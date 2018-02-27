@@ -21,7 +21,7 @@ from pysrc.joakim import config
 
 
 VERSION='2018/02/27a'
-
+FOOTLOOSE='tt0087277'
 
 class Main:
 
@@ -41,6 +41,9 @@ class Main:
 
             elif f == 'extract_top_movies':
                 self.extract_top_movies()
+
+            elif f == 'extract_top_principals':
+                self.extract_top_principals()
 
             elif f == 'extract_people':
                 self.extract_people()
@@ -63,16 +66,15 @@ class Main:
         with open(infile) as tsvfile:
             reader = csv.DictReader(tsvfile, dialect='excel-tab')
             for row in reader:
-                # OrderedDict([('tconst', 'tt0000001'), ('averageRating', '5.8'), ('numVotes', '1349')])
+                # OrderedDict([('tconst', 'tt0087277'), ('averageRating', '6.5'), ('numVotes', '58820')])
                 try:
                     row_count = row_count + 1
                     votes = int(row['numVotes'])
+                    id = row['tconst']
                     if votes > min_votes:
-                        id = row['tconst']
                         selected[id] = votes
-                    # if row_count < 10:
-                    #     print(row)
-                    #     print(row['tconst'])
+                        if id == FOOTLOOSE:
+                            print('FOOTLOOSE SELECTED: {}'.format(row))
                 except:
                     print('exception on row {} {}'.format(row_count, row))
 
@@ -130,6 +132,39 @@ class Main:
         with open(outfile2, 'wt') as f:
             f.write(jstr)
             print('file written: {}'.format(outfile2))
+
+    def extract_top_principals(self):
+        infile   = self.c.data_filename('title.principals.tsv')
+        outfile1 = self.c.top_principals_csv_filename()
+        principals = list()
+        row_count  = 0
+        top_movies = self.load_top_movies()
+
+        with open(infile) as tsvfile:
+            reader = csv.DictReader(tsvfile, dialect='excel-tab')
+            for row in reader:
+                # OrderedDict([('tconst', 'tt0000032'), ('ordering', '1'), ('nconst', 'nm3692479'),
+                # ('category', 'actress'), ('job', '\\N'), ('characters', '["The dancer"]')])
+                try:
+                    row_count = row_count + 1
+                    # if row_count < 10:
+                    #     print(row)
+                    id = row['tconst']
+                    if id in top_movies:
+                        role = row['category']
+                        if role in self.roles:
+                            nid = row['nconst']
+                            line = '{}|{}|{}'.format(id, nid, role)
+                            principals.append(line)
+                except:
+                    print('exception on row {} {}'.format(row_count, row))
+                    traceback.print_exc()
+
+        with open(outfile1, "w", newline="\n") as out:
+            out.write("id|nid|role\n")
+            for line in principals:
+                out.write(line + "\n")
+            print('file written: {}'.format(outfile1))
 
     def extract_people(self):
         # wc -l name.basics.tsv -> 8449645 name.basics.tsv

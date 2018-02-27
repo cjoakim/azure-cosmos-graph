@@ -42,7 +42,7 @@ class Config:
         # title.ratings.tsv
 
     def extract_min_votes(self):
-        return 30000
+        return 50000  # Footloose -> tt0087277 6.5 58820
 
     def top_ratings_csv_filename(self):
         return self.data_filename('top_ratings.csv')
@@ -52,6 +52,9 @@ class Config:
 
     def top_movies_json_filename(self):
         return self.data_filename('top_movies.json')
+
+    def top_principals_csv_filename(self):
+        return self.data_filename('top_principals.csv')
 
     def people_filename(self):
         return self.data_filename('people.csv')
