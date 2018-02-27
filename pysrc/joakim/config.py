@@ -41,11 +41,20 @@ class Config:
         # title.principals.tsv
         # title.ratings.tsv
 
+    def extract_min_votes(self):
+        return 30000
+
     def top_ratings_csv_filename(self):
         return self.data_filename('top_ratings.csv')
 
     def top_movies_csv_filename(self):
         return self.data_filename('top_movies.csv')
+
+    def top_movies_json_filename(self):
+        return self.data_filename('top_movies.json')
+
+    def people_filename(self):
+        return self.data_filename('people.csv')
 
     def load(self):
         try:
