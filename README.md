@@ -132,6 +132,11 @@ tt0025316|It Happened One Night
 
 See cosmos_graph.py and cosmos_graph.sh
 
+### Queries
+
+```
+g.V()
+```
 
 
 

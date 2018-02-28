@@ -5,7 +5,7 @@
 dbname=test
 collname=movies
 drop_graph=1
-drop_and_load=1
+drop_and_load=0
 
 if [ $drop_graph -gt 0 ]
 then
@@ -13,7 +13,7 @@ then
     python cosmos_graph.py drop_graph $dbname $collname
 fi
 
-if [ $drop_graph -gt 0 ]
+if [ $drop_and_load -gt 0 ]
 then
     echo 'python: drop_and_load ...'
     python cosmos_graph.py drop_and_load $dbname $collname
