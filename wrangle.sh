@@ -2,10 +2,10 @@
 
 # Chris Joakim, Microsoft, 2018/02/28
 
-extract_top_ratings=1
-extract_movies=1
-extract_principals=1
-extract_people=0
+extract_top_ratings=0
+extract_movies=0
+extract_principals=0
+extract_people=1
 
 footloose=tt0087277
 prettywoman=tt0100405
@@ -16,7 +16,7 @@ if [ $extract_top_ratings -gt 0 ]
 then
     echo 'python: extract_top_ratings ...'
     python wrangle.py extract_top_ratings
-    # inspect the file created above python process
+    # inspect the file created in the above python process
     wc   $IMDB_DATA_DIR/processed/top_ratings.csv
     head $IMDB_DATA_DIR/processed/top_ratings.csv
     cat  $IMDB_DATA_DIR/processed/top_ratings.csv | grep $footloose
@@ -27,7 +27,7 @@ if [ $extract_movies -gt 0 ]
 then
     echo 'python: extract_movies ...'
     python wrangle.py extract_movies
-    # inspect the file created above python process
+    # inspect the files created in the above python process
     wc   $IMDB_DATA_DIR/processed/movies.csv
     head $IMDB_DATA_DIR/processed/movies.csv
     echo 'grep by movie id for footloose and pretty woman'
@@ -37,12 +37,14 @@ then
     cat  $IMDB_DATA_DIR/processed/movies.csv | grep Footloose
     cat  $IMDB_DATA_DIR/processed/movies.csv | grep Pretty
     cat  $IMDB_DATA_DIR/processed/movies.csv | grep Blade
+    wc   $IMDB_DATA_DIR/processed/movies.csv
 fi
 
 if [ $extract_principals -gt 0 ]
 then
     echo 'python: extract_principals ...'
     python wrangle.py extract_principals
+    # inspect the file created in the above python process
     wc   $IMDB_DATA_DIR/processed/principals.csv
     head $IMDB_DATA_DIR/processed/principals.csv
     echo 'grep for principals in footloose'
@@ -59,11 +61,12 @@ if [ $extract_people -gt 0 ]
 then
     echo 'python: extract_people ...'
     python wrangle.py extract_people
-    inspect the file created above python process
-    # inspect the file created above python process
+    # inspect the files created in the above python process
     wc   $IMDB_DATA_DIR/processed/people.csv
     head $IMDB_DATA_DIR/processed/people.csv
-    cat  $IMDB_DATA_DIR/processed/people.csv | grep tt0100405
+    cat  $IMDB_DATA_DIR/processed/people.csv | grep $kevinbacon
+    cat  $IMDB_DATA_DIR/processed/people.csv | grep $juliaroberts
+    wc   $IMDB_DATA_DIR/processed/people.json
 fi
 
 echo 'done'

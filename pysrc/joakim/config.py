@@ -62,8 +62,11 @@ class Config:
     def principals_csv_filename(self):
         return self.data_filename_processed('principals.csv')
 
-    def people_filename(self):
+    def people_csv_filename(self):
         return self.data_filename_processed('people.csv')
+
+    def people_json_filename(self):
+        return self.data_filename_processed('people.json')
 
     def load(self):
         try:

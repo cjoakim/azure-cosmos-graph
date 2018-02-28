@@ -140,8 +140,8 @@ class Main:
         infile   = self.c.data_filename_raw('title.principals.tsv')
         outfile1 = self.c.principals_csv_filename()
         principals = list()
-        row_count  = 0
-        top_movies = self.load_movies()
+        row_count = 0
+        movies = self.load_movies()
 
         with open(infile) as tsvfile:
             reader = csv.DictReader(tsvfile, dialect='excel-tab')
@@ -153,7 +153,7 @@ class Main:
                     # if row_count < 10:
                     #     print(row)
                     id = row['tconst']
-                    if id in top_movies:
+                    if id in movies:
                         role = row['category']
                         if role in self.roles:
                             nid = row['nconst']
@@ -169,13 +169,21 @@ class Main:
                 out.write(line + "\n")
             print('file written: {}'.format(outfile1))
 
+        jstr = json.dumps(selected, sort_keys=True, indent=2)
+        with open(outfile2, 'wt') as f:
+            f.write(jstr)
+            print('file written: {}'.format(outfile2))
+
     def extract_people(self):
         # wc -l name.basics.tsv -> 8449645 name.basics.tsv
-        infile  = self.c.data_filename_raw('name.basics.tsv')
-        outfile = self.c.people_filename()
-        people  = list()
+        infile   = self.c.data_filename_raw('name.basics.tsv')
+        outfile1 = self.c.people_csv_filename()
+        outfile2 = self.c.people_json_filename()
+        people_list = list()
+        people_dict = dict()
         row_count = 0
-        top_movies = self.load_movies()
+        principal_ids = self.unique_principal_ids()
+        movies = self.load_movies()
 
         with open(infile) as tsvfile:
             reader = csv.DictReader(tsvfile, dialect='excel-tab')
@@ -185,38 +193,46 @@ class Main:
                 # ('knownForTitles', 'tt0043044,tt0050419,tt0053137,tt0072308')])
                 try:
                     row_count = row_count + 1
-                    prof = row['primaryProfession']
+                    if row_count < 10:
+                        print(row)
+                    nid = row['nconst']
+                    if nid in principal_ids:
+                        # create a csv line
+                        known4 = row['knownForTitles']
+                        titles = self.filter_titles(movies, known4)
+                        name   = row['primaryName']
+                        birth  = row['birthYear']
+                        prof   = row['primaryProfession']
+                        line   = '{}|{}|{}|{}|{}'.format(nid, name, birth, titles, prof)
+                        people_list.append(line)
 
-                    if self.filter_by_profession(prof):
-                        #print('filter_by_profession_included: {}'.format(prof))
-                        work_hits = list()
-                        nid  = row['nconst']
-                        name = row['primaryName']
-                        prof = row['primaryProfession']
-                        works = row['knownForTitles'].split(',')
-
-                        for id in works:
-                            if id in top_movies:
-                                work_hits.append(id)
-
-                        if len(work_hits) > 0:
-                            hits = ','.join(work_hits)
-                            line = '{}|{}|{}|{}'.format(nid, name, prof, hits)
-                            people.append(line)
+                        # also create a corresponding person Object for the JSON
+                        person = {}
+                        person['nid']    = nid
+                        person['name']   = name
+                        person['birth']  = birth
+                        person['prof']   = prof
+                        person['titles'] = titles.split()
+                        m = dict()
+                        for id in titles.split():
+                            mname = movies[id]
+                            m[id] = mname
+                        person['movies'] = m
+                        people_dict[nid] = person
                 except:
                     print('exception on row {} {}'.format(row_count, row))
                     traceback.print_exc()
 
-        print("extract_people - selected count: {}".format(len(people)))
+        with open(outfile1, "w", newline="\n") as out:
+            out.write("nid|name|birth|titles|profession\n")
+            for line in people_list:
+                out.write(line + "\n")
+            print('file written: {}'.format(outfile1))
 
-        with open(outfile, "w", newline="\n") as out:
-            out.write("nid|name|prof|work\n")
-            for person in people:
-                out.write(person + "\n")
-            print('file written: {}'.format(outfile))
-
-        elapsed_time = time.time() - self.start_time
-        print('lines_read: {}  elapsed: {}'.format(row_count, elapsed_time))
+        jstr = json.dumps(people_dict, sort_keys=True, indent=2)
+        with open(outfile2, 'wt') as f:
+            f.write(jstr)
+            print('file written: {}'.format(outfile2))
 
     # private
 
@@ -239,6 +255,13 @@ class Main:
             if p in self.roles:
                 return True
         return False
+
+    def filter_titles(self, movies, known_for):
+        titles = list()
+        for id in known_for.split(','):
+            if id in movies:
+                titles.append(id)
+        return ' '.join(titles).strip()
 
     def load_top_ratings(self):
         infile1 = self.c.top_ratings_csv_filename()
@@ -275,6 +298,26 @@ class Main:
                     print('exception on row {} {}'.format(row_count, row))
         print('loaded the movies; count: {}'.format(len(movies.keys())))
         return movies
+
+    def unique_principal_ids(self):
+        infile1 = self.c.principals_csv_filename()
+        principal_ids = dict()
+        row_count = 0
+        with open(infile1) as csvfile:
+            reader = csv.reader(csvfile, delimiter='|')
+            for row in reader:
+                # id|nid|role
+                # tt0012349|nm0088471|actor
+                # tt0012349|nm0000122|actor
+                try:
+                    row_count = row_count + 1
+                    if row_count > 1:
+                        nid = row[1]
+                        principal_ids[nid] = 0
+                except:
+                    print('exception on row {} {}'.format(row_count, row))
+        print('loaded the unique_principal_ids; count: {}'.format(len(principal_ids)))
+        return principal_ids
 
     def print_options(self, msg):
         print(msg)
