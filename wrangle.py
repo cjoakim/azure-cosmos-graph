@@ -6,7 +6,7 @@ Options:
   --version     Show version.
 """
 
-# Chris Joakim, Microsoft, 2018/02/27
+# Chris Joakim, Microsoft, 2018/02/28
 
 import csv
 import json
@@ -20,8 +20,11 @@ from docopt import docopt
 from pysrc.joakim import config
 
 
-VERSION='2018/02/27a'
+VERSION='2018/02/28a'
 FOOTLOOSE='tt0087277'
+PRETTYWOMAN='tt0100405'
+KEVINBACON='nm0000102'
+JULIAROBERTS='nm0000210'
 
 class Main:
 
@@ -39,11 +42,11 @@ class Main:
             if f == 'extract_top_ratings':
                 self.extract_top_ratings()
 
-            elif f == 'extract_top_movies':
-                self.extract_top_movies()
+            elif f == 'extract_movies':
+                self.extract_movies()
 
-            elif f == 'extract_top_principals':
-                self.extract_top_principals()
+            elif f == 'extract_principals':
+                self.extract_principals()
 
             elif f == 'extract_people':
                 self.extract_people()
@@ -57,7 +60,7 @@ class Main:
 
     def extract_top_ratings(self):
         # Identify and extract the top (movie) ratings with at least n-votes
-        infile = self.c.data_filename('title.ratings.tsv')
+        infile = self.c.data_filename_raw('title.ratings.tsv')
         outfile = self.c.top_ratings_csv_filename()
         min_votes = self.c.extract_min_votes()
         selected  = dict()
@@ -92,10 +95,10 @@ class Main:
         print('lines_read: {}  elapsed: {}'.format(row_count, elapsed_time))
         # lines_read: 4832632  elapsed: 25.33212375640869
 
-    def extract_top_movies(self):
-        infile = self.c.data_filename('title.basics.tsv')
-        outfile1 = self.c.top_movies_csv_filename()
-        outfile2 = self.c.top_movies_json_filename()
+    def extract_movies(self):
+        infile = self.c.data_filename_raw('title.basics.tsv')
+        outfile1 = self.c.movies_csv_filename()
+        outfile2 = self.c.movies_json_filename()
         selected = dict()
         row_count = 0
         top_rated = self.load_top_ratings()
@@ -118,7 +121,7 @@ class Main:
                 except:
                     print('exception on row {} {}'.format(row_count, row))
 
-        print("extract_top_movies - selected count: {}".format(len(selected.keys())))
+        print("extract_movies - selected count: {}".format(len(selected.keys())))
 
         with open(outfile1, "w", newline="\n") as out:
             out.write("id|title\n")
@@ -133,12 +136,12 @@ class Main:
             f.write(jstr)
             print('file written: {}'.format(outfile2))
 
-    def extract_top_principals(self):
-        infile   = self.c.data_filename('title.principals.tsv')
-        outfile1 = self.c.top_principals_csv_filename()
+    def extract_principals(self):
+        infile   = self.c.data_filename_raw('title.principals.tsv')
+        outfile1 = self.c.principals_csv_filename()
         principals = list()
         row_count  = 0
-        top_movies = self.load_top_movies()
+        top_movies = self.load_movies()
 
         with open(infile) as tsvfile:
             reader = csv.DictReader(tsvfile, dialect='excel-tab')
@@ -168,11 +171,11 @@ class Main:
 
     def extract_people(self):
         # wc -l name.basics.tsv -> 8449645 name.basics.tsv
-        infile  = self.c.data_filename('name.basics.tsv')
+        infile  = self.c.data_filename_raw('name.basics.tsv')
         outfile = self.c.people_filename()
         people  = list()
         row_count = 0
-        top_movies = self.load_top_movies()
+        top_movies = self.load_movies()
 
         with open(infile) as tsvfile:
             reader = csv.DictReader(tsvfile, dialect='excel-tab')
@@ -255,9 +258,9 @@ class Main:
         print('loaded the top_rated; count: {}'.format(len(top_rated.keys())))
         return top_rated
 
-    def load_top_movies(self):
-        infile1 = self.c.top_movies_csv_filename()
-        top_rated = dict()
+    def load_movies(self):
+        infile1 = self.c.movies_csv_filename()
+        movies  = dict()
         row_count = 0
         with open(infile1) as csvfile:
             reader = csv.reader(csvfile, delimiter='|')
@@ -267,11 +270,11 @@ class Main:
                     row_count = row_count + 1
                     if row_count > 1:
                         id, title = row[0], row[1]
-                        top_rated[id] = title
+                        movies[id] = title
                 except:
                     print('exception on row {} {}'.format(row_count, row))
-        print('loaded the top_movies; count: {}'.format(len(top_rated.keys())))
-        return top_rated
+        print('loaded the movies; count: {}'.format(len(movies.keys())))
+        return movies
 
     def print_options(self, msg):
         print(msg)

@@ -32,32 +32,38 @@ class Config:
         return os.environ['IMDB_DATA_DIR']
         # IMDB_DATA_DIR=/Users/cjoakim/Downloads/imdb
 
-    def data_filename(self, basename):
-        return '{}/{}'.format(self.data_dir(), basename)
-        # name.basics.tsv
-        # title.akas.tsv
-        # title.basics.tsv
-        # title.episode.tsv
-        # title.principals.tsv
-        # title.ratings.tsv
+    def data_filename_raw(self, basename):
+        return '{}/raw/{}'.format(self.data_dir(), basename)
+        # This directory contains the raw unzipped data downloaded from IMDb
+        # see http://www.imdb.com/interfaces/
+        # see https://datasets.imdbws.com
+        #   name.basics.tsv
+        #   title.akas.tsv
+        #   title.basics.tsv
+        #   title.episode.tsv
+        #   title.principals.tsv
+        #   title.ratings.tsv
+
+    def data_filename_processed(self, basename):
+        return '{}/processed/{}'.format(self.data_dir(), basename)
 
     def extract_min_votes(self):
-        return 50000  # Footloose -> tt0087277 6.5 58820
+        return 58000  # Footloose -> tt0087277 6.5 58820
 
     def top_ratings_csv_filename(self):
-        return self.data_filename('top_ratings.csv')
+        return self.data_filename_processed('top_ratings.csv')
 
-    def top_movies_csv_filename(self):
-        return self.data_filename('top_movies.csv')
+    def movies_csv_filename(self):
+        return self.data_filename_processed('movies.csv')
 
-    def top_movies_json_filename(self):
-        return self.data_filename('top_movies.json')
+    def movies_json_filename(self):
+        return self.data_filename_processed('movies.json')
 
-    def top_principals_csv_filename(self):
-        return self.data_filename('top_principals.csv')
+    def principals_csv_filename(self):
+        return self.data_filename_processed('principals.csv')
 
     def people_filename(self):
-        return self.data_filename('people.csv')
+        return self.data_filename_processed('people.csv')
 
     def load(self):
         try:
