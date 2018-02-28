@@ -124,6 +124,9 @@ tt0025316|It Happened One Night
 
 ## Gremlin-Python and Apache TinkerPop
 
+Apache TinkerPop is a graph computing framework for both graph databases (OLTP)
+and graph analytic systems (OLAP).
+
 - https://pypi.python.org/pypi/gremlinpython/3.2.7
 - http://tinkerpop.apache.org
 - http://tinkerpop.apache.org/docs/current/reference/#gremlin-python
@@ -135,7 +138,11 @@ See cosmos_graph.py and cosmos_graph.sh
 ### Queries
 
 ```
-g.V()
+g.V()                           select all
+g.V().count()                   count all
+g.V().has('label','movie')
+g.V().has('label','movie').has('id','tt0083658')     find the given id (movie Bladerunner)
+'id', 'tt0083658'
 ```
 
 

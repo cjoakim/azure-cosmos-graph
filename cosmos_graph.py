@@ -74,7 +74,7 @@ class Main:
         self.movies = json.load(open(self.c.movies_json_filename()))
         self.people = json.load(open(self.c.people_json_filename()))
         self.max_load = 20000
-        self.sleep_time = 0.5
+        self.sleep_time = 0.32
         self.do_inserts = True
 
         self.drop_graph(db, coll)
@@ -101,7 +101,7 @@ class Main:
             title = self.scrub_str(self.movies[id])
             spec  = "g.addV('movie').property('id', '{}').property('title', '{}')"
             query = spec.format(id, title)
-            print('insert_movie_vertices: {}  # {}'.format(query, self.do_inserts))
+            print('insert_movie_vertices: {}  # {} {}'.format(query, idx, self.do_inserts))
             if self.do_inserts:
                 if idx < self.max_load:
                     callback = self.gremlin_client.submitAsync(query)
@@ -120,7 +120,7 @@ class Main:
             name  = self.scrub_str(person['name'])
             spec  = "g.addV('person').property('id', '{}').property('name', '{}')"
             query = spec.format(pid, name)
-            print('insert_people_vertices: {}  # {}'.format(query, self.do_inserts))
+            print('insert_people_vertices: {}  # {} {}'.format(query, idx, self.do_inserts))
             if self.do_inserts:
                 if idx < self.max_load:
                     callback = self.gremlin_client.submitAsync(query)
@@ -156,12 +156,14 @@ class Main:
             person = self.people[pid]
             name   = self.scrub_str(person['name'])
             titles = person['titles']
+            count  = 0
 
             # Add the person-in-movie Edges
             spec  = "g.V('{}').addE('in').to(g.V('{}'))"
             for mid in titles:
                 query = spec.format(pid, mid)
-                print('insert_edges; p in m: {}  # {}'.format(query, self.do_inserts))
+                count = count + 1
+                print('insert_edges; p in m: {}  # {} {}'.format(query, count, self.do_inserts))
                 if self.do_inserts:
                     if idx < self.max_load:
                         callback = self.gremlin_client.submitAsync(query)
@@ -175,7 +177,8 @@ class Main:
             spec  = "g.V('{}').addE('has').to(g.V('{}'))"
             for mid in titles:
                 query = spec.format(mid, pid)
-                print('insert_edges; m has p: {}  # {}'.format(query, self.do_inserts))
+                count = count + 1
+                print('insert_edges; m has p: {}  # {} {}'.format(query, count, self.do_inserts))
                 if self.do_inserts:
                     if idx < self.max_load:
                         callback = self.gremlin_client.submitAsync(query)
@@ -184,8 +187,6 @@ class Main:
                         else:
                             print("edge NOT loaded!")
                         time.sleep(self.sleep_time)
-
-
 
     def scrub_str(self, s):
         return s.replace("'", '')
