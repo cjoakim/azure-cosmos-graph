@@ -152,11 +152,11 @@ class Main:
         #   "tt0327056"]
         # },
         people_ids = sorted(self.people.keys())
+        count = 0
         for idx, pid in enumerate(people_ids):
             person = self.people[pid]
             name   = self.scrub_str(person['name'])
             titles = person['titles']
-            count  = 0
 
             # Add the person-in-movie Edges
             spec  = "g.V('{}').addE('in').to(g.V('{}'))"

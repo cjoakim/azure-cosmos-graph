@@ -145,9 +145,28 @@ g.V().has('label','movie').has('id','tt0083658')     find the given id (movie Bl
 'id', 'tt0083658'
 ```
 
+```
+Update Thomas                          : "g.V('thomas').property('age', 44)"
 
+Traversals:
+Get all persons older than 40          : "g.V().hasLabel('person').has('age', gt(40)).values('firstName', 'age')",
+Get all persons and their first name   : "g.V().hasLabel('person').values('firstName')",
+Get all persons sorted by first name   : "g.V().hasLabel('person').order().by('firstName', incr).values('firstName')",
+Get all persons that Thomas knows      : "g.V('thomas').out('knows').hasLabel('person').values('firstName')",
+People known by those who Thomas knows : "g.V('thomas').out('knows').hasLabel('person').out('knows').hasLabel('person').values('firstName')",
+Get the path from Thomas to Robin"     : "g.V('thomas').repeat(out()).until(has('id', 'robin')).path()"
+```
 
 ## Querying CosmosDB
 
 See cosmos_graph.py and cosmos_graph.sh
+
+## Six_Degrees_of_Kevin_Bacon
+
+https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon
+
+"...in a January 1994 interview with Premiere magazine discussing the film The River Wild, mentioned that "he had worked with everybody in Hollywood or someone who’s worked with them."[1] On April 7, 1994, a lengthy newsgroup thread headed "Kevin Bacon is the Center of the Universe" appeared.  Four Albright College students: Craig Fass, Christian Gardner, Brian Turtle, and Mike Ginelli created the game early in 1994."
+
+It rests on the assumption that anyone involved in the Hollywood film industry can be linked through their film roles to Bacon within six steps.
+
 
