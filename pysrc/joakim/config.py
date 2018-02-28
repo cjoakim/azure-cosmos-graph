@@ -22,8 +22,13 @@ class Config:
         return os.environ['AZURE_COSMOSDB_GRAPH1_URI']
 
     def cosmosdb_gremlin_url(self):
+        # example: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
         acct = self.cosmosdb_acct()
         return "wss://{}.gremlin.cosmosdb.azure.com:443/".format(acct)
+
+    def cosmosdb_gremlin_username(self, dbname, collname):
+        # example: /dbs/db1/colls/coll1
+        return "/dbs/{}/colls/{}".format(dbname, collname)
 
     def cosmosdb_key(self):
         return os.environ['AZURE_COSMOSDB_GRAPH1_KEY']

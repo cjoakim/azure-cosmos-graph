@@ -122,13 +122,20 @@ tt0025316|It Happened One Night
   }
 ```
 
+## Gremlin-Python and Apache TinkerPop
+
+- https://pypi.python.org/pypi/gremlinpython/3.2.7
+- http://tinkerpop.apache.org
+- http://tinkerpop.apache.org/docs/current/reference/#gremlin-python
+
 ## Loading the Data CosmosDB
 
-See cosmos_load.py and cosmos_load.sh
+See cosmos_graph.py and cosmos_graph.sh
+
 
 
 
 ## Querying CosmosDB
 
-See cosmos_query.py and cosmos_query.sh
+See cosmos_graph.py and cosmos_graph.sh
 

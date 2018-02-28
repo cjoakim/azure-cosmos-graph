@@ -70,21 +70,3 @@ then
 fi
 
 echo 'done'
-
-# === Notes ===
-
-# 20000 votes -> 4994 movies           -> 183864 people
-# 50000 votes -> 2815 movies -> xxx principals
-
-# cat $IMDB_DATA_DIR/processed/title.ratings.tsv    | grep tt0087277
-# tt0087277   6.5 58820
-
-# cat $IMDB_DATA_DIR/processed/title.basics.tsv     | grep tt0087277
-# tt0087277   movie   Footloose   Footloose   0   1984    \N  107 Drama,Music,Romance
-
-# cat $IMDB_DATA_DIR/processed/title.basics.tsv     | grep tt0087277
-# cat $IMDB_DATA_DIR/processed/title.principals.tsv | grep tt0087277
-# cat $IMDB_DATA_DIR/processed/name.basics.tsv      | grep tt0087277  | grep Bacon
-# nm0000102   Kevin Bacon 1958    \N  actor,producer,soundtrack   tt0087277,tt0164052,tt0327056,tt0361127
-
-
