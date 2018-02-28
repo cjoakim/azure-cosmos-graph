@@ -1,11 +1,12 @@
 #!/bin/bash
 
 # Chris Joakim, Microsoft, 2018/02/28
+# ./cosmos_graph.sh > tmp/cosmos_graph.log
 
 dbname=test
 collname=movies
-drop_graph=1
-drop_and_load=0
+drop_graph=0
+drop_and_load=1
 
 if [ $drop_graph -gt 0 ]
 then
