@@ -1,8 +1,7 @@
 """
 Usage:
   python cosmos_graph.py drop_graph test movies
-  python cosmos_graph.py load_movies
-  python cosmos_graph.py load_people
+  python cosmos_graph.py drop_and_load test movies
 Options:
   -h --help     Show this screen.
   --version     Show version.
@@ -55,10 +54,8 @@ class Main:
 
             if func == 'drop_graph':
                 self.drop_graph(db, coll)
-            elif func == 'load_movies':
-                self.load_movies()
-            elif func == 'load_people':
-                self.load_people()
+            elif func == 'drop_and_load':
+                self.drop_and_load(db, coll)
             elif func == 'ad_hoc':
                 self.ad_hoc(db, coll)
             else:
@@ -81,11 +78,25 @@ class Main:
         else:
             print("graph NOT dropped!")
 
-    def load_movies(self):
-        pass
+    def drop_and_load(self, db, coll):
+        print('drop_and_load')
+        # self.create_client(db, coll)
+        # self.drop_graph()
+        self.insert_movie_vertices()
+        self.insert_people_vertices()
+        self.insert_edges();
 
-    def load_people(self):
-        pass
+    def insert_movie_vertices(self):
+        print('insert_movie_vertices')
+        infile = self.c.movies_json_filename()
+        movies = json.load(open(infile))
+        print(movies)
+
+    def insert_people_vertices(self):
+        print('insert_people_vertices')
+
+    def insert_edges(self):
+        print('insert_edges')
 
     def print_options(self, msg):
         print(msg)
