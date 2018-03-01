@@ -9,6 +9,8 @@ the CosmosDB/GraphDB, and search for the nth degrees of Kevin Bacon and others.
 
 In Azure Portal, provision a CosmosDB with the Graph API.
 
+10,000 RUs -> Estimated spend (USD): $0.80 hourly / $19.20 daily.
+
 Capture its keys in portal, and set these as environment variables:
 ```
 AZURE_COSMOSDB_GRAPH1_ACCT=xxx
@@ -130,10 +132,19 @@ and graph analytic systems (OLAP).
 - https://pypi.python.org/pypi/gremlinpython/3.2.7
 - http://tinkerpop.apache.org
 - http://tinkerpop.apache.org/docs/current/reference/#gremlin-python
+- http://gremlindocs.spmallette.documentup.com (TinkerPop 2.x)
+- http://tinkerpop.apache.org (Download Gremlin console)
+- https://docs.microsoft.com/en-us/azure/cosmos-db/create-graph-gremlin-console
 
 ## Loading the Data CosmosDB
 
 See cosmos_graph.py and cosmos_graph.sh
+
+Log output:
+```
+insert_movie_vertices; count: 2518
+
+```
 
 ### Queries
 
@@ -153,9 +164,12 @@ g.V().has('label','movie').has('id','tt0100405')        find movie with the give
 g.V().has('label','movie').has('title','Pretty Woman')  find movie with the given title
 
 g.V().has('label','person').has('id','nm0000210')       find person with the given id (Julia Roberts)
+g.V('nm0000210')                                        simpler way to find Julia Roberts
 g.V().has('label','person').has('name','Julia Roberts') find person with the given name
 
 g.V().has('label','person').has('id','nm0000102')       find person with the given id (Kevin Bacon)
+
+g.V('nm0000210').bothE().where(otherV().hasId('nm0000102'))
 
 Execute query: g.V("nm0000210").both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())
 Execute query: g.V("tt0100405").both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())
@@ -163,6 +177,17 @@ Execute query: g.V("nm0000210").both().as('v').project('vertex', 'edges').by(sel
 Execute query: g.V("nm0000102").both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())
 
 wip:
+
+:> g.V('nm0000210')
+:> g.V('nm0000210').outE('in').inV().hasLabel('person')
+:> g.V().hasLabel('person').has('firstName', 'Thomas').outE('knows').inV().hasLabel('person')
+
+g.V(1).bothE().where(otherV().hasId(2))
+g.V().has('label','person').has('name','Julia Roberts').bothE().where(otherV().hasId('nm0000152'))
+
+g.V().group().by().by(bothE().count()) # Degree centrality is a measure of the number of edges associated to each vertex.
+
+
 g.V().has('id','nm0000210').inE('in')  <- returns reasonable json
 g.V().has('label','person').has('id','nm0000210').out().values('id')
 
@@ -181,6 +206,56 @@ Get all persons sorted by first name   : "g.V().hasLabel('person').order().by('f
 Get all persons that Thomas knows      : "g.V('thomas').out('knows').hasLabel('person').values('firstName')",
 People known by those who Thomas knows : "g.V('thomas').out('knows').hasLabel('person').out('knows').hasLabel('person').values('firstName')",
 Get the path from Thomas to Robin"     : "g.V('thomas').repeat(out()).until(has('id', 'robin')).path()"
+```
+
+## Gremlin Console
+
+- See this tutorial: https://docs.microsoft.com/en-us/azure/cosmos-db/create-graph-gremlin-console
+- Dowload the 3.2.7 client from here: http://tinkerpop.apache.org/downloads.html
+- Unzip the apache-tinkerpop-gremlin-console-3.2.7-bin.zip
+- Edit file conf/remote-secure.yaml and enter your CosmosDB values as shown below:
+- In bash terminal, execte bin/gremlin.sh to start the Gremlin Console
+- In the console, run the following to connect to CosmosDB
+  gremlin> :remote connect tinkerpop.server conf/remote-secure.yaml
+- Execute queries prefixed with ':>', examples below
+
+
+```
+gremlin> :> g.V().count()
+==>6507
+
+gremlin> :> g.V('nm0000102')
+==>[id:nm0000102,label:person,type:vertex,properties:[name:[[id:34dd09d4-4146-401d-8439-566b8db34940,value:Kevin Bacon]]]]
+
+gremlin> :> g.V('nm0000210')
+==>[id:nm0000210,label:person,type:vertex,properties:[name:[[id:a3a7350c-854f-4f28-9f70-630a5c99de92,value:Julia Roberts]]]]
+
+gremlin> :> g.V('nm0000152')
+==>[id:nm0000152,label:person,type:vertex,properties:[name:[[id:7949640e-be51-4a09-af6f-aab5b5761029,value:Richard Gere]]]]
+
+gremlin> :> g.V('nm0000210').outE().inV().hasLabel('movie')
+==>[id:tt0376541,label:movie,type:vertex,properties:[title:[[id:db412101-b34a-4097-9cb3-5dac26adb41a,value:Closer]]]]
+==>[id:tt0195685,label:movie,type:vertex,properties:[title:[[id:c1763d68-b5d7-4b76-8fb7-5b6a745c26fd,value:Erin Brockovich]]]]
+==>[id:tt0100405,label:movie,type:vertex,properties:[title:[[id:b7869705-e32c-4801-ba87-be361511ee21,value:Pretty Woman]]]]
+==>[id:tt0125439,label:movie,type:vertex,properties:[title:[[id:e25b5183-da90-4892-8778-235c4c11746d,value:Notting Hill]]]]
+
+gremlin> :> g.V('nm0000152').outE().inV()
+
+gremlin> :> g.V('nm0000152').outE().inV()
+==>[id:tt0299658,label:movie,type:vertex,properties:[title:[[id:2d1c6214-79e7-43b0-861e-5cfb209f4dcb,value:Chicago]]]]
+==>[id:tt0100405,label:movie,type:vertex,properties:[title:[[id:b7869705-e32c-4801-ba87-be361511ee21,value:Pretty Woman]]]]
+
+```
+
+
+Example conf/remote-secure.yaml file:
+```
+hosts: [cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com]
+port: 443
+username: /dbs/test/colls/movies
+password: h2Dwm7 ... X6nUkSw==
+connectionPool: {enableSsl: true}
+serializer: {className: org.apache.tinkerpop.gremlin.driver.ser.GraphSONMessageSerializerV1d0, config: { serializeResultToString: true }}
 ```
 
 ## Querying CosmosDB

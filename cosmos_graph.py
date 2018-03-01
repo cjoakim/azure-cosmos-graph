@@ -7,7 +7,7 @@ Options:
   --version     Show version.
 """
 
-# Chris Joakim, Microsoft, 2018/02/28
+# Chris Joakim, Microsoft, 2018/03/01
 
 import csv, json, os, sys, time, traceback
 
@@ -20,7 +20,7 @@ from docopt import docopt
 from pysrc.joakim import config
 
 
-VERSION='2018/02/28a'
+VERSION='2018/03/01a'
 FOOTLOOSE='tt0087277'
 PRETTYWOMAN='tt0100405'
 KEVINBACON='nm0000102'
@@ -61,6 +61,12 @@ class Main:
             elif func == 'count_query':
                 self.count_query(db, coll)
 
+            elif func == 'query2':
+                self.query2(db, coll)
+
+            elif func == 'query3':
+                self.query3(db, coll)
+
             elif func == 'ad_hoc':
                 self.ad_hoc(db, coll)
             else:
@@ -100,8 +106,9 @@ class Main:
 
     def insert_movie_vertices(self):
         # example: g.addV('movie').property('id', 'tt0083658').property('title', 'Blade Runner')
-        print('insert_movie_vertices')
         movies_ids = sorted(self.movies.keys())
+        print('insert_movie_vertices; count: {}'.format(len(movies_ids)))
+
         for idx, id in enumerate(movies_ids):
             title = self.scrub_str(self.movies[id])
             spec  = "g.addV('movie').property('id', '{}').property('title', '{}')"
@@ -118,8 +125,9 @@ class Main:
 
     def insert_people_vertices(self):
         # example: g.addV('person').property('id', 'nm0000442').property('name', 'Rutger Hauer')
-        print('insert_people_vertices')
         people_ids = sorted(self.people.keys())
+        print('insert_people_vertices; count: {}'.format(len(people_ids)))
+
         for idx, pid in enumerate(people_ids):
             person = self.people[pid]
             name  = self.scrub_str(person['name'])
@@ -179,30 +187,64 @@ class Main:
                         time.sleep(self.sleep_time)
 
             # Add the movie-has-person Edges
-            spec  = "g.V('{}').addE('has').to(g.V('{}'))"
-            for mid in titles:
-                query = spec.format(mid, pid)
-                count = count + 1
-                print('insert_edges; m has p: {}  # {} {}'.format(query, count, self.do_inserts))
-                if self.do_inserts:
-                    if idx < self.max_load:
-                        callback = self.gremlin_client.submitAsync(query)
-                        if callback.result() is not None:
-                            print("edge loaded: " + query)
-                        else:
-                            print("edge NOT loaded!")
-                        time.sleep(self.sleep_time)
+            if False:
+                spec  = "g.V('{}').addE('has').to(g.V('{}'))"
+                for mid in titles:
+                    query = spec.format(mid, pid)
+                    count = count + 1
+                    print('insert_edges; m has p: {}  # {} {}'.format(query, count, self.do_inserts))
+                    if self.do_inserts:
+                        if idx < self.max_load:
+                            callback = self.gremlin_client.submitAsync(query)
+                            if callback.result() is not None:
+                                print("edge loaded: " + query)
+                            else:
+                                print("edge NOT loaded!")
+                            time.sleep(self.sleep_time)
 
     def count_query(self, db, coll):
-        print('query1')
         self.create_client(db, coll)
         query = 'g.V().count()'
+        print('count_query: {}'.format(query))
         query
         callback = self.gremlin_client.submitAsync(query)
         if callback.result() is not None:
             print(callback.result().one())
         else:
-            print("query1 returned None")
+            print("query returned None")
+
+    def query2(self, db, coll):
+        self.create_client(db, coll)
+        query = "g.V().has('label','movie').has('id','tt0100405')"
+        print('query2: {}'.format(query))
+        query
+        callback = self.gremlin_client.submitAsync(query)
+        # callback.result() is an instance of gremlin_python.driver.resultset.ResultSet
+        # all() returns a <Future at 0x1085fbe80 state=pending>
+        if callback.result() is not None:
+            print(type(callback.result()))  # <class 'gremlin_python.driver.resultset.ResultSet'>
+            rlist = callback.result().one() # <class 'list'>
+            print(type(rlist))
+            for idx, item in enumerate(rlist):
+                print('{} {}'.format(idx, item))
+        else:
+            print("query returned None")
+
+    def query3(self, db, coll):
+        self.create_client(db, coll)
+        query = "g.V('nm0000210').both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())"
+        print('query3: {}'.format(query))
+        query
+        callback = self.gremlin_client.submitAsync(query)
+        # callback.result() is an instance of gremlin_python.driver.resultset.ResultSet
+        # all() returns a <Future at 0x1085fbe80 state=pending>
+        if callback.result() is not None:
+            print(type(callback.result()))  # <class 'gremlin_python.driver.resultset.ResultSet'>
+            rlist = callback.result().one() # <class 'list'>
+            jstr = json.dumps(rlist, sort_keys=False, indent=2)
+            print(jstr)
+        else:
+            print("query returned None")
 
     def scrub_str(self, s):
         return s.replace("'", '')
