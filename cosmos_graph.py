@@ -186,6 +186,21 @@ class Main:
                             print("edge NOT loaded!")
                         time.sleep(self.sleep_time)
 
+            # Add the person-knows-person Edges
+            # spec  = "g.V('{}').addE('knows').to(g.V('{}'))"
+            # for mid in titles:
+            #     query = spec.format(pid, mid)
+            #     count = count + 1
+            #     print('insert_edges; p in m: {}  # {} {}'.format(query, count, self.do_inserts))
+            #     if self.do_inserts:
+            #         if idx < self.max_load:
+            #             callback = self.gremlin_client.submitAsync(query)
+            #             if callback.result() is not None:
+            #                 print("edge loaded: " + query)
+            #             else:
+            #                 print("edge NOT loaded!")
+            #             time.sleep(self.sleep_time)
+
             # Add the movie-has-person Edges
             if False:
                 spec  = "g.V('{}').addE('has').to(g.V('{}'))"

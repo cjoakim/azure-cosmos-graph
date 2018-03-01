@@ -5,7 +5,8 @@
 extract_top_ratings=0
 extract_movies=0
 extract_principals=0
-extract_people=1
+extract_people=0
+derive_people_edges=1
 
 footloose=tt0087277
 prettywoman=tt0100405
@@ -67,6 +68,18 @@ then
     cat  $IMDB_DATA_DIR/processed/people.csv | grep $kevinbacon
     cat  $IMDB_DATA_DIR/processed/people.csv | grep $juliaroberts
     wc   $IMDB_DATA_DIR/processed/people.json
+fi
+
+if [ $derive_people_edges -gt 0 ]
+then
+    echo 'python: derive_people_edges ...'
+    python wrangle.py derive_people_edges
+    # inspect the files created in the above python process
+    # wc   $IMDB_DATA_DIR/processed/people_edges.csv
+    # head $IMDB_DATA_DIR/processed/people_edges.csv
+    # cat  $IMDB_DATA_DIR/processed/people_edges.csv | grep $kevinbacon
+    # cat  $IMDB_DATA_DIR/processed/people_edges.csv | grep $juliaroberts
+    wc   $IMDB_DATA_DIR/processed/people_edges.json
 fi
 
 echo 'done'

@@ -6,7 +6,7 @@ Options:
   --version     Show version.
 """
 
-# Chris Joakim, Microsoft, 2018/02/28
+# Chris Joakim, Microsoft, 2018/03/01
 
 import csv
 import json
@@ -50,6 +50,9 @@ class Main:
 
             elif f == 'extract_people':
                 self.extract_people()
+
+            elif f == 'derive_people_edges':
+                self.derive_people_edges()
 
             elif f == 'scan2':
                 pass
@@ -169,11 +172,6 @@ class Main:
                 out.write(line + "\n")
             print('file written: {}'.format(outfile1))
 
-        jstr = json.dumps(selected, sort_keys=True, indent=2)
-        with open(outfile2, 'wt') as f:
-            f.write(jstr)
-            print('file written: {}'.format(outfile2))
-
     def extract_people(self):
         # wc -l name.basics.tsv -> 8449645 name.basics.tsv
         infile   = self.c.data_filename_raw('name.basics.tsv')
@@ -233,6 +231,49 @@ class Main:
         with open(outfile2, 'wt') as f:
             f.write(jstr)
             print('file written: {}'.format(outfile2))
+
+    def derive_people_edges(self):
+        infile1  = self.c.movies_json_filename()
+        infile2  = self.c.people_json_filename()
+        infile3  = self.c.principals_csv_filename()
+        outfile1 = self.c.principals_json_filename()
+        outfile2 = self.c.people_edges_json_filename()
+        movies = json.load(open(self.c.movies_json_filename()))
+        people = json.load(open(self.c.people_json_filename()))
+        people_keys = sorted(people.keys())
+        print('movies: {}'.format(len(movies.keys())))
+        print('people: {}'.format(len(people.keys())))
+        principals, people_edges, row_count = dict(), dict(), 0
+
+        # key = name1:name2 value = dict of movie id and movie title
+
+        with open(infile3) as csvfile:
+            reader = csv.reader(csvfile, delimiter='|')
+            for row in reader:
+                row_count = row_count + 1
+                if row_count > 1:
+                    prin_obj, mid, pid = None, row[0], row[1]
+                    if mid in principals:
+                        prin_obj = principals[mid]
+                    else:
+                        prin_obj = dict()
+                        prin_obj['title'] = movies[mid]
+                        prin_obj['people'] = list()
+
+                    pers_obj = dict()
+                    pers_obj['id'] = pid
+                    pers_obj['name'] = people[pid]['name']
+                    prin_obj['people'].append(pers_obj)
+                    principals[mid] = prin_obj
+
+
+                #print('{} {} {}'.format(mid, nid, movie))
+
+
+        jstr = json.dumps(principals, sort_keys=True, indent=2)
+        with open(outfile1, 'wt') as f:
+            f.write(jstr)
+            print('file written: {}'.format(outfile1))
 
     # private
 

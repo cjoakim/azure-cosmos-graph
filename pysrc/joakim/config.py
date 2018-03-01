@@ -67,11 +67,17 @@ class Config:
     def principals_csv_filename(self):
         return self.data_filename_processed('principals.csv')
 
+    def principals_json_filename(self):
+        return self.data_filename_processed('principals.json')
+
     def people_csv_filename(self):
         return self.data_filename_processed('people.csv')
 
     def people_json_filename(self):
         return self.data_filename_processed('people.json')
+
+    def people_edges_json_filename(self):
+        return self.data_filename_processed('people_edges.json')
 
     def load(self):
         try:

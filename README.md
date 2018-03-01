@@ -233,6 +233,9 @@ gremlin> :> g.V('nm0000210')
 gremlin> :> g.V('nm0000152')
 ==>[id:nm0000152,label:person,type:vertex,properties:[name:[[id:7949640e-be51-4a09-af6f-aab5b5761029,value:Richard Gere]]]]
 
+gremlin> :> g.V('tt0100405')
+==>[id:tt0100405,label:movie,type:vertex,properties:[title:[[id:b7869705-e32c-4801-ba87-be361511ee21,value:Pretty Woman]]]]
+
 gremlin> :> g.V('nm0000210').outE().inV().hasLabel('movie')
 ==>[id:tt0376541,label:movie,type:vertex,properties:[title:[[id:db412101-b34a-4097-9cb3-5dac26adb41a,value:Closer]]]]
 ==>[id:tt0195685,label:movie,type:vertex,properties:[title:[[id:c1763d68-b5d7-4b76-8fb7-5b6a745c26fd,value:Erin Brockovich]]]]
@@ -245,6 +248,8 @@ gremlin> :> g.V('nm0000152').outE().inV()
 ==>[id:tt0299658,label:movie,type:vertex,properties:[title:[[id:2d1c6214-79e7-43b0-861e-5cfb209f4dcb,value:Chicago]]]]
 ==>[id:tt0100405,label:movie,type:vertex,properties:[title:[[id:b7869705-e32c-4801-ba87-be361511ee21,value:Pretty Woman]]]]
 
+
+:> g.V('nm0000210').outE().inV().hasLabel('person')
 ```
 
 
