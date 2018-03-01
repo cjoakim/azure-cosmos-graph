@@ -74,7 +74,7 @@ class Main:
         self.movies = json.load(open(self.c.movies_json_filename()))
         self.people = json.load(open(self.c.people_json_filename()))
         self.max_load = 20000
-        self.sleep_time = 0.32
+        self.sleep_time = 0.5
         self.do_inserts = True
 
         self.drop_graph(db, coll)
