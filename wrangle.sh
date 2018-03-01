@@ -12,6 +12,7 @@ footloose=tt0087277
 prettywoman=tt0100405
 kevinbacon=nm0000102
 juliaroberts=nm0000210
+richardgere=nm0000152
 
 if [ $extract_top_ratings -gt 0 ]
 then
@@ -74,12 +75,8 @@ if [ $derive_people_edges -gt 0 ]
 then
     echo 'python: derive_people_edges ...'
     python wrangle.py derive_people_edges
-    # inspect the files created in the above python process
-    # wc   $IMDB_DATA_DIR/processed/people_edges.csv
-    # head $IMDB_DATA_DIR/processed/people_edges.csv
-    # cat  $IMDB_DATA_DIR/processed/people_edges.csv | grep $kevinbacon
-    # cat  $IMDB_DATA_DIR/processed/people_edges.csv | grep $juliaroberts
     wc   $IMDB_DATA_DIR/processed/people_edges.json
+    cat  $IMDB_DATA_DIR/processed/people_edges.json | grep $juliaroberts | grep $richardgere
 fi
 
 echo 'done'

@@ -245,8 +245,6 @@ class Main:
         print('people: {}'.format(len(people.keys())))
         principals, people_edges, row_count = dict(), dict(), 0
 
-        # key = name1:name2 value = dict of movie id and movie title
-
         with open(infile3) as csvfile:
             reader = csv.reader(csvfile, delimiter='|')
             for row in reader:
@@ -259,21 +257,29 @@ class Main:
                         prin_obj = dict()
                         prin_obj['title'] = movies[mid]
                         prin_obj['people'] = list()
-
                     pers_obj = dict()
                     pers_obj['id'] = pid
                     pers_obj['name'] = people[pid]['name']
                     prin_obj['people'].append(pers_obj)
                     principals[mid] = prin_obj
 
-
-                #print('{} {} {}'.format(mid, nid, movie))
-
-
         jstr = json.dumps(principals, sort_keys=True, indent=2)
         with open(outfile1, 'wt') as f:
             f.write(jstr)
             print('file written: {}'.format(outfile1))
+
+        for mid in sorted(principals.keys()):
+            people = principals[mid]['people']
+            for person1 in people:
+                for person2 in people:
+                    if person1['id'] != person2['id']:
+                        concat_key = '{}:{}'.format(person1['id'], person2['id'])
+                        people_edges[concat_key] = 0
+
+        jstr = json.dumps(people_edges, sort_keys=True, indent=2)
+        with open(outfile2, 'wt') as f:
+            f.write(jstr)
+            print('file written: {}'.format(outfile2))
 
     # private
 
