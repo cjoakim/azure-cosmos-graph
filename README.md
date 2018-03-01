@@ -137,12 +137,38 @@ See cosmos_graph.py and cosmos_graph.sh
 
 ### Queries
 
+
 ```
+IDs:
+footloose=tt0087277
+prettywoman=tt0100405
+kevinbacon=nm0000102
+juliaroberts=nm0000210
+richardgere=nm0000152
+
 g.V()                           select all
 g.V().count()                   count all
 g.V().has('label','movie')
-g.V().has('label','movie').has('id','tt0083658')     find the given id (movie Bladerunner)
-'id', 'tt0083658'
+g.V().has('label','movie').has('id','tt0100405')        find movie with the given id (Pretty Woman)
+g.V().has('label','movie').has('title','Pretty Woman')  find movie with the given title
+
+g.V().has('label','person').has('id','nm0000210')       find person with the given id (Julia Roberts)
+g.V().has('label','person').has('name','Julia Roberts') find person with the given name
+
+g.V().has('label','person').has('id','nm0000102')       find person with the given id (Kevin Bacon)
+
+Execute query: g.V("nm0000210").both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())
+Execute query: g.V("tt0100405").both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())
+Execute query: g.V("nm0000210").both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())
+Execute query: g.V("nm0000102").both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())
+
+wip:
+g.V().has('id','nm0000210').inE('in')  <- returns reasonable json
+g.V().has('label','person').has('id','nm0000210').out().values('id')
+
+g.V('nm0000210').repeat(out()).until(has('id', 'nm0000152')).path()
+g.V('nm0000210').repeat(out()).hasLabel('person').until(has('id', 'nm0000152')).path()
+g.V('nm0000210').out('in').hasLabel('movie').out('has').hasLabel('person').values('nm0000152')
 ```
 
 ```

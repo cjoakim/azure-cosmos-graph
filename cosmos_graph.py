@@ -54,8 +54,13 @@ class Main:
 
             if func == 'drop_graph':
                 self.drop_graph(db, coll)
+
             elif func == 'drop_and_load':
                 self.drop_and_load(db, coll)
+
+            elif func == 'count_query':
+                self.count_query(db, coll)
+
             elif func == 'ad_hoc':
                 self.ad_hoc(db, coll)
             else:
@@ -187,6 +192,17 @@ class Main:
                         else:
                             print("edge NOT loaded!")
                         time.sleep(self.sleep_time)
+
+    def count_query(self, db, coll):
+        print('query1')
+        self.create_client(db, coll)
+        query = 'g.V().count()'
+        query
+        callback = self.gremlin_client.submitAsync(query)
+        if callback.result() is not None:
+            print(callback.result().one())
+        else:
+            print("query1 returned None")
 
     def scrub_str(self, s):
         return s.replace("'", '')
