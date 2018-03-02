@@ -7,7 +7,7 @@ Options:
   --version     Show version.
 """
 
-# Chris Joakim, Microsoft, 2018/03/01
+# Chris Joakim, Microsoft, 2018/03/02
 
 import csv, json, os, sys, time, traceback
 
@@ -20,7 +20,7 @@ from docopt import docopt
 from pysrc.joakim import config
 
 
-VERSION='2018/03/01a'
+VERSION='2018/03/02a'
 FOOTLOOSE='tt0087277'
 PRETTYWOMAN='tt0100405'
 KEVINBACON='nm0000102'
@@ -84,7 +84,7 @@ class Main:
         infile2 = self.c.people_json_filename()
         self.movies = json.load(open(self.c.movies_json_filename()))
         self.people = json.load(open(self.c.people_json_filename()))
-        self.max_load = 10 # 100000
+        self.max_load = 100000
         self.sleep_time = 0.32
         self.do_inserts = True
 
