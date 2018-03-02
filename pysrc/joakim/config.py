@@ -58,11 +58,6 @@ class Config:
     def extract_min_rating(self):
         return 6.5  # Footloose -> tt0087277 6.5 58820
 
-    def required_movie_ids(self):
-        req = dict()
-        req['xxx'] = ''
-        return req
-
     def top_ratings_csv_filename(self):
         return self.data_filename_processed('top_ratings.csv')
 

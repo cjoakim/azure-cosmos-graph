@@ -254,6 +254,8 @@ class Main:
         print('people: {}'.format(len(people.keys())))
         principals, people_edges, row_count = dict(), dict(), 0
 
+        # collect the principals dictionary, keyed by movie id, with a
+        # dict as the value with title and list of people
         with open(infile3) as csvfile:
             reader = csv.reader(csvfile, delimiter='|')
             for row in reader:
@@ -283,7 +285,8 @@ class Main:
             for person1 in people:
                 for person2 in people:
                     if person1['id'] != person2['id']:
-                        concat_key = '{}:{}'.format(person1['id'], person2['id'])
+                        pair = sorted([person1['id'], person2['id']])
+                        concat_key = '{}:{}'.format(pair[0], pair[1])
                         people_edges[concat_key] = title
 
         jstr = json.dumps(people_edges, sort_keys=True, indent=2)

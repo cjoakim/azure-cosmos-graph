@@ -3,10 +3,10 @@
 # Chris Joakim, Microsoft, 2018/03/02
 
 identify_required_movies=0
-extract_top_ratings=1
-extract_movies=1
-extract_principals=1
-extract_people=1
+extract_top_ratings=0
+extract_movies=0
+extract_principals=0
+extract_people=0
 derive_people_edges=1
 
 footloose=tt0087277
