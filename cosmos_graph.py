@@ -84,8 +84,8 @@ class Main:
         infile2 = self.c.people_json_filename()
         self.movies = json.load(open(self.c.movies_json_filename()))
         self.people = json.load(open(self.c.people_json_filename()))
-        self.max_load = 100000
-        self.sleep_time = 0.32
+        self.max_load =  100000
+        self.sleep_time = 0.2
         self.do_inserts = True
 
         self.drop_graph(db, coll)
@@ -151,22 +151,7 @@ class Main:
         # examples:
         # g.V('nm0000102').addE('in').to(g.V('tt0087277'))  # Kevin Bacon in Footloose
         # g.V('tt0087277').addE('has').to(g.V('nm0000102')) # Footloose has Kevin Bacon
-        #
-        # "nm0000102": {
-        # "birth": "1958",
-        # "movies": {
-        #   "tt0087277": "Footloose",
-        #   "tt0164052": "Hollow Man",
-        #   "tt0327056": "Mystic River"
-        # },
-        # "name": "Kevin Bacon",
-        # "nid": "nm0000102",
-        # "prof": "actor,producer,soundtrack",
-        # "titles": [
-        #   "tt0087277",
-        #   "tt0164052",
-        #   "tt0327056"]
-        # },
+
         count = 0
         people_ids = sorted(self.people.keys())
         for idx, pid in enumerate(people_ids):
@@ -188,7 +173,7 @@ class Main:
                             print("edge NOT loaded!")
                         time.sleep(self.sleep_time)
 
-            if True:
+            if False:
                 spec = "g.V('{}').addE('has').to(g.V('{}'))"
                 for mid in titles:
                     query = spec.format(mid, pid)
@@ -205,14 +190,15 @@ class Main:
 
         people_edges = json.load(open(self.c.people_edges_json_filename()))
         concat_keys = sorted(people_edges.keys())
-        spec = "g.V('{}').addE('knows').to(g.V('{}'))"
+        #spec = "g.V('{}').addE('knows').to(g.V('{}'))"
+        spec = "g.V('{}').addE('{}').to(g.V('{}'))"
         #spec = "g.V('{}').addE('knows', 'title', '{}').to(g.V('{}'))"
         max_edges = self.max_load * 3
         for idx, key in enumerate(concat_keys):
             title = people_edges[key].replace("'", '')
             pair = key.split(':')
             pid1, pid2 = pair[0], pair[1]
-            query = spec.format(pid1, pid2)
+            query = spec.format(pid1, title, pid2)
             count = count + 1
             if self.do_inserts:
                 if idx < max_edges:
@@ -223,29 +209,6 @@ class Main:
                     else:
                         print("person-knows-person NOT loaded!")
                     time.sleep(self.sleep_time)
-
-        # [~/github/azure-cosmos-graph/tmp]$ cat cosmos_graph_dev.log | grep person-in-movie | wc
-        #    12996   60987  829920
-        # [~/github/azure-cosmos-graph/tmp]$ cat cosmos_graph_dev.log | grep insert_movie_vertices | wc
-        #     2519   21916  295982
-        # [~/github/azure-cosmos-graph/tmp]$ cat cosmos_graph_dev.log | grep insert_people_vertices | wc
-        #     3994   32181  466800
-        # [~/github/azure-cosmos-graph/tmp]$ cat cosmos_graph_dev.log | grep person-in-movie | wc
-        #    12996   60987  829920
-        # [~/github/azure-cosmos-graph/tmp]$ cat cosmos_graph_dev.log | grep person-knows-person | wc
-        #    28597  247578 3279424
-
-        # [~/github/azure-cosmos-graph/tmp]$ irb
-        # irb(main):001:0> doc_count = 2519 + 3994 + 12996 + 28596
-        # => 48105
-        # irb(main):002:0> sph = 60 * 60
-        # => 3600
-        # irb(main):003:0> inserts_per_sec = 3
-        # => 3
-        # irb(main):004:0> docs_per_hour = inserts_per_sec * sph
-        # => 10800
-        # irb(main):005:0> expected_hours = doc_count.to_f / docs_per_hour.to_f
-        # => 4.454166666666667
 
     def count_query(self, db, coll):
         self.create_client(db, coll)
