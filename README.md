@@ -159,7 +159,7 @@ richardgere=nm0000152
 john_lithgow=nm0001475
 tom_hanks=nm0000158
 lori_singer=nm0001742
-john_malkovich=nm0000518
+john_malkovich=
 dustin_hoffman=nm0000163
 
 
@@ -181,7 +181,7 @@ g.V('nm0000210').out('knows').values('name').path()
 
 g.V('nm0000210').bothE().where(otherV().hasId('nm0000152'))
 g.V('nm0000210').bothE().where(otherV().hasId('nm0000152')).path()
-g.V('nm0000210').bothE().where(otherV().hasId('nm0000102'))
+g.V('nm0000210').bothE().where(otherV().hasId('nm0001742'))
 g.V('nm0000152').bothE().where(otherV().hasId('nm0000163'))
 
 Execute query: g.V("nm0000210").both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())
