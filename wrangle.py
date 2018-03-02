@@ -119,8 +119,14 @@ class Main:
                         if 'movie' == row['titleType']:
                             if '0' == row['isAdult']:
                                 title = row['primaryTitle']
-                                selected[id] = title
-                                #print('selected top_rated item {} {}'.format(id, title))
+                                try:
+                                    ystr = row['startYear']
+                                    yint = int(ystr)
+                                    if yint > 1979:
+                                        selected[id] = title
+                                        print('selected top_rated item {} {} {}'.format(id, title, ystr))
+                                except:
+                                    pass
                 except:
                     print('exception on row {} {}'.format(row_count, row))
 
