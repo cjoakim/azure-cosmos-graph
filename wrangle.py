@@ -270,16 +270,23 @@ class Main:
 
         for mid in sorted(principals.keys()):
             people = principals[mid]['people']
+            title  = movies[mid]
             for person1 in people:
                 for person2 in people:
                     if person1['id'] != person2['id']:
                         concat_key = '{}:{}'.format(person1['id'], person2['id'])
-                        people_edges[concat_key] = 0
+                        people_edges[concat_key] = title
 
         jstr = json.dumps(people_edges, sort_keys=True, indent=2)
         with open(outfile2, 'wt') as f:
             f.write(jstr)
             print('file written: {}'.format(outfile2))
+
+        people_edges = json.load(open(self.c.people_edges_json_filename()))
+        concat_keys = sorted(people_edges.keys())
+        for key in concat_keys:
+            pair = key.split(':')
+            print(pair)
 
     # private
 

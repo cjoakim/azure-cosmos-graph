@@ -76,6 +76,9 @@ then
     echo 'python: derive_people_edges ...'
     python wrangle.py derive_people_edges
     wc   $IMDB_DATA_DIR/processed/people_edges.json
+    echo 'juliaroberts entries:'
+    cat  $IMDB_DATA_DIR/processed/people_edges.json | grep $juliaroberts
+    echo 'juliaroberts and richardgere entries:'
     cat  $IMDB_DATA_DIR/processed/people_edges.json | grep $juliaroberts | grep $richardgere
 fi
 

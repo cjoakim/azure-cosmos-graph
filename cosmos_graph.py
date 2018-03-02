@@ -187,19 +187,19 @@ class Main:
                         time.sleep(self.sleep_time)
 
             # Add the person-knows-person Edges
-            # spec  = "g.V('{}').addE('knows').to(g.V('{}'))"
-            # for mid in titles:
-            #     query = spec.format(pid, mid)
-            #     count = count + 1
-            #     print('insert_edges; p in m: {}  # {} {}'.format(query, count, self.do_inserts))
-            #     if self.do_inserts:
-            #         if idx < self.max_load:
-            #             callback = self.gremlin_client.submitAsync(query)
-            #             if callback.result() is not None:
-            #                 print("edge loaded: " + query)
-            #             else:
-            #                 print("edge NOT loaded!")
-            #             time.sleep(self.sleep_time)
+            people_edges = json.load(open(self.c.people_edges_json_filename()))
+            concat_keys = sorted(people_edges.keys())
+            spec = "g.V('{}').addE('knows').to(g.V('{}'))"
+            for key in concat_keys:
+                pair = key.split(':')
+                pid1, pid2 = pair[0], pair[1]
+                query = spec.format(pid1, pid2)
+                callback = self.gremlin_client.submitAsync(query)
+                if callback.result() is not None:
+                    print("person-knows-person loaded: " + query)
+                else:
+                    print("person-knows-person NOT loaded!")
+                time.sleep(self.sleep_time)
 
             # Add the movie-has-person Edges
             if False:
