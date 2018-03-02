@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# Chris Joakim, Microsoft, 2018/03/01
+# Chris Joakim, Microsoft, 2018/03/02
 # ./cosmos_graph.sh > tmp/cosmos_graph.log
 
 dbname=test
-collname=movies2
+collname=movies
 drop_graph=0
 drop_and_load=1
 count_query=1

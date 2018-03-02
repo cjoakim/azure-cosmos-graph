@@ -84,8 +84,8 @@ class Main:
         infile2 = self.c.people_json_filename()
         self.movies = json.load(open(self.c.movies_json_filename()))
         self.people = json.load(open(self.c.people_json_filename()))
-        self.max_load = 20000
-        self.sleep_time = 0.5
+        self.max_load = 100000
+        self.sleep_time = 0.32
         self.do_inserts = True
 
         self.drop_graph(db, coll)
@@ -103,6 +103,8 @@ class Main:
             print("graph dropped!")
         else:
             print("graph NOT dropped!")
+        print('sleeping 10 seconds after drop')
+        time.sleep(10)
 
     def insert_movie_vertices(self):
         # example: g.addV('movie').property('id', 'tt0083658').property('title', 'Blade Runner')
@@ -164,50 +166,35 @@ class Main:
         #   "tt0164052",
         #   "tt0327056"]
         # },
-        people_ids = sorted(self.people.keys())
         count = 0
+        people_ids = sorted(self.people.keys())
         for idx, pid in enumerate(people_ids):
             person = self.people[pid]
             name   = self.scrub_str(person['name'])
             titles = person['titles']
 
-            # Add the person-in-movie Edges
+            print('Add the person-in-movie Edges')
             spec  = "g.V('{}').addE('in').to(g.V('{}'))"
             for mid in titles:
                 query = spec.format(pid, mid)
                 count = count + 1
-                print('insert_edges; p in m: {}  # {} {}'.format(query, count, self.do_inserts))
+                print('person-in-movie edge: {}  # {}'.format(query, count))
                 if self.do_inserts:
                     if idx < self.max_load:
                         callback = self.gremlin_client.submitAsync(query)
                         if callback.result() is not None:
-                            print("edge loaded: " + query)
+                            pass
                         else:
                             print("edge NOT loaded!")
                         time.sleep(self.sleep_time)
 
-            # Add the person-knows-person Edges
-            people_edges = json.load(open(self.c.people_edges_json_filename()))
-            concat_keys = sorted(people_edges.keys())
-            spec = "g.V('{}').addE('knows').to(g.V('{}'))"
-            for key in concat_keys:
-                pair = key.split(':')
-                pid1, pid2 = pair[0], pair[1]
-                query = spec.format(pid1, pid2)
-                callback = self.gremlin_client.submitAsync(query)
-                if callback.result() is not None:
-                    print("person-knows-person loaded: " + query)
-                else:
-                    print("person-knows-person NOT loaded!")
-                time.sleep(self.sleep_time)
-
-            # Add the movie-has-person Edges
             if False:
+                print('Add the movie-has-person Edges')
                 spec  = "g.V('{}').addE('has').to(g.V('{}'))"
                 for mid in titles:
                     query = spec.format(mid, pid)
                     count = count + 1
-                    print('insert_edges; m has p: {}  # {} {}'.format(query, count, self.do_inserts))
+                    print('movie-has-person edge: {}  # {}'.format(query, count))
                     if self.do_inserts:
                         if idx < self.max_load:
                             callback = self.gremlin_client.submitAsync(query)
@@ -216,6 +203,51 @@ class Main:
                             else:
                                 print("edge NOT loaded!")
                             time.sleep(self.sleep_time)
+
+        print('Add the person-knows-person Edges')
+        people_edges = json.load(open(self.c.people_edges_json_filename()))
+        concat_keys = sorted(people_edges.keys())
+        #spec = "g.V('{}').addE('knows').to(g.V('{}'))"
+        spec = "g.V('{}').addE('knows', 'title', '{}').to(g.V('{}'))"
+        max_edges = self.max_load * 3
+        for idx, key in enumerate(concat_keys):
+            title = people_edges[key].replace("'", '')
+            pair = key.split(':')
+            pid1, pid2 = pair[0], pair[1]
+            query = spec.format(pid1, title, pid2)
+            count = count + 1
+            print('person-knows-person edge: {}  # {}'.format(query, count))
+            if self.do_inserts:
+                if idx < self.max_edges:
+                    callback = self.gremlin_client.submitAsync(query)
+                    if callback.result() is not None:
+                        pass
+                    else:
+                        print("person-knows-person NOT loaded!")
+                    time.sleep(self.sleep_time)
+
+        # [~/github/azure-cosmos-graph/tmp]$ cat cosmos_graph_dev.log | grep person-in-movie | wc
+        #    12996   60987  829920
+        # [~/github/azure-cosmos-graph/tmp]$ cat cosmos_graph_dev.log | grep insert_movie_vertices | wc
+        #     2519   21916  295982
+        # [~/github/azure-cosmos-graph/tmp]$ cat cosmos_graph_dev.log | grep insert_people_vertices | wc
+        #     3994   32181  466800
+        # [~/github/azure-cosmos-graph/tmp]$ cat cosmos_graph_dev.log | grep person-in-movie | wc
+        #    12996   60987  829920
+        # [~/github/azure-cosmos-graph/tmp]$ cat cosmos_graph_dev.log | grep person-knows-person | wc
+        #    28597  247578 3279424
+
+        # [~/github/azure-cosmos-graph/tmp]$ irb
+        # irb(main):001:0> doc_count = 2519 + 3994 + 12996 + 28596
+        # => 48105
+        # irb(main):002:0> sph = 60 * 60
+        # => 3600
+        # irb(main):003:0> inserts_per_sec = 3
+        # => 3
+        # irb(main):004:0> docs_per_hour = inserts_per_sec * sph
+        # => 10800
+        # irb(main):005:0> expected_hours = doc_count.to_f / docs_per_hour.to_f
+        # => 4.454166666666667
 
     def count_query(self, db, coll):
         self.create_client(db, coll)
