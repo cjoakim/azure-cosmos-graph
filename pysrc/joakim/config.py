@@ -53,7 +53,15 @@ class Config:
         return '{}/processed/{}'.format(self.data_dir(), basename)
 
     def extract_min_votes(self):
-        return 58000  # Footloose -> tt0087277 6.5 58820
+        return 58800  # Footloose -> tt0087277 6.5 58820
+
+    def extract_min_rating(self):
+        return 6.5  # Footloose -> tt0087277 6.5 58820
+
+    def required_movie_ids(self):
+        req = dict()
+        req['xxx'] = ''
+        return req
 
     def top_ratings_csv_filename(self):
         return self.data_filename_processed('top_ratings.csv')

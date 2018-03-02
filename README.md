@@ -152,16 +152,24 @@ insert_movie_vertices; count: 2518
 ```
 IDs:
 footloose=tt0087277
-prettywoman=tt0100405
-kevinbacon=nm0000102
-juliaroberts=nm0000210
+pretty_woman=tt0100405
+kevin_bacon=nm0000102
+julia_roberts=nm0000210
 richardgere=nm0000152
+john_lithgow=nm0001475
+tom_hanks=nm0000158
+lori_singer=nm0001742
+john_malkovich=nm0000518
+dustin_hoffman=nm0000163
+
 
 g.V()                           select all
 g.V().count()                   count all
 g.V().has('label','movie')
 g.V().has('label','movie').has('id','tt0100405')        find movie with the given id (Pretty Woman)
 g.V().has('label','movie').has('title','Pretty Woman')  find movie with the given title
+g.V('tt0100405')                                        Pretty Woman
+g.V('tt0087277')                                        Footloose
 
 g.V().has('label','person').has('id','nm0000210')       find person with the given id (Julia Roberts)
 g.V('nm0000210')                                        simpler way to find Julia Roberts
@@ -169,7 +177,12 @@ g.V().has('label','person').has('name','Julia Roberts') find person with the giv
 
 g.V().has('label','person').has('id','nm0000102')       find person with the given id (Kevin Bacon)
 
+g.V('nm0000210').out('knows').values('name').path()
+
+g.V('nm0000210').bothE().where(otherV().hasId('nm0000152'))
+g.V('nm0000210').bothE().where(otherV().hasId('nm0000152')).path()
 g.V('nm0000210').bothE().where(otherV().hasId('nm0000102'))
+g.V('nm0000152').bothE().where(otherV().hasId('nm0000163'))
 
 Execute query: g.V("nm0000210").both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())
 Execute query: g.V("tt0100405").both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())

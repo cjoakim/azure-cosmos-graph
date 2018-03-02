@@ -6,7 +6,7 @@ Options:
   --version     Show version.
 """
 
-# Chris Joakim, Microsoft, 2018/03/01
+# Chris Joakim, Microsoft, 2018/03/02
 
 import csv
 import json
@@ -66,6 +66,7 @@ class Main:
         infile = self.c.data_filename_raw('title.ratings.tsv')
         outfile = self.c.top_ratings_csv_filename()
         min_votes = self.c.extract_min_votes()
+        min_rating = self.c.extract_min_rating()
         selected  = dict()
         row_count = 0
 
@@ -76,11 +77,13 @@ class Main:
                 try:
                     row_count = row_count + 1
                     votes = int(row['numVotes'])
+                    rating = float(row['averageRating'])
                     id = row['tconst']
-                    if votes > min_votes:
-                        selected[id] = votes
-                        if id == FOOTLOOSE:
-                            print('FOOTLOOSE SELECTED: {}'.format(row))
+                    if votes >= min_votes:
+                        if rating >= min_rating:
+                            selected[id] = votes
+                            if id == FOOTLOOSE:
+                                print('FOOTLOOSE SELECTED: {}'.format(row))
                 except:
                     print('exception on row {} {}'.format(row_count, row))
 
@@ -122,7 +125,7 @@ class Main:
                                 try:
                                     ystr = row['startYear']
                                     yint = int(ystr)
-                                    if yint > 1979:
+                                    if yint > 1983:
                                         selected[id] = title
                                         print('selected top_rated item {} {} {}'.format(id, title, ystr))
                                 except:

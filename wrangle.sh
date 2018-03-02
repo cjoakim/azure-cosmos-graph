@@ -2,6 +2,7 @@
 
 # Chris Joakim, Microsoft, 2018/03/02
 
+identify_required_movies=0
 extract_top_ratings=1
 extract_movies=1
 extract_principals=1
@@ -9,10 +10,43 @@ extract_people=1
 derive_people_edges=1
 
 footloose=tt0087277
-prettywoman=tt0100405
-kevinbacon=nm0000102
-juliaroberts=nm0000210
-richardgere=nm0000152
+pretty_woman=tt0100405
+bladerunner=tt0083658
+
+kevin_bacon=nm0000102
+julia_roberts=nm0000210
+richard_gere=nm0000152
+john_lithgow=nm0001475
+tom_hanks=nm0000158
+lori_singer=nm0001742
+john_malkovich=nm0000518
+dustin_hoffman=nm0000163
+kevin_costner=nm0000126
+holly_hunter=nm0000456
+keanu_reeves=nm0000206
+hilary_swank=nm0005476
+charlize_theron=nm0000234
+harrison_ford=nm0000148
+
+# This identify_required_movies logic was explored then abandoned
+# if [ $identify_required_movies -gt 0 ]
+# then
+#     echo 'grep: identify_required_movies ...'
+#     cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $kevin_bacon     >  $IMDB_DATA_DIR/processed/required_movies_raw.txt
+#     cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $julia_roberts   >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
+#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $richard_gere    >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
+#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $john_lithgow    >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
+#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $tom_hanks       >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
+#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $kevin_bacon     >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
+#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $john_malkovich  >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
+#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $kevin_costner   >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
+#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $holly_hunter    >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
+#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $keanu_reeves    >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
+#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $hilary_swank    >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
+#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $charlize_theron >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
+#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $harrison_ford   >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
+#     cat $IMDB_DATA_DIR/processed/required_movies_raw.txt | sort | cut -c1-9 | uniq > $IMDB_DATA_DIR/processed/required_movies.txt
+# fi
 
 if [ $extract_top_ratings -gt 0 ]
 then
@@ -21,8 +55,6 @@ then
     # inspect the file created in the above python process
     wc   $IMDB_DATA_DIR/processed/top_ratings.csv
     head $IMDB_DATA_DIR/processed/top_ratings.csv
-    cat  $IMDB_DATA_DIR/processed/top_ratings.csv | grep $footloose
-    cat  $IMDB_DATA_DIR/processed/top_ratings.csv | grep $prettywoman
 fi
 
 if [ $extract_movies -gt 0 ]
@@ -34,7 +66,7 @@ then
     head $IMDB_DATA_DIR/processed/movies.csv
     echo 'grep by movie id for footloose and pretty woman'
     cat  $IMDB_DATA_DIR/processed/movies.csv | grep $footloose
-    cat  $IMDB_DATA_DIR/processed/movies.csv | grep $prettywoman
+    cat  $IMDB_DATA_DIR/processed/movies.csv | grep $pretty_woman
     echo 'grep by movie title for Footloose, Pretty, Blade'
     cat  $IMDB_DATA_DIR/processed/movies.csv | grep Footloose
     cat  $IMDB_DATA_DIR/processed/movies.csv | grep Pretty
@@ -51,12 +83,12 @@ then
     head $IMDB_DATA_DIR/processed/principals.csv
     echo 'grep for principals in footloose'
     cat  $IMDB_DATA_DIR/processed/principals.csv | grep $footloose
-    echo 'grep for principals in prettywoman'
-    cat  $IMDB_DATA_DIR/processed/principals.csv | grep $prettywoman
+    echo 'grep for principals in pretty_woman'
+    cat  $IMDB_DATA_DIR/processed/principals.csv | grep $pretty_woman
     echo 'grep for kevinbacon'
-    cat  $IMDB_DATA_DIR/processed/principals.csv | grep $kevinbacon
+    cat  $IMDB_DATA_DIR/processed/principals.csv | grep $kevin_bacon
     echo 'grep for juliaroberts'
-    cat  $IMDB_DATA_DIR/processed/principals.csv | grep $juliaroberts
+    cat  $IMDB_DATA_DIR/processed/principals.csv | grep $julia_roberts
 fi
 
 if [ $extract_people -gt 0 ]
@@ -66,8 +98,8 @@ then
     # inspect the files created in the above python process
     wc   $IMDB_DATA_DIR/processed/people.csv
     head $IMDB_DATA_DIR/processed/people.csv
-    cat  $IMDB_DATA_DIR/processed/people.csv | grep $kevinbacon
-    cat  $IMDB_DATA_DIR/processed/people.csv | grep $juliaroberts
+    cat  $IMDB_DATA_DIR/processed/people.csv | grep $kevin_bacon
+    cat  $IMDB_DATA_DIR/processed/people.csv | grep $julia_roberts
     wc   $IMDB_DATA_DIR/processed/people.json
 fi
 
@@ -77,9 +109,9 @@ then
     python wrangle.py derive_people_edges
     wc   $IMDB_DATA_DIR/processed/people_edges.json
     echo 'juliaroberts entries:'
-    cat  $IMDB_DATA_DIR/processed/people_edges.json | grep $juliaroberts
+    cat  $IMDB_DATA_DIR/processed/people_edges.json | grep $julia_roberts
     echo 'juliaroberts and richardgere entries:'
-    cat  $IMDB_DATA_DIR/processed/people_edges.json | grep $juliaroberts | grep $richardgere
+    cat  $IMDB_DATA_DIR/processed/people_edges.json | grep $julia_roberts | grep $richard_gere
 fi
 
 echo 'done'
