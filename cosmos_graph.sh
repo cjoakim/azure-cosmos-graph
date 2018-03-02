@@ -4,10 +4,10 @@
 # ./cosmos_graph.sh > tmp/cosmos_graph.log
 
 dbname=test
-collname=movies
+collname=movies2
 drop_graph=0
 drop_and_load=1
-count_query=1
+count_query=0
 query2=0
 query3=0
 
