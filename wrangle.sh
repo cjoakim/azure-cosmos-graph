@@ -1,13 +1,13 @@
 #!/bin/bash
 
-# Chris Joakim, Microsoft, 2018/03/02
+# Chris Joakim, Microsoft, 2018/03/04
 
-identify_required_movies=0
+identify_required_movies=1
 extract_top_ratings=0
 extract_movies=0
 extract_principals=0
 extract_people=0
-derive_people_edges=1
+derive_people_edges=0
 
 footloose=tt0087277
 pretty_woman=tt0100405
@@ -28,25 +28,14 @@ hilary_swank=nm0005476
 charlize_theron=nm0000234
 harrison_ford=nm0000148
 
-# This identify_required_movies logic was explored then abandoned
-# if [ $identify_required_movies -gt 0 ]
-# then
-#     echo 'grep: identify_required_movies ...'
-#     cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $kevin_bacon     >  $IMDB_DATA_DIR/processed/required_movies_raw.txt
-#     cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $julia_roberts   >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
-#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $richard_gere    >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
-#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $john_lithgow    >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
-#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $tom_hanks       >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
-#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $kevin_bacon     >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
-#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $john_malkovich  >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
-#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $kevin_costner   >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
-#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $holly_hunter    >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
-#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $keanu_reeves    >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
-#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $hilary_swank    >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
-#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $charlize_theron >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
-#     # cat $IMDB_DATA_DIR/raw/title.principals.tsv | grep $harrison_ford   >> $IMDB_DATA_DIR/processed/required_movies_raw.txt
-#     cat $IMDB_DATA_DIR/processed/required_movies_raw.txt | sort | cut -c1-9 | uniq > $IMDB_DATA_DIR/processed/required_movies.txt
-# fi
+if [ $identify_required_movies -gt 0 ]
+then
+    echo 'python: identify_required_movies ...'
+    python wrangle.py identify_required_movies
+    # inspect the file created in the above python process
+    wc   $IMDB_DATA_DIR/processed/required_movies.csv
+    head $IMDB_DATA_DIR/processed/required_movies.csv
+fi
 
 if [ $extract_top_ratings -gt 0 ]
 then

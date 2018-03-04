@@ -42,6 +42,9 @@ class Main:
             if f == 'extract_top_ratings':
                 self.extract_top_ratings()
 
+            elif f == 'identify_required_movies':
+                self.identify_required_movies()
+
             elif f == 'extract_movies':
                 self.extract_movies()
 
@@ -100,6 +103,67 @@ class Main:
         elapsed_time = time.time() - self.start_time
         print('lines_read: {}  elapsed: {}'.format(row_count, elapsed_time))
         # lines_read: 4832632  elapsed: 25.33212375640869
+
+    def required_actors(self):
+        actors = dict()
+        actors['nm0000102'] = 'kevin_bacon'
+        actors['nm0000126'] = 'kevin_costner'
+        actors['nm0000148'] = 'harrison_ford'
+        actors['nm0000152'] = 'richard_gere'
+        actors['nm0000158'] = 'tom_hanks'
+        actors['nm0000163'] = 'dustin_hoffman'
+        actors['nm0000206'] = 'keanu_reeves'
+        actors['nm0000210'] = 'julia_roberts'
+        actors['nm0000234'] = 'charlize_theron'
+        #actors['nm0000456'] = 'holly_hunter'
+        #actors['nm0000518'] = 'john_malkovich'
+        #actors['nm0001475'] = 'john_lithgow'
+        #actors['nm0005476'] = 'hilary_swank'
+        actors['nm0000113'] = 'sandra_bullock'
+        return actors
+
+    def identify_required_movies(self):
+        infile   = self.c.data_filename_raw('title.principals.tsv')
+        outfile1 = self.c.required_movies_json_filename()
+        actors   = self.required_actors()
+        row_count = 0
+        required  = dict()
+        curr_movie_mid = ''
+        curr_movie_actors = list()
+
+        with open(infile) as tsvfile:
+            reader = csv.DictReader(tsvfile, dialect='excel-tab')
+            for row in reader:
+                # OrderedDict([('tconst', 'tt0000032'), ('ordering', '1'), ('nconst', 'nm3692479'),
+                # ('category', 'actress'), ('job', '\\N'), ('characters', '["The dancer"]')])
+                try:
+                    row_count = row_count + 1
+                    if row_count < 10:
+                        print(row)
+                    mid  = row['tconst']
+                    nid  = row['nconst']
+                    role = row['category']
+                    if mid == curr_movie_mid:
+                        if (len(curr_movie_actors)) > 0:
+                            required[curr_movie_mid] = curr_movie_actors
+                            print('{} {}'.format(mid, curr_movie_actors))
+                    else:
+                        curr_movie_mid = mid
+                        curr_movie_actors = list()
+
+                    if nid in actors:
+                        name = actors[nid]
+                        concat = '{}:{}'.format(nid, name)
+                        curr_movie_actors.append(concat)
+                except:
+                    print('exception on row {} {}'.format(row_count, row))
+                    traceback.print_exc()
+
+        print('required count: {}'.format(len(required)))
+        jstr = json.dumps(required, sort_keys=True, indent=2)
+        with open(outfile1, 'wt') as f:
+            f.write(jstr)
+            print('file written: {}'.format(outfile1))
 
     def extract_movies(self):
         infile = self.c.data_filename_raw('title.basics.tsv')

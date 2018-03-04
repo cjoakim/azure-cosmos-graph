@@ -61,6 +61,9 @@ class Config:
     def top_ratings_csv_filename(self):
         return self.data_filename_processed('top_ratings.csv')
 
+    def required_movies_json_filename(self):
+        return self.data_filename_processed('required_movies.json')
+
     def movies_csv_filename(self):
         return self.data_filename_processed('movies.csv')
 
