@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Chris Joakim, Microsoft, 2018/03/04
+# Chris Joakim, Microsoft, 2018/03/05
 
-identify_required_movies=1
+identify_candidate_movies=1
 extract_top_ratings=0
 extract_movies=0
 extract_principals=0
@@ -28,10 +28,10 @@ hilary_swank=nm0005476
 charlize_theron=nm0000234
 harrison_ford=nm0000148
 
-if [ $identify_required_movies -gt 0 ]
+if [ $identify_candidate_movies -gt 0 ]
 then
-    echo 'python: identify_required_movies ...'
-    python wrangle.py identify_required_movies
+    echo 'python: identify_candidate_movies ...'
+    python wrangle.py identify_candidate_movies
     # inspect the file created in the above python process
     wc   $IMDB_DATA_DIR/processed/required_movies.csv
     head $IMDB_DATA_DIR/processed/required_movies.csv
@@ -42,8 +42,8 @@ then
     echo 'python: extract_top_ratings ...'
     python wrangle.py extract_top_ratings
     # inspect the file created in the above python process
-    wc   $IMDB_DATA_DIR/processed/top_ratings.csv
-    head $IMDB_DATA_DIR/processed/top_ratings.csv
+    wc   $IMDB_DATA_DIR/processed/top_ratings.json
+    head $IMDB_DATA_DIR/processed/top_ratings.json
 fi
 
 if [ $extract_movies -gt 0 ]

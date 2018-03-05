@@ -6,7 +6,7 @@ Options:
   --version     Show version.
 """
 
-# Chris Joakim, Microsoft, 2018/03/02
+# Chris Joakim, Microsoft, 2018/03/05
 
 import csv
 import json
@@ -42,8 +42,8 @@ class Main:
             if f == 'extract_top_ratings':
                 self.extract_top_ratings()
 
-            elif f == 'identify_required_movies':
-                self.identify_required_movies()
+            elif f == 'identify_candidate_movies':
+                self.identify_candidate_movies()
 
             elif f == 'extract_movies':
                 self.extract_movies()
@@ -104,28 +104,31 @@ class Main:
         print('lines_read: {}  elapsed: {}'.format(row_count, elapsed_time))
         # lines_read: 4832632  elapsed: 25.33212375640869
 
-    def required_actors(self):
+    def facorite_actors(self):
         actors = dict()
         actors['nm0000102'] = 'kevin_bacon'
+        actors['nm0000113'] = 'sandra_bullock'
         actors['nm0000126'] = 'kevin_costner'
         actors['nm0000148'] = 'harrison_ford'
         actors['nm0000152'] = 'richard_gere'
         actors['nm0000158'] = 'tom_hanks'
-        actors['nm0000163'] = 'dustin_hoffman'
         actors['nm0000206'] = 'keanu_reeves'
         actors['nm0000210'] = 'julia_roberts'
         actors['nm0000234'] = 'charlize_theron'
+        actors['nm0177896'] = 'bradley_cooper'
+        actors['nm1297015'] = 'emma_stone'
+        actors['nm2225369'] = 'jennifer_lawrence'
+        #actors['nm0000163'] = 'dustin_hoffman'
         #actors['nm0000456'] = 'holly_hunter'
         #actors['nm0000518'] = 'john_malkovich'
         #actors['nm0001475'] = 'john_lithgow'
         #actors['nm0005476'] = 'hilary_swank'
-        actors['nm0000113'] = 'sandra_bullock'
         return actors
 
-    def identify_required_movies(self):
+    def identify_candidate_movies(self):
         infile   = self.c.data_filename_raw('title.principals.tsv')
-        outfile1 = self.c.required_movies_json_filename()
-        actors   = self.required_actors()
+        outfile1 = self.c.candidate_movies_json_filename()
+        actors   = self.facorite_actors()
         row_count = 0
         required  = dict()
         curr_movie_mid = ''
@@ -143,18 +146,18 @@ class Main:
                     mid  = row['tconst']
                     nid  = row['nconst']
                     role = row['category']
-                    if mid == curr_movie_mid:
+                    if mid != curr_movie_mid:
                         if (len(curr_movie_actors)) > 0:
                             required[curr_movie_mid] = curr_movie_actors
-                            print('{} {}'.format(mid, curr_movie_actors))
-                    else:
+                            print('{} {}'.format(curr_movie_mid, curr_movie_actors))
                         curr_movie_mid = mid
                         curr_movie_actors = list()
 
                     if nid in actors:
-                        name = actors[nid]
-                        concat = '{}:{}'.format(nid, name)
-                        curr_movie_actors.append(concat)
+                        person = dict()
+                        person['id'] = nid
+                        person['name'] = actors[nid]
+                        curr_movie_actors.append(person)
                 except:
                     print('exception on row {} {}'.format(row_count, row))
                     traceback.print_exc()
