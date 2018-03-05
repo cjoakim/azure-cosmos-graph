@@ -291,6 +291,77 @@ connectionPool: {enableSsl: true}
 serializer: {className: org.apache.tinkerpop.gremlin.driver.ser.GraphSONMessageSerializerV1d0, config: { serializeResultToString: true }}
 ```
 
+## Simple Manual Case
+
+### Create Vectors and Edges
+
+```
+Create 3 Movies
+g.addV('movie').property('name', 'Movie1').property('id', 'm1')
+g.addV('movie').property('name', 'Movie2').property('id', 'm2')
+g.addV('movie').property('name', 'Movie3').property('id', 'm3')
+g.V('m1')
+
+Create 6 People
+g.addV('person').property('name', 'Adam').property('id', 'p1')
+g.addV('person').property('name', 'Barbara').property('id', 'p2')
+g.addV('person').property('name', 'Charles').property('id', 'p3')
+g.addV('person').property('name', 'Darlene').property('id', 'p4')
+g.addV('person').property('name', 'Edward').property('id', 'p5')
+g.addV('person').property('name', 'Fiona').property('id', 'p6')
+g.V('p1')
+
+Create Edges from People-to-Movies
+g.V('p1').addE('in').to(g.V('m1'))
+g.V('p2').addE('in').to(g.V('m1'))
+g.V('p3').addE('in').to(g.V('m1'))
+g.V('p4').addE('in').to(g.V('m2'))
+g.V('p5').addE('in').to(g.V('m2'))
+g.V('p6').addE('in').to(g.V('m3'))
+
+overlaps
+g.V('p3').addE('in').to(g.V('m2'))
+g.V('p6').addE('in').to(g.V('m2'))
+g.V('m1')
+g.V('m2')
+g.V('m3')
+
+g.V().hasLabel('person').has('name', 'Adam').property('movies', '["Movie1"]')
+g.V().hasLabel('person').has('name', 'Fiona').property('movies', '["Movie2", "Movie3"]')
+
+Create Edges from people-to-people - this the results of this syntax are questionable
+g.V('p1').addE('knows').to(g.V('p2'))
+g.V('p1').addE('knows').to(g.V('p3'))
+g.V('p2').addE('knows').to(g.V('p3'))
+g.V('p4').addE('knows').to(g.V('p5'))
+g.V('p3').addE('knows').to(g.V('p4'))
+g.V('p3').addE('knows').to(g.V('p5'))
+g.V('p6').addE('knows').to(g.V('p4'))
+g.V('p6').addE('knows').to(g.V('p5'))
+
+This person-to-person syntax works better
+g.V().hasLabel('person').has('id', 'p1').addE('knows').to(g.V().hasLabel('person').has('id', 'p2'))
+g.V().hasLabel('person').has('id', 'p1').addE('knows').to(g.V().hasLabel('person').has('id', 'p3'))
+g.V().hasLabel('person').has('id', 'p2').addE('knows').to(g.V().hasLabel('person').has('id', 'p3'))
+g.V().hasLabel('person').has('id', 'p4').addE('knows').to(g.V().hasLabel('person').has('id', 'p5'))
+g.V().hasLabel('person').has('id', 'p3').addE('knows').to(g.V().hasLabel('person').has('id', 'p4'))
+g.V().hasLabel('person').has('id', 'p3').addE('knows').to(g.V().hasLabel('person').has('id', 'p5'))
+g.V().hasLabel('person').has('id', 'p6').addE('knows').to(g.V().hasLabel('person').has('id', 'p4'))
+g.V().hasLabel('person').has('id', 'p6').addE('knows').to(g.V().hasLabel('person').has('id', 'p5'))
+```
+
+### Query
+
+```
+g.V().hasLabel('person')
+
+g.V().hasLabel('person').has('name', 'Adam').outE('knows').inV().hasLabel('person')
+
+Get the path from Thomas to Robin"
+g.V('p1').repeat(out()).until(has('id', 'p6')).path()
+```
+
+
 ## Querying CosmosDB
 
 See cosmos_graph.py and cosmos_graph.sh

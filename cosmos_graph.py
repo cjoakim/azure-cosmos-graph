@@ -108,14 +108,14 @@ class Main:
         time.sleep(10)
 
     def insert_movie_vertices(self):
-        # example: g.addV('movie').property('id', 'tt0083658').property('title', 'Blade Runner')
         movies_ids = sorted(self.movies.keys())
         print('insert_movie_vertices; count: {}'.format(len(movies_ids)))
 
-        for idx, id in enumerate(movies_ids):
-            title = self.scrub_str(self.movies[id])
-            spec  = "g.addV('movie').property('id', '{}').property('title', '{}')"
-            query = spec.format(id, title)
+        for idx, mid in enumerate(movies_ids):
+            title = self.scrub_str(self.movies[mid])
+            #spec = "g.addV('movie').property('id', '{}').property('title', '{}')"
+            spec  = "g.addV('movie').property('name', '{}').property('id', '{}')"
+            query = spec.format(title, mid)
             if self.do_inserts:
                 if idx < self.max_load:
                     print('insert_movie_vertices: {}  # {} {}'.format(query, idx, self.do_inserts))
@@ -127,15 +127,15 @@ class Main:
                     time.sleep(self.sleep_time)
 
     def insert_people_vertices(self):
-        # example: g.addV('person').property('id', 'nm0000442').property('name', 'Rutger Hauer')
         people_ids = sorted(self.people.keys())
         print('insert_people_vertices; count: {}'.format(len(people_ids)))
 
         for idx, pid in enumerate(people_ids):
             person = self.people[pid]
-            name  = self.scrub_str(person['name'])
-            spec  = "g.addV('person').property('id', '{}').property('name', '{}')"
-            query = spec.format(pid, name)
+            name   = self.scrub_str(person['name'])
+            #spec  = "g.addV('person').property('id', '{}').property('name', '{}')"
+            spec   = "g.addV('person').property('name', '{}').property('id', '{}')"
+            query  = spec.format(name, pid)
             if self.do_inserts:
                 if idx < self.max_load:
                     print('insert_people_vertices: {}  # {} {}'.format(query, idx, self.do_inserts))
@@ -148,18 +148,16 @@ class Main:
 
     def insert_edges(self):
         print('insert_edges')
-        # examples:
-        # g.V('nm0000102').addE('in').to(g.V('tt0087277'))  # Kevin Bacon in Footloose
-        # g.V('tt0087277').addE('has').to(g.V('nm0000102')) # Footloose has Kevin Bacon
-
         count = 0
         people_ids = sorted(self.people.keys())
+
+        # First add the person-in-movie Edges:
         for idx, pid in enumerate(people_ids):
             person = self.people[pid]
             name   = self.scrub_str(person['name'])
             titles = person['titles']
-
-            spec = "g.V('{}').addE('in').to(g.V('{}'))"
+            #spec = "g.V('{}').addE('in').to(g.V('{}'))"
+            spec  = "g.V().hasLabel('person').has('id', '{}').addE('in').to(g.V().hasLabel('movie').has('id', '{}'))"
             for mid in titles:
                 query = spec.format(pid, mid)
                 count = count + 1
@@ -173,26 +171,13 @@ class Main:
                             print("edge NOT loaded!")
                         time.sleep(self.sleep_time)
 
-            if False:
-                spec = "g.V('{}').addE('has').to(g.V('{}'))"
-                for mid in titles:
-                    query = spec.format(mid, pid)
-                    count = count + 1
-                    if self.do_inserts:
-                        if idx < self.max_load:
-                            print('movie-has-person edge: {}  # {}'.format(query, count))
-                            callback = self.gremlin_client.submitAsync(query)
-                            if callback.result() is not None:
-                                print("edge loaded: " + query)
-                            else:
-                                print("edge NOT loaded!")
-                            time.sleep(self.sleep_time)
-
+        # Next add the person-knows-person Edges:
         people_edges = json.load(open(self.c.people_edges_json_filename()))
         concat_keys = sorted(people_edges.keys())
-        spec = "g.V('{}').addE('knows').to(g.V('{}'))"
+        #spec = "g.V('{}').addE('knows').to(g.V('{}'))"
         #spec = "g.V('{}').addE('{}').to(g.V('{}'))"
         #spec = "g.V('{}').addE('knows', 'title', '{}').to(g.V('{}'))"
+        spec = "g.V().hasLabel('person').has('id', '{}').addE('knows').to(g.V().hasLabel('person').has('id', '{}'))"
         max_edges = self.max_load * 3
         for idx, key in enumerate(concat_keys):
             title = people_edges[key].replace("'", '')
