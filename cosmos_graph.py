@@ -159,10 +159,10 @@ class Main:
             #spec = "g.V('{}').addE('in').to(g.V('{}'))"
             spec  = "g.V().hasLabel('person').has('id', '{}').addE('in').to(g.V().hasLabel('movie').has('id', '{}'))"
             for mid in titles:
-                query = spec.format(pid, mid)
-                count = count + 1
                 if self.do_inserts:
                     if idx < self.max_load:
+                        query = spec.format(pid, mid)
+                        count = count + 1
                         print('person-in-movie edge: {}  # {}'.format(query, count))
                         callback = self.gremlin_client.submitAsync(query)
                         if callback.result() is not None:
@@ -183,16 +183,27 @@ class Main:
             title = people_edges[key].replace("'", '')
             pair = key.split(':')
             pid1, pid2 = pair[0], pair[1]
-            query = spec.format(pid1, pid2)
-            count = count + 1
+
             if self.do_inserts:
                 if idx < max_edges:
-                    print('person-knows-person edge: {}  # {}'.format(query, count))
+                    query = spec.format(pid1, pid2)
+                    count = count + 1
+                    print('person-knows-person edge a:b: {}  # {}'.format(query, count))
                     callback = self.gremlin_client.submitAsync(query)
                     if callback.result() is not None:
                         pass
                     else:
-                        print("person-knows-person NOT loaded!")
+                        print("person-knows-person a:b NOT loaded!")
+                    time.sleep(self.sleep_time)
+
+                    query = spec.format(pid2, pid1)
+                    count = count + 1
+                    print('person-knows-person edge b:a: {}  # {}'.format(query, count))
+                    callback = self.gremlin_client.submitAsync(query)
+                    if callback.result() is not None:
+                        pass
+                    else:
+                        print("person-knows-person b:a NOT loaded!")
                     time.sleep(self.sleep_time)
 
     def count_query(self, db, coll):

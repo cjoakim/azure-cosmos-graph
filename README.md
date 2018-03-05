@@ -236,6 +236,22 @@ People known by those who Thomas knows : "g.V('thomas').out('knows').hasLabel('p
 Get the path from Thomas to Robin"     : "g.V('thomas').repeat(out()).until(has('id', 'robin')).path()"
 ```
 
+Monday 3/6 2pm attempt:
+```
+insert_movie_vertices:    g.addV('movie').property('name', 'Pretty Woman').property('id', 'tt0100405')
+insert_people_vertices:   g.addV('person').property('name', 'Julia Roberts').property('id', 'nm0000210')
+insert_people_vertices:   g.addV('person').property('name', 'Richard Gere').property('id', 'nm0000152')
+person-in-movie edge:     g.V().hasLabel('person').has('id', 'nm0000210').addE('in').to(g.V().hasLabel('movie').has('id', 'tt0100405'))
+person-knows-person edge: g.V().hasLabel('person').has('id', 'nm0000152').addE('knows').to(g.V().hasLabel('person').has('id', 'nm0000210'))
+
+
+g.V('nm0000210').repeat(out()).until(has('id', 'nm0000152')).path()
+g.V().hasLabel('person').has('id', 'nm0000210').repeat(out()).until(has('id', 'nm0000152')).path()
+
+g.V('nm0000152').repeat(out()).until(has('id', 'nm0000210')).path()  # has results
+g.V('nm0000210').repeat(out()).until(has('id', 'nm0000152')).path()  # has no results
+```
+
 ## Gremlin Console
 
 - See this tutorial: https://docs.microsoft.com/en-us/azure/cosmos-db/create-graph-gremlin-console
