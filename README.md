@@ -201,9 +201,24 @@ g.V().has('label','person').has('name','Julia Roberts').bothE().where(otherV().h
 g.V().group().by().by(bothE().count()) # Degree centrality is a measure of the number of edges associated to each vertex.
 
 
-g.V().has('id','nm0000210').inE('in')  <- returns reasonable json
-g.V().has('label','person').has('id','nm0000210').out().values('id')
+g.V('nm0000210').inE() <- returns reasonable json
+g.V('nm0000210').inE().until(has('id', 'nm0000152'))
 
+g.V('nm0000210').out('Pretty Woman')  # works
+
+g.V().as('nm0000210').repeat(out().simplePath()).times(2).where(out().as('nm0000152')).path()
+
+g.V('nm0000210').repeat(out()).until(has('id', 'nm0000158')).path()
+
+spec = "g.V('{}').addE('{}').to(g.V('{}'))"
+g.V('nm0000210').addE('knows').to(g.V('nm0000102'))
+
+spec = "g.V('{}').addE('knows', 'title', '{}').to(g.V('{}'))"
+g.V('nm0000210').addE('knows', 'title', 'xxx').to(g.V('nm0000102'))
+
+g.V('nm0000210').has('label','person').has('id','nm0000102').out().values('id')
+
+g.V('nm0000210').repeat(out()).until(has('id', 'nm0000152')).path()
 g.V('nm0000210').repeat(out()).until(has('id', 'nm0000152')).path()
 g.V('nm0000210').repeat(out()).hasLabel('person').until(has('id', 'nm0000152')).path()
 g.V('nm0000210').out('in').hasLabel('movie').out('has').hasLabel('person').values('nm0000152')

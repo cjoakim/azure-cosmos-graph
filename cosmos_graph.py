@@ -7,7 +7,7 @@ Options:
   --version     Show version.
 """
 
-# Chris Joakim, Microsoft, 2018/03/02
+# Chris Joakim, Microsoft, 2018/03/05
 
 import csv, json, os, sys, time, traceback
 
@@ -85,7 +85,7 @@ class Main:
         self.movies = json.load(open(self.c.movies_json_filename()))
         self.people = json.load(open(self.c.people_json_filename()))
         self.max_load =  100000
-        self.sleep_time = 0.2
+        self.sleep_time = 0.25
         self.do_inserts = True
 
         self.drop_graph(db, coll)
@@ -190,15 +190,15 @@ class Main:
 
         people_edges = json.load(open(self.c.people_edges_json_filename()))
         concat_keys = sorted(people_edges.keys())
-        #spec = "g.V('{}').addE('knows').to(g.V('{}'))"
-        spec = "g.V('{}').addE('{}').to(g.V('{}'))"
+        spec = "g.V('{}').addE('knows').to(g.V('{}'))"
+        #spec = "g.V('{}').addE('{}').to(g.V('{}'))"
         #spec = "g.V('{}').addE('knows', 'title', '{}').to(g.V('{}'))"
         max_edges = self.max_load * 3
         for idx, key in enumerate(concat_keys):
             title = people_edges[key].replace("'", '')
             pair = key.split(':')
             pid1, pid2 = pair[0], pair[1]
-            query = spec.format(pid1, title, pid2)
+            query = spec.format(pid1, pid2)
             count = count + 1
             if self.do_inserts:
                 if idx < max_edges:
