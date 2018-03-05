@@ -356,8 +356,10 @@ class Main:
             title  = movies[mid]
             for person1 in people:
                 for person2 in people:
-                    if person1['id'] != person2['id']:
-                        pair = sorted([person1['id'], person2['id']])
+                    pid1 = person1['id']
+                    pid2 = person2['id']
+                    if pid1 != pid2:
+                        pair = sorted([pid1, pid2])
                         concat_key = '{}:{}'.format(pair[0], pair[1])
                         people_edges[concat_key] = title
 

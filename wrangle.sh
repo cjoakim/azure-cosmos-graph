@@ -2,12 +2,12 @@
 
 # Chris Joakim, Microsoft, 2018/03/05
 
-identify_candidate_movies=0
-extract_top_ratings=0
+identify_candidate_movies=1
+extract_top_ratings=0        # now obsolete in favor of identify_candidate_movies
 extract_movies=1
-extract_principals=0
-extract_people=0
-derive_people_edges=0
+extract_principals=1
+extract_people=1
+derive_people_edges=1
 
 footloose=tt0087277
 pretty_woman=tt0100405
