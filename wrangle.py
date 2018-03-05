@@ -168,6 +168,9 @@ class Main:
             f.write(jstr)
             print('file written: {}'.format(outfile1))
 
+        elapsed_time = time.time() - self.start_time
+        print('lines_read: {}  elapsed: {}'.format(row_count, elapsed_time))
+
     def extract_movies(self):
         infile = self.c.data_filename_raw('title.basics.tsv')
         outfile1 = self.c.movies_csv_filename()
