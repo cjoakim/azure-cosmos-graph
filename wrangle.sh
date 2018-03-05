@@ -2,9 +2,9 @@
 
 # Chris Joakim, Microsoft, 2018/03/05
 
-identify_candidate_movies=1
+identify_candidate_movies=0
 extract_top_ratings=0
-extract_movies=0
+extract_movies=1
 extract_principals=0
 extract_people=0
 derive_people_edges=0

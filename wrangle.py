@@ -170,6 +170,7 @@ class Main:
 
         elapsed_time = time.time() - self.start_time
         print('lines_read: {}  elapsed: {}'.format(row_count, elapsed_time))
+        # lines_read: 27211583  elapsed: 130.86662912368774
 
     def extract_movies(self):
         infile = self.c.data_filename_raw('title.basics.tsv')
@@ -177,7 +178,8 @@ class Main:
         outfile2 = self.c.movies_json_filename()
         selected = dict()
         row_count = 0
-        top_rated = self.load_top_ratings()
+        #top_rated = self.load_top_ratings()
+        candidate_movies = self.load_candidate_movies()
 
         with open(infile) as tsvfile:
             reader = csv.DictReader(tsvfile, dialect='excel-tab')
@@ -188,7 +190,7 @@ class Main:
                 try:
                     row_count = row_count + 1
                     id = row['tconst']
-                    if id in top_rated:
+                    if id in candidate_movies:  # top_rated:
                         if 'movie' == row['titleType']:
                             if '0' == row['isAdult']:
                                 title = row['primaryTitle']
@@ -398,6 +400,11 @@ class Main:
             if id in movies:
                 titles.append(id)
         return ' '.join(titles).strip()
+
+    def load_candidate_movies(self):
+        infile = self.c.candidate_movies_json_filename()
+        with open(infile, 'r') as f:
+            return json.loads(f.read())
 
     def load_top_ratings(self):
         infile1 = self.c.top_ratings_csv_filename()
