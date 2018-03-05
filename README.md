@@ -249,7 +249,9 @@ g.V('nm0000210').repeat(out()).until(has('id', 'nm0000152')).path()
 g.V().hasLabel('person').has('id', 'nm0000210').repeat(out()).until(has('id', 'nm0000152')).path()
 
 g.V('nm0000152').repeat(out()).until(has('id', 'nm0000210')).path()  # has results
-g.V('nm0000210').repeat(out()).until(has('id', 'nm0000152')).path()  # has no results
+g.V('nm0000210').repeat(out()).until(has('id', 'nm0000152')).path()  # has no results!
+
+g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000210')).path().count(local)
 ```
 
 ## Gremlin Console
