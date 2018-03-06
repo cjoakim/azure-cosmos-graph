@@ -149,7 +149,15 @@ class Main:
         for idx, key in enumerate(concat_keys):
             title = people_edges[key].replace("'", '')
             pair  = key.split(':')
+            # create the edge from person 1 to person 2
             query = spec.format(pair[0], pair[1])
+            self.execute_query(query)
+
+        for idx, key in enumerate(concat_keys):
+            title = people_edges[key].replace("'", '')
+            pair  = key.split(':')
+            # create the edge from person 2 to person 1
+            query = spec.format(pair[1], pair[0])
             self.execute_query(query)
 
     def query(self, db, coll):
