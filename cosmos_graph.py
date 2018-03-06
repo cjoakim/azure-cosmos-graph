@@ -18,7 +18,7 @@ from gremlin_python.driver import client
 from docopt import docopt
 
 from pysrc.joakim import config
-
+from pysrc.joakim import values
 
 VERSION='2018/03/06a'
 FOOTLOOSE='tt0087277'
@@ -32,6 +32,7 @@ class Main:
         self.start_time = time.time()
         self.args = sys.argv
         self.c = config.Config()
+        self.favorites = values.Favorites()
 
     def create_client(self, db, coll):
         # Get a database connection from the Gremlin Server.
@@ -57,6 +58,9 @@ class Main:
 
             elif func == 'drop_and_load':
                 self.drop_and_load(db, coll)
+
+            elif func == 'query':
+                self.query(db, coll)
 
             elif func == 'count_query':
                 self.count_query(db, coll)
@@ -132,7 +136,7 @@ class Main:
         for idx, pid in enumerate(people_ids):
             person = self.people[pid]
             name   = self.scrub_str(person['name'])
-            spec v = "g.addV('person').property('id', '{}').property('name', '{}')"
+            spec   = "g.addV('person').property('id', '{}').property('name', '{}')"
             query  = spec.format(pid, name)
             if self.do_inserts:
                 if idx < self.max_load:
@@ -194,6 +198,7 @@ class Main:
                         print("person-knows-person a:b NOT loaded!")
                     time.sleep(self.sleep_time)
 
+                    # Do Edges need to be added in "both directions"?  p1 -> p2 and p2 -> p1?
                     # query = spec.format(pid2, pid1)
                     # count = count + 1
                     # print('person-knows-person edge b:a: {}  # {}'.format(query, count))
@@ -204,42 +209,34 @@ class Main:
                     #     print("person-knows-person b:a NOT loaded!")
                     # time.sleep(self.sleep_time)
 
-    def count_query(self, db, coll):
-        self.create_client(db, coll)
-        query = 'g.V().count()'
-        print('count_query: {}'.format(query))
-        query
-        callback = self.gremlin_client.submitAsync(query)
-        if callback.result() is not None:
-            print(callback.result().one())
-        else:
-            print("query returned None")
+    def query(self, db, coll):
+        # python cosmos_graph.py query test movies count
+        # python cosmos_graph.py query test movies movie tt0087277
+        # python cosmos_graph.py query test movies movie footloose
+        # python cosmos_graph.py query test movies movie pretty_woman
 
-    def query2(self, db, coll):
         self.create_client(db, coll)
-        query = "g.V().has('label','movie').has('id','tt0100405')"
-        print('query2: {}'.format(query))
-        query
-        callback = self.gremlin_client.submitAsync(query)
-        # callback.result() is an instance of gremlin_python.driver.resultset.ResultSet
-        # all() returns a <Future at 0x1085fbe80 state=pending>
-        if callback.result() is not None:
-            print(type(callback.result()))  # <class 'gremlin_python.driver.resultset.ResultSet'>
-            rlist = callback.result().one() # <class 'list'>
-            print(type(rlist))
-            for idx, item in enumerate(rlist):
-                print('{} {}'.format(idx, item))
-        else:
-            print("query returned None")
+        qname = sys.argv[4].lower()
+        query = None
 
-    def query3(self, db, coll):
-        self.create_client(db, coll)
-        query = "g.V('nm0000210').both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())"
-        print('query3: {}'.format(query))
-        query
+        if qname == 'count':
+            query = 'g.V().count()'
+        elif qname == 'movie':
+            arg = sys.argv[5].lower()
+            id  = self.favorites.translate_to_id(arg)
+            query = "g.V().has('label','movie').has('id','{}')".format(id)
+        elif qname == 'person':
+            arg = sys.argv[5].lower()
+            id  = self.favorites.translate_to_id(arg)
+            query = "g.V().has('label','person').has('id','{}')".format(id)
+        elif qname == 'edges':
+            arg = sys.argv[5].lower()
+            id  = self.favorites.translate_to_id(arg)
+            query = "g.V('{}').both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())".format(id)
+
+        print('qname: {}'.format(qname))
+        print('query: {}'.format(query))
         callback = self.gremlin_client.submitAsync(query)
-        # callback.result() is an instance of gremlin_python.driver.resultset.ResultSet
-        # all() returns a <Future at 0x1085fbe80 state=pending>
         if callback.result() is not None:
             print(type(callback.result()))  # <class 'gremlin_python.driver.resultset.ResultSet'>
             rlist = callback.result().one() # <class 'list'>

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Chris Joakim, Microsoft, 2018/03/05
+# Chris Joakim, Microsoft, 2018/03/06
 
 identify_candidate_movies=1
 extract_top_ratings=0        # now obsolete in favor of identify_candidate_movies

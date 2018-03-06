@@ -18,7 +18,7 @@ import traceback
 from docopt import docopt
 
 from pysrc.joakim import config
-
+from pysrc.joakim import values
 
 VERSION='2018/03/06a'
 FOOTLOOSE='tt0087277'
@@ -32,6 +32,7 @@ class Main:
         self.start_time = time.time()
         self.args = sys.argv
         self.c = config.Config()
+        self.favorites = values.Favorites()
         self.roles = self.selected_roles()
 
     def execute(self):
@@ -104,31 +105,10 @@ class Main:
         print('lines_read: {}  elapsed: {}'.format(row_count, elapsed_time))
         # lines_read: 4832632  elapsed: 25.33212375640869
 
-    def facorite_actors(self):
-        actors = dict()
-        actors['nm0000102'] = 'kevin_bacon'
-        actors['nm0000113'] = 'sandra_bullock'
-        actors['nm0000126'] = 'kevin_costner'
-        actors['nm0000148'] = 'harrison_ford'
-        actors['nm0000152'] = 'richard_gere'
-        actors['nm0000158'] = 'tom_hanks'
-        actors['nm0000206'] = 'keanu_reeves'
-        actors['nm0000210'] = 'julia_roberts'
-        actors['nm0000234'] = 'charlize_theron'
-        actors['nm0177896'] = 'bradley_cooper'
-        actors['nm1297015'] = 'emma_stone'
-        actors['nm2225369'] = 'jennifer_lawrence'
-        #actors['nm0000163'] = 'dustin_hoffman'
-        #actors['nm0000456'] = 'holly_hunter'
-        #actors['nm0000518'] = 'john_malkovich'
-        #actors['nm0001475'] = 'john_lithgow'
-        #actors['nm0005476'] = 'hilary_swank'
-        return actors
-
     def identify_candidate_movies(self):
         infile   = self.c.data_filename_raw('title.principals.tsv')
         outfile1 = self.c.candidate_movies_json_filename()
-        actors   = self.facorite_actors()
+        actors   = self.favorites.favorite_actors()
         row_count = 0
         required  = dict()
         curr_movie_mid = ''
