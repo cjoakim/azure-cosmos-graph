@@ -211,12 +211,14 @@ class Main:
 
     def query(self, db, coll):
         # python cosmos_graph.py query test movies count
-        # python cosmos_graph.py query test movies movie tt0087277
-        # python cosmos_graph.py query test movies movie footloose
+        # python cosmos_graph.py query test movies movie   tt0087277
+        # python cosmos_graph.py query test movies movie   footloose
         # python cosmos_graph.py query test movies movie_e footloose
-        # python cosmos_graph.py query test movies movie pretty_woman
-        # python cosmos_graph.py query test movies edges pretty_woman
-        # python cosmos_graph.py query test movies path  julia_roberts richard_gere
+        # python cosmos_graph.py query test movies movie   pretty_woman
+        # python cosmos_graph.py query test movies edges   pretty_woman
+        # python cosmos_graph.py query test movies person  julia_roberts
+        # python cosmos_graph.py query test movies person  diane_lane
+        # python cosmos_graph.py query test movies path    julia_roberts richard_gere
 
         self.create_client(db, coll)
         qname = sys.argv[4].lower()
