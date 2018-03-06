@@ -87,6 +87,9 @@ class Config:
     def people_edges_json_filename(self):
         return self.data_filename_processed('people_edges.json')
 
+    def drop_and_load_queries_json_filename(self):
+        return self.data_filename_processed('drop_and_load_queries.json')
+
     def load(self):
         try:
             with open(json_filename, 'r') as json_file:

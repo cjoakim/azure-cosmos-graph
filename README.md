@@ -57,72 +57,7 @@ See wrangle.sh and wrangle.py; they produce the following output files.
 
 ### Output Data
 
-#### movies.csv
-```
-id|title
-tt0012349|The Kid
-tt0013442|Nosferatu
-tt0015864|The Gold Rush
-tt0017136|Metropolis
-tt0017925|The General
-tt0021749|City Lights
-tt0022100|M
-tt0024216|King Kong
-tt0025316|It Happened One Night
-```
-
-#### movies.json
-```
-{
-  ...
-  "tt0087182": "Dune",
-  "tt0087277": "Footloose",
-  "tt0087332": "Ghostbusters",
-  "tt0087363": "Gremlins",
-  "tt0087469": "Indiana Jones and the Temple of Doom",
-  ...
-}
-```
-
-#### people.json
-```
-  ...
-  "nm0000102": {
-    "birth": "1958",
-    "movies": {
-      "tt0087277": "Footloose",
-      "tt0164052": "Hollow Man",
-      "tt0327056": "Mystic River"
-    },
-    "name": "Kevin Bacon",
-    "nid": "nm0000102",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0087277",
-      "tt0164052",
-      "tt0327056"
-    ]
-  },
-  ...
-  "nm0000210": {
-    "birth": "1967",
-    "movies": {
-      "tt0100405": "Pretty Woman",
-      "tt0125439": "Notting Hill",
-      "tt0195685": "Erin Brockovich",
-      "tt0376541": "Closer"
-    },
-    "name": "Julia Roberts",
-    "nid": "nm0000210",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt0376541",
-      "tt0195685",
-      "tt0100405",
-      "tt0125439"
-    ]
-  }
-```
+TODO - revisit
 
 ## Gremlin-Python and Apache TinkerPop
 
@@ -391,5 +326,7 @@ https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon
 "...in a January 1994 interview with Premiere magazine discussing the film The River Wild, mentioned that "he had worked with everybody in Hollywood or someone who’s worked with them."[1] On April 7, 1994, a lengthy newsgroup thread headed "Kevin Bacon is the Center of the Universe" appeared.  Four Albright College students: Craig Fass, Christian Gardner, Brian Turtle, and Mike Ginelli created the game early in 1994."
 
 It rests on the assumption that anyone involved in the Hollywood film industry can be linked through their film roles to Bacon within six steps.
+
+
 
 
