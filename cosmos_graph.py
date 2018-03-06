@@ -162,6 +162,7 @@ class Main:
         # python cosmos_graph.py query test movies person  julia_roberts
         # python cosmos_graph.py query test movies person  diane_lane
         # python cosmos_graph.py query test movies path    julia_roberts richard_gere
+        # python cosmos_graph.py query test movies v2v     julia_roberts
 
         self.create_client(db, coll)
         qname = sys.argv[4].lower()
@@ -194,6 +195,11 @@ class Main:
             arg = sys.argv[5].lower()
             id  = self.favorites.translate_to_id(arg)
             query = "g.V('{}').both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())".format(id)
+
+        elif qname == 'v2v':
+            arg = sys.argv[5].lower()
+            id  = self.favorites.translate_to_id(arg)
+            query = "g.V('{}').bothE().inV()".format(id)
 
         elif qname == 'path':
             arg1 = sys.argv[5].lower()
