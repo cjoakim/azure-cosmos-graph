@@ -6,7 +6,7 @@ Options:
   --version     Show version.
 """
 
-# Chris Joakim, Microsoft, 2018/03/05
+# Chris Joakim, Microsoft, 2018/03/06
 
 import csv
 import json
@@ -20,7 +20,7 @@ from docopt import docopt
 from pysrc.joakim import config
 
 
-VERSION='2018/02/28a'
+VERSION='2018/03/06a'
 FOOTLOOSE='tt0087277'
 PRETTYWOMAN='tt0100405'
 KEVINBACON='nm0000102'

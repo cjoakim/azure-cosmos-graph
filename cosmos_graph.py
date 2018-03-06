@@ -7,7 +7,7 @@ Options:
   --version     Show version.
 """
 
-# Chris Joakim, Microsoft, 2018/03/05
+# Chris Joakim, Microsoft, 2018/03/06
 
 import csv, json, os, sys, time, traceback
 
@@ -20,7 +20,7 @@ from docopt import docopt
 from pysrc.joakim import config
 
 
-VERSION='2018/03/02a'
+VERSION='2018/03/06a'
 FOOTLOOSE='tt0087277'
 PRETTYWOMAN='tt0100405'
 KEVINBACON='nm0000102'
@@ -113,9 +113,8 @@ class Main:
 
         for idx, mid in enumerate(movies_ids):
             title = self.scrub_str(self.movies[mid])
-            #spec = "g.addV('movie').property('id', '{}').property('title', '{}')"
-            spec  = "g.addV('movie').property('name', '{}').property('id', '{}')"
-            query = spec.format(title, mid)
+            spec  = "g.addV('movie').property('id', '{}').property('title', '{}')"
+            query = spec.format(mid, title)
             if self.do_inserts:
                 if idx < self.max_load:
                     print('insert_movie_vertices: {}  # {} {}'.format(query, idx, self.do_inserts))
@@ -133,9 +132,8 @@ class Main:
         for idx, pid in enumerate(people_ids):
             person = self.people[pid]
             name   = self.scrub_str(person['name'])
-            #spec  = "g.addV('person').property('id', '{}').property('name', '{}')"
-            spec   = "g.addV('person').property('name', '{}').property('id', '{}')"
-            query  = spec.format(name, pid)
+            spec v = "g.addV('person').property('id', '{}').property('name', '{}')"
+            query  = spec.format(pid, name)
             if self.do_inserts:
                 if idx < self.max_load:
                     print('insert_people_vertices: {}  # {} {}'.format(query, idx, self.do_inserts))
@@ -196,15 +194,15 @@ class Main:
                         print("person-knows-person a:b NOT loaded!")
                     time.sleep(self.sleep_time)
 
-                    query = spec.format(pid2, pid1)
-                    count = count + 1
-                    print('person-knows-person edge b:a: {}  # {}'.format(query, count))
-                    callback = self.gremlin_client.submitAsync(query)
-                    if callback.result() is not None:
-                        pass
-                    else:
-                        print("person-knows-person b:a NOT loaded!")
-                    time.sleep(self.sleep_time)
+                    # query = spec.format(pid2, pid1)
+                    # count = count + 1
+                    # print('person-knows-person edge b:a: {}  # {}'.format(query, count))
+                    # callback = self.gremlin_client.submitAsync(query)
+                    # if callback.result() is not None:
+                    #     pass
+                    # else:
+                    #     print("person-knows-person b:a NOT loaded!")
+                    # time.sleep(self.sleep_time)
 
     def count_query(self, db, coll):
         self.create_client(db, coll)
