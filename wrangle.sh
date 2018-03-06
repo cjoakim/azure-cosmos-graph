@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# This script wrangles the IMDb data and creates a small subset that can be
+# inserted into CosmosDB
+#
+# Run with:
+#   ./wrangle.sh > tmp/wrangle.txt
+#
 # Chris Joakim, Microsoft, 2018/03/06
 
 identify_candidate_movies=1
@@ -11,37 +17,23 @@ derive_people_edges=1
 
 footloose=tt0087277
 pretty_woman=tt0100405
-bladerunner=tt0083658
-
 kevin_bacon=nm0000102
 julia_roberts=nm0000210
 richard_gere=nm0000152
-john_lithgow=nm0001475
-tom_hanks=nm0000158
-lori_singer=nm0001742
-john_malkovich=nm0000518
-dustin_hoffman=nm0000163
-kevin_costner=nm0000126
-holly_hunter=nm0000456
-keanu_reeves=nm0000206
-hilary_swank=nm0005476
-charlize_theron=nm0000234
-harrison_ford=nm0000148
+
 
 if [ $identify_candidate_movies -gt 0 ]
 then
     echo 'python: identify_candidate_movies ...'
     python wrangle.py identify_candidate_movies
-    # inspect the file created in the above python process
-    wc   $IMDB_DATA_DIR/processed/required_movies.csv
-    head $IMDB_DATA_DIR/processed/required_movies.csv
+    wc   $IMDB_DATA_DIR/processed/candidate_movies.json
+    head $IMDB_DATA_DIR/processed/candidate_movies.json
 fi
 
 if [ $extract_top_ratings -gt 0 ]
 then
     echo 'python: extract_top_ratings ...'
     python wrangle.py extract_top_ratings
-    # inspect the file created in the above python process
     wc   $IMDB_DATA_DIR/processed/top_ratings.json
     head $IMDB_DATA_DIR/processed/top_ratings.json
 fi
@@ -50,7 +42,6 @@ if [ $extract_movies -gt 0 ]
 then
     echo 'python: extract_movies ...'
     python wrangle.py extract_movies
-    # inspect the files created in the above python process
     wc   $IMDB_DATA_DIR/processed/movies.csv
     head $IMDB_DATA_DIR/processed/movies.csv
     echo 'grep by movie id for footloose and pretty woman'
