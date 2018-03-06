@@ -213,7 +213,10 @@ class Main:
         # python cosmos_graph.py query test movies count
         # python cosmos_graph.py query test movies movie tt0087277
         # python cosmos_graph.py query test movies movie footloose
+        # python cosmos_graph.py query test movies movie_e footloose
         # python cosmos_graph.py query test movies movie pretty_woman
+        # python cosmos_graph.py query test movies edges pretty_woman
+        # python cosmos_graph.py query test movies path  julia_roberts richard_gere
 
         self.create_client(db, coll)
         qname = sys.argv[4].lower()
@@ -221,29 +224,52 @@ class Main:
 
         if qname == 'count':
             query = 'g.V().count()'
+
         elif qname == 'movie':
             arg = sys.argv[5].lower()
             id  = self.favorites.translate_to_id(arg)
             query = "g.V().has('label','movie').has('id','{}')".format(id)
+
+        elif qname == 'movie_e':
+            arg = sys.argv[5].lower()
+            id  = self.favorites.translate_to_id(arg)
+            query = "g.V('{}').both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())".format(id)
+
         elif qname == 'person':
             arg = sys.argv[5].lower()
             id  = self.favorites.translate_to_id(arg)
             query = "g.V().has('label','person').has('id','{}')".format(id)
+
+        elif qname == 'person_e':
+            arg = sys.argv[5].lower()
+            id  = self.favorites.translate_to_id(arg)
+            query = "g.V('{}').both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())".format(id)
+
         elif qname == 'edges':
             arg = sys.argv[5].lower()
             id  = self.favorites.translate_to_id(arg)
             query = "g.V('{}').both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())".format(id)
 
-        print('qname: {}'.format(qname))
-        print('query: {}'.format(query))
-        callback = self.gremlin_client.submitAsync(query)
-        if callback.result() is not None:
-            print(type(callback.result()))  # <class 'gremlin_python.driver.resultset.ResultSet'>
-            rlist = callback.result().one() # <class 'list'>
-            jstr = json.dumps(rlist, sort_keys=False, indent=2)
-            print(jstr)
+        elif qname == 'path':
+            arg1 = sys.argv[5].lower()
+            arg2 = sys.argv[6].lower()
+            id1  = self.favorites.translate_to_id(arg1)
+            id2  = self.favorites.translate_to_id(arg2)
+            query = "g.V('{}').bothE().where(otherV().hasId('{}')).path()".format(id1, id2)
+
+        if query:
+            print('qname: {}'.format(qname))
+            print('query: {}'.format(query))
+            callback = self.gremlin_client.submitAsync(query)
+            if callback.result() is not None:
+                print(type(callback.result()))  # <class 'gremlin_python.driver.resultset.ResultSet'>
+                rlist = callback.result().one() # <class 'list'>
+                jstr = json.dumps(rlist, sort_keys=False, indent=2)
+                print(jstr)
+            else:
+                print("query returned None")
         else:
-            print("query returned None")
+            print('invalid args')
 
     def scrub_str(self, s):
         return s.replace("'", '')

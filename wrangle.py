@@ -108,7 +108,7 @@ class Main:
     def identify_candidate_movies(self):
         infile   = self.c.data_filename_raw('title.principals.tsv')
         outfile1 = self.c.candidate_movies_json_filename()
-        actors   = self.favorites.favorite_actors()
+        actors   = self.favorites.actors_for_candidate_movies()
         row_count = 0
         required  = dict()
         curr_movie_mid = ''
