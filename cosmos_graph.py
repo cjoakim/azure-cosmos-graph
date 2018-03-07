@@ -186,13 +186,14 @@ class Main:
         # python cosmos_graph.py query test movies movie   pretty_woman
         # python cosmos_graph.py query test movies edges   pretty_woman
         # python cosmos_graph.py query test movies person  julia_roberts
-        # python cosmos_graph.py query test movies path    julia_roberts richard_gere
+        # python cosmos_graph.py query test movies path    julia_roberts nm0000178
         # python cosmos_graph.py query test movies path    richard_gere julia_roberts
         # python cosmos_graph.py query test movies path    kevin_bacon julia_roberts
         # python cosmos_graph.py query test movies path    kevin_bacon richard_gere
         # python cosmos_graph.py query test movies v2v     julia_roberts
         # python cosmos_graph.py query test movies knows   julia_roberts
-        # python cosmos_graph.py query test movies in      tt0086927
+        # python cosmos_graph.py query test movies in      julia_roberts
+        # python cosmos_graph.py query test movies people_in pretty_woman
 
         self.create_client(db, coll)
         qname = sys.argv[4].lower()
@@ -211,12 +212,17 @@ class Main:
             id  = self.favorites.translate_to_id(arg)
             query = "g.V().has('label','person').has('id','{}')".format(id)
 
-        elif qname == 'edges': ?
+        elif qname == 'edges':
             arg = sys.argv[5].lower()
             id  = self.favorites.translate_to_id(arg)
             query = "g.V('{}').both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())".format(id)
 
         elif qname == 'v2v':
+            arg = sys.argv[5].lower()
+            id  = self.favorites.translate_to_id(arg)
+            query = "g.V('{}').bothE().inV()".format(id)
+
+        elif qname == 'people_in':
             arg = sys.argv[5].lower()
             id  = self.favorites.translate_to_id(arg)
             query = "g.V('{}').bothE().inV()".format(id)
