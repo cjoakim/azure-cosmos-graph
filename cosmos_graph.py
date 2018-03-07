@@ -53,6 +53,9 @@ class Main:
             elif func == 'create_drop_and_load_queries':
                 self.create_drop_and_load_queries(db, coll)
 
+            elif func == 'execute_drop_and_load_queries':
+                self.execute_drop_and_load_queries(db, coll)
+
             elif func == 'query':
                 self.query(db, coll)
             else:
@@ -71,24 +74,6 @@ class Main:
         self.gremlin_client = client.Client(endpoint, 'g', username=username, password=password)
         time.sleep(1)
         print(self.gremlin_client) # <gremlin_python.driver.client.Client object at 0x109305b38>
-
-    def drop_graph(self, db, coll):
-        print('drop_graph - db {} coll: {}'.format(db, coll))
-        query = 'g.V().drop()'
-        self.create_client(db, coll)
-        self.execute_query(query, 10)
-
-    def execute_query(self, query, sleep_time=0.25):
-        if query:
-            self.queries.append(query)
-            if self.submit_query:
-                print('execute_query: {}  # {}'.format(query, len(self.queries)))
-                callback = self.gremlin_client.submitAsync(query)
-                if callback.result() is None:
-                    print("query not successful")
-                time.sleep(sleep_time)
-            else:
-                print('create_query: {}  # {}'.format(query, len(self.queries)))
 
     def create_drop_and_load_queries(self, db, coll):
         print('create_drop_and_load_queries START')
@@ -167,8 +152,34 @@ class Main:
             query = spec.format(pair[1], pair[0], title)
             self.queries.append(query)
 
+    def drop_graph(self, db, coll):
+        print('drop_graph - db {} coll: {}'.format(db, coll))
+        query = 'g.V().drop()'
+        self.create_client(db, coll)
+        self.execute_query(query, 10)
+
+    def execute_query(self, query, sleep_time=0.25):
+        if query:
+            callback = self.gremlin_client.submitAsync(query)
+            if callback.result() is None:
+                print("query not successful")
+            time.sleep(sleep_time)
+
     def execute_drop_and_load_queries(self):
-        pass
+        infile  = self.c.drop_and_load_queries_txt_filename()
+        queries = list()
+
+        with open(infile, 'rt') as f:
+            for idx, line in enumerate(f):
+                # pehaps filter out comment lines here
+                queries.append(line.strip())
+
+        for idx, q in enumerate(queries):
+            print('execute_query: {}  # {}'.format(q, idx))
+            if idx == 0:
+                self.execute_query(q, 10)
+            else:
+                self.execute_query(q)
 
     def query(self, db, coll):
         # python cosmos_graph.py query test movies count
