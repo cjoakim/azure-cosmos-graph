@@ -81,7 +81,6 @@ class Main:
         infile2 = self.c.people_json_filename()
         self.movies = json.load(open(self.c.movies_json_filename()))
         self.people = json.load(open(self.c.people_json_filename()))
-        self.queries.append('g.V().drop()')
         self.create_movie_vertices()
         self.create_people_vertices()
         self.create_edges()
@@ -165,9 +164,11 @@ class Main:
                 print("query not successful")
             time.sleep(sleep_time)
 
-    def execute_drop_and_load_queries(self):
+    def execute_drop_and_load_queries(self, db, coll):
         infile  = self.c.drop_and_load_queries_txt_filename()
         queries = list()
+
+        self.drop_graph(db, coll)
 
         with open(infile, 'rt') as f:
             for idx, line in enumerate(f):
@@ -176,10 +177,7 @@ class Main:
 
         for idx, q in enumerate(queries):
             print('execute_query: {}  # {}'.format(q, idx))
-            if idx == 0:
-                self.execute_query(q, 10)
-            else:
-                self.execute_query(q)
+            self.execute_query(q)
 
     def query(self, db, coll):
         # python cosmos_graph.py query test movies count
