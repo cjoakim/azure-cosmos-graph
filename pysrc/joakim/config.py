@@ -1,7 +1,7 @@
 import json
 import os
 
-# Chris Joakim, Microsoft, 2018/03/06
+# Chris Joakim, Microsoft, 2018/03/07
 
 
 class Config:
@@ -87,8 +87,8 @@ class Config:
     def people_edges_json_filename(self):
         return self.data_filename_processed('people_edges.json')
 
-    def drop_and_load_queries_json_filename(self):
-        return self.data_filename_processed('drop_and_load_queries.json')
+    def drop_and_load_queries_txt_filename(self):
+        return self.data_filename_processed('drop_and_load_queries.txt')
 
     def load(self):
         try:

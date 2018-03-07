@@ -58,8 +58,14 @@ class Main:
             elif f == 'derive_people_edges':
                 self.derive_people_edges()
 
-            elif f == 'scan2':
-                pass
+            elif f == 'load_queries_to_txt':
+                # python wrangle.py load_queries_to_txt > /Users/cjoakim/github/cj_data/imdb/processed/load_queries.txt
+                infile  = '/Users/cjoakim/github/cj_data/imdb/processed/drop_and_load_queries.json'
+                queries = list()
+                with open(infile, 'r') as f:
+                    queries = json.loads(f.read())
+                for q in queries:
+                    print(q)
             else:
                 self.print_options('Error: invalid function: {}'.format(f))
         else:

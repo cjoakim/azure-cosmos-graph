@@ -1,15 +1,13 @@
 #!/bin/bash
 
-# Chris Joakim, Microsoft, 2018/03/06
+# Chris Joakim, Microsoft, 2018/03/07
 # ./cosmos_graph.sh > tmp/cosmos_graph.log
 
 dbname=test
 collname=movies
 drop_graph=0
-drop_and_load=1
-count_query=0
-query2=0
-query3=0
+create_drop_and_load_queries=1
+execute_drop_and_load_queries=0
 
 if [ $drop_graph -gt 0 ]
 then
@@ -17,28 +15,16 @@ then
     python cosmos_graph.py drop_graph $dbname $collname
 fi
 
-if [ $drop_and_load -gt 0 ]
+if [ $create_drop_and_load_queries -gt 0 ]
 then
-    echo 'python: drop_and_load ...'
-    python cosmos_graph.py drop_and_load $dbname $collname
+    echo 'python: create_drop_and_load_queries ...'
+    python cosmos_graph.py create_drop_and_load_queries $dbname $collname
 fi
 
-if [ $count_query -gt 0 ]
+if [ $execute_drop_and_load_queries -gt 0 ]
 then
-    echo 'python: count_query ...'
-    python cosmos_graph.py count_query $dbname $collname
-fi
-
-if [ $query2 -gt 0 ]
-then
-    echo 'python: query2 ...'
-    python cosmos_graph.py query2 $dbname $collname
-fi
-
-if [ $query3 -gt 0 ]
-then
-    echo 'python: query3 ...'
-    python cosmos_graph.py query3 $dbname $collname
+    echo 'python: execute_drop_and_load_queries ...'
+    python cosmos_graph.py execute_drop_and_load_queries $dbname $collname
 fi
 
 echo 'done'
