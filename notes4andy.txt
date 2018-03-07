@@ -1,0 +1,34 @@
+# CosmosDB GraphDB Project - Six Degrees of Julia Roberts
+
+## IMDb Data
+
+I downloaded the raw data from here:
+
+- http://www.imdb.com/interfaces/
+- https://datasets.imdbws.com
+
+## Wrangling
+
+I filtered and wrangled the raw data with python to get a managable
+set of data to load into the DB.  The algorithm is driven by this list
+of actors.
+
+    def actors_for_candidate_movies(self):
+        actors = dict()
+        actors['nm0000102'] = 'kevin_bacon'
+        actors['nm0000113'] = 'sandra_bullock'
+        actors['nm0000126'] = 'kevin_costner'
+        actors['nm0000148'] = 'harrison_ford'
+        actors['nm0000152'] = 'richard_gere'
+        actors['nm0000158'] = 'tom_hanks'
+        actors['nm0000206'] = 'keanu_reeves'
+        actors['nm0000210'] = 'julia_roberts'
+        actors['nm0000234'] = 'charlize_theron'
+        actors['nm0177896'] = 'bradley_cooper'
+        actors['nm1297015'] = 'emma_stone'
+        actors['nm2225369'] = 'jennifer_lawrence'
+        return actors
+
+The filtering logic then extracts just the movies that these actors were
+in, and the actors that were also in each movie.
+
