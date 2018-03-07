@@ -1,0 +1,952 @@
+nid|name|birth|titles|profession
+nm0000047|Sophia Loren|1934||actress,soundtrack
+nm0000052|Marcello Mastroianni|1924||actor,soundtrack,producer
+nm0000056|Paul Newman|1925||actor,producer,director
+nm0000063|Anthony Quinn|1915||actor,producer,soundtrack
+nm0000093|Brad Pitt|1963||actor,producer,soundtrack
+nm0000095|Woody Allen|1935||writer,director,actor
+nm0000098|Jennifer Aniston|1969||actress,producer,soundtrack
+nm0000101|Dan Aykroyd|1952||writer,actor,producer
+nm0000102|Kevin Bacon|1958|tt0087277 tt0164052 tt0327056 tt0361127|actor,producer,soundtrack
+nm0000106|Drew Barrymore|1975||producer,actress,soundtrack
+nm0000107|Kim Basinger|1953||actress,soundtrack,producer
+nm0000110|Kenneth Branagh|1960|tt0107616|actor,producer,director
+nm0000113|Sandra Bullock|1964|tt0111257 tt1041829 tt1454468 tt0212346|producer,actress,soundtrack
+nm0000114|Steve Buscemi|1957||actor,director,producer
+nm0000115|Nicolas Cage|1964||actor,producer,soundtrack
+nm0000117|Neve Campbell|1973|tt0120890|actress,producer,soundtrack
+nm0000120|Jim Carrey|1962||actor,writer,producer
+nm0000123|George Clooney|1961||actor,producer,director
+nm0000124|Jennifer Connelly|1970||actress
+nm0000125|Sean Connery|1930|tt0097576|actor,producer,soundtrack
+nm0000126|Kevin Costner|1955|tt0099348 tt0102798 tt0103855 tt0119925|actor,producer,soundtrack
+nm0000129|Tom Cruise|1962||actor,producer,soundtrack
+nm0000131|John Cusack|1966||actor,producer,writer
+nm0000132|Claire Danes|1979||actress,producer,soundtrack
+nm0000133|Geena Davis|1956|tt0104694|actress,producer,soundtrack
+nm0000134|Robert De Niro|1943||actor,producer,soundtrack
+nm0000136|Johnny Depp|1963||actor,producer,soundtrack
+nm0000138|Leonardo DiCaprio|1974||actor,producer,writer
+nm0000139|Cameron Diaz|1972||actress,producer,soundtrack
+nm0000140|Michael Douglas|1944||actor,producer,soundtrack
+nm0000141|David Duchovny|1960||actor,producer,director
+nm0000142|Clint Eastwood|1930||actor,producer,director
+nm0000146|Ralph Fiennes|1962||actor,director,soundtrack
+nm0000147|Colin Firth|1960||actor,producer,soundtrack
+nm0000148|Harrison Ford|1942|tt0106977 tt0090329 tt0118571|actor,writer,producer
+nm0000149|Jodie Foster|1962||actress,director,producer
+nm0000151|Morgan Freeman|1937||actor,producer,soundtrack
+nm0000152|Richard Gere|1949|tt0299658 tt0358135 tt0100405|actor,soundtrack,producer
+nm0000154|Mel Gibson|1956||actor,producer,director
+nm0000158|Tom Hanks|1956|tt0094737 tt0109830 tt0120815 tt0162222|producer,actor,soundtrack
+nm0000159|Teri Hatcher|1964||actress,writer,soundtrack
+nm0000160|Ethan Hawke|1970||actor,writer,director
+nm0000162|Anne Heche|1969|tt0120828|actress,writer,producer
+nm0000163|Dustin Hoffman|1937||actor,producer,soundtrack
+nm0000164|Anthony Hopkins|1937||actor,soundtrack,composer
+nm0000166|Helen Hunt|1963||actress,producer,director
+nm0000168|Samuel L. Jackson|1948||actor,producer,soundtrack
+nm0000169|Tommy Lee Jones|1946|tt0106977|actor,director,soundtrack
+nm0000171|Ashley Judd|1968||actress,producer,director
+nm0000173|Nicole Kidman|1967||actress,producer,soundtrack
+nm0000174|Val Kilmer|1959||actor,soundtrack,producer
+nm0000177|Kevin Kline|1947||actor,soundtrack,director
+nm0000178|Diane Lane|1965|tt0250797|actress,soundtrack
+nm0000179|Jude Law|1972||actor,producer,soundtrack
+nm0000182|Jennifer Lopez|1969||actress,producer,soundtrack
+nm0000185|Dolph Lundgren|1957||actor,producer,director
+nm0000187|Madonna|1958|tt0104694|soundtrack,actress,music_department
+nm0000190|Matthew McConaughey|1969||actor,producer,soundtrack
+nm0000191|Ewan McGregor|1971||actor,writer,soundtrack
+nm0000193|Demi Moore|1962||actress,producer,director
+nm0000194|Julianne Moore|1960|tt1570728|actress,soundtrack,producer
+nm0000195|Bill Murray|1950||actor,soundtrack,writer
+nm0000197|Jack Nicholson|1937||actor,soundtrack,producer
+nm0000198|Gary Oldman|1958||actor,soundtrack,producer
+nm0000199|Al Pacino|1940||actor,soundtrack,director
+nm0000200|Bill Paxton|1955||actor,producer,director
+nm0000201|Michelle Pfeiffer|1958|tt0161081|actress,soundtrack,producer
+nm0000203|River Phoenix|1970|tt0102494 tt0097576 tt0091557|actor,soundtrack
+nm0000204|Natalie Portman|1981|tt0376541|actress,producer,soundtrack
+nm0000205|Parker Posey|1968||actress,soundtrack,writer
+nm0000206|Keanu Reeves|1964|tt0133093 tt0102685 tt0234215 tt0111257|actor,producer,soundtrack
+nm0000207|Christina Ricci|1980|tt0340855|actress,producer,soundtrack
+nm0000208|Molly Ringwald|1968||actress,soundtrack,music_department
+nm0000209|Tim Robbins|1958|tt0327056|actor,producer,director
+nm0000210|Julia Roberts|1967|tt0376541 tt0195685 tt0100405 tt0125439|actress,producer,soundtrack
+nm0000212|Meg Ryan|1961|tt0108160 tt0128853|actress,producer,soundtrack
+nm0000213|Winona Ryder|1971||actress,producer,soundtrack
+nm0000215|Susan Sarandon|1946||actress,producer,soundtrack
+nm0000218|Kristin Scott Thomas|1960||actress,soundtrack,director
+nm0000222|Brooke Shields|1965|tt0805570|actress,producer,soundtrack
+nm0000223|Elisabeth Shue|1963||actress,soundtrack,producer
+nm0000225|Christian Slater|1969|tt0102798|actor,producer,soundtrack
+nm0000226|Will Smith|1968||music_department,actor,producer
+nm0000227|Mira Sorvino|1967||actress,producer,soundtrack
+nm0000228|Kevin Spacey|1959||actor,producer,soundtrack
+nm0000230|Sylvester Stallone|1946||actor,writer,producer
+nm0000232|Sharon Stone|1958||actress,producer,writer
+nm0000234|Charlize Theron|1975|tt0340855 tt1735898 tt1392190 tt0395972|actress,producer,soundtrack
+nm0000235|Uma Thurman|1970||actress,soundtrack,writer
+nm0000239|Liv Tyler|1977||actress,producer,soundtrack
+nm0000242|Mark Wahlberg|1971||producer,actor,soundtrack
+nm0000243|Denzel Washington|1954||actor,producer,soundtrack
+nm0000244|Sigourney Weaver|1949||actress,soundtrack,producer
+nm0000245|Robin Williams|1951||actor,soundtrack,writer
+nm0000246|Bruce Willis|1955||actor,soundtrack,producer
+nm0000250|Renée Zellweger|1969|tt0299658|actress,soundtrack,producer
+nm0000255|Ben Affleck|1972||producer,actor,writer
+nm0000257|Alan Alda|1936|tt3682448|actor,miscellaneous,soundtrack
+nm0000260|Joan Allen|1956||actress,producer
+nm0000261|Karen Allen|1951|tt0367882|actress,director,soundtrack
+nm0000271|Anne Archer|1947|tt0105112 tt0109444|actress,producer,soundtrack
+nm0000276|Sean Astin|1971||actor,producer,director
+nm0000285|Alec Baldwin|1958||actor,producer,soundtrack
+nm0000287|William Baldwin|1963||actor,producer,stunts
+nm0000288|Christian Bale|1974||actor,editorial_department,producer
+nm0000293|Sean Bean|1959||actor,producer
+nm0000295|Kate Beckinsale|1973||actress,soundtrack
+nm0000298|Candice Bergen|1946|tt0212346|actress,producer,soundtrack
+nm0000300|Juliette Binoche|1964||actress,art_department,miscellaneous
+nm0000313|Jeff Bridges|1949||actor,soundtrack,producer
+nm0000323|Michael Caine|1933|tt0124315|actor,producer,soundtrack
+nm0000326|Kim Cattrall|1956||actress,producer,soundtrack
+nm0000330|Stockard Channing|1944|tt0120791|actress,soundtrack,miscellaneous
+nm0000332|Don Cheadle|1964|tt0375679|actor,producer,soundtrack
+nm0000335|Glenn Close|1947||actress,soundtrack,producer
+nm0000345|Billy Crystal|1948||actor,writer,producer
+nm0000349|Joan Cusack|1962|tt0435761 tt0096463 tt0120363|actress,soundtrack,writer
+nm0000352|Vincent D'Onofrio|1959||actor,producer,soundtrack
+nm0000353|Willem Dafoe|1955||actor,soundtrack,producer
+nm0000354|Matt Damon|1970||producer,actor,soundtrack
+nm0000357|Lolita Davidovich|1961||actress
+nm0000368|Laura Dern|1967||actress,producer,writer
+nm0000369|Matt Dillon|1964|tt0375679 tt0120890|actor,art_department,director
+nm0000375|Robert Downey Jr.|1965||actor,producer,soundtrack
+nm0000379|Kirsten Dunst|1982||actress,producer,director
+nm0000380|Robert Duvall|1931||actor,producer,soundtrack
+nm0000385|Sam Elliott|1944||actor,producer,writer
+nm0000391|Rupert Everett|1959|tt0119738|actor,soundtrack,producer
+nm0000393|Peter Falk|1927||actor,producer,soundtrack
+nm0000396|Farrah Fawcett|1947||actress,producer,soundtrack
+nm0000397|Corey Feldman|1971||actor,producer,soundtrack
+nm0000398|Sally Field|1946|tt0948470 tt0098384 tt0109830|actress,producer,soundtrack
+nm0000400|Linda Fiorentino|1958||actress,soundtrack
+nm0000401|Laurence Fishburne|1961|tt0234215 tt0133093 tt0327056|actor,producer,director
+nm0000402|Carrie Fisher|1956||actress,soundtrack,writer
+nm0000403|Bridget Fonda|1964||actress,soundtrack
+nm0000409|Brendan Fraser|1968|tt0375679|actor,producer,soundtrack
+nm0000412|Andy Garcia|1956|tt0240772|actor,producer,soundtrack
+nm0000415|Jami Gertz|1965||actress,producer,executive
+nm0000417|Crispin Glover|1964|tt0091860|actor,soundtrack,producer
+nm0000418|Danny Glover|1946||actor,producer,director
+nm0000421|Cuba Gooding Jr.|1968|tt0203019|actor,soundtrack,producer
+nm0000422|John Goodman|1952||actor,soundtrack,producer
+nm0000424|Hugh Grant|1960|tt0125439|actor,soundtrack
+nm0000429|Melanie Griffith|1957|tt0096463|actress,producer
+nm0000432|Gene Hackman|1930||actor,soundtrack,producer
+nm0000435|Daryl Hannah|1960|tt0088161|actress,producer,soundtrack
+nm0000437|Woody Harrelson|1961|tt1156398|actor,producer,soundtrack
+nm0000438|Ed Harris|1950|tt0112384|actor,producer,director
+nm0000443|Goldie Hawn|1945|tt0116242|actress,producer,soundtrack
+nm0000450|Philip Seymour Hoffman|1967|tt0472062|actor,producer,soundtrack
+nm0000454|Dennis Hopper|1936|tt0114898 tt0111257|actor,director,writer
+nm0000458|William Hurt|1950||actor,producer
+nm0000467|Don Johnson|1949||actor,producer,soundtrack
+nm0000469|James Earl Jones|1931||actor,soundtrack
+nm0000470|Jeffrey Jones|1946||actor
+nm0000471|Raul Julia|1940|tt0100404|actor,soundtrack
+nm0000473|Diane Keaton|1946|tt0337741|actress,producer,director
+nm0000474|Michael Keaton|1951||actor,producer,soundtrack
+nm0000478|Tawny Kitaen|1961|tt0086927|actress,producer
+nm0000481|Alice Krige|1954||actress,producer,writer
+nm0000492|Jennifer Jason Leigh|1962|tt0257044|actress,producer,soundtrack
+nm0000493|Jack Lemmon|1925||actor,soundtrack,producer
+nm0000496|Juliette Lewis|1973|tt1322269|actress,soundtrack,director
+nm0000499|Bai Ling|1966||actress,producer,writer
+nm0000501|Ray Liotta|1954||actor,producer,soundtrack
+nm0000511|Shirley MacLaine|1934|tt0098384|actress,soundtrack,writer
+nm0000515|Virginia Madsen|1961||actress,producer,soundtrack
+nm0000518|John Malkovich|1953||actor,producer,director
+nm0000524|Mary Stuart Masterson|1966||actress,producer,director
+nm0000526|Samantha Mathis|1970||actress,soundtrack
+nm0000527|Walter Matthau|1920||actor,soundtrack,director
+nm0000531|Frances McDormand|1957||actress,producer,soundtrack
+nm0000534|Kelly McGillis|1957|tt0090329|actress,producer,soundtrack
+nm0000539|Dina Meyer|1968|tt0113481|actress,producer
+nm0000542|Penelope Ann Miller|1964||actress,soundtrack
+nm0000545|Helen Mirren|1945||actress,director,producer
+nm0000547|Alfred Molina|1953||actor,producer,soundtrack
+nm0000551|Dermot Mulroney|1963|tt0119738 tt1322269|actor,soundtrack,music_department
+nm0000553|Liam Neeson|1952||actor,producer,soundtrack
+nm0000555|Judd Nelson|1959||actor,writer,producer
+nm0000559|Leonard Nimoy|1931||actor,director,producer
+nm0000560|Nick Nolte|1941||actor,producer
+nm0000562|Jeremy Northam|1961|tt0113957|actor,soundtrack
+nm0000563|Chris O'Donnell|1970||actor,producer,director
+nm0000565|Lena Olin|1955||actress
+nm0000566|Julia Ormond|1965||actress,producer
+nm0000571|Mary-Louise Parker|1964||actress,soundtrack,miscellaneous
+nm0000574|Jason Patric|1966|tt0478134 tt0120179|actor,producer
+nm0000575|Alexandra Paul|1963|tt0092925|actress,producer,writer
+nm0000576|Sean Penn|1960|tt0327056|actor,producer,director
+nm0000593|Kelly Preston|1962||actress,soundtrack
+nm0000597|Bill Pullman|1953||actor,director,soundtrack
+nm0000598|Dennis Quaid|1954||actor,producer,soundtrack
+nm0000604|John C. Reilly|1965|tt0299658 tt2015381|actor,writer,producer
+nm0000605|Brad Renfro|1982||actor,soundtrack,writer
+nm0000606|Jean Reno|1948|tt0382625|actor
+nm0000610|Giovanni Ribisi|1974|tt0120815|actor,soundtrack,cinematographer
+nm0000612|Denise Richards|1971|tt0120890|actress,producer,soundtrack
+nm0000616|Eric Roberts|1956||actor,producer,soundtrack
+nm0000619|Tim Roth|1961||actor,producer,soundtrack
+nm0000621|Kurt Russell|1951||actor,producer,writer
+nm0000623|Rene Russo|1954||actress,producer
+nm0000624|Laura San Giacomo|1962|tt0100405|actress
+nm0000627|Greta Scacchi|1960|tt0100404|actress
+nm0000630|Liev Schreiber|1967||actor,producer,miscellaneous
+nm0000638|William Shatner|1931||actor,writer,producer
+nm0000640|Martin Sheen|1940||actor,producer,soundtrack
+nm0000641|Gary Sinise|1955|tt0112384 tt0109830|actor,producer,director
+nm0000648|Wesley Snipes|1962|tt0106697|actor,producer,soundtrack
+nm0000652|James Spader|1960||actor,producer
+nm0000656|Madeleine Stowe|1958||actress,director,writer
+nm0000657|David Strathairn|1949||actor,producer,soundtrack
+nm0000658|Meryl Streep|1949|tt1322269|actress,soundtrack,producer
+nm0000661|Donald Sutherland|1935|tt0317740 tt1951265 tt1951264|actor,soundtrack,producer
+nm0000662|Kiefer Sutherland|1966||actor,producer,miscellaneous
+nm0000664|Patrick Swayze|1952|tt0102685|actor,soundtrack,producer
+nm0000666|Lili Taylor|1967||actress,writer,soundtrack
+nm0000668|Emma Thompson|1959||actress,writer,soundtrack
+nm0000671|Billy Bob Thornton|1955||actor,writer,director
+nm0000673|Marisa Tomei|1964||actress,producer
+nm0000675|Jeanne Tripplehorn|1963||actress,soundtrack
+nm0000677|Robin Tunney|1972||actress,soundtrack
+nm0000686|Christopher Walken|1943|tt0264464|actor,soundtrack,miscellaneous
+nm0000687|J.T. Walsh|1943|tt0104257|actor
+nm0000688|Sela Ward|1956|tt0106977|actress,producer
+nm0000704|Elijah Wood|1981||actor,producer,soundtrack
+nm0000705|Robin Wright|1966|tt0109830|actress,producer,director
+nm0000707|Sean Young|1959|tt0093640|actress,miscellaneous,director
+nm0000722|Joss Ackland|1928|tt0101452|actor,soundtrack
+nm0000732|Danny Aiello|1933||actor,producer,soundtrack
+nm0000741|Tim Allen|1953|tt0114709|actor,producer,miscellaneous
+nm0000754|Kevin Anderson|1960|tt0102945|actor,soundtrack,stunts
+nm0000832|Diane Baker|1938|tt0113957|actress,producer,production_manager
+nm0000834|Kathy Baker|1950|tt1655441|actress,producer
+nm0000837|Bob Balaban|1945||actor,director,producer
+nm0000843|Anne Bancroft|1931||actress,soundtrack,director
+nm0000849|Javier Bardem|1969||actor,producer,soundtrack
+nm0000867|Jason Bateman|1969||actor,producer,director
+nm0000870|Kathy Bates|1948||actress,director,soundtrack
+nm0000885|Ned Beatty|1937||actor,soundtrack
+nm0000889|Bonnie Bedelia|1948||actress,soundtrack
+nm0000906|Annette Bening|1958||actress,soundtrack,executive
+nm0000920|Patrick Bergin|1951|tt0105112 tt0102945|actor,soundtrack,producer
+nm0000931|Elizabeth Berridge|1962||actress
+nm0000932|Halle Berry|1966|tt1371111|actress,producer,executive
+nm0000949|Cate Blanchett|1969||actress,producer,director
+nm0000973|Benjamin Bratt|1963|tt0212346|actor,producer,soundtrack
+nm0000978|Lloyd Bridges|1913||actor,soundtrack,director
+nm0000982|Josh Brolin|1968||actor,producer,director
+nm0000990|Betty Buckley|1947||actress,soundtrack,composer
+nm0000995|Ellen Burstyn|1932||actress,producer,soundtrack
+nm0000997|Gary Busey|1944|tt0102685|actor,soundtrack,composer
+nm0001001|James Caan|1940||actor,soundtrack,director
+nm0001006|John Candy|1950||actor,writer,soundtrack
+nm0001009|Kate Capshaw|1953|tt0087469|actress,soundtrack,producer
+nm0001035|Ben Chaplin|1970|tt0264935|actor,soundtrack
+nm0001044|Rae Dawn Chong|1961||actress,soundtrack,director
+nm0001046|Julie Christie|1940||actress,soundtrack
+nm0001056|Dabney Coleman|1932|tt0128853|actor,miscellaneous,soundtrack
+nm0001057|Toni Collette|1972||actress,producer,soundtrack
+nm0001065|Harry Connick Jr.|1967|tt0119313|actor,soundtrack,music_department
+nm0001073|Courteney Cox|1964||actress,producer,director
+nm0001075|Peter Coyote|1941||actor,miscellaneous,writer
+nm0001080|Lindsay Crouse|1948|tt0780571|actress,soundtrack,miscellaneous
+nm0001099|Jeff Daniels|1955||actor,soundtrack,writer
+nm0001110|Embeth Davidtz|1965||actress
+nm0001133|Brian Dennehy|1938||actor,producer,director
+nm0001136|Bruce Dern|1936|tt0340855|actor,producer,soundtrack
+nm0001150|James Doohan|1920||actor,miscellaneous
+nm0001152|Illeana Douglas|1965||actress,producer,writer
+nm0001156|Olympia Dukakis|1931|tt0098384|actress,producer
+nm0001164|Charles Durning|1923||actor,soundtrack,miscellaneous
+nm0001165|Charles S. Dutton|1951||actor,producer,director
+nm0001169|George Dzundza|1945||actor,assistant_director,soundtrack
+nm0001172|Christopher Eccleston|1964||actor
+nm0001173|Aaron Eckhart|1968|tt3263904|actor,producer
+nm0001185|Hector Elizondo|1936|tt0163187 tt0100405|actor,director,soundtrack
+nm0001186|Denholm Elliott|1922|tt0097576|actor
+nm0001215|Albert Finney|1936|tt0195685|actor,producer,soundtrack
+nm0001217|Fionnula Flanagan|1941||actress,producer
+nm0001222|Calista Flockhart|1964||actress,soundtrack,producer
+nm0001251|Peter Gallagher|1955|tt0114924|actor,soundtrack,writer
+nm0001254|James Gandolfini|1961|tt0236493|actor,producer,soundtrack
+nm0001258|James Garner|1928||actor,producer,soundtrack
+nm0001264|Sarah Michelle Gellar|1977||actress,producer,soundtrack
+nm0001272|Annabeth Gish|1971|tt0095690|actress
+nm0001276|Jackie Gleason|1916||actor,music_department,writer
+nm0001277|Scott Glenn|1941||actor,producer,stunts
+nm0001288|Kelsey Grammer|1955||producer,actor,soundtrack
+nm0001295|Graham Greene|1952|tt0120689 tt0099348|actor,soundtrack
+nm0001305|Lukas Haas|1976|tt0090329|actor,soundtrack,music_department
+nm0001315|Marcia Gay Harden|1959|tt0327056|actress
+nm0001321|Richard Harris|1930||actor,soundtrack,producer
+nm0001324|Ian Hart|1964|tt0117039|actor,writer,miscellaneous
+nm0001326|Josh Hartnett|1978||actor,producer
+nm0001329|Nigel Hawthorne|1929|tt0106697|actor,producer
+nm0001334|John Heard|1946|tt0094737|actor,producer,soundtrack
+nm0001335|Tippi Hedren|1930||actress,producer
+nm0001347|Barbara Hershey|1948||actress
+nm0001364|Bob Hoskins|1942|tt0102057|actor,soundtrack,director
+nm0001365|Whitney Houston|1963|tt0103855|soundtrack,actress,producer
+nm0001368|Ernie Hudson|1945||actor,producer,soundtrack
+nm0001372|Bonnie Hunt|1961|tt0120689|producer,writer,actress
+nm0001383|David Hyde Pierce|1959||actor,soundtrack,writer
+nm0001384|Ice-T|1958|tt0113481|actor,soundtrack,producer
+nm0001389|Chris Isaak|1956||soundtrack,actor,composer
+nm0001416|Catherine Keener|1959||actress,producer,casting_department
+nm0001427|Greg Kinnear|1963|tt0128853|actor,producer,writer
+nm0001433|Yaphet Kotto|1939||actor,writer,director
+nm0001435|Lisa Kudrow|1963||actress,writer,producer
+nm0001439|Anthony LaPaglia|1959||actor,producer,writer
+nm0001445|Martin Landau|1928||actor,producer,miscellaneous
+nm0001447|Nathan Lane|1956||actor,soundtrack,producer
+nm0001449|Frank Langella|1938|tt0870111|actor,soundtrack
+nm0001459|Denis Leary|1957|tt0948470 tt0118002|writer,actor,producer
+nm0001462|Jason Scott Lee|1966||actor
+nm0001473|Laura Linney|1964||actress,producer,miscellaneous
+nm0001475|John Lithgow|1945||actor,soundtrack,producer
+nm0001480|Shelley Long|1949|tt0091541|actress,soundtrack,producer
+nm0001482|Courtney Love|1964||actress,soundtrack,composer
+nm0001496|Amy Madigan|1950|tt0097351|actress,soundtrack,producer
+nm0001497|Tobey Maguire|1975||actor,producer,director
+nm0001498|John Mahoney|1940|tt0117381|actor,soundtrack,producer
+nm0001499|Tina Majorino|1985|tt0114898|actress,soundtrack
+nm0001505|Joe Mantegna|1947||actor,producer,director
+nm0001507|Cheech Marin|1946||actor,soundtrack,writer
+nm0001512|Mary Elizabeth Mastrantonio|1958|tt0102798|actress,soundtrack
+nm0001515|Joseph Mazzello|1983|tt0110997|actor,director,writer
+nm0001520|Christopher McDonald|1955||actor,producer,director
+nm0001521|Mary McDonnell|1952|tt0099348|actress,soundtrack
+nm0001527|Elizabeth McGovern|1961||actress,writer,producer
+nm0001535|Dale Midkiff|1959|tt0102343|actor,producer,soundtrack
+nm0001542|Jay Mohr|1970|tt0421073|actor,writer,producer
+nm0001551|Alanis Morissette|1974||soundtrack,actress,composer
+nm0001556|David Morse|1953|tt0120689|actor,director,producer
+nm0001557|Viggo Mortensen|1958||actor,soundtrack,producer
+nm0001567|Connie Nielsen|1965||actress
+nm0001570|Edward Norton|1969|tt0117381|actor,producer,writer
+nm0001573|Catherine O'Hara|1954||actress,writer,producer
+nm0001584|Miranda Otto|1967|tt0161081|actress,soundtrack
+nm0001590|Chazz Palminteri|1952||actor,writer,producer
+nm0001598|Robert Patrick|1958||actor,producer
+nm0001599|Will Patton|1954|tt0119925|actor
+nm0001605|Amanda Peet|1972|tt0337741|actress
+nm0001610|Elizabeth Perkins|1960|tt0094737|actress
+nm0001614|Lori Petty|1963|tt0102685 tt0104694|actress,producer,writer
+nm0001618|Joaquin Phoenix|1974||actor,producer,soundtrack
+nm0001624|Oliver Platt|1960||actor,producer
+nm0001626|Christopher Plummer|1929||actor,soundtrack,producer
+nm0001627|Sidney Poitier|1927|tt0119395|actor,director,soundtrack
+nm0001633|Annie Potts|1952|tt0120363 tt0114709|actress,producer,soundtrack
+nm0001644|Aidan Quinn|1959||actor,director,producer
+nm0001648|Charlotte Rampling|1946||actress,soundtrack,camera_department
+nm0001670|Natasha Richardson|1963||actress,producer,soundtrack
+nm0001687|Gena Rowlands|1930||actress,writer,soundtrack
+nm0001691|Geoffrey Rush|1951||actor,soundtrack,producer
+nm0001693|Eva Marie Saint|1924||actress,producer
+nm0001698|John Savage|1949||actor,producer,soundtrack
+nm0001703|Maximilian Schell|1930||actor,director,writer
+nm0001710|David Schwimmer|1966||actor,director,soundtrack
+nm0001714|Campbell Scott|1961|tt1872181|actor,producer,director
+nm0001718|Kyra Sedgwick|1965|tt0361127 tt0114496|actress,producer,soundtrack
+nm0001729|Craig Sheffer|1960|tt0106697|actor,producer,director
+nm0001731|Sam Shepard|1943|tt1322269|actor,writer,soundtrack
+nm0001742|Lori Singer|1957|tt0087277|actress,soundtrack,producer
+nm0001744|Tom Sizemore|1961|tt0120815|actor,producer,writer
+nm0001745|Stellan Skarsgård|1951||actor,producer,writer
+nm0001746|Ione Skye|1970|tt0091860|actress,writer,soundtrack
+nm0001747|Charles Martin Smith|1953|tt0094226|actor,director,writer
+nm0001763|Nick Stahl|1979||actor,producer,assistant_director
+nm0001772|Patrick Stewart|1940||actor,producer,director
+nm0001802|Nancy Travis|1961||actress,producer,soundtrack
+nm0001804|Stanley Tucci|1960||actor,producer,director
+nm0001815|Jim Varney|1949|tt0114709 tt0120363|actor,writer,soundtrack
+nm0001817|Reginald VelJohnson|1952||actor,writer,soundtrack
+nm0001833|Emily Watson|1967||actress,soundtrack
+nm0001838|Rachel Weisz|1970||actress,producer,soundtrack
+nm0001845|Forest Whitaker|1961||actor,producer,director
+nm0001848|Dianne Wiest|1948||actress,soundtrack
+nm0001854|Rita Wilson|1956|tt0108160 tt0163187|actress,producer,soundtrack
+nm0001856|Oprah Winfrey|1954||producer,actress,soundtrack
+nm0001858|Mare Winningham|1959|tt0098536|actress,soundtrack
+nm0001860|Alicia Witt|1975|tt0313737|actress,soundtrack,music_department
+nm0001872|Steve Zahn|1967||actor,soundtrack
+nm0001876|Catherine Zeta-Jones|1969|tt0362227 tt0349903 tt0299658|actress,soundtrack
+nm0001882|Olivia d'Abo|1969||actress,soundtrack,music_department
+nm0001884|Max von Sydow|1929||actor,soundtrack,director
+nm0001952|Rubén Blades|1948||actor,soundtrack,composer
+nm0001967|Peter Boyle|1935||actor,soundtrack
+nm0001987|Tantoo Cardinal|1950|tt0099348|actress,director
+nm0002004|Sarita Choudhury|1966|tt1951265 tt1951266|actress
+nm0002006|Thomas Haden Church|1960||actor,miscellaneous,producer
+nm0002027|Ben Cross|1947|tt0113071|actor
+nm0002062|Kathryn Erbe|1965|tt0164181|actress,miscellaneous
+nm0002091|Michael Gambon|1940||actor,soundtrack,music_department
+nm0002110|Rodney A. Grant|1959|tt0099348|actor
+nm0002128|Tess Harper|1950|tt0119395|actress
+nm0002138|Gregory Hines|1946|tt0087089|actor,soundtrack,miscellaneous
+nm0002142|Sandrine Holt|1972||actress
+nm0002536|Emmy Rossum|1986|tt0327056|actress,soundtrack,director
+nm0003817|Michael Clarke Duncan|1957|tt0120689|actor,soundtrack,producer
+nm0004266|Anne Hathaway|1982||actress,soundtrack,producer
+nm0004517|Jason Alexander|1959|tt0100405 tt1028532|actor,writer,soundtrack
+nm0004695|Jessica Alba|1981|tt0817230|actress,cinematographer,producer
+nm0004729|Michael Beach|1963||actor,producer
+nm0004742|Maria Bello|1967||actress,producer,writer
+nm0004743|Gil Bellows|1967|tt1582507|actor,producer,director
+nm0004753|Leslie Bibb|1974||actress,producer,soundtrack
+nm0004754|Jessica Biel|1982|tt0429493|actress,producer,soundtrack
+nm0004778|Adrien Brody|1973||actor,producer,composer
+nm0004789|Amanda Bynes|1986|tt1282140|actress,soundtrack
+nm0004851|Penélope Cruz|1974||actress,soundtrack,producer
+nm0004874|Vin Diesel|1967|tt2015381|producer,actor,director
+nm0004875|Taye Diggs|1971|tt0299658|actor,producer,soundtrack
+nm0004883|Tate Donovan|1963||actor,director,soundtrack
+nm0004936|Ben Foster|1980||actor,director,producer
+nm0004937|Jamie Foxx|1967||actor,producer,writer
+nm0004950|Jennifer Garner|1972||actress,producer,soundtrack
+nm0004979|David Alan Grier|1956|tt0361127|actor,writer,producer
+nm0004988|Colin Hanks|1977|tt0852713|actor,director,producer
+nm0005017|Katie Holmes|1978||actress,producer,soundtrack
+nm0005023|Djimon Hounsou|1964|tt2015381|actor,producer,director
+nm0005024|Terrence Howard|1969|tt0375679|actor,soundtrack,producer
+nm0005028|Kate Hudson|1979||actress,soundtrack,producer
+nm0005042|Jason Isaacs|1963||actor,producer,soundtrack
+nm0005048|Thomas Jane|1969||actor,producer,director
+nm0005052|Michael Jeter|1952|tt0316356 tt0338348 tt0120689|actor,soundtrack,director
+nm0005068|Vinnie Jones|1965|tt0805570|actor,soundtrack
+nm0005093|Regina King|1971||actress,director,producer
+nm0005110|Ashton Kutcher|1978||actor,producer,writer
+nm0005148|Delroy Lindo|1952|tt0124315|actor,producer,soundtrack
+nm0005162|Robert Loggia|1930|tt0094737|actor,director,soundtrack
+nm0005210|Tim McGraw|1967|tt0878804|soundtrack,actor,music_department
+nm0005212|Ian McKellen|1939||actor,soundtrack,writer
+nm0005221|Christopher Meloni|1961|tt0453562|actor,director,producer
+nm0005246|Esai Morales|1962|tt0110944|actor,producer,director
+nm0005251|Carrie-Anne Moss|1967|tt0133093|actress,producer
+nm0005260|Frankie Muniz|1985|tt0156812|actor,producer,soundtrack
+nm0005266|Craig T. Nelson|1944||actor,producer,director
+nm0005283|Jacqueline Obradors|1966|tt0120828|actress
+nm0005299|Sarah Paulson|1974||actress,soundtrack,producer
+nm0005351|Ryan Reynolds|1976||actor,producer,soundtrack
+nm0005377|Sam Rockwell|1968|tt0270288|actor,producer,soundtrack
+nm0005392|Keri Russell|1976||actress,soundtrack
+nm0005460|Mary Steenburgen|1953|tt1041829|actress,producer,soundtrack
+nm0005466|Julia Stiles|1981||actress,director,writer
+nm0005476|Hilary Swank|1974||actress,producer,soundtrack
+nm0005478|Larenz Tate|1975|tt0375679|actor,producer,director
+nm0005491|Maura Tierney|1965|tt0141098|actress,producer,soundtrack
+nm0005520|Amber Valletta|1974||actress,producer
+nm0005541|Marlon Wayans|1972||actor,writer,producer
+nm0005561|Luke Wilson|1971||actor,director,writer
+nm0005562|Owen Wilson|1968||actor,producer,writer
+nm0006663|Enrique Murciano|1973|tt0385307 tt0120179|actor,producer
+nm0006669|William Sadler|1950|tt0101452|actor,soundtrack,director
+nm0006820|Aleks Paunovic|1969||actor,producer,stunts
+nm0006958|Jonathan Tucker|1982||actor,soundtrack
+nm0007210|Saul Rubinek|1948||actor,soundtrack,director
+nm0010736|Amy Adams|1974|tt1800241|actress,soundtrack,producer
+nm0014582|Liam Aiken|1990|tt0230838 tt0120686 tt0257044|actor,camera_department
+nm0021835|Joaquim de Almeida|1957|tt0109444|actor
+nm0028625|David Andrews|1952|tt0112384|actor
+nm0037410|Karina Arroyave|1969|tt0375679|actress
+nm0038355|Tadanobu Asano|1973||actor,director,composer
+nm0038988|Lior Ashkenazi|1969||actor
+nm0040015|Mackenzie Astin|1973||actor
+nm0040662|Tom Atkins|1935||actor
+nm0041215|Anat Atzmon|1958|tt0091019|actress,soundtrack
+nm0046112|Penn Badgley|1986|tt1282140|actor,producer
+nm0048379|David Aaron Baker|1963|tt0313737 tt0462338|actor,soundtrack
+nm0048414|Dylan Baker|1959||actor,director,producer
+nm0057363|Barbara Barrie|1931||actress,soundtrack
+nm0058581|Justin Bartha|1978|tt1119646 tt1411697|actor,producer,miscellaneous
+nm0059946|Elya Baskin|1950||actor,miscellaneous
+nm0063440|Adam Beach|1972||actor,producer,composer
+nm0063800|Noah Bean|1978|tt1126618|actor,director,editor
+nm0065007|Demián Bichir|1963|tt2404463|actor,producer,director
+nm0068338|Kristen Bell|1980||actress,soundtrack,producer
+nm0069515|Diana Belshaw|\N|tt0223844|actress
+nm0072344|Abraham Benrubi|1969|tt0316356|actor,soundtrack
+nm0079273|Paul Bettany|1971||actor,director,writer
+nm0080049|Yasiin Bey|1973|tt0317740|actor,soundtrack,producer
+nm0098597|Sara Botsford|1951||actress,director,writer
+nm0101621|Alan Boyce|1961|tt0095853|actor
+nm0109773|David Brisbin|1952|tt0109830 tt0195685|actor,writer
+nm0117709|Daniel Brühl|1978||actor,producer
+nm0122653|Edward Burns|1968|tt0120815|actor,writer,producer
+nm0124107|Chuck Bush|1961|tt0089126|producer,actor,editor
+nm0126004|Dan Byrd|1985|tt1282140|actor,soundtrack
+nm0129106|Robert Cait|\N||actor
+nm0131235|Christian Camargo|1971|tt0267626|actor,producer,director
+nm0131811|Terry Camilleri|\N|tt0096928|actor
+nm0132549|Jason Campbell|\N|tt0095640|actor
+nm0136797|Steve Carell|1962|tt1570728|actor,producer,writer
+nm0137506|George Carlin|1937|tt0096928|actor,producer,writer
+nm0141617|Finn Carter|1960|tt0100814|actress
+nm0141715|John Carter|1927|tt0462338|actor,director
+nm0144045|Jean-Pierre Cassel|1932||actor,soundtrack,director
+nm0148418|Michael Cera|1988||actor,producer,soundtrack
+nm0152420|Judith Chapman|1951||actress
+nm0152638|Dave Chappelle|1973||writer,actor,producer
+nm0155392|Tiger Hu Chen|1975|tt2016940 tt0242653 tt0234215|actor,stunts,writer
+nm0155693|Kristin Chenoweth|1968||actress,soundtrack,producer
+nm0159776|Erika Christensen|1982|tt0365885|actress,producer,soundtrack
+nm0159789|Hayden Christensen|1981||actor,producer,executive
+nm0165101|Patricia Clarkson|1959|tt0120689|actress,producer,soundtrack
+nm0167850|Bill Cobbs|1934|tt0103855|actor,producer,music_department
+nm0168262|Rory Cochrane|1972|tt0405296|actor,soundtrack
+nm0170552|George Cole|1925|tt0117002|actor,soundtrack
+nm0171513|Margaret Colin|1958|tt0250797 tt0118972|actress
+nm0176073|Michael Constantine|1927|tt3760922 tt0259446|actor
+nm0176981|Dane Cook|1972||actor,writer,director
+nm0177020|Drake Cook|\N|tt0146309|actor
+nm0177896|Bradley Cooper|1975|tt2015381 tt1800241 tt1045658 tt2179136|actor,producer,soundtrack
+nm0178574|Zachary David Cope|1994|tt0164181|actor
+nm0178875|Chris Coppola|\N|tt0338348|actor,soundtrack,producer
+nm0179173|John Corbett|1961|tt1068641|actor,soundtrack,miscellaneous
+nm0180411|Abbie Cornish|1982|tt1219289|actress,soundtrack
+nm0185475|Cylk Cozart|1957|tt0118883|actor,producer,director
+nm0185819|Daniel Craig|1968||actor,producer,soundtrack
+nm0187724|Wendy Crewson|1956|tt0118571|actress,producer
+nm0190744|Marton Csokas|1966||actor,soundtrack
+nm0191906|Jim Cummings|1952||actor,soundtrack,miscellaneous
+nm0193524|Thomas Curtis|1991|tt0395972|actor
+nm0202184|Kristin Dattilo|1970||actress,soundtrack
+nm0205626|Viola Davis|1965|tt1454029|actress,producer,soundtrack
+nm0221046|Zooey Deschanel|1980|tt1068680|actress,producer,music_department
+nm0223103|Eru Potaka Dewes|\N|tt0110944|actor
+nm0223157|Colleen Dewhurst|1924||actress
+nm0225332|Kim Dickens|1965|tt0164052|actress
+nm0225767|Dawn Didawick|1941|tt0195685|actress
+nm0226813|Garret Dillahunt|1964||actor,soundtrack,director
+nm0226820|Stephen Dillane|1957||actor
+nm0227759|Peter Dinklage|1969||actor,producer,soundtrack
+nm0230335|John Doe|1953|tt0103855|actor,soundtrack,composer
+nm0233145|Alison Doody|1966|tt0097576|actress
+nm0238057|Shawn Driscoll|\N|tt0146309 tt0265029|actor,producer,miscellaneous
+nm0243233|Mark Duplass|1976||actor,producer,writer
+nm0245112|Clea DuVall|1977||actress,director,producer
+nm0249291|Joel Edgerton|1974||actor,writer,producer
+nm0251678|David Eigenberg|1964|tt0265349|actor
+nm0251986|Jesse Eisenberg|1983|tt1156398|actor,writer,soundtrack
+nm0252230|Chiwetel Ejiofor|1977||actor,soundtrack,director
+nm0252961|Idris Elba|1972||actor,producer,soundtrack
+nm0253371|Michael Elgart|\N|tt0095853|actor
+nm0254712|Aunjanue Ellis|1969|tt1454029 tt0203019|actress,producer,soundtrack
+nm0262635|Chris Evans|1981||actor,producer,director
+nm0266824|Dakota Fanning|1994||actress,soundtrack,producer
+nm0267506|Anna Faris|1976|tt0852713|actress,soundtrack,producer
+nm0267812|Vera Farmiga|1973||actress,producer,soundtrack
+nm0268199|Colin Farrell|1976||actor,soundtrack,producer
+nm0270268|Kathleen Fee|\N|tt1840417 tt1667353|actress,miscellaneous,writer
+nm0272706|Jodelle Ferland|1994|tt0795351|actress
+nm0273592|Juan Fernández|1956||actor,producer,director
+nm0278752|Peter Firth|1953||actor,soundtrack
+nm0280890|Lanny Flaherty|1942|tt0114898|actor
+nm0289656|James Frain|1968|tt0184858|actor
+nm0295484|Anna Friel|1976|tt1219289|actress,producer
+nm0299028|Deborra-Lee Furness|1955||actress,producer,director
+nm0301185|David Gail|1965||actor
+nm0302108|Zach Galifianakis|1969|tt1411697 tt1119646|actor,producer,writer
+nm0314524|Greg Germann|1958|tt0230838|actor,soundtrack,director
+nm0316079|Paul Giamatti|1967|tt0120815|actor,producer,soundtrack
+nm0316284|Giancarlo Giannini|1942||actor,miscellaneous,director
+nm0317293|Pamela Gidley|1965|tt0095853|actress,director,writer
+nm0324231|Alexander Godunov|1949|tt0091541 tt0090329|actor
+nm0324658|Walton Goggins|1971||actor,producer
+nm0331516|Ryan Gosling|1980|tt3783958|actor,soundtrack,producer
+nm0332562|Alain Goulem|1966||actor,miscellaneous
+nm0333410|Topher Grace|1978||actor,producer,soundtrack
+nm0335344|David Marshall Grant|1955||producer,actor,writer
+nm0339304|Bruce Greenwood|1956||actor,producer,soundtrack
+nm0339460|Judy Greer|1975||actress,producer,soundtrack
+nm0342732|George Grizzard|1928|tt0086927|actor
+nm0343447|Michael Gross|1947|tt0100814|actor,producer
+nm0350079|Luis Guzmán|1956||actor,producer
+nm0350454|Maggie Gyllenhaal|1977||actress,producer,soundtrack
+nm0355112|Michael Haley|1942|tt0472062 tt0376541|assistant_director,actor,producer
+nm0355659|Irma P. Hall|1935|tt0335245|actress,producer,assistant
+nm0356017|Rebecca Hall|1982||actress,producer
+nm0358316|Jon Hamm|1971|tt2293640|actor,producer,soundtrack
+nm0362766|Tom Hardy|1977|tt1392190|actor,producer,writer
+nm0363159|Michael Harkins|1969||miscellaneous,actor,camera_department
+nm0366667|Leslie Zemeckis|1969|tt0338348|actress,producer,writer
+nm0370035|John Hawkes|1959||actor,soundtrack,music_department
+nm0371342|David Hayman|1948|tt0119395|actor,director,producer
+nm0372522|Bryan Hearne|1988|tt0180734|actor
+nm0376716|Christina Hendricks|1975|tt1974419|actress,soundtrack
+nm0378245|Taraji P. Henson|1970|tt4846340|actress,producer,soundtrack
+nm0383422|John Michael Higgins|1963||actor,soundtrack,music_department
+nm0383603|Freddie Highmore|1992||actor,producer,writer
+nm0385792|Marin Hinkle|1966||actress
+nm0388382|Tyler Hoechlin|1987|tt0257044|actor,soundtrack,executive
+nm0396558|Nicholas Hoult|1989|tt1392190|actor,soundtrack
+nm0397171|Bryce Dallas Howard|1981|tt1454029|actress,director,writer
+nm0401264|Michiel Huisman|1981|tt1655441|actor,soundtrack
+nm0406975|Rhys Ifans|1967|tt0125439 tt0948470|actor,soundtrack,producer
+nm0407030|Hisashi Igawa|1936|tt0101991|actor
+nm0408946|Aaron Ingram|\N|tt0100930|actor
+nm0410464|Tom Irwin|1956||actor
+nm0412374|Dana Ivey|1941|tt0313737 tt0114319|actress,soundtrack
+nm0412901|T.J. Lowther|1986|tt0107808|actor
+nm0420955|Richard Jenkins|1947||actor
+nm0421776|Vicky Jenson|\N||art_department,animation_department,art_director
+nm0421822|Ken Jeong|1969|tt1411697 tt1119646|actor,writer,producer
+nm0425316|Javon Johnson|\N||actor,writer,producer
+nm0428065|Felicity Jones|1983|tt3062096 tt1872181|actress,producer,soundtrack
+nm0428963|Orlando Jones|1968||actor,writer,miscellaneous
+nm0429363|Toby Jones|1966||actor,soundtrack
+nm0436811|Kris Kamm|1964|tt0111756|actor,producer
+nm0441588|Nicky Katt|1970||actor,producer
+nm0443238|Narumi Kayashima|1942|tt0101991|actress
+nm0443577|Lainie Kazan|1940|tt0259446 tt3760922|actress,soundtrack
+nm0447290|Gary Kemp|1959|tt1570728 tt0103855|soundtrack,actor,composer
+nm0451234|Irrfan Khan|1967|tt0948470|actor,producer,director
+nm0453248|Buzz Kilman|1944|tt0107818|actor
+nm0460867|David Edwin Knight|\N|tt0100930|actor
+nm0461136|Keira Knightley|1985||actress,soundtrack,producer
+nm0469103|Jeroen Krabbé|1944|tt0106977|actor,director,producer
+nm0470981|Thomas Kretschmann|1962||actor
+nm0479471|Shia LaBeouf|1986||actor,director,soundtrack
+nm0482730|The Dalai Lama|1935|tt0819354|actor,miscellaneous
+nm0486728|Brooke Langton|1970|tt0191397|actress,soundtrack,writer
+nm0490980|Cyndi Lauper|1953||soundtrack,actress,miscellaneous
+nm0491402|Hugh Laurie|1959||actor,producer,soundtrack
+nm0492746|Elizabeth Lawrence|1922|tt0102945|actress
+nm0494784|Ron Lea|\N||actor,director,producer
+nm0503567|Logan Lerman|1992||actor,producer
+nm0506405|Eugene Levy|1946||actor,writer,producer
+nm0512934|Hamish Linklater|1976||actor,soundtrack,writer
+nm0515116|Blake Lively|1987|tt1655441|actress,producer,soundtrack
+nm0515296|Ron Livingston|1967||actor,camera_department,producer
+nm0517844|Alison Lohman|1979||actress
+nm0519489|Emily Longstreth|1967|tt0096926|actress
+nm0521753|Lori Loughlin|1964||actress,producer,writer
+nm0526019|Diego Luna|1979||producer,actor,director
+nm0527945|Pasha D. Lychnikoff|1967||actor
+nm0532235|Seth MacFarlane|1973|tt2557490|writer,music_department,producer
+nm0536723|Valerie Mahaffey|1953|tt3263904|actress,producer
+nm0537698|Charles Gitonga Maina|\N|tt0109067|actor
+nm0539678|Ross Malinger|1984|tt0108160|actor
+nm0540441|Jena Malone|1984|tt1951266 tt1951264 tt1974419|actress,soundtrack,producer
+nm0542677|Byron Mann|\N||actor
+nm0544721|Mary Mara|1960|tt0102343|actress,soundtrack
+nm0545408|Nancy Marchand|1928|tt0114319|actress
+nm0550371|Eddie Marsan|1968|tt0448157|actor,soundtrack
+nm0551290|Cristina Marsillach|1963|tt0091019|actress
+nm0551502|K.C. Martel|1967|tt0094318|actor,soundtrack
+nm0553648|Olivier Martinez|1966|tt0250797|actor
+nm0561809|Roberta Maxwell|\N|tt0107818|actress
+nm0564215|James McAvoy|1979||actor,soundtrack,producer
+nm0564277|Chi McBride|1961|tt0362227|actor,producer
+nm0564500|Richard McCabe|\N|tt0125439|actor
+nm0565250|Melissa McCarthy|1970|tt2404463|actress,producer,soundtrack
+nm0567343|Bill McCutcheon|1924|tt0098384|actor
+nm0567912|Michael McDonald|1964||actor,director,producer
+nm0569226|Bruce McGill|1950||actor,soundtrack
+nm0571188|Lonette McKee|1954|tt0203019|actress,soundtrack,composer
+nm0573037|Julian McMahon|1968||actor,producer
+nm0574534|Ian McShane|1942|tt4425200|actor,director,producer
+nm0578949|Eva Mendes|1974|tt1817273|actress,soundtrack,director
+nm0580351|Stephen Merchant|1974||writer,producer,actor
+nm0582418|Laurie Metcalf|1955|tt0435761 tt0114709 tt0120363|actress,soundtrack,miscellaneous
+nm0584052|Paul Sanchez|\N||actor,director,writer
+nm0587401|Tomas Milian|1933||actor,writer,soundtrack
+nm0588222|Dennis Miller|1953||writer,producer,actor
+nm0593664|Radha Mitchell|1973||actress,producer,director
+nm0596297|Karen Mok|1970|tt2016940|actress,soundtrack,music_department
+nm0597388|Jason Momoa|1979||actor,producer,director
+nm0604702|Harry Morgan|1915||actor,soundtrack,director
+nm0606487|Dean Norris|1963||actor,soundtrack,producer
+nm0607325|Temuera Morrison|1960||actor,director,miscellaneous
+nm0608012|Joe Morton|1947|tt0111257|actor,soundtrack,director
+nm0609114|Ebon Moss-Bachrach|1977||actor,soundtrack
+nm0613561|Sachiko Murase|1905|tt0101991|actress
+nm0628601|Thandie Newton|1972|tt0375679|actress,soundtrack,producer
+nm0634897|Khyentse Norbu|\N||writer,director,miscellaneous
+nm0636426|Noomi Rapace|1979|tt1446714|actress
+nm0636942|Bojana Novakovic|1981|tt1718158|actress,director,writer
+nm0637681|Winston Ntshona|1941|tt0109067|actor,writer
+nm0638824|Michael Nyqvist|1960|tt2911666|actor,producer
+nm0644022|Bob Odenkirk|1962||writer,actor,producer
+nm0645683|Sophie Okonedo|1968|tt0402022|actress
+nm0649330|Gerald Orange|\N|tt0098185|actor,miscellaneous
+nm0650945|Roxana Ortega|\N|tt1583420|actress,producer,writer
+nm0651159|John Ortiz|1968|tt1045658|actor,producer
+nm0652663|Patton Oswalt|1969|tt1625346|actor,writer,producer
+nm0653268|Kevin Otto|\N||actor,producer,miscellaneous
+nm0654110|Clive Owen|1964||actor,producer,soundtrack
+nm0654295|Alfie Allen|1986|tt2911666|actor
+nm0654648|David Oyelowo|1976||actor,producer,director
+nm0668271|Bruce Payne|1958||actor,assistant_director,producer
+nm0672103|Jonathan Penner|1962||actor,producer,writer
+nm0680983|Ellen Page|1987||actress,producer,soundtrack
+nm0685856|Michael Pitt|1981||actor,producer,soundtrack
+nm0687321|George Plimpton|1927||actor,writer,camera_department
+nm0695435|Chris Pratt|1979|tt2015381 tt1355644|actor,soundtrack,producer
+nm0700869|Amrish Puri|1932|tt0087469|actor,music_department,soundtrack
+nm0702841|Jonathan Ke Quan|1971|tt0087469|actor,miscellaneous,stunts
+nm0703615|Denis Quilley|1927|tt0089420|actor
+nm0708784|Rudy Ramos|1950||actor
+nm0709634|Lexi Randall|1980|tt0111667|actress
+nm0712857|James Ray|1932|tt0096094|actor
+nm0714147|Elizabeth Reaser|1975||actress
+nm0714310|James Rebhorn|1948||actor
+nm0715563|Lou Reed|1942||soundtrack,composer,actor
+nm0719321|Mark Rendall|1988||actor,soundtrack
+nm0719637|Jeremy Renner|1971||actor,producer,soundtrack
+nm0724245|Michael Richards|1949|tt0120373|actor,writer,producer
+nm0724927|William Richert|\N|tt0102494|actor,writer,director
+nm0725543|Don Rickles|1926|tt0114709 tt0120363|actor,soundtrack
+nm0726492|Ron Rifkin|1939||actor,miscellaneous
+nm0730168|Sam Robards|1961||actor,producer
+nm0735467|Paul Rodriguez|1955||actor,writer,producer
+nm0736263|Daniel Roebuck|1963|tt0106977|actor,producer,director
+nm0736622|Seth Rogen|1982||actor,producer,writer
+nm0749263|Mark Ruffalo|1967||actor,producer,director
+nm0751638|James Russo|1953||actor,producer,writer
+nm0752379|David Ryall|1935|tt0970411|actor,soundtrack
+nm0752407|Amy Ryan|1968||actress,soundtrack,producer
+nm0753073|Mark Rydell|1929||director,miscellaneous,actor
+nm0753314|Mark Rylance|1960|tt3682448|actor,art_department
+nm0756089|Melissa Sagemiller|1974|tt0406816|actress,producer
+nm0757854|Theresa Saldana|1954||actress
+nm0757855|Zoe Saldana|1978|tt2015381|actress,producer,writer
+nm0760796|Hiroyuki Sanada|1960||actor,music_department,composer
+nm0774386|Matthias Schoenaerts|1977||actor,producer,director
+nm0775455|Carly Schroeder|1990||actress,producer
+nm0779866|Tom Everett Scott|1970|tt0117887 tt3783958|actor,director,writer
+nm0782561|Emmanuelle Seigner|1966||actress,soundtrack
+nm0783033|Marian Seldes|1928|tt0304415|actress
+nm0784884|Rade Serbedzija|1946||actor,soundtrack,director
+nm0785227|Andy Serkis|1964||actor,producer,soundtrack
+nm0790688|Michael Sheen|1969|tt0870111|actor,producer,soundtrack
+nm0793069|Ko Shibasaki|1981|tt1335975|actress,soundtrack
+nm0794647|Sergey Shnyryov|1971|tt2277106|actor
+nm0798534|Trinidad Silva|1950||actor
+nm0798971|Sarah Silverman|1970|tt2557490|actress,writer,producer
+nm0799777|J.K. Simmons|1955|tt3783958|actor,soundtrack
+nm0813015|Paul Soles|1930||actor,soundtrack,writer
+nm0813977|Josef Sommer|1934|tt0090329|actor
+nm0815880|Djiby Soumare|\N|tt0095174|actor
+nm0817844|Abigail Spencer|1981|tt0409847|actress,writer,producer
+nm0818055|Octavia Spencer|1972|tt4846340 tt1454029|actress,producer,soundtrack
+nm0818880|Stephen Spinella|1956|tt0119395|actor
+nm0819874|Sam Spruell|1977|tt1735898|actor
+nm0821041|Robert Stack|1919||actor,producer,soundtrack
+nm0822972|Maureen Stapleton|1925|tt0091541|actress,soundtrack
+nm0824220|Peter Stebbings|1971|tt0267626|actor,director,writer
+nm0824566|Jadrien Steele|1974|tt0091557|actor,director,writer
+nm0824763|Jessica Steen|1965||actress,producer
+nm0825784|Margot Steinberg|\N|tt0116621|actress
+nm0829032|Ray Stevenson|1964||actor,soundtrack
+nm0829576|Kristen Stewart|1990|tt1735898|actress,soundtrack,director
+nm0834380|KaDee Strickland|1975||actress
+nm0834626|Elaine Stritch|1925|tt0174480|actress,music_department,soundtrack
+nm0836343|Jim Sturgess|1978|tt1371111|actor,soundtrack,music_department
+nm0837177|Jason Sudeikis|1975||actor,soundtrack,writer
+nm0838059|Erik Per Sullivan|1991|tt0250797|actor,soundtrack
+nm0839326|Daniel Sunjata|1971||actor,soundtrack
+nm0842475|Stanley Swerdlow|\N|tt0102768|actor
+nm0842770|Tilda Swinton|1960||actress,producer,writer
+nm0845209|Aitana Sánchez-Gijón|1968|tt0114887|actress
+nm0846480|Cary-Hiroyuki Tagawa|1950|tt4302938 tt1028532|actor,producer,miscellaneous
+nm0851582|Audrey Tautou|1976|tt0382625|actress,soundtrack,miscellaneous
+nm0852028|Benedict Taylor|1960||actor
+nm0855564|Lee Tergesen|1965|tt0340855|actor,soundtrack
+nm0859772|Tim Thomerson|1946||actor,producer,miscellaneous
+nm0860749|Susanna Thompson|1958|tt0259288|actress
+nm0870007|Katharine Towne|1978|tt0161081|actress
+nm0870204|Stuart Townsend|1972|tt0338097|actor,director,writer
+nm0870430|Bob Tracey|1923|tt0265349|actor
+nm0878240|Rita Tushingham|1942||actress,soundtrack
+nm0889522|Nia Vardalos|1962|tt3760922 tt0345074 tt0259446|actress,writer,producer
+nm0891483|Yolanda Vazquez|1960|tt0109067 tt0125439|actress
+nm0891502|Nataliya Vdovina|1969|tt2277106|actress
+nm0893204|Diane Venora|1952|tt0119395|actress,producer
+nm0893965|Ben Vereen|1946||actor,soundtrack,director
+nm0911542|Fred Ward|1942|tt0100814|actor,soundtrack,producer
+nm0911644|Jonathan Ward|1970|tt0094318 tt0098384|actor,producer,writer
+nm0913460|Isaiah Washington|1963||actor,producer,executive
+nm0914612|Emma Watson|1990||actress,soundtrack,producer
+nm0915865|Jacki Weaver|1947|tt1045658|actress,soundtrack
+nm0915989|Hugo Weaving|1960|tt0133093|actor,soundtrack,producer
+nm0919991|Tom Welling|1977||actor,producer,director
+nm0920073|Wendell Wellman|1944|tt0108185|actor,writer,miscellaneous
+nm0922035|Dominic West|1969|tt0299658|actor,director,producer
+nm0924154|Shea Whigham|1969|tt1045658 tt1800241|actor
+nm0924210|Ben Whishaw|1980|tt1371111|actor,music_department,soundtrack
+nm0925096|Lari White|1965|tt0162222|actress,soundtrack
+nm0925966|Bradley Whitford|1959||actor,producer,writer
+nm0926165|Mae Whitman|1988||actress,soundtrack,art_department
+nm0929489|Tom Wilkinson|1948||actor,soundtrack
+nm0931404|Olivia Williams|1968|tt0119925|actress,soundtrack
+nm0933940|Patrick Wilson|1973||actor,soundtrack,producer
+nm0933988|Rainn Wilson|1966|tt1512235|actor,producer,soundtrack
+nm0934254|Trey Wilson|1948|tt0094812|actor,composer,producer
+nm0935664|Alex Winter|1965|tt0096928|actor,director,producer
+nm0936403|Ray Wise|1947|tt1270798|actor,soundtrack
+nm0939697|Evan Rachel Wood|1987||actress,soundtrack,music_department
+nm0940158|Bokeem Woodbine|1973||actor,producer,soundtrack
+nm0940919|Edward Woodward|1930||actor,producer,soundtrack
+nm0946962|José María Yazpik|1970||actor,producer
+nm0947338|Anton Yelchin|1989||actor,soundtrack
+nm0948078|Ruocheng Ying|\N|tt0107426|actor
+nm0949744|Karen Young|1958||actress,director,writer
+nm0950494|Hai Yu|\N|tt2016940|actor,stunts
+nm0957460|Adrian Zmed|1954|tt0086927|actor,soundtrack,director
+nm0957909|Ayelet Zurer|1969|tt0808151|actress,producer
+nm0959242|José Zúñiga|\N||actor
+nm0970926|Losang Gyatso|\N|tt0852953|actor
+nm0973177|Kyle Gallner|1986|tt2179136|actor,producer
+nm0993507|Kat Dennings|1986||actress,producer,soundtrack
+nm1005576|Rob Maxey|1953|tt0257044|actor
+nm1009277|Dax Shepard|1975|tt2097307|actor,director,soundtrack
+nm1046097|Rachel McAdams|1978||actress,soundtrack
+nm1047913|Glen Gould|\N|tt0932669|actor,producer,director
+nm1055413|Michael Fassbender|1977|tt1270798 tt1446714|actor,producer,soundtrack
+nm1072959|Gattlin Griffith|\N||actor
+nm1086384|Lou Taylor Pucci|1985|tt0318761|actor,soundtrack,producer
+nm1086543|Amanda Seyfried|1985||actress,soundtrack,producer
+nm1092227|Sienna Miller|1981|tt2503944 tt2179136|actress
+nm1102577|Elle Fanning|1998|tt1974419|actress,soundtrack
+nm1102891|Kristen Schaal|1978|tt0435761|actress,soundtrack,miscellaneous
+nm1105980|Kathryn Newton|\N||actress,soundtrack
+nm1107001|Anthony Mackie|1978||actor,producer,soundtrack
+nm1113550|Abigail Breslin|1996|tt1156398|actress,soundtrack
+nm1122614|Dominic Scott Kay|1996|tt0413895|actor,writer,producer
+nm1159180|Ed Helms|1974|tt1119646|actor,soundtrack,producer
+nm1164392|Christina Eleusiniotis|\N|tt0259446|actress
+nm1165110|Chris Hemsworth|1983|tt1735898|actor
+nm1165660|T.R. Knight|1973|tt0453562|actor
+nm1176985|Dave Bautista|1969|tt2015381 tt1856101|actor,producer,miscellaneous
+nm1183149|Edgar Ramírez|1977||actor,producer,assistant_director
+nm1195855|Lee Pace|1979|tt2015381|actor,soundtrack
+nm1241511|Orto Ignatiussen|\N|tt1454468|actor,miscellaneous
+nm1242688|Josh Hutcherson|1992|tt1951266 tt1951264 tt1951265|actor,producer,soundtrack
+nm1249052|Riccardo Scamarcio|1979|tt4425200 tt2503944|actor,producer
+nm1268748|Tamer Hassan|1968||actor,producer,writer
+nm1289434|Emily Blunt|1983||actress,soundtrack,miscellaneous
+nm1294664|Ellar Coltrane|1994|tt4287320|actor,producer,soundtrack
+nm1297015|Emma Stone|1988|tt3783958 tt1282140 tt1454029|actress,soundtrack,producer
+nm1302735|Max Thieriot|1988|tt1582507|actor,director
+nm1312500|Colleen Porch|\N||actress
+nm1312575|Olivia Wilde|1984||actress,producer,director
+nm1312633|Morgan Klein|\N|tt0349193|director,actor,writer
+nm1330560|Garrett Hedlund|1984||actor,soundtrack
+nm1334869|Logan Marshall-Green|1976|tt1446714|actor,producer
+nm1369571|Joe Stapleton|\N|tt0327056 tt3715320|actor
+nm1374980|Zac Efron|1987||actor,soundtrack,producer
+nm1382417|Joseph Friend|\N|tt0477095|actor
+nm1404408|Alice Eve|1982||actress,producer,director
+nm1419440|Ivana Baquero|1994|tt0951335|actress
+nm1455681|AnnaSophia Robb|1993||actress,soundtrack
+nm1469236|Olivia Colman|1974||actress,soundtrack
+nm1517976|Chris Pine|1980||actor,producer,soundtrack
+nm1519680|Saoirse Ronan|1994||actress,soundtrack
+nm1535523|Jaden Smith|1998||actor,soundtrack
+nm1540404|Max Minghella|1985||actor,producer,writer
+nm1552919|Flora Cross|1993|tt0387059|actress
+nm1567113|Jessica Chastain|1977|tt1454029|actress,producer,soundtrack
+nm1568793|Sophi Bairley|\N|tt1014806|actress,assistant_director,soundtrack
+nm1569276|Chadwick Boseman|1977|tt0453562|actor,producer,writer
+nm1601397|Olivia Munn|1980|tt3385516|actress,writer
+nm1630992|Madeline Carroll|1996|tt1027862|actress,producer
+nm1631269|Chloë Grace Moretz|1997||actress,soundtrack
+nm1663205|Sharlto Copley|1973|tt0429493|actor,producer,soundtrack
+nm1679669|Rosemarie DeWitt|1971|tt3783958|actress,miscellaneous
+nm1706767|Jonah Hill|1983||actor,producer,writer
+nm1720028|Amber Heard|1986|tt2172934|actress,producer,soundtrack
+nm1732997|Matthieu Ricard|\N||director
+nm1745736|Paula Patton|1975||actress,producer,soundtrack
+nm1779870|Brit Marling|1982||actress,writer,producer
+nm1794849|Carlos Pratts|1986|tt2097298|actor,producer,writer
+nm1813221|Gugu Mbatha-Raw|1983||actress,soundtrack
+nm1816775|Gregg Weiner|\N|tt2005151|actor
+nm1843026|Gillian Jacobs|1982||actress,soundtrack,director
+nm1847117|Janelle Monáe|1985|tt4846340|soundtrack,actress,miscellaneous
+nm1851028|Miles Heizer|1994|tt0822849|actor
+nm1853544|Pierre Coffin|1967|tt2293640|actor,director,producer
+nm1869101|Ana de Armas|1988|tt2005151 tt1856101|actress
+nm1886602|Miles Teller|1987||actor,producer,soundtrack
+nm1925239|Jack O'Connell|1990||actor
+nm1940449|Andrew Garfield|1983|tt1872181 tt0948470|actor,producer,soundtrack
+nm2052567|Jae Head|1996|tt0878804 tt0448157|actor
+nm2053085|June Diane Raphael|1980||actress,writer,miscellaneous
+nm2057859|Andrea Riseborough|1981||actress,soundtrack,producer
+nm2089529|Sarah Mahoney|\N|tt1583420|actress
+nm2105255|Sarah Roemer|1984|tt1028532|actress,producer
+nm2182034|Shyann McClure|2000|tt0477071|actress,soundtrack
+nm2213961|Marina Goldman|\N|tt1339660|producer,miscellaneous,actress
+nm2225369|Jennifer Lawrence|1990|tt1392170 tt1270798 tt1045658 tt1800241|actress,soundtrack,producer
+nm2240346|Kodi Smit-McPhee|1996|tt0898367|actor
+nm2309517|Armie Hammer|1986||actor
+nm2348627|Lucas Hedges|1996||actor
+nm2368789|Zoë Kravitz|1988|tt1270798 tt1392190|actress,soundtrack
+nm2466842|Quinton Aaron|1984|tt0878804|actor,producer,writer
+nm2504006|Max Records|1997|tt0386117|actor,soundtrack
+nm2564938|Adelaide Clemens|1989||actress
+nm2589551|Pepita Emmerichs|\N|tt0386117|actress
+nm2633535|Asa Butterfield|1997|tt1731141|actor
+nm2718512|Nicole Beharie|\N|tt0453562|actress,soundtrack
+nm2746751|Aaron Burns|1985||actor,visual_effects,camera_department
+nm2765903|Gordana Vukres|\N|tt0455782|actress
+nm2773059|Gabriel Basso|\N|tt3503406|actor,soundtrack
+nm2776169|Meredith Droeger|\N|tt1244659|actress
+nm2794962|Hailee Steinfeld|1996|tt1731141|actress,soundtrack,music_department
+nm2933757|Gal Gadot|1985||actress
+nm2934314|Lily Collins|1989|tt1667353|actress,soundtrack
+nm2955013|Liam Hemsworth|1990|tt1951264 tt1392170 tt1951265|actor,miscellaneous
+nm2991877|Max Chaiet|\N|tt4128724|director,camera_department,editor
+nm3042755|Thomas Middleditch|1982||actor,writer,soundtrack
+nm3078932|Lady Gaga|1986||soundtrack,actress,composer
+nm3111373|Steve Lantz|\N|tt2005151|actor
+nm3194762|Karl Glusman|\N|tt1974419|actor,camera_department
+nm3199307|Ruby Rose|1986|tt4425200|actress,writer,producer
+nm3280686|Art Parkinson|2001|tt4302938|actor
+nm3404934|Charlie Bewley|1981|tt1758692|actor,producer,writer
+nm3458761|David Mazouz|2001|tt1878841|actor
+nm3493212|Isaiah Stone|\N|tt1399683|actor
+nm3510471|Sam Claflin|1986|tt1735898 tt1951265|actor,producer,soundtrack
+nm3772243|Theo James|1984||actor
+nm3823724|Jirantanin Pitakporntrakul|\N|tt1578882|actress
+nm3915784|John Boyega|1992||actor,producer,soundtrack
+nm3995471|Craig Van Hook|\N|tt1817273|actor,transportation_department
+nm4003520|Annie Rose Buckley|\N|tt2140373|actress
+nm4025229|Suki Waterhouse|1992|tt4334266|actress,producer
+nm4025491|Alexander Black|1983|tt2980210|actor,writer,director
+nm4207679|Izabela Vidovic|2001|tt2543472|actress,producer,writer
+nm4223385|Thomas Horn|\N|tt0477302|actor,assistant_director
+nm4448022|Lorenza Izzo|1989|tt3605418|actress,soundtrack
+nm4496875|Mackenzie Davis|1987|tt1856101|actress,producer,soundtrack
+nm4867258|Lucy Fry|\N||actress
+nm4881741|Hays Wellford|2003|tt3813310|actor
+nm5016878|Jacob Tremblay|2006|tt2543472|actor
+nm5831542|Barkhad Abdi|1985|tt1535109 tt1856101|actor
+nm5831543|Barkhad Abdirahman|1994|tt1535109|actor
+nm6132568|Markus Waldow|\N|tt1578882|actor
+nm6518675|Cole Konis|\N|tt2179136|actor
+nm6627667|James Freedson-Jackson|\N|tt3813310|actor
+nm6632783|Meghan Martin|\N||actress
+nm6852212|Barbara Chase-Riboud|1939|tt4128724|
+nm7107400|Ramiro Rodriguez|\N|tt2097298|actor
+nm7457303|Faith Logan|1995||actress,miscellaneous
+nm7633342|Jayda Fink|\N|tt4334266|actress
+nm8329660|Dj Dallenbach|\N||actor,producer
+nm8696054|Jordan Marx|\N|tt2488194|actress
+nm9148153|Joshua DeBeni|\N|tt2488194|
+nm9552585|Brandon Phillips|\N||actor
+nm9552586|Anna Strelkov|\N||actress

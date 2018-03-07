@@ -32,3 +32,17 @@ of actors.
 The filtering logic then extracts just the movies that these actors were
 in, and the actors that were also in each movie.
 
+## Gremlin Query Statement Creation
+
+I wanted to decouple the Gremlin Query Creation from the actual loading
+of the DB, so the wrangled data is read to produce file ''
+
+## Gremlin Query Statement Creation
+
+
+## Storage Account
+
+name:     cjoakimgraphdata
+key:      fwZsiatGhgjwL/c9vha5FDmYoP+A8t0eDBr0UoV/AU3IvG3JfKPp1cguwviFVk/jir0udiZAouheXtI+dvqO7w==
+conn_str: DefaultEndpointsProtocol=https;AccountName=cjoakimgraphdata;AccountKey=fwZsiatGhgjwL/c9vha5FDmYoP+A8t0eDBr0UoV/AU3IvG3JfKPp1cguwviFVk/jir0udiZAouheXtI+dvqO7w==;EndpointSuffix=core.windows.net
+
