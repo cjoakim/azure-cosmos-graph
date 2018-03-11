@@ -203,7 +203,7 @@ class Main:
             epoch1 = time.time()
             print('load_sync idx: {} epoch: {} query: {}'.format(idx, epoch1, query))
             result = self.gremlin_client.submit(query)
-            print(result)
+            #print(result)  # gremlin_python.driver.resultset.ResultSet object at 0x104daedd8>
             if result is None:
                 epoch2 = time.time()
                 print('load_sync - QUERY_NOT_SUCCESSFUL; elapsed: {}'.format(epoch2 - epoch1))
