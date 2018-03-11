@@ -82,113 +82,15 @@ insert_movie_vertices; count: 2518
 
 ```
 
+### Some of the Actors
+
+- Footloose https://www.youtube.com/watch?v=AFQaVbIPOWk
+
+
 ### Queries
 
 
-```
-IDs:
-footloose=tt0087277
-pretty_woman=tt0100405
-kevin_bacon=nm0000102
-julia_roberts=nm0000210
-richardgere=nm0000152
-john_lithgow=nm0001475
-tom_hanks=nm0000158
-lori_singer=nm0001742
-john_malkovich=
-dustin_hoffman=nm0000163
 
-
-g.V()                           select all
-g.V().count()                   count all
-g.V().has('label','movie')
-g.V().has('label','movie').has('id','tt0100405')        find movie with the given id (Pretty Woman)
-g.V().has('label','movie').has('title','Pretty Woman')  find movie with the given title
-g.V('tt0100405')                                        Pretty Woman
-g.V('tt0087277')                                        Footloose
-
-g.V().has('label','person').has('id','nm0000210')       find person with the given id (Julia Roberts)
-g.V('nm0000210')                                        simpler way to find Julia Roberts
-g.V().has('label','person').has('name','Julia Roberts') find person with the given name
-
-g.V().has('label','person').has('id','nm0000102')       find person with the given id (Kevin Bacon)
-
-g.V('nm0000210').out('knows').values('name').path()
-
-g.V('nm0000210').bothE().where(otherV().hasId('nm0000152'))
-g.V('nm0000210').bothE().where(otherV().hasId('nm0000152')).path()
-g.V('nm0000210').bothE().where(otherV().hasId('nm0001742'))
-g.V('nm0000152').bothE().where(otherV().hasId('nm0000163'))
-
-Execute query: g.V("nm0000210").both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())
-Execute query: g.V("tt0100405").both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())
-Execute query: g.V("nm0000210").both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())
-Execute query: g.V("nm0000102").both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())
-
-wip:
-
-:> g.V('nm0000210')
-:> g.V('nm0000210').outE('in').inV().hasLabel('person')
-:> g.V().hasLabel('person').has('firstName', 'Thomas').outE('knows').inV().hasLabel('person')
-
-g.V(1).bothE().where(otherV().hasId(2))
-g.V().has('label','person').has('name','Julia Roberts').bothE().where(otherV().hasId('nm0000152'))
-
-g.V().group().by().by(bothE().count()) # Degree centrality is a measure of the number of edges associated to each vertex.
-
-
-g.V('nm0000210').inE() <- returns reasonable json
-g.V('nm0000210').inE().until(has('id', 'nm0000152'))
-
-g.V('nm0000210').out('Pretty Woman')  # works
-
-g.V().as('nm0000210').repeat(out().simplePath()).times(2).where(out().as('nm0000152')).path()
-
-g.V('nm0000210').repeat(out()).until(has('id', 'nm0000158')).path()
-
-spec = "g.V('{}').addE('{}').to(g.V('{}'))"
-g.V('nm0000210').addE('knows').to(g.V('nm0000102'))
-
-spec = "g.V('{}').addE('knows', 'title', '{}').to(g.V('{}'))"
-g.V('nm0000210').addE('knows', 'title', 'xxx').to(g.V('nm0000102'))
-
-g.V('nm0000210').has('label','person').has('id','nm0000102').out().values('id')
-
-g.V('nm0000210').repeat(out()).until(has('id', 'nm0000152')).path()
-g.V('nm0000210').repeat(out()).until(has('id', 'nm0000152')).path()
-g.V('nm0000210').repeat(out()).hasLabel('person').until(has('id', 'nm0000152')).path()
-g.V('nm0000210').out('in').hasLabel('movie').out('has').hasLabel('person').values('nm0000152')
-```
-
-```
-Update Thomas                          : "g.V('thomas').property('age', 44)"
-
-Traversals:
-Get all persons older than 40          : "g.V().hasLabel('person').has('age', gt(40)).values('firstName', 'age')",
-Get all persons and their first name   : "g.V().hasLabel('person').values('firstName')",
-Get all persons sorted by first name   : "g.V().hasLabel('person').order().by('firstName', incr).values('firstName')",
-Get all persons that Thomas knows      : "g.V('thomas').out('knows').hasLabel('person').values('firstName')",
-People known by those who Thomas knows : "g.V('thomas').out('knows').hasLabel('person').out('knows').hasLabel('person').values('firstName')",
-Get the path from Thomas to Robin"     : "g.V('thomas').repeat(out()).until(has('id', 'robin')).path()"
-```
-
-Monday 3/6 2pm attempt:
-```
-insert_movie_vertices:    g.addV('movie').property('name', 'Pretty Woman').property('id', 'tt0100405')
-insert_people_vertices:   g.addV('person').property('name', 'Julia Roberts').property('id', 'nm0000210')
-insert_people_vertices:   g.addV('person').property('name', 'Richard Gere').property('id', 'nm0000152')
-person-in-movie edge:     g.V().hasLabel('person').has('id', 'nm0000210').addE('in').to(g.V().hasLabel('movie').has('id', 'tt0100405'))
-person-knows-person edge: g.V().hasLabel('person').has('id', 'nm0000152').addE('knows').to(g.V().hasLabel('person').has('id', 'nm0000210'))
-
-
-g.V('nm0000210').repeat(out()).until(has('id', 'nm0000152')).path()
-g.V().hasLabel('person').has('id', 'nm0000210').repeat(out()).until(has('id', 'nm0000152')).path()
-
-g.V('nm0000152').repeat(out()).until(has('id', 'nm0000210')).path()  # has results
-g.V('nm0000210').repeat(out()).until(has('id', 'nm0000152')).path()  # has no results!
-
-g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000210')).path().count(local)
-```
 
 ## Gremlin Console
 

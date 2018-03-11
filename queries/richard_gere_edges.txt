@@ -1,0 +1,279 @@
+function: query
+endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+username: /dbs/dev/colls/movies
+qname: edges
+query: g.V('nm0000152').bothE()
+--- result_below ---
+{
+  "qname": "edges",
+  "query": "g.V('nm0000152').bothE()",
+  "result_count": 22,
+  "result": [
+    {
+      "id": "7379c7ab-c19c-46b7-ad1a-2e912f404460",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0299658",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Chicago"
+      }
+    },
+    {
+      "id": "95ab2bda-88ec-4e8d-aebc-b942c6d3e5d9",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0358135",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Shall We Dance"
+      }
+    },
+    {
+      "id": "976dee4d-e1b5-472a-8300-92c3eb38061c",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0100405",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Pretty Woman"
+      }
+    },
+    {
+      "id": "43ecb7b2-230c-4a46-8190-191f093438a9",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000160",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Brooklyns Finest"
+      }
+    },
+    {
+      "id": "9029910a-08b8-42ac-8625-b3cc7ce85276",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000166",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Dr. T & the Women"
+      }
+    },
+    {
+      "id": "7bb9476d-bb19-41d8-bf09-38d7070cd019",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000178",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Nights in Rodanthe"
+      }
+    },
+    {
+      "id": "a48e47c8-b6fd-48e6-92ca-9d5bfcdc0b04",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000182",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Shall We Dance"
+      }
+    },
+    {
+      "id": "b5a62740-4127-438b-845b-4353a39985f7",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000191",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Amelia"
+      }
+    },
+    {
+      "id": "8efeb997-926b-446c-9285-364d09efc189",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000210",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Runaway Bride"
+      }
+    },
+    {
+      "id": "c2e25ee1-4824-433f-988d-61ec3a18d6b2",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000213",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Autumn in New York"
+      }
+    },
+    {
+      "id": "2ee399ff-b0a2-422d-9700-6f06095b63fb",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000215",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Arbitrage"
+      }
+    },
+    {
+      "id": "43a75428-920d-4f14-9c94-2008060926ea",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000232",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Intersection"
+      }
+    },
+    {
+      "id": "ccfba21b-6aac-4c77-84ec-4f9b861db6c8",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000235",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Final Analysis"
+      }
+    },
+    {
+      "id": "5b0ef9cb-6c98-4622-83d8-28f4a2798115",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000246",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "The Jackal"
+      }
+    },
+    {
+      "id": "592a38e8-de2f-48f5-a5ab-619ba8f2a486",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000250",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Chicago"
+      }
+    },
+    {
+      "id": "dcd2425a-06de-43aa-ba9a-44a919b19f59",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000260",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Hachi: A Dogs Tale"
+      }
+    },
+    {
+      "id": "426a03e0-9fbf-4005-b09e-042cfd3a8356",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000300",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Bee Season"
+      }
+    },
+    {
+      "id": "fb5b0ba8-841a-4e95-8c76-ab497511561b",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000332",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Brooklyns Finest"
+      }
+    },
+    {
+      "id": "21d235b1-cd59-418a-8540-d3304f22ccd0",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000349",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Runaway Bride"
+      }
+    },
+    {
+      "id": "16b9cacb-af7d-4c4f-8df8-db12de610e22",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000357",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Intersection"
+      }
+    },
+    {
+      "id": "f437000a-25a3-40a6-b3de-b6991c8c755b",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000368",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Dr. T & the Women"
+      }
+    },
+    {
+      "id": "33e9d885-eeb8-4dff-be9a-2166df148e91",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000396",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Dr. T & the Women"
+      }
+    }
+  ]
+}
+--- result_above ---
+file written: tmp/query_edges_1520765441.json

@@ -1,0 +1,279 @@
+function: query
+endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+username: /dbs/dev/colls/movies
+qname: edges
+query: g.V('nm0000210').bothE()
+--- result_below ---
+{
+  "qname": "edges",
+  "query": "g.V('nm0000210').bothE()",
+  "result_count": 22,
+  "result": [
+    {
+      "id": "6d77583c-7233-4207-bd45-9702c0856d15",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0376541",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Closer"
+      }
+    },
+    {
+      "id": "21f3574f-d45c-4d2a-a817-7308f3d94a40",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0195685",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Erin Brockovich"
+      }
+    },
+    {
+      "id": "3be6957a-b62f-40c7-8e05-9295b60a0f74",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0100405",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Pretty Woman"
+      }
+    },
+    {
+      "id": "46c93169-63ed-40c3-bb12-ba5ea9b4ee8d",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0125439",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Notting Hill"
+      }
+    },
+    {
+      "id": "105c8052-0627-4607-9a66-243050629ce0",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000215",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Stepmom"
+      }
+    },
+    {
+      "id": "5086c56c-0900-4f00-9b99-c555f6cd1985",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000243",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "The Pelican Brief"
+      }
+    },
+    {
+      "id": "7036fa39-c752-4c12-8373-ad55df040e40",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000245",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Hook"
+      }
+    },
+    {
+      "id": "7d371bf5-9b6b-4a6e-aed3-db39a84f690a",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000287",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Flatliners"
+      }
+    },
+    {
+      "id": "6bca17f3-e588-4436-89ab-a22155eb1f82",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000345",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Americas Sweethearts"
+      }
+    },
+    {
+      "id": "5731a279-f756-4dcf-8393-bc8905c58f5d",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000349",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Runaway Bride"
+      }
+    },
+    {
+      "id": "df51f32c-b820-4057-a25c-05a72b62cfd5",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000352",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Dying Young"
+      }
+    },
+    {
+      "id": "6d09d337-d19e-4671-ab85-bf41c6b5f05c",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000354",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Oceans Eleven"
+      }
+    },
+    {
+      "id": "402a5bd4-e452-4ab8-9c37-a3d5eb7e10a6",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000379",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Mona Lisa Smile"
+      }
+    },
+    {
+      "id": "d90b2290-ab2e-4b3b-a0a7-c393d8cacd74",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000380",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Something to Talk About"
+      }
+    },
+    {
+      "id": "3622610b-c4bc-4587-a900-ecf3b66af623",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000391",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "My Best Friends Wedding"
+      }
+    },
+    {
+      "id": "be9de601-68f4-47ba-9559-dcb81c58fe3f",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000398",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Steel Magnolias"
+      }
+    },
+    {
+      "id": "2e917f78-ffb8-48ca-a5c7-cfdd9e55b714",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000424",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Notting Hill"
+      }
+    },
+    {
+      "id": "35b53faa-5cf6-482b-89bf-fbc1b6b50904",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000438",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Stepmom"
+      }
+    },
+    {
+      "id": "edcdf6e5-1db8-4ec6-baea-a2c230234afc",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000443",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Everyone Says I Love You"
+      }
+    },
+    {
+      "id": "ef2dac69-75a0-4b5b-8d57-dfdd4ff62052",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000450",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Charlie Wilsons War"
+      }
+    },
+    {
+      "id": "0eb18028-744c-4730-af6c-930128752b09",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000496",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "August: Osage County"
+      }
+    },
+    {
+      "id": "154611dc-a7d7-40a4-b8e8-4f6f189c6301",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000511",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Steel Magnolias"
+      }
+    }
+  ]
+}
+--- result_above ---
+file written: tmp/query_edges_1520765439.json

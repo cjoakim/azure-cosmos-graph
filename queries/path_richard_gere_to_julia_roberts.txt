@@ -142,4 +142,4 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000210')).pat
   ]
 }
 --- result_above ---
-file written: tmp/query_path_1520763836.json
+file written: tmp/query_path_1520765459.json

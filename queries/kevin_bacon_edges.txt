@@ -1,0 +1,279 @@
+function: query
+endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+username: /dbs/dev/colls/movies
+qname: edges
+query: g.V('nm0000102').bothE()
+--- result_below ---
+{
+  "qname": "edges",
+  "query": "g.V('nm0000102').bothE()",
+  "result_count": 22,
+  "result": [
+    {
+      "id": "2584cc1a-44f9-4402-a323-3cf834cc6264",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0087277",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "Footloose"
+      }
+    },
+    {
+      "id": "7d84fe29-d785-426c-afa4-09ba4d757869",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0164052",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "Hollow Man"
+      }
+    },
+    {
+      "id": "ad7e56f0-9911-488a-91ec-728f3807b896",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0327056",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "Mystic River"
+      }
+    },
+    {
+      "id": "f68c3430-9e0f-4c3d-90c9-590b5e7765d7",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0361127",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "The Woodsman"
+      }
+    },
+    {
+      "id": "de0eb92c-145d-4fb2-8b56-1a9671a306e6",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000117",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "Wild Things"
+      }
+    },
+    {
+      "id": "f7754f75-fc12-4181-ae68-6aef31c481d4",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000129",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "A Few Good Men"
+      }
+    },
+    {
+      "id": "6411576a-9535-4d2c-93a1-2719373e9a9a",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000134",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "Sleepers"
+      }
+    },
+    {
+      "id": "8997d74a-7502-48dd-9c46-a2ddca5d8b4e",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000147",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "Where the Truth Lies"
+      }
+    },
+    {
+      "id": "69112ee6-8e7a-4885-807d-2893d7d9b833",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000158",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "Apollo 13"
+      }
+    },
+    {
+      "id": "20efba94-d721-4272-88d1-0ec966b770f1",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000178",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "My Dog Skip"
+      }
+    },
+    {
+      "id": "7f7616b9-737f-45d4-bee0-228c32667098",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000193",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "A Few Good Men"
+      }
+    },
+    {
+      "id": "4c29a41b-0c62-4a86-9f98-f2efe740f59d",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000197",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "A Few Good Men"
+      }
+    },
+    {
+      "id": "411505be-cb23-42f2-ab56-7f0e84fed8d1",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000198",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "Murder in the First"
+      }
+    },
+    {
+      "id": "cdb38cdb-6b8c-4921-a86e-4d92458f5f6e",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000200",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "Apollo 13"
+      }
+    },
+    {
+      "id": "0188751c-136f-4a06-abf6-e0cc2175432a",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000209",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "Mystic River"
+      }
+    },
+    {
+      "id": "aeb3be4c-7627-4acc-bc29-84309ed7b188",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000210",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "Flatliners"
+      }
+    },
+    {
+      "id": "5798efe2-b424-4547-9bc7-63e7d2261c62",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000223",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "Hollow Man"
+      }
+    },
+    {
+      "id": "06fe9a07-c2f6-4bcb-8472-58cebaf73f72",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000225",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "Murder in the First"
+      }
+    },
+    {
+      "id": "8e0c7c77-6c78-42f9-ab95-78119b74c5af",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000234",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "Trapped"
+      }
+    },
+    {
+      "id": "270ae452-57ba-4aa1-b7ba-704af76900d8",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000239",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "Super"
+      }
+    },
+    {
+      "id": "63ae8fa0-f1f4-4cc1-8476-0c660495af96",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000250",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "My One and Only"
+      }
+    },
+    {
+      "id": "73505ed5-c978-4da1-8a15-aad346abf0a5",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000276",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "White Water Summer"
+      }
+    }
+  ]
+}
+--- result_above ---
+file written: tmp/query_edges_1520765437.json

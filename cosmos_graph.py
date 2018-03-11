@@ -215,7 +215,7 @@ class Main:
         elif qname == 'edges':
             arg = sys.argv[5].lower()
             id  = self.favorites.translate_to_id(arg)
-            query = "g.V('{}').both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())".format(id)
+            #query = "g.V('{}').both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())".format(id)
             query = "g.V('{}').bothE()".format(id)
 
         elif qname == 'vertices':

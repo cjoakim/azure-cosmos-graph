@@ -51,4 +51,4 @@ query: g.V('nm0000152').out('in')
   ]
 }
 --- result_above ---
-file written: tmp/query_in_1520763818.json
+file written: tmp/query_in_1520765430.json

@@ -389,4 +389,4 @@ query: g.V('nm0000152').out('knows')
   ]
 }
 --- result_above ---
-file written: tmp/query_knows_1520763829.json
+file written: tmp/query_knows_1520765452.json

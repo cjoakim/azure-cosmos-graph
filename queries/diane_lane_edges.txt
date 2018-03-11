@@ -1,0 +1,279 @@
+function: query
+endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+username: /dbs/dev/colls/movies
+qname: edges
+query: g.V('nm0000178').bothE()
+--- result_below ---
+{
+  "qname": "edges",
+  "query": "g.V('nm0000178').bothE()",
+  "result_count": 22,
+  "result": [
+    {
+      "id": "39562c08-79b4-4e71-894a-6997de3f7a71",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0250797",
+      "outV": "nm0000178",
+      "properties": {
+        "title": "Unfaithful"
+      }
+    },
+    {
+      "id": "b98076f7-fd34-4354-8119-9b7f5228bb65",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000206",
+      "outV": "nm0000178",
+      "properties": {
+        "title": "Hardball"
+      }
+    },
+    {
+      "id": "2627691b-3841-4a76-a78c-6b1493079b1f",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0002138",
+      "outV": "nm0000178",
+      "properties": {
+        "title": "The Cotton Club"
+      }
+    },
+    {
+      "id": "3fdffd47-61f5-410f-be7b-c2dd7e06b4cd",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0005221",
+      "outV": "nm0000178",
+      "properties": {
+        "title": "Nights in Rodanthe"
+      }
+    },
+    {
+      "id": "1616d962-f375-459b-a124-baee505cd460",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0005260",
+      "outV": "nm0000178",
+      "properties": {
+        "title": "My Dog Skip"
+      }
+    },
+    {
+      "id": "a0726ef0-c4ef-4b75-b7e1-2e3a1cc04c6a",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0005561",
+      "outV": "nm0000178",
+      "properties": {
+        "title": "My Dog Skip"
+      }
+    },
+    {
+      "id": "8564ff89-f990-4438-9bad-50674f8b0d17",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0205626",
+      "outV": "nm0000178",
+      "properties": {
+        "title": "Nights in Rodanthe"
+      }
+    },
+    {
+      "id": "6e273fb9-b74c-492e-945b-36b6992148db",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0370035",
+      "outV": "nm0000178",
+      "properties": {
+        "title": "Hardball"
+      }
+    },
+    {
+      "id": "521b0f4a-01d6-4920-b3cf-2c00e9840b09",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0372522",
+      "outV": "nm0000178",
+      "properties": {
+        "title": "Hardball"
+      }
+    },
+    {
+      "id": "c05968e9-b57c-4b6e-8ff2-32e3543e8e6d",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0553648",
+      "outV": "nm0000178",
+      "properties": {
+        "title": "Unfaithful"
+      }
+    },
+    {
+      "id": "20d06fde-36af-4c71-a027-977c595e4bfc",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0571188",
+      "outV": "nm0000178",
+      "properties": {
+        "title": "The Cotton Club"
+      }
+    },
+    {
+      "id": "4ed1cd4a-3416-47be-bdb7-7f0f52925b13",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0838059",
+      "outV": "nm0000178",
+      "properties": {
+        "title": "Unfaithful"
+      }
+    },
+    {
+      "id": "b1f1b411-94d8-42da-ba43-742f762b0e8f",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000102",
+      "outV": "nm0000178",
+      "properties": {
+        "title": "My Dog Skip"
+      }
+    },
+    {
+      "id": "5dfc53ff-0536-494c-8d56-9572a90efdec",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000152",
+      "outV": "nm0000178",
+      "properties": {
+        "title": "Nights in Rodanthe"
+      }
+    },
+    {
+      "id": "20efba94-d721-4272-88d1-0ec966b770f1",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000178",
+      "outV": "nm0000102",
+      "properties": {
+        "title": "My Dog Skip"
+      }
+    },
+    {
+      "id": "7bb9476d-bb19-41d8-bf09-38d7070cd019",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000178",
+      "outV": "nm0000152",
+      "properties": {
+        "title": "Nights in Rodanthe"
+      }
+    },
+    {
+      "id": "43742433-5087-44b3-a653-f349e58fbb7f",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000178",
+      "outV": "nm0000206",
+      "properties": {
+        "title": "Hardball"
+      }
+    },
+    {
+      "id": "f3bbf51e-da05-4d7e-80ab-3a606c49febe",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000178",
+      "outV": "nm0002138",
+      "properties": {
+        "title": "The Cotton Club"
+      }
+    },
+    {
+      "id": "ebb1a046-0ec3-4fa9-9143-85c5664770d5",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000178",
+      "outV": "nm0005221",
+      "properties": {
+        "title": "Nights in Rodanthe"
+      }
+    },
+    {
+      "id": "b2509953-3a85-4769-a547-c3af5619d3e4",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000178",
+      "outV": "nm0005260",
+      "properties": {
+        "title": "My Dog Skip"
+      }
+    },
+    {
+      "id": "e6e37297-9df8-461e-a847-f64148dc4bc1",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000178",
+      "outV": "nm0005561",
+      "properties": {
+        "title": "My Dog Skip"
+      }
+    },
+    {
+      "id": "20881c4a-fecf-4359-9226-402952fb3942",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0000178",
+      "outV": "nm0205626",
+      "properties": {
+        "title": "Nights in Rodanthe"
+      }
+    }
+  ]
+}
+--- result_above ---
+file written: tmp/query_edges_1520765443.json

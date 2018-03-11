@@ -25,4 +25,4 @@ query: g.V().has('label','person').has('id','nm0000210')
   ]
 }
 --- result_above ---
-file written: tmp/query_person_1520763809.json
+file written: tmp/query_person_1520765421.json

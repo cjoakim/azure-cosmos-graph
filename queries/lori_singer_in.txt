@@ -25,4 +25,4 @@ query: g.V('nm0001742').out('in')
   ]
 }
 --- result_above ---
-file written: tmp/query_in_1520763822.json
+file written: tmp/query_in_1520765434.json
