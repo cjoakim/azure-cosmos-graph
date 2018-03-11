@@ -6,7 +6,7 @@
 # Run with:
 #   ./wrangle.sh > tmp/wrangle.txt
 #
-# Chris Joakim, Microsoft, 2018/03/06
+# Chris Joakim, Microsoft, 2018/03/11
 
 identify_candidate_movies=1
 extract_top_ratings=0        # now obsolete in favor of identify_candidate_movies
@@ -30,13 +30,13 @@ then
     head $IMDB_DATA_DIR/processed/candidate_movies.json
 fi
 
-if [ $extract_top_ratings -gt 0 ]
-then
-    echo 'python: extract_top_ratings ...'
-    python wrangle.py extract_top_ratings
-    wc   $IMDB_DATA_DIR/processed/top_ratings.json
-    head $IMDB_DATA_DIR/processed/top_ratings.json
-fi
+# if [ $extract_top_ratings -gt 0 ]
+# then
+#     echo 'python: extract_top_ratings ...'
+#     python wrangle.py extract_top_ratings
+#     wc   $IMDB_DATA_DIR/processed/top_ratings.json
+#     head $IMDB_DATA_DIR/processed/top_ratings.json
+# fi
 
 if [ $extract_movies -gt 0 ]
 then
@@ -88,9 +88,9 @@ then
     echo 'python: derive_people_edges ...'
     python wrangle.py derive_people_edges
     wc   $IMDB_DATA_DIR/processed/people_edges.json
-    echo 'juliaroberts entries:'
+    echo 'juliaroberts edges:'
     cat  $IMDB_DATA_DIR/processed/people_edges.json | grep $julia_roberts
-    echo 'juliaroberts and richardgere entries:'
+    echo 'juliaroberts and richardgere edges:'
     cat  $IMDB_DATA_DIR/processed/people_edges.json | grep $julia_roberts | grep $richard_gere
 fi
 
