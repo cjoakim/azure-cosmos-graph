@@ -108,7 +108,7 @@ $ ./execute_load_queries.sh
 ```
 
 This process will take approximately an 40-minutes, as there is a built in sleep time between
-inserts.
+inserts.  853 Vertices should be inserted, with 3795 Edges.
 
 ### Query the Database
 
