@@ -6,6 +6,6 @@
 dbname=dev
 collname=movies
 
-python cosmos_graph.py execute_drop_and_load_queries $dbname $collname
+python cosmos_graph.py execute_load_queries $dbname $collname
 
 echo 'done'

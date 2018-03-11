@@ -1,8 +1,8 @@
 """
 Usage:
   python cosmos_graph.py drop_graph dev movies
-  python cosmos_graph.py create_drop_and_load_queries dev movies
-  python cosmos_graph.py execute_drop_and_load_queries dev movies
+  python cosmos_graph.py create_load_queries dev movies
+  python cosmos_graph.py execute_load_queries dev movies
   python cosmos_graph.py query dev movies countv
   python cosmos_graph.py query dev movies movie    tt0087277
   python cosmos_graph.py query dev movies movie    footloose
@@ -67,11 +67,11 @@ class Main:
             if func == 'drop_graph':
                 self.drop_graph(db, coll)
 
-            elif func == 'create_drop_and_load_queries':
-                self.create_drop_and_load_queries(db, coll)
+            elif func == 'create_load_queries':
+                self.create_load_queries(db, coll)
 
-            elif func == 'execute_drop_and_load_queries':
-                self.execute_drop_and_load_queries(db, coll)
+            elif func == 'execute_load_queries':
+                self.execute_load_queries(db, coll)
 
             elif func == 'query':
                 self.query(db, coll)
@@ -95,8 +95,8 @@ class Main:
         self.gremlin_client = client.Client(endpoint, 'g', username=username, password=password)
         time.sleep(5)
 
-    def create_drop_and_load_queries(self, db, coll):
-        print('create_drop_and_load_queries START')
+    def create_load_queries(self, db, coll):
+        print('create_load_queries START')
         infile1 = self.c.movies_json_filename()
         infile2 = self.c.people_json_filename()
         self.movies = json.load(open(self.c.movies_json_filename()))
@@ -105,13 +105,13 @@ class Main:
         self.create_people_vertices()
         self.create_edges()
 
-        outfile = self.c.drop_and_load_queries_txt_filename()
+        outfile = self.c.load_queries_txt_filename()
         with open(outfile, "w", newline="\n") as out:
             for line in self.queries:
                 out.write(line + "\n")
             print('file written: {}'.format(outfile))
 
-        print('create_drop_and_load_queries COMPLETE')
+        print('create_load_queries COMPLETE')
 
     def create_movie_vertices(self):
         movies_ids = sorted(self.movies.keys())
@@ -177,8 +177,8 @@ class Main:
             else:
                 time.sleep(self.default_sleep_time)
 
-    def execute_drop_and_load_queries(self, db, coll):
-        infile  = self.c.drop_and_load_queries_txt_filename()
+    def execute_load_queries(self, db, coll):
+        infile  = self.c.load_queries_txt_filename()
         queries = list()
 
         self.drop_graph(db, coll)

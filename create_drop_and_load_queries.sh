@@ -5,11 +5,11 @@
 
 dbname=dev
 collname=movies
-outfile=data/processed/drop_and_load_queries.txt
+outfile=data/processed/load_queries.txt
 
 rm $outfile
 
-python cosmos_graph.py create_drop_and_load_queries $dbname $collname
+python cosmos_graph.py create_load_queries $dbname $collname
 
 wc  $outfile
 
