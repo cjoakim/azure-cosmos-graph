@@ -56,6 +56,8 @@ class Main:
         self.queries = list()
         self.default_sleep_time = 0.5
         self.submit_query = False
+        self.load_queries = list()
+        self.load_idx = 0
 
     def execute(self):
         if len(sys.argv) > 3:
@@ -179,18 +181,40 @@ class Main:
 
     def execute_load_queries(self, db, coll):
         infile  = self.c.load_queries_txt_filename()
-        queries = list()
+        self.load_queries = list()
 
         self.drop_graph(db, coll)
 
         with open(infile, 'rt') as f:
             for idx, line in enumerate(f):
-                # pehaps filter out comment lines here
-                queries.append(line.strip())
+                self.load_queries.append(line.strip())
 
-        for idx, q in enumerate(queries):
-            print('execute_query: {}  # {}'.format(q, idx))
-            self.execute_query(q, self.default_sleep_time)
+        print('{} load_queries loaded from file {}'.format(len(self.load_queries, infile)))
+        self.load_loop(0)  # initiate the recursive loop
+
+        # for idx, q in enumerate(queries):
+        #     print('execute_query: {}  # {}'.format(q, idx))
+        #     self.execute_query(q, self.default_sleep_time)
+
+    def load_loop(self, idx):
+        if idx < len(self.load_queries):
+            query = self.load_queries[idx]
+            epoch1, epoch2 = None, None
+            if query:
+                epoch1 = arrow.utcnow().timestamp
+                print('load_loop idx: {} epoch: {} query: {}'.format(idx, epoch1, query))
+                callback = self.gremlin_client.submitAsync(query)
+                if callback.result() is None:
+                    epoch2 = arrow.utcnow().timestamp
+                    print('QUERY_NOT_SUCCESSFUL; elapsed: {}'.format(epoch2 - epoch1))
+                    time.sleep(self.default_sleep_time)
+                    self.load_loop(idx + 1)  # <-- recursively call this function
+                else:
+                    print('query_successful; elapsed: {}'.format(epoch2 - epoch1))
+                    time.sleep(self.default_sleep_time)
+                    self.load_loop(idx + 1)  # <-- recursively call this function
+        else:
+            print('load_loop completed at index {}'.format(idx))
 
     def capture_gremlin_queries_for_doc(self):
         queries_dir = 'queries'
