@@ -37,8 +37,33 @@ It is recommended that you specify 10,000 RUs.
 ![image 1](img/create_graph.png "")
 
 
+## This Project
 
-## IMDb Data
+This project contains **both** the data-wrangling logic as well as the end-result data
+that you can simply use.
+
+To use the pre-wrangled data skip down to the **Load and Query the DB** section.
+
+### Data Wrangling
+
+The source data for this project is the **Internet Movie Database**.  It contains millions of rows
+of data related to Hollywood moves, their actors/participants, and their ratings.
+
+This can be downloaded from here:
+- http://www.imdb.com/interfaces/
+- https://datasets.imdbws.com
+
+The wrangling logic in this project filters this huge amount of data into a small subset that
+is easily loaded into CosmosDB for your exploration.  The wrangling logic is implemented in Python 3.
+
+In short, the wrangling steps are:
+- Start with a manually created list of 12 favorite actors (see 'actors_for_candidate_movies' in values.py)
+- Extract just the movies for those actors (approx 486 movies)
+- Extract the principals (i.e. - actors) for those moves.  Omit directors, producers, stunt men, etc.
+- Extract the details for each of the principals
+
+
+#### IMDb Data
 
 You can download the data from here:
 
