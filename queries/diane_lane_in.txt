@@ -1,0 +1,28 @@
+function: query
+endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+username: /dbs/dev/colls/movies
+qname: in
+query: g.V('nm0000178').out('in')
+--- result_below ---
+{
+  "qname": "in",
+  "query": "g.V('nm0000178').out('in')",
+  "result_count": 1,
+  "result": [
+    {
+      "id": "tt0250797",
+      "label": "movie",
+      "type": "vertex",
+      "properties": {
+        "title": [
+          {
+            "id": "3ceb0576-a60e-4558-9d79-4663521f1cda",
+            "value": "Unfaithful"
+          }
+        ]
+      }
+    }
+  ]
+}
+--- result_above ---
+file written: tmp/query_in_1520763820.json

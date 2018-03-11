@@ -1,4 +1,4 @@
-# Chris Joakim, Microsoft, 2018/03/06
+# Chris Joakim, Microsoft, 2018/03/11
 
 
 class Favorites:
@@ -7,6 +7,7 @@ class Favorites:
         pass
 
     def actors_for_candidate_movies(self):
+        # This set of actors drives the selection of movies in the IMDb data-wrangling process.
         actors = dict()
         actors['nm0000102'] = 'kevin_bacon'
         actors['nm0000113'] = 'sandra_bullock'
@@ -23,13 +24,15 @@ class Favorites:
         return actors
 
     def favorite_actors(self):
+        # This method returns a dict of actors, for command-line translation from name to id.
         actors = self.actors_for_candidate_movies()
         # Add these additional actors
         actors['nm0000163'] = 'dustin_hoffman'
+        actors['nm0000178'] = 'diane_lane'
         actors['nm0000456'] = 'holly_hunter'
         actors['nm0000518'] = 'john_malkovich'
+        actors['nm0001742'] = 'lori_singer'
         actors['nm0005476'] = 'hilary_swank'
-        actors['nm0000178'] = 'diane_lane'
         return actors
 
     def favorite_movies(self):

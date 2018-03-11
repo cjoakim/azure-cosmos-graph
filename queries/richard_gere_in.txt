@@ -1,0 +1,54 @@
+function: query
+endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+username: /dbs/dev/colls/movies
+qname: in
+query: g.V('nm0000152').out('in')
+--- result_below ---
+{
+  "qname": "in",
+  "query": "g.V('nm0000152').out('in')",
+  "result_count": 3,
+  "result": [
+    {
+      "id": "tt0299658",
+      "label": "movie",
+      "type": "vertex",
+      "properties": {
+        "title": [
+          {
+            "id": "30585134-0d5b-4e8f-b1e7-be09d3687c76",
+            "value": "Chicago"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tt0358135",
+      "label": "movie",
+      "type": "vertex",
+      "properties": {
+        "title": [
+          {
+            "id": "8e54a447-26e9-4b01-bf0e-3f8fdd85cd9b",
+            "value": "Shall We Dance"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tt0100405",
+      "label": "movie",
+      "type": "vertex",
+      "properties": {
+        "title": [
+          {
+            "id": "cb8a0baf-c421-4035-b382-52b0ba00486c",
+            "value": "Pretty Woman"
+          }
+        ]
+      }
+    }
+  ]
+}
+--- result_above ---
+file written: tmp/query_in_1520763818.json

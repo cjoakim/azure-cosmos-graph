@@ -1,0 +1,28 @@
+function: query
+endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+username: /dbs/dev/colls/movies
+qname: movie
+query: g.V().has('label','movie').has('id','tt0087277')
+--- result_below ---
+{
+  "qname": "movie",
+  "query": "g.V().has('label','movie').has('id','tt0087277')",
+  "result_count": 1,
+  "result": [
+    {
+      "id": "tt0087277",
+      "label": "movie",
+      "type": "vertex",
+      "properties": {
+        "title": [
+          {
+            "id": "419b314a-f3fd-4871-b372-20b179a88a2b",
+            "value": "Footloose"
+          }
+        ]
+      }
+    }
+  ]
+}
+--- result_above ---
+file written: tmp/query_movie_1520763801.json

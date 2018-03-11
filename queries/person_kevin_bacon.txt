@@ -1,0 +1,28 @@
+function: query
+endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+username: /dbs/dev/colls/movies
+qname: person
+query: g.V().has('label','person').has('id','nm0000102')
+--- result_below ---
+{
+  "qname": "person",
+  "query": "g.V().has('label','person').has('id','nm0000102')",
+  "result_count": 1,
+  "result": [
+    {
+      "id": "nm0000102",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "0a414d67-4be1-48c2-8ab6-289e269182ed",
+            "value": "Kevin Bacon"
+          }
+        ]
+      }
+    }
+  ]
+}
+--- result_above ---
+file written: tmp/query_person_1520763805.json

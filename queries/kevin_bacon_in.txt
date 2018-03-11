@@ -1,0 +1,67 @@
+function: query
+endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+username: /dbs/dev/colls/movies
+qname: in
+query: g.V('nm0000102').out('in')
+--- result_below ---
+{
+  "qname": "in",
+  "query": "g.V('nm0000102').out('in')",
+  "result_count": 4,
+  "result": [
+    {
+      "id": "tt0087277",
+      "label": "movie",
+      "type": "vertex",
+      "properties": {
+        "title": [
+          {
+            "id": "419b314a-f3fd-4871-b372-20b179a88a2b",
+            "value": "Footloose"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tt0164052",
+      "label": "movie",
+      "type": "vertex",
+      "properties": {
+        "title": [
+          {
+            "id": "7d14d37a-8f60-42d1-a73f-8db2b6938830",
+            "value": "Hollow Man"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tt0327056",
+      "label": "movie",
+      "type": "vertex",
+      "properties": {
+        "title": [
+          {
+            "id": "a7e210b8-35e0-44c7-b32f-b38481966274",
+            "value": "Mystic River"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tt0361127",
+      "label": "movie",
+      "type": "vertex",
+      "properties": {
+        "title": [
+          {
+            "id": "3ff1552f-67e9-4f55-8a06-9194ba0c637c",
+            "value": "The Woodsman"
+          }
+        ]
+      }
+    }
+  ]
+}
+--- result_above ---
+file written: tmp/query_in_1520763814.json

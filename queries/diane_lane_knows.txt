@@ -1,0 +1,184 @@
+function: query
+endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+username: /dbs/dev/colls/movies
+qname: knows
+query: g.V('nm0000178').out('knows')
+--- result_below ---
+{
+  "qname": "knows",
+  "query": "g.V('nm0000178').out('knows')",
+  "result_count": 13,
+  "result": [
+    {
+      "id": "nm0000206",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "bc5c4c1a-9263-4b01-9ca6-7bb563060b0e",
+            "value": "Keanu Reeves"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0002138",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "2acc1634-ebca-4b2e-8847-d7c9544b63c1",
+            "value": "Gregory Hines"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0005221",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "2b7e10a7-5d82-4cd3-9de0-817519965a84",
+            "value": "Christopher Meloni"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0005260",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "a7694ce6-ec34-4f4a-9f59-31bf23068d51",
+            "value": "Frankie Muniz"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0005561",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "08954f85-7300-4576-8f70-dec2e0bb82a9",
+            "value": "Luke Wilson"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0205626",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "eef16bf9-0ffc-4eeb-9419-4e65d303eda6",
+            "value": "Viola Davis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0370035",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "dfeaa931-ba6d-40bd-8a97-fe5e02982588",
+            "value": "John Hawkes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0372522",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "4f342511-c027-42da-9fb9-f06862479b57",
+            "value": "Bryan Hearne"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0553648",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "83a31656-a5b6-47b6-abcf-137615b818f0",
+            "value": "Olivier Martinez"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0571188",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "6c0ed1dc-dd7e-4b5d-a2ea-5fdb9efe9143",
+            "value": "Lonette McKee"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0838059",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "add2fd32-5836-4e11-9f6b-382ba22feca8",
+            "value": "Erik Per Sullivan"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000102",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "0a414d67-4be1-48c2-8ab6-289e269182ed",
+            "value": "Kevin Bacon"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000152",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "39333657-057a-40d9-ad15-3527084e8ebb",
+            "value": "Richard Gere"
+          }
+        ]
+      }
+    }
+  ]
+}
+--- result_above ---
+file written: tmp/query_knows_1520763833.json

@@ -65,6 +65,7 @@ Apache TinkerPop is a graph computing framework for both graph databases (OLTP)
 and graph analytic systems (OLAP).
 
 - https://pypi.python.org/pypi/gremlinpython/3.2.7
+- http://tinkerpop.apache.org/docs/3.2.7/recipes/
 - http://tinkerpop.apache.org
 - http://tinkerpop.apache.org/docs/current/reference/#gremlin-python
 - http://gremlindocs.spmallette.documentup.com (TinkerPop 2.x)
@@ -326,7 +327,4 @@ https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon
 "...in a January 1994 interview with Premiere magazine discussing the film The River Wild, mentioned that "he had worked with everybody in Hollywood or someone who’s worked with them."[1] On April 7, 1994, a lengthy newsgroup thread headed "Kevin Bacon is the Center of the Universe" appeared.  Four Albright College students: Craig Fass, Christian Gardner, Brian Turtle, and Mike Ginelli created the game early in 1994."
 
 It rests on the assumption that anyone involved in the Hollywood film industry can be linked through their film roles to Bacon within six steps.
-
-
-
 

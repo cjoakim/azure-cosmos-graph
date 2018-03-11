@@ -10,6 +10,7 @@ Options:
 # Chris Joakim, Microsoft, 2018/03/11
 
 import csv, json, os, sys, time, traceback
+import arrow
 
 # gremlin_python lib is Gremlin-Python for Apache TinkerPop
 # see http://tinkerpop.apache.org
@@ -23,7 +24,7 @@ from docopt import docopt
 from pysrc.joakim import config
 from pysrc.joakim import values
 
-VERSION='2018/03/06'
+VERSION='2018/03/11'
 FOOTLOOSE='tt0087277'
 PRETTYWOMAN='tt0100405'
 KEVINBACON='nm0000102'
@@ -70,10 +71,9 @@ class Main:
         password = self.c.cosmosdb_key()
         print('endpoint: {}'.format(endpoint))
         print('username: {}'.format(username))
-        print('password: {}'.format(password))
+        #print('password: {}'.format(password))
         self.gremlin_client = client.Client(endpoint, 'g', username=username, password=password)
         time.sleep(1)
-        print(self.gremlin_client) # <gremlin_python.driver.client.Client object at 0x109305b38>
 
     def create_drop_and_load_queries(self, db, coll):
         print('create_drop_and_load_queries START')
@@ -180,26 +180,26 @@ class Main:
             self.execute_query(q)
 
     def query(self, db, coll):
-        # python cosmos_graph.py query dev movies count
-        # python cosmos_graph.py query dev movies movie   tt0087277
-        # python cosmos_graph.py query dev movies movie   footloose
-        # python cosmos_graph.py query dev movies movie   pretty_woman
-        # python cosmos_graph.py query dev movies edges   pretty_woman
-        # python cosmos_graph.py query dev movies person  julia_roberts
-        # python cosmos_graph.py query dev movies path    julia_roberts nm0000178
-        # python cosmos_graph.py query dev movies path    richard_gere julia_roberts
-        # python cosmos_graph.py query dev movies path    kevin_bacon julia_roberts
-        # python cosmos_graph.py query dev movies path    kevin_bacon richard_gere
-        # python cosmos_graph.py query dev movies v2v     julia_roberts
-        # python cosmos_graph.py query dev movies knows   julia_roberts
-        # python cosmos_graph.py query dev movies in      julia_roberts
-        # python cosmos_graph.py query dev movies people_in pretty_woman
+        # python cosmos_graph.py query dev movies countv
+        # python cosmos_graph.py query dev movies movie    tt0087277
+        # python cosmos_graph.py query dev movies movie    footloose
+        # python cosmos_graph.py query dev movies movie    pretty_woman
+        # python cosmos_graph.py query dev movies person   julia_roberts
+        # python cosmos_graph.py query dev movies person   nm0001742
+        # python cosmos_graph.py query dev movies edges    footloose
+        # python cosmos_graph.py query dev movies edges    julia_roberts
+        # python cosmos_graph.py query dev movies vertices julia_roberts
+        # python cosmos_graph.py query dev movies knows    kevin_bacon
+        # python cosmos_graph.py query dev movies in       julia_roberts
+        # python cosmos_graph.py query dev movies path     richard_gere julia_roberts
+        # python cosmos_graph.py query dev movies path     richard_gere kevin_bacon
+        # python cosmos_graph.py query dev movies path     richard_gere richard_gere
 
         self.create_client(db, coll)
         qname = sys.argv[4].lower()
         query = None
 
-        if qname == 'count':
+        if qname == 'countv':
             query = 'g.V().count()'
 
         elif qname == 'movie':
@@ -216,13 +216,9 @@ class Main:
             arg = sys.argv[5].lower()
             id  = self.favorites.translate_to_id(arg)
             query = "g.V('{}').both().as('v').project('vertex', 'edges').by(select('v')).by(bothE().fold())".format(id)
+            query = "g.V('{}').bothE()".format(id)
 
-        elif qname == 'v2v':
-            arg = sys.argv[5].lower()
-            id  = self.favorites.translate_to_id(arg)
-            query = "g.V('{}').bothE().inV()".format(id)
-
-        elif qname == 'people_in':
+        elif qname == 'vertices':
             arg = sys.argv[5].lower()
             id  = self.favorites.translate_to_id(arg)
             query = "g.V('{}').bothE().inV()".format(id)
@@ -239,12 +235,19 @@ class Main:
             #query = "g.V('{}').repeat(out('knows')).times(1)".format(id1)
             query = "g.V('{}').out('in')".format(id1)
 
+        # elif qname == 'path_orig':
+        #     arg1 = sys.argv[5].lower()
+        #     arg2 = sys.argv[6].lower()
+        #     id1  = self.favorites.translate_to_id(arg1)
+        #     id2  = self.favorites.translate_to_id(arg2)
+        #     query = "g.V('{}').bothE().where(otherV().hasId('{}')).path()".format(id1, id2)
+
         elif qname == 'path':
             arg1 = sys.argv[5].lower()
             arg2 = sys.argv[6].lower()
             id1  = self.favorites.translate_to_id(arg1)
             id2  = self.favorites.translate_to_id(arg2)
-            query = "g.V('{}').bothE().where(otherV().hasId('{}')).path()".format(id1, id2)
+            query = "g.V('{}').repeat(out().simplePath()).until(hasId('{}')).path().limit(3)".format(id1, id2)
 
         if query:
             print('qname: {}'.format(qname))
@@ -254,11 +257,20 @@ class Main:
             if callback.result() is not None:
                 #print(type(callback.result()))  # <class 'gremlin_python.driver.resultset.ResultSet'>
                 print('--- result_below ---')
-                rlist = callback.result().one() # <class 'list'>
-                jstr = json.dumps(rlist, sort_keys=False, indent=2)
+                data = dict()
+                r = callback.result().one()
+                data['qname'] = qname
+                data['query'] = query
+                data['result_count'] = len(r)
+                data['result'] = r
+                jstr = json.dumps(data, sort_keys=False, indent=2)
                 print(jstr)
-            else:
-                print("query returned None")
+
+                outfile = 'tmp/query_{}_{}.json'.format(qname, arrow.utcnow().timestamp)
+                with open(outfile, "w") as out:
+                    out.write(jstr)
+                    print('--- result_above ---')
+                    print('file written: {}'.format(outfile))
         else:
             print('invalid args')
 

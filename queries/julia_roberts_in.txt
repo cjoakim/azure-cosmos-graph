@@ -1,0 +1,67 @@
+function: query
+endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+username: /dbs/dev/colls/movies
+qname: in
+query: g.V('nm0000210').out('in')
+--- result_below ---
+{
+  "qname": "in",
+  "query": "g.V('nm0000210').out('in')",
+  "result_count": 4,
+  "result": [
+    {
+      "id": "tt0376541",
+      "label": "movie",
+      "type": "vertex",
+      "properties": {
+        "title": [
+          {
+            "id": "102d1290-2d9e-45a8-9df8-e5703730b971",
+            "value": "Closer"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tt0195685",
+      "label": "movie",
+      "type": "vertex",
+      "properties": {
+        "title": [
+          {
+            "id": "bef342e9-5040-42fb-9292-8e87f7418f4c",
+            "value": "Erin Brockovich"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tt0100405",
+      "label": "movie",
+      "type": "vertex",
+      "properties": {
+        "title": [
+          {
+            "id": "cb8a0baf-c421-4035-b382-52b0ba00486c",
+            "value": "Pretty Woman"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tt0125439",
+      "label": "movie",
+      "type": "vertex",
+      "properties": {
+        "title": [
+          {
+            "id": "49db6688-6121-4972-8079-ad1f09b61248",
+            "value": "Notting Hill"
+          }
+        ]
+      }
+    }
+  ]
+}
+--- result_above ---
+file written: tmp/query_in_1520763816.json

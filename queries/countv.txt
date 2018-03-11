@@ -1,0 +1,16 @@
+function: query
+endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+username: /dbs/dev/colls/movies
+qname: countv
+query: g.V().count()
+--- result_below ---
+{
+  "qname": "countv",
+  "query": "g.V().count()",
+  "result_count": 1,
+  "result": [
+    1437
+  ]
+}
+--- result_above ---
+file written: tmp/query_countv_1520763799.json

@@ -1,0 +1,28 @@
+function: query
+endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+username: /dbs/dev/colls/movies
+qname: person
+query: g.V().has('label','person').has('id','nm0000210')
+--- result_below ---
+{
+  "qname": "person",
+  "query": "g.V().has('label','person').has('id','nm0000210')",
+  "result_count": 1,
+  "result": [
+    {
+      "id": "nm0000210",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "ad7a1362-37a8-43c7-8985-abb49394eb46",
+            "value": "Julia Roberts"
+          }
+        ]
+      }
+    }
+  ]
+}
+--- result_above ---
+file written: tmp/query_person_1520763809.json

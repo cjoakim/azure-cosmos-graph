@@ -1,0 +1,28 @@
+function: query
+endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+username: /dbs/dev/colls/movies
+qname: movie
+query: g.V().has('label','movie').has('id','tt0100405')
+--- result_below ---
+{
+  "qname": "movie",
+  "query": "g.V().has('label','movie').has('id','tt0100405')",
+  "result_count": 1,
+  "result": [
+    {
+      "id": "tt0100405",
+      "label": "movie",
+      "type": "vertex",
+      "properties": {
+        "title": [
+          {
+            "id": "cb8a0baf-c421-4035-b382-52b0ba00486c",
+            "value": "Pretty Woman"
+          }
+        ]
+      }
+    }
+  ]
+}
+--- result_above ---
+file written: tmp/query_movie_1520763803.json
