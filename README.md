@@ -9,7 +9,10 @@ the CosmosDB/GraphDB, and search for the nth degrees of Kevin Bacon and others.
 
 This CosmosDB/GraphDB example was inspired by [this](https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon)
 
-"...in a January 1994 interview with Premiere magazine discussing the film The River Wild, mentioned that "he had worked with everybody in Hollywood or someone who’s worked with them."[1] On April 7, 1994, a lengthy newsgroup thread headed "Kevin Bacon is the Center of the Universe" appeared.  Four Albright College students: Craig Fass, Christian Gardner, Brian Turtle, and Mike Ginelli created the game early in 1994."
+> "...in a January 1994 interview with Premiere magazine discussing the film The River Wild, mentioned that "he had worked
+> with everybody in Hollywood or someone who’s worked with them."[1] On April 7, 1994, a lengthy newsgroup thread headed
+> "Kevin Bacon is the Center of the Universe" appeared.  Four Albright College students: Craig Fass, Christian Gardner,
+> Brian Turtle, and Mike Ginelli created the game early in 1994."
 
 It rests on the assumption that anyone involved in the Hollywood film industry can be linked through their film roles to Bacon within six steps.
 
