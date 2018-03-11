@@ -1,6 +1,6 @@
 # azure-cosmos-graph
 
-CosmosDB Graph Database example - the N-Degrees of Kevin Bacon (or Julia Roberts or Richard Gere or Diane Lane ...)
+CosmosDB Graph Database example - the N-Degrees of Kevin Bacon (or Julia Roberts or Richard Gere or Diane Lane or Lori Singer...)
 
 Start with the IMDb datasets, wrangle them to a smaller size, load them into
 the CosmosDB/GraphDB, and search for the nth degrees of Kevin Bacon and others.
