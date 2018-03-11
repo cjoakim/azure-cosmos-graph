@@ -243,23 +243,41 @@ class Main:
                 out.write(line + "\n")
             print('file written: {}'.format(outfile1))
 
+    def movies_for_person(self, pid):
+        movie_ids = dict()
+        for p in self.principals_list:
+            if p[1] == pid:
+                mid = p[0]
+                movie_ids[mid] = pid
+        return ','.join(sorted(movie_ids.keys()))
+
     def extract_people(self):
         # wc -l name.basics.tsv -> 8449645 name.basics.tsv
-        infile   = self.c.data_filename_raw('name.basics.tsv')
+        infile1  = self.c.principals_csv_filename()
+        infile2  = self.c.data_filename_raw('name.basics.tsv')
         outfile1 = self.c.people_csv_filename()
         outfile2 = self.c.people_json_filename()
+        self.principals_list = list()
         people_list = list()
         people_dict = dict()
         row_count = 0
         principal_ids = self.unique_principal_ids()
         movies = self.load_movies()
 
-        with open(infile) as tsvfile:
+        with open(infile1, 'rt') as f:
+            # infile1 looks like this:
+            # id|nid|role
+            # tt0086927|nm0000158|actor
+            for idx, line in enumerate(f):
+                self.principals_list.append(line.strip().split('|'))
+
+        with open(infile2) as tsvfile:
             reader = csv.DictReader(tsvfile, dialect='excel-tab')
             for row in reader:
                 # OrderedDict([('nconst', 'nm0000001'), ('primaryName', 'Fred Astaire'), ('birthYear', '1899'),
                 # ('deathYear', '1987'), ('primaryProfession', 'soundtrack,actor,miscellaneous'),
                 # ('knownForTitles', 'tt0043044,tt0050419,tt0053137,tt0072308')])
+                # NOTE: the knownForTitles field is not fully populated in the IMDb data!
                 try:
                     row_count = row_count + 1
                     if row_count < 10:
@@ -268,7 +286,8 @@ class Main:
                     if nid in principal_ids:
                         # create a csv line
                         known4 = row['knownForTitles']
-                        titles = self.filter_titles(movies, known4)
+                        #titles = self.filter_titles(movies, known4)
+                        titles = self.movies_for_person(nid)
                         name   = row['primaryName']
                         birth  = row['birthYear']
                         prof   = row['primaryProfession']
@@ -283,7 +302,7 @@ class Main:
                         person['prof']   = prof
                         person['titles'] = titles.split()
                         m = dict()
-                        for id in titles.split():
+                        for id in titles.split(','):
                             mname = movies[id]
                             m[id] = mname
                         person['movies'] = m
@@ -381,10 +400,10 @@ class Main:
             f.write(jstr)
             print('file written: {}'.format(outfile2))
 
-        people_edges = json.load(open(self.c.people_edges_json_filename()))
-        concat_keys = sorted(people_edges.keys())
-        for key in concat_keys:
-            print(key.split(':'))
+        # people_edges = json.load(open(self.c.people_edges_json_filename()))
+        # concat_keys = sorted(people_edges.keys())
+        # for key in concat_keys:
+        #     print(key.split(':'))
 
     # private
 
@@ -457,15 +476,17 @@ class Main:
         return movies
 
     def unique_principal_ids(self):
+        # return a dict with the unique set of actor/actress ids as keys
+        # principals csv file looks like this:
+        # id|nid|role
+        # tt0086927|nm0000158|actor
+        # tt0086927|nm0000478|actress
         infile1 = self.c.principals_csv_filename()
         principal_ids = dict()
         row_count = 0
         with open(infile1) as csvfile:
             reader = csv.reader(csvfile, delimiter='|')
             for row in reader:
-                # id|nid|role
-                # tt0012349|nm0088471|actor
-                # tt0012349|nm0000122|actor
                 try:
                     row_count = row_count + 1
                     if row_count > 1:

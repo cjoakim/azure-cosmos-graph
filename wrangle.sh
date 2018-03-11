@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# This script wrangles the IMDb data and creates a small subset that can be
-# inserted into CosmosDB
+# This script wrangles the IMDb data and creates a relatively small subset
+# that can be inserted into CosmosDB.
 #
 # Run with:
 #   ./wrangle.sh > tmp/wrangle.txt
@@ -9,7 +9,6 @@
 # Chris Joakim, Microsoft, 2018/03/11
 
 identify_candidate_movies=1
-extract_top_ratings=0        # now obsolete in favor of identify_candidate_movies
 extract_movies=1
 extract_principals=1
 extract_people=1
@@ -29,14 +28,6 @@ then
     wc   $IMDB_DATA_DIR/processed/candidate_movies.json
     head $IMDB_DATA_DIR/processed/candidate_movies.json
 fi
-
-# if [ $extract_top_ratings -gt 0 ]
-# then
-#     echo 'python: extract_top_ratings ...'
-#     python wrangle.py extract_top_ratings
-#     wc   $IMDB_DATA_DIR/processed/top_ratings.json
-#     head $IMDB_DATA_DIR/processed/top_ratings.json
-# fi
 
 if [ $extract_movies -gt 0 ]
 then
