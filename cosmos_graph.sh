@@ -6,8 +6,8 @@
 dbname=dev
 collname=movies
 drop_graph=0
-create_drop_and_load_queries=1
-execute_drop_and_load_queries=0
+create_load_queries=1
+execute_load_queries=0
 
 if [ $drop_graph -gt 0 ]
 then
@@ -15,16 +15,16 @@ then
     python cosmos_graph.py drop_graph $dbname $collname
 fi
 
-if [ $create_drop_and_load_queries -gt 0 ]
+if [ $create_load_queries -gt 0 ]
 then
-    echo 'python: create_drop_and_load_queries ...'
-    python cosmos_graph.py create_drop_and_load_queries $dbname $collname
+    echo 'python: create_load_queries ...'
+    python cosmos_graph.py create_load_queries $dbname $collname
 fi
 
-if [ $execute_drop_and_load_queries -gt 0 ]
+if [ $execute_load_queries -gt 0 ]
 then
-    echo 'python: execute_drop_and_load_queries ...'
-    python cosmos_graph.py execute_drop_and_load_queries $dbname $collname
+    echo 'python: execute_load_queries ...'
+    python cosmos_graph.py execute_load_queries $dbname $collname
 fi
 
 echo 'done'
