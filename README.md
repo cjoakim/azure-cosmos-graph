@@ -58,9 +58,10 @@ The wrangling logic in this project filters this huge amount of data into a smal
 is easily loaded into CosmosDB for your exploration.  The wrangling logic is implemented in Python 3.
 
 In short, the wrangling steps are:
-- Start with a manually created list of 7 favorite actors (see 'actors_for_candidate_movies' in values.py)
-- Extract just the movies for those actors (approx 486 movies)
-- Extract the principals (i.e. - actors) for those moves.  Omit directors, producers, stunt men, etc.
+- Start with a manually created list of just 6 favorite actors (see 'actors_for_candidate_movies' below)
+- Extract just the movies for those actors (approx 269 movies)
+- Filter the movies by minimum rating
+- Extract the principals (i.e. - actors) for those filtered movies.  Omit directors, producers, stunt men, etc.
 - Extract the details for each of the principals
 - Derive the person-knows-person Edges based on the set of actors for each movie.
 - Generate a list of Gremlin commands to insert the Vertices (movies, actors) and Edges into the DB
@@ -76,6 +77,20 @@ IMDB_DATA_DIR=<some directory on your computer>
 
 Within $IMDB_DATA_DIR there should be raw/ and processed/ subdirectories.  The downloaded
 and unzipped IMDb data should be in the raw/ directory.
+
+This is the list of the 6 actors as Python code:
+```
+    def actors_for_candidate_movies(self):
+        # This set of actors drives the selection of movies in the IMDb data-wrangling process.
+        actors = dict()
+        actors['nm0000102'] = 'kevin_bacon'
+        actors['nm0000126'] = 'kevin_costner'
+        actors['nm0000152'] = 'richard_gere'
+        actors['nm0000158'] = 'tom_hanks'
+        actors['nm0000210'] = 'julia_roberts'
+        actors['nm2225369'] = 'jennifer_lawrence'
+        return actors
+```
 
 ### Load the Database
 

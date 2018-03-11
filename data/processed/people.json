@@ -38,22 +38,19 @@
   "nm0000063": {
     "birth": "1915",
     "movies": {
-      "tt0100485": "Revenge",
-      "tt0114887": "A Walk in the Clouds"
+      "tt0100485": "Revenge"
     },
     "name": "Anthony Quinn",
     "nid": "nm0000063",
     "prof": "actor,producer,soundtrack",
     "titles": [
-      "tt0100485",
-      "tt0114887"
+      "tt0100485"
     ]
   },
   "nm0000093": {
     "birth": "1963",
     "movies": {
       "tt0117665": "Sleepers",
-      "tt0118972": "The Devil's Own",
       "tt0236493": "The Mexican",
       "tt0240772": "Ocean's Eleven",
       "tt0349903": "Ocean's Twelve"
@@ -63,7 +60,6 @@
     "prof": "actor,producer,soundtrack",
     "titles": [
       "tt0117665",
-      "tt0118972",
       "tt0236493",
       "tt0240772",
       "tt0349903"
@@ -240,107 +236,25 @@
   "nm0000110": {
     "birth": "1960",
     "movies": {
-      "tt0107616": "Much Ado About Nothing",
       "tt1205537": "Jack Ryan: Shadow Recruit"
     },
     "name": "Kenneth Branagh",
     "nid": "nm0000110",
     "prof": "actor,producer,director",
     "titles": [
-      "tt0107616",
       "tt1205537"
     ]
   },
   "nm0000113": {
     "birth": "1964",
     "movies": {
-      "tt0098185": "A Fool and His Money",
-      "tt0100930": "Who Shot Patakango?",
-      "tt0102343": "Love Potion No. 9",
-      "tt0105807": "When the Party's Over",
-      "tt0106697": "Demolition Man",
-      "tt0106913": "Fire on the Amazon",
-      "tt0108327": "The Thing Called Love",
-      "tt0108473": "The Vanishing",
-      "tt0108596": "Wrestling Ernest Hemingway",
-      "tt0111257": "Speed",
-      "tt0113957": "The Net",
-      "tt0114924": "While You Were Sleeping",
-      "tt0116621": "In Love and War",
-      "tt0117913": "A Time to Kill",
-      "tt0118002": "Two If by Sea",
-      "tt0119313": "Hope Floats",
-      "tt0120179": "Speed 2: Cruise Control",
-      "tt0120791": "Practical Magic",
-      "tt0120794": "The Prince of Egypt",
-      "tt0141098": "Forces of Nature",
-      "tt0171356": "Gun Shy",
-      "tt0191754": "28 Days",
-      "tt0212346": "Miss Congeniality",
-      "tt0264935": "Murder by Numbers",
-      "tt0279778": "Divine Secrets of the Ya-Ya Sisterhood",
-      "tt0313737": "Two Weeks Notice",
-      "tt0375679": "Crash",
-      "tt0385307": "Miss Congeniality 2: Armed and Fabulous",
-      "tt0410297": "The Lake House",
-      "tt0420609": "Infamous",
-      "tt0477071": "Premonition",
-      "tt0477302": "Extremely Loud & Incredibly Close",
-      "tt0878804": "The Blind Side",
-      "tt0881891": "All About Steve",
-      "tt1018765": "Our Brand Is Crisis",
-      "tt1041829": "The Proposal",
-      "tt1454468": "Gravity",
-      "tt2293640": "Minions",
-      "tt2404463": "The Heat",
-      "tt3228928": "The Prime Ministers: The Pioneers",
-      "tt5164214": "Ocean's 8"
+      "tt0477302": "Extremely Loud & Incredibly Close"
     },
     "name": "Sandra Bullock",
     "nid": "nm0000113",
     "prof": "producer,actress,soundtrack",
     "titles": [
-      "tt0098185",
-      "tt0100930",
-      "tt0102343",
-      "tt0105807",
-      "tt0106697",
-      "tt0106913",
-      "tt0108327",
-      "tt0108473",
-      "tt0108596",
-      "tt0111257",
-      "tt0113957",
-      "tt0114924",
-      "tt0116621",
-      "tt0117913",
-      "tt0118002",
-      "tt0119313",
-      "tt0120179",
-      "tt0120791",
-      "tt0120794",
-      "tt0141098",
-      "tt0171356",
-      "tt0191754",
-      "tt0212346",
-      "tt0264935",
-      "tt0279778",
-      "tt0313737",
-      "tt0375679",
-      "tt0385307",
-      "tt0410297",
-      "tt0420609",
-      "tt0477071",
-      "tt0477302",
-      "tt0878804",
-      "tt0881891",
-      "tt1018765",
-      "tt1041829",
-      "tt1454468",
-      "tt2293640",
-      "tt2404463",
-      "tt3228928",
-      "tt5164214"
+      "tt0477302"
     ]
   },
   "nm0000114": {
@@ -362,19 +276,13 @@
   "nm0000115": {
     "birth": "1964",
     "movies": {
-      "tt0375568": "Astro Boy",
-      "tt0429589": "The Ant Bully",
-      "tt0481499": "The Croods",
-      "tt2850386": "The Croods 2"
+      "tt0429589": "The Ant Bully"
     },
     "name": "Nicolas Cage",
     "nid": "nm0000115",
     "prof": "actor,producer,soundtrack",
     "titles": [
-      "tt0375568",
-      "tt0429589",
-      "tt0481499",
-      "tt2850386"
+      "tt0429589"
     ]
   },
   "nm0000117": {
@@ -389,25 +297,12 @@
       "tt0120890"
     ]
   },
-  "nm0000120": {
-    "birth": "1962",
-    "movies": {
-      "tt1068680": "Yes Man"
-    },
-    "name": "Jim Carrey",
-    "nid": "nm0000120",
-    "prof": "actor,writer,producer",
-    "titles": [
-      "tt1068680"
-    ]
-  },
   "nm0000123": {
     "birth": "1961",
     "movies": {
       "tt0240772": "Ocean's Eleven",
       "tt0270288": "Confessions of a Dangerous Mind",
       "tt0349903": "Ocean's Twelve",
-      "tt1454468": "Gravity",
       "tt2241351": "Money Monster"
     },
     "name": "George Clooney",
@@ -417,27 +312,13 @@
       "tt0240772",
       "tt0270288",
       "tt0349903",
-      "tt1454468",
       "tt2241351"
-    ]
-  },
-  "nm0000124": {
-    "birth": "1970",
-    "movies": {
-      "tt0970416": "The Day the Earth Stood Still"
-    },
-    "name": "Jennifer Connelly",
-    "nid": "nm0000124",
-    "prof": "actress",
-    "titles": [
-      "tt0970416"
     ]
   },
   "nm0000125": {
     "birth": "1930",
     "movies": {
       "tt0094226": "The Untouchables",
-      "tt0097576": "Indiana Jones and the Last Crusade",
       "tt0113071": "First Knight"
     },
     "name": "Sean Connery",
@@ -445,7 +326,6 @@
     "prof": "actor,producer,soundtrack",
     "titles": [
       "tt0094226",
-      "tt0097576",
       "tt0113071"
     ]
   },
@@ -598,9 +478,7 @@
     "movies": {
       "tt0094226": "The Untouchables",
       "tt0117665": "Sleepers",
-      "tt0203019": "Men of Honor",
       "tt1045658": "Silver Linings Playbook",
-      "tt1219289": "Limitless",
       "tt2446980": "Joy"
     },
     "name": "Robert De Niro",
@@ -609,22 +487,8 @@
     "titles": [
       "tt0094226",
       "tt0117665",
-      "tt0203019",
       "tt1045658",
-      "tt1219289",
       "tt2446980"
-    ]
-  },
-  "nm0000136": {
-    "birth": "1963",
-    "movies": {
-      "tt0138304": "The Astronaut's Wife"
-    },
-    "name": "Johnny Depp",
-    "nid": "nm0000136",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0138304"
     ]
   },
   "nm0000138": {
@@ -642,29 +506,13 @@
   "nm0000139": {
     "birth": "1972",
     "movies": {
-      "tt0116289": "Feeling Minnesota",
       "tt0119738": "My Best Friend's Wedding"
     },
     "name": "Cameron Diaz",
     "nid": "nm0000139",
     "prof": "actress,producer,soundtrack",
     "titles": [
-      "tt0116289",
       "tt0119738"
-    ]
-  },
-  "nm0000140": {
-    "birth": "1944",
-    "movies": {
-      "tt0821640": "Ghosts of Girlfriends Past",
-      "tt3228928": "The Prime Ministers: The Pioneers"
-    },
-    "name": "Michael Douglas",
-    "nid": "nm0000140",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0821640",
-      "tt3228928"
     ]
   },
   "nm0000141": {
@@ -693,112 +541,16 @@
       "tt0107808"
     ]
   },
-  "nm0000146": {
-    "birth": "1962",
-    "movies": {
-      "tt0120794": "The Prince of Egypt",
-      "tt4302938": "Kubo and the Two Strings"
-    },
-    "name": "Ralph Fiennes",
-    "nid": "nm0000146",
-    "prof": "actor,director,soundtrack",
-    "titles": [
-      "tt0120794",
-      "tt4302938"
-    ]
-  },
   "nm0000147": {
     "birth": "1960",
     "movies": {
-      "tt0373450": "Where the Truth Lies",
-      "tt2870756": "Magic in the Moonlight"
+      "tt0373450": "Where the Truth Lies"
     },
     "name": "Colin Firth",
     "nid": "nm0000147",
     "prof": "actor,producer,soundtrack",
     "titles": [
-      "tt0373450",
-      "tt2870756"
-    ]
-  },
-  "nm0000148": {
-    "birth": "1942",
-    "movies": {
-      "tt0087469": "Indiana Jones and the Temple of Doom",
-      "tt0090329": "Witness",
-      "tt0091557": "The Mosquito Coast",
-      "tt0095174": "Frantic",
-      "tt0096463": "Working Girl",
-      "tt0097576": "Indiana Jones and the Last Crusade",
-      "tt0100404": "Presumed Innocent",
-      "tt0102768": "Regarding Henry",
-      "tt0105112": "Patriot Games",
-      "tt0106977": "The Fugitive",
-      "tt0109444": "Clear and Present Danger",
-      "tt0114319": "Sabrina",
-      "tt0118571": "Air Force One",
-      "tt0118972": "The Devil's Own",
-      "tt0120828": "Six Days Seven Nights",
-      "tt0156934": "Random Hearts",
-      "tt0161081": "What Lies Beneath",
-      "tt0188050": "Mardy Murie: Arctic Dance",
-      "tt0267626": "K-19: The Widowmaker",
-      "tt0329717": "Hollywood Homicide",
-      "tt0367882": "Indiana Jones and the Kingdom of the Crystal Skull",
-      "tt0408345": "Firewall",
-      "tt0409847": "Cowboys & Aliens",
-      "tt0453562": "42",
-      "tt0924129": "Crossing Over",
-      "tt0953363": "Dalai Lama Renaissance",
-      "tt1126618": "Morning Glory",
-      "tt1244659": "Extraordinary Measures",
-      "tt1413495": "Paranoia",
-      "tt1462764": "Untitled Indiana Jones Project",
-      "tt1655441": "The Age of Adaline",
-      "tt1731141": "Ender's Game",
-      "tt1856101": "Blade Runner 2049",
-      "tt3325392": "Dalai Lama Awakening",
-      "tt3915966": "Living in the Age of Airplanes"
-    },
-    "name": "Harrison Ford",
-    "nid": "nm0000148",
-    "prof": "actor,writer,producer",
-    "titles": [
-      "tt0087469",
-      "tt0090329",
-      "tt0091557",
-      "tt0095174",
-      "tt0096463",
-      "tt0097576",
-      "tt0100404",
-      "tt0102768",
-      "tt0105112",
-      "tt0106977",
-      "tt0109444",
-      "tt0114319",
-      "tt0118571",
-      "tt0118972",
-      "tt0120828",
-      "tt0156934",
-      "tt0161081",
-      "tt0188050",
-      "tt0267626",
-      "tt0329717",
-      "tt0367882",
-      "tt0408345",
-      "tt0409847",
-      "tt0453562",
-      "tt0924129",
-      "tt0953363",
-      "tt1126618",
-      "tt1244659",
-      "tt1413495",
-      "tt1462764",
-      "tt1655441",
-      "tt1731141",
-      "tt1856101",
-      "tt3325392",
-      "tt3915966"
+      "tt0373450"
     ]
   },
   "nm0000149": {
@@ -816,15 +568,13 @@
   "nm0000151": {
     "birth": "1937",
     "movies": {
-      "tt0102798": "Robin Hood: Prince of Thieves",
-      "tt0115857": "Chain Reaction"
+      "tt0102798": "Robin Hood: Prince of Thieves"
     },
     "name": "Morgan Freeman",
     "nid": "nm0000151",
     "prof": "actor,producer,soundtrack",
     "titles": [
-      "tt0102798",
-      "tt0115857"
+      "tt0102798"
     ]
   },
   "nm0000152": {
@@ -1041,18 +791,6 @@
       "tt6294822"
     ]
   },
-  "nm0000159": {
-    "birth": "1964",
-    "movies": {
-      "tt0115438": "2 Days in the Valley"
-    },
-    "name": "Teri Hatcher",
-    "nid": "nm0000159",
-    "prof": "actress,writer,soundtrack",
-    "titles": [
-      "tt0115438"
-    ]
-  },
   "nm0000160": {
     "birth": "1970",
     "movies": {
@@ -1065,18 +803,6 @@
       "tt1210042"
     ]
   },
-  "nm0000162": {
-    "birth": "1969",
-    "movies": {
-      "tt0120828": "Six Days Seven Nights"
-    },
-    "name": "Anne Heche",
-    "nid": "nm0000162",
-    "prof": "actress,writer,producer",
-    "titles": [
-      "tt0120828"
-    ]
-  },
   "nm0000163": {
     "birth": "1937",
     "movies": {
@@ -1087,18 +813,6 @@
     "prof": "actor,producer,soundtrack",
     "titles": [
       "tt0102057"
-    ]
-  },
-  "nm0000164": {
-    "birth": "1937",
-    "movies": {
-      "tt0103874": "Bram Stoker's Dracula"
-    },
-    "name": "Anthony Hopkins",
-    "nid": "nm0000164",
-    "prof": "actor,soundtrack,composer",
-    "titles": [
-      "tt0103874"
     ]
   },
   "nm0000166": {
@@ -1115,68 +829,16 @@
       "tt0205271"
     ]
   },
-  "nm0000168": {
-    "birth": "1948",
-    "movies": {
-      "tt0117913": "A Time to Kill"
-    },
-    "name": "Samuel L. Jackson",
-    "nid": "nm0000168",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0117913"
-    ]
-  },
-  "nm0000169": {
-    "birth": "1946",
-    "movies": {
-      "tt0106977": "The Fugitive",
-      "tt0478134": "In the Valley of Elah"
-    },
-    "name": "Tommy Lee Jones",
-    "nid": "nm0000169",
-    "prof": "actor,director,soundtrack",
-    "titles": [
-      "tt0106977",
-      "tt0478134"
-    ]
-  },
-  "nm0000171": {
-    "birth": "1968",
-    "movies": {
-      "tt0924129": "Crossing Over"
-    },
-    "name": "Ashley Judd",
-    "nid": "nm0000171",
-    "prof": "actress,producer,director",
-    "titles": [
-      "tt0924129"
-    ]
-  },
   "nm0000173": {
     "birth": "1967",
     "movies": {
-      "tt0120791": "Practical Magic",
       "tt1741273": "Secret in Their Eyes"
     },
     "name": "Nicole Kidman",
     "nid": "nm0000173",
     "prof": "actress,producer,soundtrack",
     "titles": [
-      "tt0120791",
       "tt1741273"
-    ]
-  },
-  "nm0000174": {
-    "birth": "1959",
-    "movies": {
-      "tt0120794": "The Prince of Egypt"
-    },
-    "name": "Val Kilmer",
-    "nid": "nm0000174",
-    "prof": "actor,soundtrack,producer",
-    "titles": [
-      "tt0120794"
     ]
   },
   "nm0000177": {
@@ -1196,7 +858,6 @@
     "movies": {
       "tt0087089": "The Cotton Club",
       "tt0156812": "My Dog Skip",
-      "tt0180734": "Hardball",
       "tt0250797": "Unfaithful",
       "tt0956038": "Nights in Rodanthe"
     },
@@ -1206,7 +867,6 @@
     "titles": [
       "tt0087089",
       "tt0156812",
-      "tt0180734",
       "tt0250797",
       "tt0956038"
     ]
@@ -1235,18 +895,6 @@
       "tt0358135"
     ]
   },
-  "nm0000185": {
-    "birth": "1957",
-    "movies": {
-      "tt0113481": "Johnny Mnemonic"
-    },
-    "name": "Dolph Lundgren",
-    "nid": "nm0000185",
-    "prof": "actor,producer,director",
-    "titles": [
-      "tt0113481"
-    ]
-  },
   "nm0000187": {
     "birth": "1958",
     "movies": {
@@ -1257,22 +905,6 @@
     "prof": "soundtrack,actress,music_department",
     "titles": [
       "tt0104694"
-    ]
-  },
-  "nm0000190": {
-    "birth": "1969",
-    "movies": {
-      "tt0117913": "A Time to Kill",
-      "tt0821640": "Ghosts of Girlfriends Past",
-      "tt4302938": "Kubo and the Two Strings"
-    },
-    "name": "Matthew McConaughey",
-    "nid": "nm0000190",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0117913",
-      "tt0821640",
-      "tt4302938"
     ]
   },
   "nm0000191": {
@@ -1303,20 +935,6 @@
       "tt0780571"
     ]
   },
-  "nm0000194": {
-    "birth": "1960",
-    "movies": {
-      "tt0106977": "The Fugitive",
-      "tt1570728": "Crazy, Stupid, Love."
-    },
-    "name": "Julianne Moore",
-    "nid": "nm0000194",
-    "prof": "actress,soundtrack,producer",
-    "titles": [
-      "tt0106977",
-      "tt1570728"
-    ]
-  },
   "nm0000195": {
     "birth": "1950",
     "movies": {
@@ -1332,15 +950,13 @@
   "nm0000197": {
     "birth": "1937",
     "movies": {
-      "tt0104257": "A Few Good Men",
-      "tt0337741": "Something's Gotta Give"
+      "tt0104257": "A Few Good Men"
     },
     "name": "Jack Nicholson",
     "nid": "nm0000197",
     "prof": "actor,soundtrack,producer",
     "titles": [
-      "tt0104257",
-      "tt0337741"
+      "tt0104257"
     ]
   },
   "nm0000198": {
@@ -1348,10 +964,7 @@
     "movies": {
       "tt0097125": "Criminal Law",
       "tt0102138": "JFK",
-      "tt0103874": "Bram Stoker's Dracula",
       "tt0113870": "Murder in the First",
-      "tt0118571": "Air Force One",
-      "tt1413495": "Paranoia",
       "tt3014866": "Criminal"
     },
     "name": "Gary Oldman",
@@ -1360,235 +973,56 @@
     "titles": [
       "tt0097125",
       "tt0102138",
-      "tt0103874",
       "tt0113870",
-      "tt0118571",
-      "tt1413495",
       "tt3014866"
-    ]
-  },
-  "nm0000199": {
-    "birth": "1940",
-    "movies": {
-      "tt0118971": "The Devil's Advocate"
-    },
-    "name": "Al Pacino",
-    "nid": "nm0000199",
-    "prof": "actor,soundtrack,director",
-    "titles": [
-      "tt0118971"
     ]
   },
   "nm0000200": {
     "birth": "1955",
     "movies": {
-      "tt0112384": "Apollo 13",
-      "tt0120751": "Mighty Joe Young"
+      "tt0112384": "Apollo 13"
     },
     "name": "Bill Paxton",
     "nid": "nm0000200",
     "prof": "actor,producer,director",
     "titles": [
-      "tt0112384",
-      "tt0120751"
+      "tt0112384"
     ]
   },
   "nm0000201": {
     "birth": "1958",
     "movies": {
-      "tt0120794": "The Prince of Egypt",
-      "tt0161081": "What Lies Beneath",
       "tt5109784": "Mother!"
     },
     "name": "Michelle Pfeiffer",
     "nid": "nm0000201",
     "prof": "actress,soundtrack,producer",
     "titles": [
-      "tt0120794",
-      "tt0161081",
       "tt5109784"
-    ]
-  },
-  "nm0000203": {
-    "birth": "1970",
-    "movies": {
-      "tt0091557": "The Mosquito Coast",
-      "tt0102494": "My Own Private Idaho",
-      "tt0108327": "The Thing Called Love"
-    },
-    "name": "River Phoenix",
-    "nid": "nm0000203",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt0091557",
-      "tt0102494",
-      "tt0108327"
     ]
   },
   "nm0000204": {
     "birth": "1981",
     "movies": {
-      "tt0376541": "Closer",
-      "tt0808399": "New York, I Love You"
+      "tt0376541": "Closer"
     },
     "name": "Natalie Portman",
     "nid": "nm0000204",
     "prof": "actress,producer,soundtrack",
     "titles": [
-      "tt0376541",
-      "tt0808399"
+      "tt0376541"
     ]
   },
   "nm0000205": {
     "birth": "1968",
     "movies": {
-      "tt0128853": "You've Got Mail",
-      "tt3715320": "Irrational Man"
+      "tt0128853": "You've Got Mail"
     },
     "name": "Parker Posey",
     "nid": "nm0000205",
     "prof": "actress,soundtrack,writer",
     "titles": [
-      "tt0128853",
-      "tt3715320"
-    ]
-  },
-  "nm0000206": {
-    "birth": "1964",
-    "movies": {
-      "tt0091065": "Flying",
-      "tt0091860": "River's Edge",
-      "tt0095730": "The Night Before",
-      "tt0095853": "Permanent Record",
-      "tt0095903": "The Prince of Pennsylvania",
-      "tt0096928": "Bill & Ted's Excellent Adventure",
-      "tt0100822": "Tune in Tomorrow...",
-      "tt0101452": "Bill & Ted's Bogus Journey",
-      "tt0102494": "My Own Private Idaho",
-      "tt0102685": "Point Break",
-      "tt0103874": "Bram Stoker's Dracula",
-      "tt0107426": "Little Buddha",
-      "tt0107616": "Much Ado About Nothing",
-      "tt0111257": "Speed",
-      "tt0113481": "Johnny Mnemonic",
-      "tt0114887": "A Walk in the Clouds",
-      "tt0115857": "Chain Reaction",
-      "tt0116289": "Feeling Minnesota",
-      "tt0118971": "The Devil's Advocate",
-      "tt0119502": "The Last Time I Committed Suicide",
-      "tt0133093": "The Matrix",
-      "tt0180734": "Hardball",
-      "tt0191397": "The Replacements",
-      "tt0204626": "The Watcher",
-      "tt0219699": "The Gift",
-      "tt0223844": "One Step Away",
-      "tt0230838": "Sweet November",
-      "tt0234215": "The Matrix Reloaded",
-      "tt0242653": "The Matrix Revolutions",
-      "tt0318761": "Thumbsucker",
-      "tt0337741": "Something's Gotta Give",
-      "tt0360486": "Constantine",
-      "tt0405296": "A Scanner Darkly",
-      "tt0410297": "The Lake House",
-      "tt0421073": "Street Kings",
-      "tt0904079": "The Great Warming",
-      "tt0970416": "The Day the Earth Stood Still",
-      "tt1220888": "Henry's Crime",
-      "tt1335975": "47 Ronin",
-      "tt1718158": "Generation Um...",
-      "tt1974419": "The Neon Demon",
-      "tt2016940": "Man of Tai Chi",
-      "tt2911666": "John Wick",
-      "tt3503406": "The Whole Truth",
-      "tt3605418": "Knock Knock",
-      "tt4019560": "Exposed",
-      "tt4154916": "Replicas",
-      "tt4334266": "The Bad Batch",
-      "tt4425200": "John Wick: Chapter 2",
-      "tt6146586": "John Wick: Chapter 3",
-      "tt6494418": "Siberia",
-      "tt6987770": "Destination Wedding"
-    },
-    "name": "Keanu Reeves",
-    "nid": "nm0000206",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0091065",
-      "tt0091860",
-      "tt0095730",
-      "tt0095853",
-      "tt0095903",
-      "tt0096928",
-      "tt0100822",
-      "tt0101452",
-      "tt0102494",
-      "tt0102685",
-      "tt0103874",
-      "tt0107426",
-      "tt0107616",
-      "tt0111257",
-      "tt0113481",
-      "tt0114887",
-      "tt0115857",
-      "tt0116289",
-      "tt0118971",
-      "tt0119502",
-      "tt0133093",
-      "tt0180734",
-      "tt0191397",
-      "tt0204626",
-      "tt0219699",
-      "tt0223844",
-      "tt0230838",
-      "tt0234215",
-      "tt0242653",
-      "tt0318761",
-      "tt0337741",
-      "tt0360486",
-      "tt0405296",
-      "tt0410297",
-      "tt0421073",
-      "tt0904079",
-      "tt0970416",
-      "tt1220888",
-      "tt1335975",
-      "tt1718158",
-      "tt1974419",
-      "tt2016940",
-      "tt2911666",
-      "tt3503406",
-      "tt3605418",
-      "tt4019560",
-      "tt4154916",
-      "tt4334266",
-      "tt4425200",
-      "tt6146586",
-      "tt6494418",
-      "tt6987770"
-    ]
-  },
-  "nm0000207": {
-    "birth": "1980",
-    "movies": {
-      "tt0340855": "Monster"
-    },
-    "name": "Christina Ricci",
-    "nid": "nm0000207",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt0340855"
-    ]
-  },
-  "nm0000208": {
-    "birth": "1968",
-    "movies": {
-      "tt6494418": "Siberia"
-    },
-    "name": "Molly Ringwald",
-    "nid": "nm0000208",
-    "prof": "actress,soundtrack,music_department",
-    "titles": [
-      "tt6494418"
+      "tt0128853"
     ]
   },
   "nm0000209": {
@@ -1720,19 +1154,13 @@
   "nm0000213": {
     "birth": "1971",
     "movies": {
-      "tt0103874": "Bram Stoker's Dracula",
-      "tt0174480": "Autumn in New York",
-      "tt0405296": "A Scanner Darkly",
-      "tt6987770": "Destination Wedding"
+      "tt0174480": "Autumn in New York"
     },
     "name": "Winona Ryder",
     "nid": "nm0000213",
     "prof": "actress,producer,soundtrack",
     "titles": [
-      "tt0103874",
-      "tt0174480",
-      "tt0405296",
-      "tt6987770"
+      "tt0174480"
     ]
   },
   "nm0000215": {
@@ -1751,30 +1179,6 @@
       "tt0120686",
       "tt0358135",
       "tt1764183"
-    ]
-  },
-  "nm0000218": {
-    "birth": "1960",
-    "movies": {
-      "tt0156934": "Random Hearts"
-    },
-    "name": "Kristin Scott Thomas",
-    "nid": "nm0000218",
-    "prof": "actress,soundtrack,director",
-    "titles": [
-      "tt0156934"
-    ]
-  },
-  "nm0000222": {
-    "birth": "1965",
-    "movies": {
-      "tt0805570": "The Midnight Meat Train"
-    },
-    "name": "Brooke Shields",
-    "nid": "nm0000222",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt0805570"
     ]
   },
   "nm0000223": {
@@ -1807,56 +1211,6 @@
       "tt0233142"
     ]
   },
-  "nm0000226": {
-    "birth": "1968",
-    "movies": {
-      "tt0146984": "The Legend of Bagger Vance",
-      "tt0448157": "Hancock"
-    },
-    "name": "Will Smith",
-    "nid": "nm0000226",
-    "prof": "music_department,actor,producer",
-    "titles": [
-      "tt0146984",
-      "tt0448157"
-    ]
-  },
-  "nm0000227": {
-    "birth": "1967",
-    "movies": {
-      "tt4019560": "Exposed"
-    },
-    "name": "Mira Sorvino",
-    "nid": "nm0000227",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt4019560"
-    ]
-  },
-  "nm0000228": {
-    "birth": "1959",
-    "movies": {
-      "tt0117913": "A Time to Kill"
-    },
-    "name": "Kevin Spacey",
-    "nid": "nm0000228",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0117913"
-    ]
-  },
-  "nm0000230": {
-    "birth": "1946",
-    "movies": {
-      "tt0106697": "Demolition Man"
-    },
-    "name": "Sylvester Stallone",
-    "nid": "nm0000230",
-    "prof": "actor,writer,producer",
-    "titles": [
-      "tt0106697"
-    ]
-  },
   "nm0000232": {
     "birth": "1958",
     "movies": {
@@ -1872,91 +1226,15 @@
   "nm0000234": {
     "birth": "1975",
     "movies": {
-      "tt0115438": "2 Days in the Valley",
       "tt0117887": "That Thing You Do!",
-      "tt0118971": "The Devil's Advocate",
-      "tt0120373": "Trial and Error",
-      "tt0120751": "Mighty Joe Young",
-      "tt0124315": "The Cider House Rules",
-      "tt0138304": "The Astronaut's Wife",
-      "tt0138946": "The Yards",
-      "tt0146984": "The Legend of Bagger Vance",
-      "tt0184858": "Reindeer Games",
-      "tt0203019": "Men of Honor",
-      "tt0219400": "Waking Up in Reno",
-      "tt0230838": "Sweet November",
-      "tt0280380": "Trapped",
-      "tt0317740": "The Italian Job",
-      "tt0338097": "Head in the Clouds",
-      "tt0340855": "Monster",
-      "tt0352520": "The Life and Death of Peter Sellers",
-      "tt0375568": "Astro Boy",
-      "tt0395972": "North Country",
-      "tt0402022": "\u00c6on Flux",
-      "tt0448157": "Hancock",
-      "tt0478134": "In the Valley of Elah",
-      "tt0888693": "Sleepwalking",
-      "tt0898367": "The Road",
-      "tt1068641": "The Burning Plain",
-      "tt1337047": "Angels in Exile",
-      "tt1392190": "Mad Max: Fury Road",
-      "tt1446714": "Prometheus",
-      "tt1625346": "Young Adult",
-      "tt1735898": "Snow White and the Huntsman",
-      "tt2139881": "Flarsky",
-      "tt2381991": "The Huntsman: Winter's War",
-      "tt2402101": "Dark Places",
-      "tt2406566": "Atomic Blonde",
-      "tt2557490": "A Million Ways to Die in the West",
-      "tt3286560": "The Last Face",
-      "tt3721964": "Gringo",
-      "tt4302938": "Kubo and the Two Strings",
-      "tt5610554": "Tully"
+      "tt0280380": "Trapped"
     },
     "name": "Charlize Theron",
     "nid": "nm0000234",
     "prof": "actress,producer,soundtrack",
     "titles": [
-      "tt0115438",
       "tt0117887",
-      "tt0118971",
-      "tt0120373",
-      "tt0120751",
-      "tt0124315",
-      "tt0138304",
-      "tt0138946",
-      "tt0146984",
-      "tt0184858",
-      "tt0203019",
-      "tt0219400",
-      "tt0230838",
-      "tt0280380",
-      "tt0317740",
-      "tt0338097",
-      "tt0340855",
-      "tt0352520",
-      "tt0375568",
-      "tt0395972",
-      "tt0402022",
-      "tt0448157",
-      "tt0478134",
-      "tt0888693",
-      "tt0898367",
-      "tt1068641",
-      "tt1337047",
-      "tt1392190",
-      "tt1446714",
-      "tt1625346",
-      "tt1735898",
-      "tt2139881",
-      "tt2381991",
-      "tt2402101",
-      "tt2406566",
-      "tt2557490",
-      "tt3286560",
-      "tt3721964",
-      "tt4302938",
-      "tt5610554"
+      "tt0280380"
     ]
   },
   "nm0000235": {
@@ -1985,20 +1263,6 @@
       "tt1512235"
     ]
   },
-  "nm0000242": {
-    "birth": "1971",
-    "movies": {
-      "tt0138946": "The Yards",
-      "tt0317740": "The Italian Job"
-    },
-    "name": "Mark Wahlberg",
-    "nid": "nm0000242",
-    "prof": "producer,actor,soundtrack",
-    "titles": [
-      "tt0138946",
-      "tt0317740"
-    ]
-  },
   "nm0000243": {
     "birth": "1954",
     "movies": {
@@ -2011,20 +1275,6 @@
     "titles": [
       "tt0107798",
       "tt0107818"
-    ]
-  },
-  "nm0000244": {
-    "birth": "1949",
-    "movies": {
-      "tt0096463": "Working Girl",
-      "tt0420609": "Infamous"
-    },
-    "name": "Sigourney Weaver",
-    "nid": "nm0000244",
-    "prof": "actress,soundtrack,producer",
-    "titles": [
-      "tt0096463",
-      "tt0420609"
     ]
   },
   "nm0000245": {
@@ -2057,32 +1307,14 @@
     "birth": "1969",
     "movies": {
       "tt0299658": "Chicago",
-      "tt0795351": "Case 39",
-      "tt1185431": "My One and Only",
-      "tt3503406": "The Whole Truth"
+      "tt1185431": "My One and Only"
     },
     "name": "Ren\u00e9e Zellweger",
     "nid": "nm0000250",
     "prof": "actress,soundtrack,producer",
     "titles": [
       "tt0299658",
-      "tt0795351",
-      "tt1185431",
-      "tt3503406"
-    ]
-  },
-  "nm0000255": {
-    "birth": "1972",
-    "movies": {
-      "tt0141098": "Forces of Nature",
-      "tt0184858": "Reindeer Games"
-    },
-    "name": "Ben Affleck",
-    "nid": "nm0000255",
-    "prof": "producer,actor,writer",
-    "titles": [
-      "tt0141098",
-      "tt0184858"
+      "tt1185431"
     ]
   },
   "nm0000257": {
@@ -2111,32 +1343,6 @@
       "tt1028532"
     ]
   },
-  "nm0000261": {
-    "birth": "1951",
-    "movies": {
-      "tt0367882": "Indiana Jones and the Kingdom of the Crystal Skull"
-    },
-    "name": "Karen Allen",
-    "nid": "nm0000261",
-    "prof": "actress,director,soundtrack",
-    "titles": [
-      "tt0367882"
-    ]
-  },
-  "nm0000271": {
-    "birth": "1947",
-    "movies": {
-      "tt0105112": "Patriot Games",
-      "tt0109444": "Clear and Present Danger"
-    },
-    "name": "Anne Archer",
-    "nid": "nm0000271",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt0105112",
-      "tt0109444"
-    ]
-  },
   "nm0000276": {
     "birth": "1971",
     "movies": {
@@ -2152,17 +1358,13 @@
   "nm0000285": {
     "birth": "1958",
     "movies": {
-      "tt0096094": "She's Having a Baby",
-      "tt0096463": "Working Girl",
-      "tt1243974": "Aloha"
+      "tt0096094": "She's Having a Baby"
     },
     "name": "Alec Baldwin",
     "nid": "nm0000285",
     "prof": "actor,producer,soundtrack",
     "titles": [
-      "tt0096094",
-      "tt0096463",
-      "tt1243974"
+      "tt0096094"
     ]
   },
   "nm0000287": {
@@ -2189,42 +1391,6 @@
       "tt1800241"
     ]
   },
-  "nm0000293": {
-    "birth": "1959",
-    "movies": {
-      "tt0105112": "Patriot Games"
-    },
-    "name": "Sean Bean",
-    "nid": "nm0000293",
-    "prof": "actor,producer",
-    "titles": [
-      "tt0105112"
-    ]
-  },
-  "nm0000295": {
-    "birth": "1973",
-    "movies": {
-      "tt0107616": "Much Ado About Nothing"
-    },
-    "name": "Kate Beckinsale",
-    "nid": "nm0000295",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt0107616"
-    ]
-  },
-  "nm0000298": {
-    "birth": "1946",
-    "movies": {
-      "tt0212346": "Miss Congeniality"
-    },
-    "name": "Candice Bergen",
-    "nid": "nm0000298",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt0212346"
-    ]
-  },
   "nm0000300": {
     "birth": "1964",
     "movies": {
@@ -2240,29 +1406,13 @@
   "nm0000313": {
     "birth": "1949",
     "movies": {
-      "tt0108473": "The Vanishing",
       "tt0790736": "R.I.P.D."
     },
     "name": "Jeff Bridges",
     "nid": "nm0000313",
     "prof": "actor,soundtrack,producer",
     "titles": [
-      "tt0108473",
       "tt0790736"
-    ]
-  },
-  "nm0000323": {
-    "birth": "1933",
-    "movies": {
-      "tt0124315": "The Cider House Rules",
-      "tt0212346": "Miss Congeniality"
-    },
-    "name": "Michael Caine",
-    "nid": "nm0000323",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0124315",
-      "tt0212346"
     ]
   },
   "nm0000326": {
@@ -2277,42 +1427,16 @@
       "tt0099165"
     ]
   },
-  "nm0000330": {
-    "birth": "1944",
-    "movies": {
-      "tt0120791": "Practical Magic"
-    },
-    "name": "Stockard Channing",
-    "nid": "nm0000330",
-    "prof": "actress,soundtrack,miscellaneous",
-    "titles": [
-      "tt0120791"
-    ]
-  },
   "nm0000332": {
     "birth": "1964",
     "movies": {
-      "tt0375679": "Crash",
       "tt1210042": "Brooklyn's Finest"
     },
     "name": "Don Cheadle",
     "nid": "nm0000332",
     "prof": "actor,producer,soundtrack",
     "titles": [
-      "tt0375679",
       "tt1210042"
-    ]
-  },
-  "nm0000335": {
-    "birth": "1947",
-    "movies": {
-      "tt0118571": "Air Force One"
-    },
-    "name": "Glenn Close",
-    "nid": "nm0000335",
-    "prof": "actress,soundtrack,producer",
-    "titles": [
-      "tt0118571"
     ]
   },
   "nm0000345": {
@@ -2347,41 +1471,20 @@
     "birth": "1959",
     "movies": {
       "tt0095690": "Mystic Pizza",
-      "tt0101787": "Dying Young",
-      "tt0116289": "Feeling Minnesota",
-      "tt0318761": "Thumbsucker"
+      "tt0101787": "Dying Young"
     },
     "name": "Vincent D'Onofrio",
     "nid": "nm0000352",
     "prof": "actor,producer,soundtrack",
     "titles": [
       "tt0095690",
-      "tt0101787",
-      "tt0116289",
-      "tt0318761"
-    ]
-  },
-  "nm0000353": {
-    "birth": "1955",
-    "movies": {
-      "tt0109444": "Clear and Present Danger",
-      "tt0120179": "Speed 2: Cruise Control",
-      "tt2911666": "John Wick"
-    },
-    "name": "Willem Dafoe",
-    "nid": "nm0000353",
-    "prof": "actor,soundtrack,producer",
-    "titles": [
-      "tt0109444",
-      "tt0120179",
-      "tt2911666"
+      "tt0101787"
     ]
   },
   "nm0000354": {
     "birth": "1970",
     "movies": {
       "tt0120815": "Saving Private Ryan",
-      "tt0146984": "The Legend of Bagger Vance",
       "tt0240772": "Ocean's Eleven"
     },
     "name": "Matt Damon",
@@ -2389,7 +1492,6 @@
     "prof": "producer,actor,soundtrack",
     "titles": [
       "tt0120815",
-      "tt0146984",
       "tt0240772"
     ]
   },
@@ -2431,18 +1533,6 @@
       "tt0120890"
     ]
   },
-  "nm0000375": {
-    "birth": "1965",
-    "movies": {
-      "tt0405296": "A Scanner Darkly"
-    },
-    "name": "Robert Downey Jr.",
-    "nid": "nm0000375",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0405296"
-    ]
-  },
   "nm0000379": {
     "birth": "1982",
     "movies": {
@@ -2458,31 +1548,15 @@
   "nm0000380": {
     "birth": "1931",
     "movies": {
-      "tt0108596": "Wrestling Ernest Hemingway",
       "tt0114496": "Something to Talk About",
-      "tt0316356": "Open Range",
-      "tt0898367": "The Road"
+      "tt0316356": "Open Range"
     },
     "name": "Robert Duvall",
     "nid": "nm0000380",
     "prof": "actor,producer,soundtrack",
     "titles": [
-      "tt0108596",
       "tt0114496",
-      "tt0316356",
-      "tt0898367"
-    ]
-  },
-  "nm0000385": {
-    "birth": "1944",
-    "movies": {
-      "tt1517451": "A Star Is Born"
-    },
-    "name": "Sam Elliott",
-    "nid": "nm0000385",
-    "prof": "actor,producer,writer",
-    "titles": [
-      "tt1517451"
+      "tt0316356"
     ]
   },
   "nm0000391": {
@@ -2495,18 +1569,6 @@
     "prof": "actor,soundtrack,producer",
     "titles": [
       "tt0119738"
-    ]
-  },
-  "nm0000393": {
-    "birth": "1927",
-    "movies": {
-      "tt0100822": "Tune in Tomorrow..."
-    },
-    "name": "Peter Falk",
-    "nid": "nm0000393",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0100822"
     ]
   },
   "nm0000396": {
@@ -2564,18 +1626,12 @@
   "nm0000401": {
     "birth": "1961",
     "movies": {
-      "tt0133093": "The Matrix",
-      "tt0234215": "The Matrix Reloaded",
-      "tt0242653": "The Matrix Revolutions",
       "tt1355644": "Passengers"
     },
     "name": "Laurence Fishburne",
     "nid": "nm0000401",
     "prof": "actor,producer,director",
     "titles": [
-      "tt0133093",
-      "tt0234215",
-      "tt0242653",
       "tt1355644"
     ]
   },
@@ -2594,29 +1650,25 @@
   "nm0000403": {
     "birth": "1964",
     "movies": {
-      "tt0107426": "Little Buddha",
       "tt0112453": "Balto"
     },
     "name": "Bridget Fonda",
     "nid": "nm0000403",
     "prof": "actress,soundtrack",
     "titles": [
-      "tt0107426",
       "tt0112453"
     ]
   },
   "nm0000409": {
     "birth": "1968",
     "movies": {
-      "tt0485851": "The Air I Breathe",
-      "tt1244659": "Extraordinary Measures"
+      "tt0485851": "The Air I Breathe"
     },
     "name": "Brendan Fraser",
     "nid": "nm0000409",
     "prof": "actor,producer,soundtrack",
     "titles": [
-      "tt0485851",
-      "tt1244659"
+      "tt0485851"
     ]
   },
   "nm0000412": {
@@ -2645,18 +1697,6 @@
       "tt0091814"
     ]
   },
-  "nm0000417": {
-    "birth": "1964",
-    "movies": {
-      "tt0091860": "River's Edge"
-    },
-    "name": "Crispin Glover",
-    "nid": "nm0000417",
-    "prof": "actor,soundtrack,producer",
-    "titles": [
-      "tt0091860"
-    ]
-  },
   "nm0000418": {
     "birth": "1946",
     "movies": {
@@ -2669,39 +1709,24 @@
       "tt0090022"
     ]
   },
-  "nm0000421": {
-    "birth": "1968",
-    "movies": {
-      "tt0203019": "Men of Honor"
-    },
-    "name": "Cuba Gooding Jr.",
-    "nid": "nm0000421",
-    "prof": "actor,soundtrack,producer",
-    "titles": [
-      "tt0203019"
-    ]
-  },
   "nm0000422": {
     "birth": "1952",
     "movies": {
       "tt0095927": "Punchline",
-      "tt0804461": "Death Sentence",
-      "tt2406566": "Atomic Blonde"
+      "tt0804461": "Death Sentence"
     },
     "name": "John Goodman",
     "nid": "nm0000422",
     "prof": "actor,soundtrack,producer",
     "titles": [
       "tt0095927",
-      "tt0804461",
-      "tt2406566"
+      "tt0804461"
     ]
   },
   "nm0000424": {
     "birth": "1960",
     "movies": {
       "tt0125439": "Notting Hill",
-      "tt0313737": "Two Weeks Notice",
       "tt1371111": "Cloud Atlas"
     },
     "name": "Hugh Grant",
@@ -2709,21 +1734,18 @@
     "prof": "actor,soundtrack",
     "titles": [
       "tt0125439",
-      "tt0313737",
       "tt1371111"
     ]
   },
   "nm0000429": {
     "birth": "1957",
     "movies": {
-      "tt0096463": "Working Girl",
       "tt0099165": "The Bonfire of the Vanities"
     },
     "name": "Melanie Griffith",
     "nid": "nm0000429",
     "prof": "actress,producer",
     "titles": [
-      "tt0096463",
       "tt0099165"
     ]
   },
@@ -2732,8 +1754,7 @@
     "movies": {
       "tt0091786": "Power",
       "tt0093640": "No Way Out",
-      "tt0111756": "Wyatt Earp",
-      "tt0191397": "The Replacements"
+      "tt0111756": "Wyatt Earp"
     },
     "name": "Gene Hackman",
     "nid": "nm0000432",
@@ -2741,8 +1762,7 @@
     "titles": [
       "tt0091786",
       "tt0093640",
-      "tt0111756",
-      "tt0191397"
+      "tt0111756"
     ]
   },
   "nm0000435": {
@@ -2760,7 +1780,6 @@
   "nm0000437": {
     "birth": "1961",
     "movies": {
-      "tt1156398": "Zombieland",
       "tt1951265": "The Hunger Games: Mockingjay - Part 1",
       "tt1951266": "The Hunger Games: Mockingjay - Part 2"
     },
@@ -2768,7 +1787,6 @@
     "nid": "nm0000437",
     "prof": "actor,producer,soundtrack",
     "titles": [
-      "tt1156398",
       "tt1951265",
       "tt1951266"
     ]
@@ -2777,7 +1795,6 @@
     "birth": "1950",
     "movies": {
       "tt0120686": "Stepmom",
-      "tt1454468": "Gravity",
       "tt5109784": "Mother!"
     },
     "name": "Ed Harris",
@@ -2785,7 +1802,6 @@
     "prof": "actor,producer,director",
     "titles": [
       "tt0120686",
-      "tt1454468",
       "tt5109784"
     ]
   },
@@ -2818,14 +1834,12 @@
   "nm0000454": {
     "birth": "1936",
     "movies": {
-      "tt0111257": "Speed",
       "tt0114898": "Waterworld"
     },
     "name": "Dennis Hopper",
     "nid": "nm0000454",
     "prof": "actor,director,writer",
     "titles": [
-      "tt0111257",
       "tt0114898"
     ]
   },
@@ -2863,56 +1877,6 @@
     "prof": "actor,soundtrack",
     "titles": [
       "tt0097351"
-    ]
-  },
-  "nm0000470": {
-    "birth": "1946",
-    "movies": {
-      "tt0118971": "The Devil's Advocate"
-    },
-    "name": "Jeffrey Jones",
-    "nid": "nm0000470",
-    "prof": "actor",
-    "titles": [
-      "tt0118971"
-    ]
-  },
-  "nm0000471": {
-    "birth": "1940",
-    "movies": {
-      "tt0100404": "Presumed Innocent"
-    },
-    "name": "Raul Julia",
-    "nid": "nm0000471",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt0100404"
-    ]
-  },
-  "nm0000473": {
-    "birth": "1946",
-    "movies": {
-      "tt0337741": "Something's Gotta Give",
-      "tt1126618": "Morning Glory"
-    },
-    "name": "Diane Keaton",
-    "nid": "nm0000473",
-    "prof": "actress,producer,director",
-    "titles": [
-      "tt0337741",
-      "tt1126618"
-    ]
-  },
-  "nm0000474": {
-    "birth": "1951",
-    "movies": {
-      "tt2293640": "Minions"
-    },
-    "name": "Michael Keaton",
-    "nid": "nm0000474",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt2293640"
     ]
   },
   "nm0000478": {
@@ -2990,22 +1954,19 @@
   "nm0000501": {
     "birth": "1954",
     "movies": {
-      "tt0097351": "Field of Dreams",
-      "tt0924129": "Crossing Over"
+      "tt0097351": "Field of Dreams"
     },
     "name": "Ray Liotta",
     "nid": "nm0000501",
     "prof": "actor,producer,soundtrack",
     "titles": [
-      "tt0097351",
-      "tt0924129"
+      "tt0097351"
     ]
   },
   "nm0000511": {
     "birth": "1934",
     "movies": {
       "tt0098384": "Steel Magnolias",
-      "tt0108596": "Wrestling Ernest Hemingway",
       "tt0398375": "Rumor Has It..."
     },
     "name": "Shirley MacLaine",
@@ -3013,20 +1974,7 @@
     "prof": "actress,soundtrack,writer",
     "titles": [
       "tt0098384",
-      "tt0108596",
       "tt0398375"
-    ]
-  },
-  "nm0000515": {
-    "birth": "1961",
-    "movies": {
-      "tt0408345": "Firewall"
-    },
-    "name": "Virginia Madsen",
-    "nid": "nm0000515",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt0408345"
     ]
   },
   "nm0000518": {
@@ -3060,14 +2008,12 @@
   "nm0000526": {
     "birth": "1970",
     "movies": {
-      "tt0108327": "The Thing Called Love",
       "tt0951335": "The New Daughter"
     },
     "name": "Samantha Mathis",
     "nid": "nm0000526",
     "prof": "actress,soundtrack",
     "titles": [
-      "tt0108327",
       "tt0951335"
     ]
   },
@@ -3083,44 +2029,6 @@
       "tt0102138"
     ]
   },
-  "nm0000531": {
-    "birth": "1957",
-    "movies": {
-      "tt0395972": "North Country",
-      "tt0402022": "\u00c6on Flux"
-    },
-    "name": "Frances McDormand",
-    "nid": "nm0000531",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt0395972",
-      "tt0402022"
-    ]
-  },
-  "nm0000534": {
-    "birth": "1957",
-    "movies": {
-      "tt0090329": "Witness"
-    },
-    "name": "Kelly McGillis",
-    "nid": "nm0000534",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt0090329"
-    ]
-  },
-  "nm0000539": {
-    "birth": "1968",
-    "movies": {
-      "tt0113481": "Johnny Mnemonic"
-    },
-    "name": "Dina Meyer",
-    "nid": "nm0000539",
-    "prof": "actress,producer",
-    "titles": [
-      "tt0113481"
-    ]
-  },
   "nm0000542": {
     "birth": "1964",
     "movies": {
@@ -3131,18 +2039,6 @@
     "prof": "actress,soundtrack",
     "titles": [
       "tt0095640"
-    ]
-  },
-  "nm0000545": {
-    "birth": "1945",
-    "movies": {
-      "tt0091557": "The Mosquito Coast"
-    },
-    "name": "Helen Mirren",
-    "nid": "nm0000545",
-    "prof": "actress,director,producer",
-    "titles": [
-      "tt0091557"
     ]
   },
   "nm0000547": {
@@ -3160,7 +2056,6 @@
   "nm0000551": {
     "birth": "1963",
     "movies": {
-      "tt0108327": "The Thing Called Love",
       "tt0119738": "My Best Friend's Wedding",
       "tt1322269": "August: Osage County"
     },
@@ -3168,7 +2063,6 @@
     "nid": "nm0000551",
     "prof": "actor,soundtrack,music_department",
     "titles": [
-      "tt0108327",
       "tt0119738",
       "tt1322269"
     ]
@@ -3176,19 +2070,13 @@
   "nm0000553": {
     "birth": "1952",
     "movies": {
-      "tt0117039": "Michael Collins",
-      "tt0171356": "Gun Shy",
-      "tt0429493": "The A-Team",
-      "tt2557490": "A Million Ways to Die in the West"
+      "tt0117039": "Michael Collins"
     },
     "name": "Liam Neeson",
     "nid": "nm0000553",
     "prof": "actor,producer,soundtrack",
     "titles": [
-      "tt0117039",
-      "tt0171356",
-      "tt0429493",
-      "tt2557490"
+      "tt0117039"
     ]
   },
   "nm0000555": {
@@ -3203,18 +2091,6 @@
       "tt0089126"
     ]
   },
-  "nm0000559": {
-    "birth": "1931",
-    "movies": {
-      "tt3228928": "The Prime Ministers: The Pioneers"
-    },
-    "name": "Leonard Nimoy",
-    "nid": "nm0000559",
-    "prof": "actor,director,producer",
-    "titles": [
-      "tt3228928"
-    ]
-  },
   "nm0000560": {
     "birth": "1941",
     "movies": {
@@ -3227,56 +2103,28 @@
       "tt0110093"
     ]
   },
-  "nm0000562": {
-    "birth": "1961",
-    "movies": {
-      "tt0113957": "The Net"
-    },
-    "name": "Jeremy Northam",
-    "nid": "nm0000562",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt0113957"
-    ]
-  },
-  "nm0000563": {
-    "birth": "1970",
-    "movies": {
-      "tt0116621": "In Love and War"
-    },
-    "name": "Chris O'Donnell",
-    "nid": "nm0000563",
-    "prof": "actor,producer,director",
-    "titles": [
-      "tt0116621"
-    ]
-  },
   "nm0000565": {
     "birth": "1955",
     "movies": {
-      "tt0107611": "Mr. Jones",
-      "tt0329717": "Hollywood Homicide"
+      "tt0107611": "Mr. Jones"
     },
     "name": "Lena Olin",
     "nid": "nm0000565",
     "prof": "actress",
     "titles": [
-      "tt0107611",
-      "tt0329717"
+      "tt0107611"
     ]
   },
   "nm0000566": {
     "birth": "1965",
     "movies": {
-      "tt0113071": "First Knight",
-      "tt0114319": "Sabrina"
+      "tt0113071": "First Knight"
     },
     "name": "Julia Ormond",
     "nid": "nm0000566",
     "prof": "actress,producer",
     "titles": [
-      "tt0113071",
-      "tt0114319"
+      "tt0113071"
     ]
   },
   "nm0000571": {
@@ -3294,17 +2142,13 @@
   "nm0000574": {
     "birth": "1966",
     "movies": {
-      "tt0117665": "Sleepers",
-      "tt0120179": "Speed 2: Cruise Control",
-      "tt0478134": "In the Valley of Elah"
+      "tt0117665": "Sleepers"
     },
     "name": "Jason Patric",
     "nid": "nm0000574",
     "prof": "actor,producer",
     "titles": [
-      "tt0117665",
-      "tt0120179",
-      "tt0478134"
+      "tt0117665"
     ]
   },
   "nm0000575": {
@@ -3322,15 +2166,13 @@
   "nm0000576": {
     "birth": "1960",
     "movies": {
-      "tt0327056": "Mystic River",
-      "tt1321870": "Gangster Squad"
+      "tt0327056": "Mystic River"
     },
     "name": "Sean Penn",
     "nid": "nm0000576",
     "prof": "actor,producer,director",
     "titles": [
-      "tt0327056",
-      "tt1321870"
+      "tt0327056"
     ]
   },
   "nm0000593": {
@@ -3347,32 +2189,18 @@
       "tt0804461"
     ]
   },
-  "nm0000597": {
-    "birth": "1953",
-    "movies": {
-      "tt0114924": "While You Were Sleeping"
-    },
-    "name": "Bill Pullman",
-    "nid": "nm0000597",
-    "prof": "actor,director,soundtrack",
-    "titles": [
-      "tt0114924"
-    ]
-  },
   "nm0000598": {
     "birth": "1954",
     "movies": {
       "tt0111756": "Wyatt Earp",
-      "tt0114496": "Something to Talk About",
-      "tt1840417": "The Words"
+      "tt0114496": "Something to Talk About"
     },
     "name": "Dennis Quaid",
     "nid": "nm0000598",
     "prof": "actor,producer,soundtrack",
     "titles": [
       "tt0111756",
-      "tt0114496",
-      "tt1840417"
+      "tt0114496"
     ]
   },
   "nm0000604": {
@@ -3409,20 +2237,6 @@
     "prof": "actor",
     "titles": [
       "tt0382625"
-    ]
-  },
-  "nm0000610": {
-    "birth": "1974",
-    "movies": {
-      "tt0219699": "The Gift",
-      "tt1321870": "Gangster Squad"
-    },
-    "name": "Giovanni Ribisi",
-    "nid": "nm0000610",
-    "prof": "actor,soundtrack,cinematographer",
-    "titles": [
-      "tt0219699",
-      "tt1321870"
     ]
   },
   "nm0000612": {
@@ -3497,18 +2311,6 @@
       "tt0100405"
     ]
   },
-  "nm0000627": {
-    "birth": "1960",
-    "movies": {
-      "tt0100404": "Presumed Innocent"
-    },
-    "name": "Greta Scacchi",
-    "nid": "nm0000627",
-    "prof": "actress",
-    "titles": [
-      "tt0100404"
-    ]
-  },
   "nm0000630": {
     "birth": "1967",
     "movies": {
@@ -3519,18 +2321,6 @@
     "prof": "actor,producer,miscellaneous",
     "titles": [
       "tt1333125"
-    ]
-  },
-  "nm0000638": {
-    "birth": "1931",
-    "movies": {
-      "tt0385307": "Miss Congeniality 2: Armed and Fabulous"
-    },
-    "name": "William Shatner",
-    "nid": "nm0000638",
-    "prof": "actor,writer,producer",
-    "titles": [
-      "tt0385307"
     ]
   },
   "nm0000640": {
@@ -3553,42 +2343,26 @@
     "birth": "1955",
     "movies": {
       "tt0109830": "Forrest Gump",
-      "tt0112384": "Apollo 13",
-      "tt0184858": "Reindeer Games"
+      "tt0112384": "Apollo 13"
     },
     "name": "Gary Sinise",
     "nid": "nm0000641",
     "prof": "actor,producer,director",
     "titles": [
       "tt0109830",
-      "tt0112384",
-      "tt0184858"
+      "tt0112384"
     ]
   },
   "nm0000648": {
     "birth": "1962",
     "movies": {
-      "tt0106697": "Demolition Man",
       "tt1210042": "Brooklyn's Finest"
     },
     "name": "Wesley Snipes",
     "nid": "nm0000648",
     "prof": "actor,producer,soundtrack",
     "titles": [
-      "tt0106697",
       "tt1210042"
-    ]
-  },
-  "nm0000652": {
-    "birth": "1960",
-    "movies": {
-      "tt0204626": "The Watcher"
-    },
-    "name": "James Spader",
-    "nid": "nm0000652",
-    "prof": "actor,producer",
-    "titles": [
-      "tt0204626"
     ]
   },
   "nm0000656": {
@@ -3633,44 +2407,16 @@
       "tt6294822"
     ]
   },
-  "nm0000661": {
-    "birth": "1935",
-    "movies": {
-      "tt0317740": "The Italian Job"
-    },
-    "name": "Donald Sutherland",
-    "nid": "nm0000661",
-    "prof": "actor,soundtrack,producer",
-    "titles": [
-      "tt0317740"
-    ]
-  },
   "nm0000662": {
     "birth": "1966",
     "movies": {
-      "tt0099582": "Flatliners",
-      "tt0108473": "The Vanishing"
+      "tt0099582": "Flatliners"
     },
     "name": "Kiefer Sutherland",
     "nid": "nm0000662",
     "prof": "actor,producer,miscellaneous",
     "titles": [
-      "tt0099582",
-      "tt0108473"
-    ]
-  },
-  "nm0000664": {
-    "birth": "1952",
-    "movies": {
-      "tt0102685": "Point Break",
-      "tt0219400": "Waking Up in Reno"
-    },
-    "name": "Patrick Swayze",
-    "nid": "nm0000664",
-    "prof": "actor,soundtrack,producer",
-    "titles": [
-      "tt0102685",
-      "tt0219400"
+      "tt0099582"
     ]
   },
   "nm0000666": {
@@ -3688,43 +2434,25 @@
   "nm0000668": {
     "birth": "1959",
     "movies": {
-      "tt0107616": "Much Ado About Nothing",
       "tt2140373": "Saving Mr. Banks"
     },
     "name": "Emma Thompson",
     "nid": "nm0000668",
     "prof": "actress,writer,soundtrack",
     "titles": [
-      "tt0107616",
       "tt2140373"
     ]
   },
   "nm0000671": {
     "birth": "1955",
     "movies": {
-      "tt0219400": "Waking Up in Reno",
-      "tt1018765": "Our Brand Is Crisis",
       "tt2345112": "Parkland"
     },
     "name": "Billy Bob Thornton",
     "nid": "nm0000671",
     "prof": "actor,writer,director",
     "titles": [
-      "tt0219400",
-      "tt1018765",
       "tt2345112"
-    ]
-  },
-  "nm0000673": {
-    "birth": "1964",
-    "movies": {
-      "tt0204626": "The Watcher"
-    },
-    "name": "Marisa Tomei",
-    "nid": "nm0000673",
-    "prof": "actress,producer",
-    "titles": [
-      "tt0204626"
     ]
   },
   "nm0000675": {
@@ -3737,18 +2465,6 @@
     "prof": "actress,soundtrack",
     "titles": [
       "tt0114898"
-    ]
-  },
-  "nm0000677": {
-    "birth": "1972",
-    "movies": {
-      "tt1068641": "The Burning Plain"
-    },
-    "name": "Robin Tunney",
-    "nid": "nm0000677",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt1068641"
     ]
   },
   "nm0000686": {
@@ -3778,14 +2494,12 @@
   "nm0000688": {
     "birth": "1956",
     "movies": {
-      "tt0106977": "The Fugitive",
       "tt0406816": "The Guardian"
     },
     "name": "Sela Ward",
     "nid": "nm0000688",
     "prof": "actress,producer",
     "titles": [
-      "tt0106977",
       "tt0406816"
     ]
   },
@@ -3827,30 +2541,6 @@
       "tt0093640"
     ]
   },
-  "nm0000722": {
-    "birth": "1928",
-    "movies": {
-      "tt0101452": "Bill & Ted's Bogus Journey"
-    },
-    "name": "Joss Ackland",
-    "nid": "nm0000722",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt0101452"
-    ]
-  },
-  "nm0000732": {
-    "birth": "1933",
-    "movies": {
-      "tt0115438": "2 Days in the Valley"
-    },
-    "name": "Danny Aiello",
-    "nid": "nm0000732",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0115438"
-    ]
-  },
   "nm0000741": {
     "birth": "1953",
     "movies": {
@@ -3877,30 +2567,6 @@
     "prof": "actor,soundtrack,stunts",
     "titles": [
       "tt0102945"
-    ]
-  },
-  "nm0000832": {
-    "birth": "1938",
-    "movies": {
-      "tt0113957": "The Net"
-    },
-    "name": "Diane Baker",
-    "nid": "nm0000832",
-    "prof": "actress,producer,production_manager",
-    "titles": [
-      "tt0113957"
-    ]
-  },
-  "nm0000834": {
-    "birth": "1950",
-    "movies": {
-      "tt1655441": "The Age of Adaline"
-    },
-    "name": "Kathy Baker",
-    "nid": "nm0000834",
-    "prof": "actress,producer",
-    "titles": [
-      "tt1655441"
     ]
   },
   "nm0000837": {
@@ -3931,7 +2597,6 @@
     "birth": "1969",
     "movies": {
       "tt0879870": "Eat Pray Love",
-      "tt3286560": "The Last Face",
       "tt5109784": "Mother!"
     },
     "name": "Javier Bardem",
@@ -3939,32 +2604,7 @@
     "prof": "actor,producer,soundtrack",
     "titles": [
       "tt0879870",
-      "tt3286560",
       "tt5109784"
-    ]
-  },
-  "nm0000867": {
-    "birth": "1969",
-    "movies": {
-      "tt0448157": "Hancock"
-    },
-    "name": "Jason Bateman",
-    "nid": "nm0000867",
-    "prof": "actor,producer,director",
-    "titles": [
-      "tt0448157"
-    ]
-  },
-  "nm0000870": {
-    "birth": "1948",
-    "movies": {
-      "tt0970416": "The Day the Earth Stood Still"
-    },
-    "name": "Kathy Bates",
-    "nid": "nm0000870",
-    "prof": "actress,director,soundtrack",
-    "titles": [
-      "tt0970416"
     ]
   },
   "nm0000885": {
@@ -3979,54 +2619,16 @@
       "tt0435761"
     ]
   },
-  "nm0000889": {
-    "birth": "1948",
-    "movies": {
-      "tt0095903": "The Prince of Pennsylvania"
-    },
-    "name": "Bonnie Bedelia",
-    "nid": "nm0000889",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt0095903"
-    ]
-  },
-  "nm0000906": {
-    "birth": "1958",
-    "movies": {
-      "tt0102768": "Regarding Henry"
-    },
-    "name": "Annette Bening",
-    "nid": "nm0000906",
-    "prof": "actress,soundtrack,executive",
-    "titles": [
-      "tt0102768"
-    ]
-  },
   "nm0000920": {
     "birth": "1951",
     "movies": {
-      "tt0102945": "Sleeping with the Enemy",
-      "tt0105112": "Patriot Games"
+      "tt0102945": "Sleeping with the Enemy"
     },
     "name": "Patrick Bergin",
     "nid": "nm0000920",
     "prof": "actor,soundtrack,producer",
     "titles": [
-      "tt0102945",
-      "tt0105112"
-    ]
-  },
-  "nm0000931": {
-    "birth": "1962",
-    "movies": {
-      "tt0105807": "When the Party's Over"
-    },
-    "name": "Elizabeth Berridge",
-    "nid": "nm0000931",
-    "prof": "actress",
-    "titles": [
-      "tt0105807"
+      "tt0102945"
     ]
   },
   "nm0000932": {
@@ -4039,34 +2641,6 @@
     "prof": "actress,producer,executive",
     "titles": [
       "tt1371111"
-    ]
-  },
-  "nm0000949": {
-    "birth": "1969",
-    "movies": {
-      "tt0219699": "The Gift",
-      "tt0367882": "Indiana Jones and the Kingdom of the Crystal Skull",
-      "tt5164214": "Ocean's 8"
-    },
-    "name": "Cate Blanchett",
-    "nid": "nm0000949",
-    "prof": "actress,producer,director",
-    "titles": [
-      "tt0219699",
-      "tt0367882",
-      "tt5164214"
-    ]
-  },
-  "nm0000973": {
-    "birth": "1963",
-    "movies": {
-      "tt0212346": "Miss Congeniality"
-    },
-    "name": "Benjamin Bratt",
-    "nid": "nm0000973",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0212346"
     ]
   },
   "nm0000978": {
@@ -4093,56 +2667,6 @@
       "tt0164052"
     ]
   },
-  "nm0000990": {
-    "birth": "1947",
-    "movies": {
-      "tt0095174": "Frantic"
-    },
-    "name": "Betty Buckley",
-    "nid": "nm0000990",
-    "prof": "actress,soundtrack,composer",
-    "titles": [
-      "tt0095174"
-    ]
-  },
-  "nm0000995": {
-    "birth": "1932",
-    "movies": {
-      "tt0279778": "Divine Secrets of the Ya-Ya Sisterhood"
-    },
-    "name": "Ellen Burstyn",
-    "nid": "nm0000995",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt0279778"
-    ]
-  },
-  "nm0000997": {
-    "birth": "1944",
-    "movies": {
-      "tt0102685": "Point Break"
-    },
-    "name": "Gary Busey",
-    "nid": "nm0000997",
-    "prof": "actor,soundtrack,composer",
-    "titles": [
-      "tt0102685"
-    ]
-  },
-  "nm0001001": {
-    "birth": "1940",
-    "movies": {
-      "tt0138946": "The Yards",
-      "tt1220888": "Henry's Crime"
-    },
-    "name": "James Caan",
-    "nid": "nm0001001",
-    "prof": "actor,soundtrack,director",
-    "titles": [
-      "tt0138946",
-      "tt1220888"
-    ]
-  },
   "nm0001006": {
     "birth": "1950",
     "movies": {
@@ -4160,41 +2684,25 @@
   "nm0001009": {
     "birth": "1953",
     "movies": {
-      "tt0087469": "Indiana Jones and the Temple of Doom",
       "tt0091786": "Power"
     },
     "name": "Kate Capshaw",
     "nid": "nm0001009",
     "prof": "actress,soundtrack,producer",
     "titles": [
-      "tt0087469",
       "tt0091786"
-    ]
-  },
-  "nm0001035": {
-    "birth": "1970",
-    "movies": {
-      "tt0264935": "Murder by Numbers"
-    },
-    "name": "Ben Chaplin",
-    "nid": "nm0001035",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt0264935"
     ]
   },
   "nm0001044": {
     "birth": "1961",
     "movies": {
-      "tt0088707": "American Flyers",
-      "tt0105807": "When the Party's Over"
+      "tt0088707": "American Flyers"
     },
     "name": "Rae Dawn Chong",
     "nid": "nm0001044",
     "prof": "actress,soundtrack,director",
     "titles": [
-      "tt0088707",
-      "tt0105807"
+      "tt0088707"
     ]
   },
   "nm0001046": {
@@ -4233,18 +2741,6 @@
       "tt0345074"
     ]
   },
-  "nm0001065": {
-    "birth": "1967",
-    "movies": {
-      "tt0119313": "Hope Floats"
-    },
-    "name": "Harry Connick Jr.",
-    "nid": "nm0001065",
-    "prof": "actor,soundtrack,music_department",
-    "titles": [
-      "tt0119313"
-    ]
-  },
   "nm0001073": {
     "birth": "1964",
     "movies": {
@@ -4281,22 +2777,6 @@
       "tt0093403"
     ]
   },
-  "nm0001099": {
-    "birth": "1955",
-    "movies": {
-      "tt0115438": "2 Days in the Valley",
-      "tt0120373": "Trial and Error",
-      "tt0437405": "Paper Man"
-    },
-    "name": "Jeff Daniels",
-    "nid": "nm0001099",
-    "prof": "actor,soundtrack,writer",
-    "titles": [
-      "tt0115438",
-      "tt0120373",
-      "tt0437405"
-    ]
-  },
   "nm0001110": {
     "birth": "1965",
     "movies": {
@@ -4312,29 +2792,25 @@
   "nm0001133": {
     "birth": "1938",
     "movies": {
-      "tt0095640": "Miles from Home",
-      "tt0100404": "Presumed Innocent"
+      "tt0095640": "Miles from Home"
     },
     "name": "Brian Dennehy",
     "nid": "nm0001133",
     "prof": "actor,producer,director",
     "titles": [
-      "tt0095640",
-      "tt0100404"
+      "tt0095640"
     ]
   },
   "nm0001136": {
     "birth": "1936",
     "movies": {
-      "tt0096734": "The 'Burbs",
-      "tt0340855": "Monster"
+      "tt0096734": "The 'Burbs"
     },
     "name": "Bruce Dern",
     "nid": "nm0001136",
     "prof": "actor,producer,soundtrack",
     "titles": [
-      "tt0096734",
-      "tt0340855"
+      "tt0096734"
     ]
   },
   "nm0001150": {
@@ -4387,18 +2863,6 @@
       "tt0089543"
     ]
   },
-  "nm0001165": {
-    "birth": "1951",
-    "movies": {
-      "tt0156934": "Random Hearts"
-    },
-    "name": "Charles S. Dutton",
-    "nid": "nm0001165",
-    "prof": "actor,producer,director",
-    "titles": [
-      "tt0156934"
-    ]
-  },
   "nm0001169": {
     "birth": "1945",
     "movies": {
@@ -4449,18 +2913,6 @@
       "tt0163187"
     ]
   },
-  "nm0001186": {
-    "birth": "1922",
-    "movies": {
-      "tt0097576": "Indiana Jones and the Last Crusade"
-    },
-    "name": "Denholm Elliott",
-    "nid": "nm0001186",
-    "prof": "actor",
-    "titles": [
-      "tt0097576"
-    ]
-  },
   "nm0001215": {
     "birth": "1936",
     "movies": {
@@ -4471,18 +2923,6 @@
     "prof": "actor,producer,soundtrack",
     "titles": [
       "tt0195685"
-    ]
-  },
-  "nm0001217": {
-    "birth": "1941",
-    "movies": {
-      "tt0279778": "Divine Secrets of the Ya-Ya Sisterhood"
-    },
-    "name": "Fionnula Flanagan",
-    "nid": "nm0001217",
-    "prof": "actress,producer",
-    "titles": [
-      "tt0279778"
     ]
   },
   "nm0001222": {
@@ -4497,18 +2937,6 @@
       "tt0120303"
     ]
   },
-  "nm0001251": {
-    "birth": "1955",
-    "movies": {
-      "tt0114924": "While You Were Sleeping"
-    },
-    "name": "Peter Gallagher",
-    "nid": "nm0001251",
-    "prof": "actor,soundtrack,writer",
-    "titles": [
-      "tt0114924"
-    ]
-  },
   "nm0001254": {
     "birth": "1961",
     "movies": {
@@ -4519,18 +2947,6 @@
     "prof": "actor,producer,soundtrack",
     "titles": [
       "tt0236493"
-    ]
-  },
-  "nm0001258": {
-    "birth": "1928",
-    "movies": {
-      "tt0279778": "Divine Secrets of the Ya-Ya Sisterhood"
-    },
-    "name": "James Garner",
-    "nid": "nm0001258",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0279778"
     ]
   },
   "nm0001264": {
@@ -4607,42 +3023,16 @@
       "tt0099348"
     ]
   },
-  "nm0001305": {
-    "birth": "1976",
-    "movies": {
-      "tt0090329": "Witness"
-    },
-    "name": "Lukas Haas",
-    "nid": "nm0001305",
-    "prof": "actor,soundtrack,music_department",
-    "titles": [
-      "tt0090329"
-    ]
-  },
   "nm0001315": {
     "birth": "1959",
     "movies": {
-      "tt0822849": "Rails & Ties",
-      "tt2870756": "Magic in the Moonlight"
+      "tt0822849": "Rails & Ties"
     },
     "name": "Marcia Gay Harden",
     "nid": "nm0001315",
     "prof": "actress",
     "titles": [
-      "tt0822849",
-      "tt2870756"
-    ]
-  },
-  "nm0001321": {
-    "birth": "1930",
-    "movies": {
-      "tt0108596": "Wrestling Ernest Hemingway"
-    },
-    "name": "Richard Harris",
-    "nid": "nm0001321",
-    "prof": "actor,soundtrack,producer",
-    "titles": [
-      "tt0108596"
+      "tt0822849"
     ]
   },
   "nm0001324": {
@@ -4655,30 +3045,6 @@
     "prof": "actor,writer,miscellaneous",
     "titles": [
       "tt0117039"
-    ]
-  },
-  "nm0001326": {
-    "birth": "1978",
-    "movies": {
-      "tt0329717": "Hollywood Homicide"
-    },
-    "name": "Josh Hartnett",
-    "nid": "nm0001326",
-    "prof": "actor,producer",
-    "titles": [
-      "tt0329717"
-    ]
-  },
-  "nm0001329": {
-    "birth": "1929",
-    "movies": {
-      "tt0106697": "Demolition Man"
-    },
-    "name": "Nigel Hawthorne",
-    "nid": "nm0001329",
-    "prof": "actor,producer",
-    "titles": [
-      "tt0106697"
     ]
   },
   "nm0001334": {
@@ -4707,18 +3073,6 @@
       "tt1781840"
     ]
   },
-  "nm0001347": {
-    "birth": "1948",
-    "movies": {
-      "tt0100822": "Tune in Tomorrow..."
-    },
-    "name": "Barbara Hershey",
-    "nid": "nm0001347",
-    "prof": "actress",
-    "titles": [
-      "tt0100822"
-    ]
-  },
   "nm0001364": {
     "birth": "1942",
     "movies": {
@@ -4745,30 +3099,16 @@
       "tt0103855"
     ]
   },
-  "nm0001368": {
-    "birth": "1945",
-    "movies": {
-      "tt0204626": "The Watcher"
-    },
-    "name": "Ernie Hudson",
-    "nid": "nm0001368",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0204626"
-    ]
-  },
   "nm0001372": {
     "birth": "1961",
     "movies": {
-      "tt0120689": "The Green Mile",
-      "tt0156934": "Random Hearts"
+      "tt0120689": "The Green Mile"
     },
     "name": "Bonnie Hunt",
     "nid": "nm0001372",
     "prof": "producer,writer,actress",
     "titles": [
-      "tt0120689",
-      "tt0156934"
+      "tt0120689"
     ]
   },
   "nm0001383": {
@@ -4783,82 +3123,28 @@
       "tt0290212"
     ]
   },
-  "nm0001384": {
-    "birth": "1958",
-    "movies": {
-      "tt0113481": "Johnny Mnemonic"
-    },
-    "name": "Ice-T",
-    "nid": "nm0001384",
-    "prof": "actor,soundtrack,producer",
-    "titles": [
-      "tt0113481"
-    ]
-  },
-  "nm0001389": {
-    "birth": "1956",
-    "movies": {
-      "tt0107426": "Little Buddha"
-    },
-    "name": "Chris Isaak",
-    "nid": "nm0001389",
-    "prof": "soundtrack,actor,composer",
-    "titles": [
-      "tt0107426"
-    ]
-  },
   "nm0001416": {
     "birth": "1959",
     "movies": {
-      "tt0481499": "The Croods",
-      "tt1535109": "Captain Phillips",
-      "tt2850386": "The Croods 2"
+      "tt1535109": "Captain Phillips"
     },
     "name": "Catherine Keener",
     "nid": "nm0001416",
     "prof": "actress,producer,casting_department",
     "titles": [
-      "tt0481499",
-      "tt1535109",
-      "tt2850386"
+      "tt1535109"
     ]
   },
   "nm0001427": {
     "birth": "1963",
     "movies": {
-      "tt0114319": "Sabrina",
       "tt0128853": "You've Got Mail"
     },
     "name": "Greg Kinnear",
     "nid": "nm0001427",
     "prof": "actor,producer,writer",
     "titles": [
-      "tt0114319",
       "tt0128853"
-    ]
-  },
-  "nm0001433": {
-    "birth": "1939",
-    "movies": {
-      "tt0118002": "Two If by Sea"
-    },
-    "name": "Yaphet Kotto",
-    "nid": "nm0001433",
-    "prof": "actor,writer,director",
-    "titles": [
-      "tt0118002"
-    ]
-  },
-  "nm0001435": {
-    "birth": "1963",
-    "movies": {
-      "tt0437405": "Paper Man"
-    },
-    "name": "Lisa Kudrow",
-    "nid": "nm0001435",
-    "prof": "actress,writer,producer",
-    "titles": [
-      "tt0437405"
     ]
   },
   "nm0001439": {
@@ -4915,18 +3201,6 @@
       "tt2223990"
     ]
   },
-  "nm0001459": {
-    "birth": "1957",
-    "movies": {
-      "tt0118002": "Two If by Sea"
-    },
-    "name": "Denis Leary",
-    "nid": "nm0001459",
-    "prof": "writer,actor,producer",
-    "titles": [
-      "tt0118002"
-    ]
-  },
   "nm0001462": {
     "birth": "1966",
     "movies": {
@@ -4958,15 +3232,13 @@
   "nm0001475": {
     "birth": "1945",
     "movies": {
-      "tt0087277": "Footloose",
-      "tt0352520": "The Life and Death of Peter Sellers"
+      "tt0087277": "Footloose"
     },
     "name": "John Lithgow",
     "nid": "nm0001475",
     "prof": "actor,soundtrack,producer",
     "titles": [
-      "tt0087277",
-      "tt0352520"
+      "tt0087277"
     ]
   },
   "nm0001480": {
@@ -4996,27 +3268,13 @@
   "nm0001496": {
     "birth": "1950",
     "movies": {
-      "tt0095903": "The Prince of Pennsylvania",
       "tt0097351": "Field of Dreams"
     },
     "name": "Amy Madigan",
     "nid": "nm0001496",
     "prof": "actress,soundtrack,producer",
     "titles": [
-      "tt0095903",
       "tt0097351"
-    ]
-  },
-  "nm0001497": {
-    "birth": "1975",
-    "movies": {
-      "tt0124315": "The Cider House Rules"
-    },
-    "name": "Tobey Maguire",
-    "nid": "nm0001497",
-    "prof": "actor,producer,director",
-    "titles": [
-      "tt0124315"
     ]
   },
   "nm0001498": {
@@ -5091,18 +3349,6 @@
       "tt0110997"
     ]
   },
-  "nm0001520": {
-    "birth": "1955",
-    "movies": {
-      "tt4019560": "Exposed"
-    },
-    "name": "Christopher McDonald",
-    "nid": "nm0001520",
-    "prof": "actor,producer,director",
-    "titles": [
-      "tt4019560"
-    ]
-  },
   "nm0001521": {
     "birth": "1952",
     "movies": {
@@ -5127,18 +3373,6 @@
       "tt0096094"
     ]
   },
-  "nm0001535": {
-    "birth": "1959",
-    "movies": {
-      "tt0102343": "Love Potion No. 9"
-    },
-    "name": "Dale Midkiff",
-    "nid": "nm0001535",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0102343"
-    ]
-  },
   "nm0001542": {
     "birth": "1970",
     "movies": {
@@ -5151,18 +3385,6 @@
       "tt0119896"
     ]
   },
-  "nm0001551": {
-    "birth": "1974",
-    "movies": {
-      "tt0904079": "The Great Warming"
-    },
-    "name": "Alanis Morissette",
-    "nid": "nm0001551",
-    "prof": "soundtrack,actress,composer",
-    "titles": [
-      "tt0904079"
-    ]
-  },
   "nm0001556": {
     "birth": "1953",
     "movies": {
@@ -5173,20 +3395,6 @@
     "prof": "actor,director,producer",
     "titles": [
       "tt0120689"
-    ]
-  },
-  "nm0001557": {
-    "birth": "1958",
-    "movies": {
-      "tt0191754": "28 Days",
-      "tt0898367": "The Road"
-    },
-    "name": "Viggo Mortensen",
-    "nid": "nm0001557",
-    "prof": "actor,soundtrack,producer",
-    "titles": [
-      "tt0191754",
-      "tt0898367"
     ]
   },
   "nm0001567": {
@@ -5205,16 +3413,14 @@
     "birth": "1969",
     "movies": {
       "tt0116242": "Everyone Says I Love You",
-      "tt0117381": "Primal Fear",
-      "tt0317740": "The Italian Job"
+      "tt0117381": "Primal Fear"
     },
     "name": "Edward Norton",
     "nid": "nm0001570",
     "prof": "actor,producer,writer",
     "titles": [
       "tt0116242",
-      "tt0117381",
-      "tt0317740"
+      "tt0117381"
     ]
   },
   "nm0001573": {
@@ -5227,18 +3433,6 @@
     "prof": "actress,writer,producer",
     "titles": [
       "tt0386117"
-    ]
-  },
-  "nm0001584": {
-    "birth": "1967",
-    "movies": {
-      "tt0161081": "What Lies Beneath"
-    },
-    "name": "Miranda Otto",
-    "nid": "nm0001584",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt0161081"
     ]
   },
   "nm0001590": {
@@ -5279,86 +3473,42 @@
       "tt0119925"
     ]
   },
-  "nm0001605": {
-    "birth": "1972",
-    "movies": {
-      "tt0337741": "Something's Gotta Give"
-    },
-    "name": "Amanda Peet",
-    "nid": "nm0001605",
-    "prof": "actress",
-    "titles": [
-      "tt0337741"
-    ]
-  },
   "nm0001610": {
     "birth": "1960",
     "movies": {
       "tt0094737": "Big",
-      "tt0102011": "He Said, She Said",
-      "tt0191754": "28 Days"
+      "tt0102011": "He Said, She Said"
     },
     "name": "Elizabeth Perkins",
     "nid": "nm0001610",
     "prof": "actress",
     "titles": [
       "tt0094737",
-      "tt0102011",
-      "tt0191754"
+      "tt0102011"
     ]
   },
   "nm0001614": {
     "birth": "1963",
     "movies": {
-      "tt0102685": "Point Break",
       "tt0104694": "A League of Their Own"
     },
     "name": "Lori Petty",
     "nid": "nm0001614",
     "prof": "actress,producer,writer",
     "titles": [
-      "tt0102685",
       "tt0104694"
-    ]
-  },
-  "nm0001618": {
-    "birth": "1974",
-    "movies": {
-      "tt0138946": "The Yards",
-      "tt3715320": "Irrational Man"
-    },
-    "name": "Joaquin Phoenix",
-    "nid": "nm0001618",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0138946",
-      "tt3715320"
-    ]
-  },
-  "nm0001624": {
-    "birth": "1960",
-    "movies": {
-      "tt0171356": "Gun Shy"
-    },
-    "name": "Oliver Platt",
-    "nid": "nm0001624",
-    "prof": "actor,producer",
-    "titles": [
-      "tt0171356"
     ]
   },
   "nm0001626": {
     "birth": "1929",
     "movies": {
-      "tt0092925": "Dragnet",
-      "tt0410297": "The Lake House"
+      "tt0092925": "Dragnet"
     },
     "name": "Christopher Plummer",
     "nid": "nm0001626",
     "prof": "actor,soundtrack,producer",
     "titles": [
-      "tt0092925",
-      "tt0410297"
+      "tt0092925"
     ]
   },
   "nm0001627": {
@@ -5409,42 +3559,16 @@
       "tt2873282"
     ]
   },
-  "nm0001670": {
-    "birth": "1963",
-    "movies": {
-      "tt0219400": "Waking Up in Reno"
-    },
-    "name": "Natasha Richardson",
-    "nid": "nm0001670",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt0219400"
-    ]
-  },
   "nm0001687": {
     "birth": "1930",
     "movies": {
-      "tt0114496": "Something to Talk About",
-      "tt0119313": "Hope Floats"
+      "tt0114496": "Something to Talk About"
     },
     "name": "Gena Rowlands",
     "nid": "nm0001687",
     "prof": "actress,writer,soundtrack",
     "titles": [
-      "tt0114496",
-      "tt0119313"
-    ]
-  },
-  "nm0001691": {
-    "birth": "1951",
-    "movies": {
-      "tt0352520": "The Life and Death of Peter Sellers"
-    },
-    "name": "Geoffrey Rush",
-    "nid": "nm0001691",
-    "prof": "actor,soundtrack,producer",
-    "titles": [
-      "tt0352520"
+      "tt0114496"
     ]
   },
   "nm0001693": {
@@ -5483,18 +3607,6 @@
       "tt0120303"
     ]
   },
-  "nm0001710": {
-    "birth": "1966",
-    "movies": {
-      "tt0120828": "Six Days Seven Nights"
-    },
-    "name": "David Schwimmer",
-    "nid": "nm0001710",
-    "prof": "actor,director,soundtrack",
-    "titles": [
-      "tt0120828"
-    ]
-  },
   "nm0001714": {
     "birth": "1961",
     "movies": {
@@ -5525,18 +3637,6 @@
       "tt0102733",
       "tt0361127",
       "tt0388213"
-    ]
-  },
-  "nm0001729": {
-    "birth": "1960",
-    "movies": {
-      "tt0106913": "Fire on the Amazon"
-    },
-    "name": "Craig Sheffer",
-    "nid": "nm0001729",
-    "prof": "actor,producer,director",
-    "titles": [
-      "tt0106913"
     ]
   },
   "nm0001731": {
@@ -5589,18 +3689,6 @@
       "tt0808151"
     ]
   },
-  "nm0001746": {
-    "birth": "1970",
-    "movies": {
-      "tt0091860": "River's Edge"
-    },
-    "name": "Ione Skye",
-    "nid": "nm0001746",
-    "prof": "actress,writer,soundtrack",
-    "titles": [
-      "tt0091860"
-    ]
-  },
   "nm0001747": {
     "birth": "1953",
     "movies": {
@@ -5611,18 +3699,6 @@
     "prof": "actor,director,writer",
     "titles": [
       "tt0094226"
-    ]
-  },
-  "nm0001763": {
-    "birth": "1979",
-    "movies": {
-      "tt0888693": "Sleepwalking"
-    },
-    "name": "Nick Stahl",
-    "nid": "nm0001763",
-    "prof": "actor,producer,assistant_director",
-    "titles": [
-      "tt0888693"
     ]
   },
   "nm0001772": {
@@ -5640,15 +3716,13 @@
   "nm0001802": {
     "birth": "1961",
     "movies": {
-      "tt0099850": "Internal Affairs",
-      "tt0108473": "The Vanishing"
+      "tt0099850": "Internal Affairs"
     },
     "name": "Nancy Travis",
     "nid": "nm0001802",
     "prof": "actress,producer,soundtrack",
     "titles": [
-      "tt0099850",
-      "tt0108473"
+      "tt0099850"
     ]
   },
   "nm0001804": {
@@ -5691,60 +3765,28 @@
       "tt0098536"
     ]
   },
-  "nm0001833": {
-    "birth": "1967",
-    "movies": {
-      "tt0352520": "The Life and Death of Peter Sellers"
-    },
-    "name": "Emily Watson",
-    "nid": "nm0001833",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt0352520"
-    ]
-  },
-  "nm0001838": {
-    "birth": "1970",
-    "movies": {
-      "tt0115857": "Chain Reaction",
-      "tt0360486": "Constantine",
-      "tt5083738": "The Favourite"
-    },
-    "name": "Rachel Weisz",
-    "nid": "nm0001838",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt0115857",
-      "tt0360486",
-      "tt5083738"
-    ]
-  },
   "nm0001845": {
     "birth": "1961",
     "movies": {
-      "tt0386117": "Where the Wild Things Are",
-      "tt0421073": "Street Kings"
+      "tt0386117": "Where the Wild Things Are"
     },
     "name": "Forest Whitaker",
     "nid": "nm0001845",
     "prof": "actor,producer,director",
     "titles": [
-      "tt0386117",
-      "tt0421073"
+      "tt0386117"
     ]
   },
   "nm0001848": {
     "birth": "1948",
     "movies": {
-      "tt0087277": "Footloose",
-      "tt0120791": "Practical Magic"
+      "tt0087277": "Footloose"
     },
     "name": "Dianne Wiest",
     "nid": "nm0001848",
     "prof": "actress,soundtrack",
     "titles": [
-      "tt0087277",
-      "tt0120791"
+      "tt0087277"
     ]
   },
   "nm0001854": {
@@ -5787,30 +3829,6 @@
       "tt0111667"
     ]
   },
-  "nm0001860": {
-    "birth": "1975",
-    "movies": {
-      "tt0313737": "Two Weeks Notice"
-    },
-    "name": "Alicia Witt",
-    "nid": "nm0001860",
-    "prof": "actress,soundtrack,music_department",
-    "titles": [
-      "tt0313737"
-    ]
-  },
-  "nm0001872": {
-    "birth": "1967",
-    "movies": {
-      "tt0141098": "Forces of Nature"
-    },
-    "name": "Steve Zahn",
-    "nid": "nm0001872",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt0141098"
-    ]
-  },
   "nm0001876": {
     "birth": "1969",
     "movies": {
@@ -5829,18 +3847,6 @@
       "tt0362227"
     ]
   },
-  "nm0001882": {
-    "birth": "1969",
-    "movies": {
-      "tt0091065": "Flying"
-    },
-    "name": "Olivia d'Abo",
-    "nid": "nm0001882",
-    "prof": "actress,soundtrack,music_department",
-    "titles": [
-      "tt0091065"
-    ]
-  },
   "nm0001884": {
     "birth": "1929",
     "movies": {
@@ -5853,42 +3859,6 @@
       "tt0477302"
     ]
   },
-  "nm0001952": {
-    "birth": "1948",
-    "movies": {
-      "tt0118972": "The Devil's Own"
-    },
-    "name": "Rub\u00e9n Blades",
-    "nid": "nm0001952",
-    "prof": "actor,soundtrack,composer",
-    "titles": [
-      "tt0118972"
-    ]
-  },
-  "nm0001967": {
-    "birth": "1935",
-    "movies": {
-      "tt0114924": "While You Were Sleeping"
-    },
-    "name": "Peter Boyle",
-    "nid": "nm0001967",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt0114924"
-    ]
-  },
-  "nm0001987": {
-    "birth": "1950",
-    "movies": {
-      "tt0932669": "Older Than America"
-    },
-    "name": "Tantoo Cardinal",
-    "nid": "nm0001987",
-    "prof": "actress,director",
-    "titles": [
-      "tt0932669"
-    ]
-  },
   "nm0002004": {
     "birth": "1966",
     "movies": {
@@ -5899,18 +3869,6 @@
     "prof": "actress",
     "titles": [
       "tt2980210"
-    ]
-  },
-  "nm0002006": {
-    "birth": "1960",
-    "movies": {
-      "tt0881891": "All About Steve"
-    },
-    "name": "Thomas Haden Church",
-    "nid": "nm0002006",
-    "prof": "actor,miscellaneous,producer",
-    "titles": [
-      "tt0881891"
     ]
   },
   "nm0002027": {
@@ -6024,15 +3982,13 @@
   "nm0004266": {
     "birth": "1982",
     "movies": {
-      "tt0817230": "Valentine's Day",
-      "tt5164214": "Ocean's 8"
+      "tt0817230": "Valentine's Day"
     },
     "name": "Anne Hathaway",
     "nid": "nm0004266",
     "prof": "actress,soundtrack,producer",
     "titles": [
-      "tt0817230",
-      "tt5164214"
+      "tt0817230"
     ]
   },
   "nm0004517": {
@@ -6095,78 +4051,6 @@
       "tt1582507"
     ]
   },
-  "nm0004753": {
-    "birth": "1974",
-    "movies": {
-      "tt0805570": "The Midnight Meat Train"
-    },
-    "name": "Leslie Bibb",
-    "nid": "nm0004753",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt0805570"
-    ]
-  },
-  "nm0004754": {
-    "birth": "1982",
-    "movies": {
-      "tt0429493": "The A-Team"
-    },
-    "name": "Jessica Biel",
-    "nid": "nm0004754",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt0429493"
-    ]
-  },
-  "nm0004778": {
-    "birth": "1973",
-    "movies": {
-      "tt0119502": "The Last Time I Committed Suicide"
-    },
-    "name": "Adrien Brody",
-    "nid": "nm0004778",
-    "prof": "actor,producer,composer",
-    "titles": [
-      "tt0119502"
-    ]
-  },
-  "nm0004789": {
-    "birth": "1986",
-    "movies": {
-      "tt1282140": "Easy A"
-    },
-    "name": "Amanda Bynes",
-    "nid": "nm0004789",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt1282140"
-    ]
-  },
-  "nm0004851": {
-    "birth": "1974",
-    "movies": {
-      "tt0338097": "Head in the Clouds"
-    },
-    "name": "Pen\u00e9lope Cruz",
-    "nid": "nm0004851",
-    "prof": "actress,soundtrack,producer",
-    "titles": [
-      "tt0338097"
-    ]
-  },
-  "nm0004874": {
-    "birth": "1967",
-    "movies": {
-      "tt2015381": "Guardians of the Galaxy"
-    },
-    "name": "Vin Diesel",
-    "nid": "nm0004874",
-    "prof": "producer,actor,director",
-    "titles": [
-      "tt2015381"
-    ]
-  },
   "nm0004875": {
     "birth": "1971",
     "movies": {
@@ -6177,18 +4061,6 @@
     "prof": "actor,producer,soundtrack",
     "titles": [
       "tt0299658"
-    ]
-  },
-  "nm0004883": {
-    "birth": "1963",
-    "movies": {
-      "tt0102343": "Love Potion No. 9"
-    },
-    "name": "Tate Donovan",
-    "nid": "nm0004883",
-    "prof": "actor,director,soundtrack",
-    "titles": [
-      "tt0102343"
     ]
   },
   "nm0004936": {
@@ -6206,28 +4078,24 @@
   "nm0004937": {
     "birth": "1967",
     "movies": {
-      "tt0817230": "Valentine's Day",
-      "tt1872181": "The Amazing Spider-Man 2"
+      "tt0817230": "Valentine's Day"
     },
     "name": "Jamie Foxx",
     "nid": "nm0004937",
     "prof": "actor,producer,writer",
     "titles": [
-      "tt0817230",
-      "tt1872181"
+      "tt0817230"
     ]
   },
   "nm0004950": {
     "birth": "1972",
     "movies": {
-      "tt0821640": "Ghosts of Girlfriends Past",
       "tt2223990": "Draft Day"
     },
     "name": "Jennifer Garner",
     "nid": "nm0004950",
     "prof": "actress,producer,soundtrack",
     "titles": [
-      "tt0821640",
       "tt2223990"
     ]
   },
@@ -6246,40 +4114,24 @@
   "nm0004988": {
     "birth": "1977",
     "movies": {
-      "tt0460810": "The Great Buck Howard",
-      "tt0852713": "The House Bunny"
+      "tt0460810": "The Great Buck Howard"
     },
     "name": "Colin Hanks",
     "nid": "nm0004988",
     "prof": "actor,director,producer",
     "titles": [
-      "tt0460810",
-      "tt0852713"
-    ]
-  },
-  "nm0005017": {
-    "birth": "1978",
-    "movies": {
-      "tt0219699": "The Gift"
-    },
-    "name": "Katie Holmes",
-    "nid": "nm0005017",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt0219699"
+      "tt0460810"
     ]
   },
   "nm0005023": {
     "birth": "1964",
     "movies": {
-      "tt0360486": "Constantine",
       "tt1578882": "Elephant White"
     },
     "name": "Djimon Hounsou",
     "nid": "nm0005023",
     "prof": "actor,producer,director",
     "titles": [
-      "tt0360486",
       "tt1578882"
     ]
   },
@@ -6307,30 +4159,6 @@
       "tt4824302"
     ]
   },
-  "nm0005042": {
-    "birth": "1963",
-    "movies": {
-      "tt0230838": "Sweet November"
-    },
-    "name": "Jason Isaacs",
-    "nid": "nm0005042",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0230838"
-    ]
-  },
-  "nm0005048": {
-    "birth": "1969",
-    "movies": {
-      "tt0119502": "The Last Time I Committed Suicide"
-    },
-    "name": "Thomas Jane",
-    "nid": "nm0005048",
-    "prof": "actor,producer,director",
-    "titles": [
-      "tt0119502"
-    ]
-  },
   "nm0005052": {
     "birth": "1952",
     "movies": {
@@ -6341,30 +4169,6 @@
     "prof": "actor,soundtrack,director",
     "titles": [
       "tt0338348"
-    ]
-  },
-  "nm0005068": {
-    "birth": "1965",
-    "movies": {
-      "tt0805570": "The Midnight Meat Train"
-    },
-    "name": "Vinnie Jones",
-    "nid": "nm0005068",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt0805570"
-    ]
-  },
-  "nm0005093": {
-    "birth": "1971",
-    "movies": {
-      "tt0385307": "Miss Congeniality 2: Armed and Fabulous"
-    },
-    "name": "Regina King",
-    "nid": "nm0005093",
-    "prof": "actress,director,producer",
-    "titles": [
-      "tt0385307"
     ]
   },
   "nm0005110": {
@@ -6379,20 +4183,6 @@
       "tt0406816"
     ]
   },
-  "nm0005148": {
-    "birth": "1952",
-    "movies": {
-      "tt0116289": "Feeling Minnesota",
-      "tt0124315": "The Cider House Rules"
-    },
-    "name": "Delroy Lindo",
-    "nid": "nm0005148",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0116289",
-      "tt0124315"
-    ]
-  },
   "nm0005162": {
     "birth": "1930",
     "movies": {
@@ -6403,18 +4193,6 @@
     "prof": "actor,director,soundtrack",
     "titles": [
       "tt0094737"
-    ]
-  },
-  "nm0005210": {
-    "birth": "1967",
-    "movies": {
-      "tt0878804": "The Blind Side"
-    },
-    "name": "Tim McGraw",
-    "nid": "nm0005210",
-    "prof": "soundtrack,actor,music_department",
-    "titles": [
-      "tt0878804"
     ]
   },
   "nm0005212": {
@@ -6453,22 +4231,6 @@
       "tt0110944"
     ]
   },
-  "nm0005251": {
-    "birth": "1967",
-    "movies": {
-      "tt0133093": "The Matrix",
-      "tt0234215": "The Matrix Reloaded",
-      "tt0242653": "The Matrix Revolutions"
-    },
-    "name": "Carrie-Anne Moss",
-    "nid": "nm0005251",
-    "prof": "actress,producer",
-    "titles": [
-      "tt0133093",
-      "tt0234215",
-      "tt0242653"
-    ]
-  },
   "nm0005260": {
     "birth": "1985",
     "movies": {
@@ -6484,27 +4246,13 @@
   "nm0005266": {
     "birth": "1944",
     "movies": {
-      "tt0098536": "Turner & Hooch",
-      "tt1041829": "The Proposal"
+      "tt0098536": "Turner & Hooch"
     },
     "name": "Craig T. Nelson",
     "nid": "nm0005266",
     "prof": "actor,producer,director",
     "titles": [
-      "tt0098536",
-      "tt1041829"
-    ]
-  },
-  "nm0005283": {
-    "birth": "1966",
-    "movies": {
-      "tt0120828": "Six Days Seven Nights"
-    },
-    "name": "Jacqueline Obradors",
-    "nid": "nm0005283",
-    "prof": "actress",
-    "titles": [
-      "tt0120828"
+      "tt0098536"
     ]
   },
   "nm0005299": {
@@ -6522,22 +4270,14 @@
   "nm0005351": {
     "birth": "1976",
     "movies": {
-      "tt0437405": "Paper Man",
-      "tt0481499": "The Croods",
       "tt0790736": "R.I.P.D.",
-      "tt1041829": "The Proposal",
-      "tt2850386": "The Croods 2",
       "tt3014866": "Criminal"
     },
     "name": "Ryan Reynolds",
     "nid": "nm0005351",
     "prof": "actor,producer,soundtrack",
     "titles": [
-      "tt0437405",
-      "tt0481499",
       "tt0790736",
-      "tt1041829",
-      "tt2850386",
       "tt3014866"
     ]
   },
@@ -6553,30 +4293,6 @@
     "titles": [
       "tt0270288",
       "tt0870111"
-    ]
-  },
-  "nm0005392": {
-    "birth": "1976",
-    "movies": {
-      "tt1244659": "Extraordinary Measures"
-    },
-    "name": "Keri Russell",
-    "nid": "nm0005392",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt1244659"
-    ]
-  },
-  "nm0005460": {
-    "birth": "1953",
-    "movies": {
-      "tt1041829": "The Proposal"
-    },
-    "name": "Mary Steenburgen",
-    "nid": "nm0005460",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt1041829"
     ]
   },
   "nm0005466": {
@@ -6617,30 +4333,6 @@
       "tt0119925"
     ]
   },
-  "nm0005491": {
-    "birth": "1965",
-    "movies": {
-      "tt0141098": "Forces of Nature"
-    },
-    "name": "Maura Tierney",
-    "nid": "nm0005491",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt0141098"
-    ]
-  },
-  "nm0005520": {
-    "birth": "1974",
-    "movies": {
-      "tt0477071": "Premonition"
-    },
-    "name": "Amber Valletta",
-    "nid": "nm0005520",
-    "prof": "actress,producer",
-    "titles": [
-      "tt0477071"
-    ]
-  },
   "nm0005541": {
     "birth": "1972",
     "movies": {
@@ -6668,63 +4360,13 @@
   "nm0005562": {
     "birth": "1968",
     "movies": {
-      "tt1392197": "Marmaduke",
       "tt2543472": "Wonder"
     },
     "name": "Owen Wilson",
     "nid": "nm0005562",
     "prof": "actor,producer,writer",
     "titles": [
-      "tt1392197",
       "tt2543472"
-    ]
-  },
-  "nm0006663": {
-    "birth": "1973",
-    "movies": {
-      "tt0385307": "Miss Congeniality 2: Armed and Fabulous"
-    },
-    "name": "Enrique Murciano",
-    "nid": "nm0006663",
-    "prof": "actor,producer",
-    "titles": [
-      "tt0385307"
-    ]
-  },
-  "nm0006669": {
-    "birth": "1950",
-    "movies": {
-      "tt0101452": "Bill & Ted's Bogus Journey"
-    },
-    "name": "William Sadler",
-    "nid": "nm0006669",
-    "prof": "actor,soundtrack,director",
-    "titles": [
-      "tt0101452"
-    ]
-  },
-  "nm0006820": {
-    "birth": "1969",
-    "movies": {
-      "tt6494418": "Siberia"
-    },
-    "name": "Aleks Paunovic",
-    "nid": "nm0006820",
-    "prof": "actor,producer,stunts",
-    "titles": [
-      "tt6494418"
-    ]
-  },
-  "nm0006958": {
-    "birth": "1982",
-    "movies": {
-      "tt0478134": "In the Valley of Elah"
-    },
-    "name": "Jonathan Tucker",
-    "nid": "nm0006958",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt0478134"
     ]
   },
   "nm0007210": {
@@ -6765,20 +4407,6 @@
       "tt0257044"
     ]
   },
-  "nm0021835": {
-    "birth": "1957",
-    "movies": {
-      "tt0109444": "Clear and Present Danger",
-      "tt1018765": "Our Brand Is Crisis"
-    },
-    "name": "Joaquim de Almeida",
-    "nid": "nm0021835",
-    "prof": "actor",
-    "titles": [
-      "tt0109444",
-      "tt1018765"
-    ]
-  },
   "nm0028625": {
     "birth": "1952",
     "movies": {
@@ -6791,30 +4419,6 @@
       "tt0111756"
     ]
   },
-  "nm0037410": {
-    "birth": "1969",
-    "movies": {
-      "tt0375679": "Crash"
-    },
-    "name": "Karina Arroyave",
-    "nid": "nm0037410",
-    "prof": "actress",
-    "titles": [
-      "tt0375679"
-    ]
-  },
-  "nm0038355": {
-    "birth": "1973",
-    "movies": {
-      "tt1335975": "47 Ronin"
-    },
-    "name": "Tadanobu Asano",
-    "nid": "nm0038355",
-    "prof": "actor,director,composer",
-    "titles": [
-      "tt1335975"
-    ]
-  },
   "nm0038988": {
     "birth": "1969",
     "movies": {
@@ -6825,18 +4429,6 @@
     "prof": "actor",
     "titles": [
       "tt4191702"
-    ]
-  },
-  "nm0040015": {
-    "birth": "1973",
-    "movies": {
-      "tt0116621": "In Love and War"
-    },
-    "name": "Mackenzie Astin",
-    "nid": "nm0040015",
-    "prof": "actor",
-    "titles": [
-      "tt0116621"
     ]
   },
   "nm0040662": {
@@ -6861,18 +4453,6 @@
     "prof": "actress,soundtrack",
     "titles": [
       "tt0091019"
-    ]
-  },
-  "nm0046112": {
-    "birth": "1986",
-    "movies": {
-      "tt1282140": "Easy A"
-    },
-    "name": "Penn Badgley",
-    "nid": "nm0046112",
-    "prof": "actor,producer",
-    "titles": [
-      "tt1282140"
     ]
   },
   "nm0048379": {
@@ -6911,22 +4491,6 @@
       "tt0092967"
     ]
   },
-  "nm0058581": {
-    "birth": "1978",
-    "movies": {
-      "tt1119646": "The Hangover",
-      "tt1411697": "The Hangover Part II",
-      "tt1951261": "The Hangover Part III"
-    },
-    "name": "Justin Bartha",
-    "nid": "nm0058581",
-    "prof": "actor,producer,miscellaneous",
-    "titles": [
-      "tt1119646",
-      "tt1411697",
-      "tt1951261"
-    ]
-  },
   "nm0059946": {
     "birth": "1950",
     "movies": {
@@ -6939,68 +4503,6 @@
       "tt0123191"
     ]
   },
-  "nm0063440": {
-    "birth": "1972",
-    "movies": {
-      "tt0932669": "Older Than America"
-    },
-    "name": "Adam Beach",
-    "nid": "nm0063440",
-    "prof": "actor,producer,composer",
-    "titles": [
-      "tt0932669"
-    ]
-  },
-  "nm0063800": {
-    "birth": "1978",
-    "movies": {
-      "tt1126618": "Morning Glory"
-    },
-    "name": "Noah Bean",
-    "nid": "nm0063800",
-    "prof": "actor,director,editor",
-    "titles": [
-      "tt1126618"
-    ]
-  },
-  "nm0065007": {
-    "birth": "1963",
-    "movies": {
-      "tt2404463": "The Heat"
-    },
-    "name": "Demi\u00e1n Bichir",
-    "nid": "nm0065007",
-    "prof": "actor,producer,director",
-    "titles": [
-      "tt2404463"
-    ]
-  },
-  "nm0068338": {
-    "birth": "1980",
-    "movies": {
-      "tt0375568": "Astro Boy",
-      "tt2097307": "Hit and Run"
-    },
-    "name": "Kristen Bell",
-    "nid": "nm0068338",
-    "prof": "actress,soundtrack,producer",
-    "titles": [
-      "tt0375568",
-      "tt2097307"
-    ]
-  },
-  "nm0069515": {
-    "birth": "\\N",
-    "movies": {
-      "tt0223844": "One Step Away"
-    },
-    "name": "Diana Belshaw",
-    "nid": "nm0069515",
-    "prof": "actress",
-    "titles": [
-      "tt0223844"
-    ]
-  },
   "nm0072344": {
     "birth": "1969",
     "movies": {
@@ -7011,18 +4513,6 @@
     "prof": "actor,soundtrack",
     "titles": [
       "tt0316356"
-    ]
-  },
-  "nm0079273": {
-    "birth": "1971",
-    "movies": {
-      "tt0408345": "Firewall"
-    },
-    "name": "Paul Bettany",
-    "nid": "nm0079273",
-    "prof": "actor,director,writer",
-    "titles": [
-      "tt0408345"
     ]
   },
   "nm0080049": {
@@ -7049,18 +4539,6 @@
       "tt0087374"
     ]
   },
-  "nm0101621": {
-    "birth": "1961",
-    "movies": {
-      "tt0095853": "Permanent Record"
-    },
-    "name": "Alan Boyce",
-    "nid": "nm0101621",
-    "prof": "actor",
-    "titles": [
-      "tt0095853"
-    ]
-  },
   "nm0109773": {
     "birth": "1952",
     "movies": {
@@ -7071,18 +4549,6 @@
     "prof": "actor,writer",
     "titles": [
       "tt0195685"
-    ]
-  },
-  "nm0117709": {
-    "birth": "1978",
-    "movies": {
-      "tt2503944": "Burnt"
-    },
-    "name": "Daniel Br\u00fchl",
-    "nid": "nm0117709",
-    "prof": "actor,producer",
-    "titles": [
-      "tt2503944"
     ]
   },
   "nm0122653": {
@@ -7109,54 +4575,6 @@
       "tt0089126"
     ]
   },
-  "nm0126004": {
-    "birth": "1985",
-    "movies": {
-      "tt1282140": "Easy A"
-    },
-    "name": "Dan Byrd",
-    "nid": "nm0126004",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt1282140"
-    ]
-  },
-  "nm0129106": {
-    "birth": "\\N",
-    "movies": {
-      "tt3228928": "The Prime Ministers: The Pioneers"
-    },
-    "name": "Robert Cait",
-    "nid": "nm0129106",
-    "prof": "actor",
-    "titles": [
-      "tt3228928"
-    ]
-  },
-  "nm0131235": {
-    "birth": "1971",
-    "movies": {
-      "tt0267626": "K-19: The Widowmaker"
-    },
-    "name": "Christian Camargo",
-    "nid": "nm0131235",
-    "prof": "actor,producer,director",
-    "titles": [
-      "tt0267626"
-    ]
-  },
-  "nm0131811": {
-    "birth": "\\N",
-    "movies": {
-      "tt0096928": "Bill & Ted's Excellent Adventure"
-    },
-    "name": "Terry Camilleri",
-    "nid": "nm0131811",
-    "prof": "actor",
-    "titles": [
-      "tt0096928"
-    ]
-  },
   "nm0132549": {
     "birth": "\\N",
     "movies": {
@@ -7167,32 +4585,6 @@
     "prof": "actor",
     "titles": [
       "tt0095640"
-    ]
-  },
-  "nm0136797": {
-    "birth": "1962",
-    "movies": {
-      "tt1570728": "Crazy, Stupid, Love.",
-      "tt4622512": "Battle of the Sexes"
-    },
-    "name": "Steve Carell",
-    "nid": "nm0136797",
-    "prof": "actor,producer,writer",
-    "titles": [
-      "tt1570728",
-      "tt4622512"
-    ]
-  },
-  "nm0137506": {
-    "birth": "1937",
-    "movies": {
-      "tt0096928": "Bill & Ted's Excellent Adventure"
-    },
-    "name": "George Carlin",
-    "nid": "nm0137506",
-    "prof": "actor,producer,writer",
-    "titles": [
-      "tt0096928"
     ]
   },
   "nm0141617": {
@@ -7243,54 +4635,6 @@
       "tt4209788"
     ]
   },
-  "nm0152420": {
-    "birth": "1951",
-    "movies": {
-      "tt0106913": "Fire on the Amazon"
-    },
-    "name": "Judith Chapman",
-    "nid": "nm0152420",
-    "prof": "actress",
-    "titles": [
-      "tt0106913"
-    ]
-  },
-  "nm0152638": {
-    "birth": "1973",
-    "movies": {
-      "tt1517451": "A Star Is Born"
-    },
-    "name": "Dave Chappelle",
-    "nid": "nm0152638",
-    "prof": "writer,actor,producer",
-    "titles": [
-      "tt1517451"
-    ]
-  },
-  "nm0155392": {
-    "birth": "1975",
-    "movies": {
-      "tt2016940": "Man of Tai Chi"
-    },
-    "name": "Tiger Hu Chen",
-    "nid": "nm0155392",
-    "prof": "actor,stunts,writer",
-    "titles": [
-      "tt2016940"
-    ]
-  },
-  "nm0155693": {
-    "birth": "1968",
-    "movies": {
-      "tt2097307": "Hit and Run"
-    },
-    "name": "Kristin Chenoweth",
-    "nid": "nm0155693",
-    "prof": "actress,soundtrack,producer",
-    "titles": [
-      "tt2097307"
-    ]
-  },
   "nm0159776": {
     "birth": "1982",
     "movies": {
@@ -7301,18 +4645,6 @@
     "prof": "actress,producer,soundtrack",
     "titles": [
       "tt0365885"
-    ]
-  },
-  "nm0159789": {
-    "birth": "1981",
-    "movies": {
-      "tt0808399": "New York, I Love You"
-    },
-    "name": "Hayden Christensen",
-    "nid": "nm0159789",
-    "prof": "actor,producer,executive",
-    "titles": [
-      "tt0808399"
     ]
   },
   "nm0165101": {
@@ -7339,18 +4671,6 @@
       "tt0103855"
     ]
   },
-  "nm0168262": {
-    "birth": "1972",
-    "movies": {
-      "tt0405296": "A Scanner Darkly"
-    },
-    "name": "Rory Cochrane",
-    "nid": "nm0168262",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt0405296"
-    ]
-  },
   "nm0170552": {
     "birth": "1925",
     "movies": {
@@ -7361,18 +4681,6 @@
     "prof": "actor,soundtrack",
     "titles": [
       "tt0117002"
-    ]
-  },
-  "nm0171513": {
-    "birth": "1958",
-    "movies": {
-      "tt0118972": "The Devil's Own"
-    },
-    "name": "Margaret Colin",
-    "nid": "nm0171513",
-    "prof": "actress",
-    "titles": [
-      "tt0118972"
     ]
   },
   "nm0176073": {
@@ -7416,59 +4724,19 @@
   "nm0177896": {
     "birth": "1975",
     "movies": {
-      "tt0349193": "Bending All the Rules",
-      "tt0429493": "The A-Team",
-      "tt0795351": "Case 39",
-      "tt0805570": "The Midnight Meat Train",
-      "tt0808399": "New York, I Love You",
-      "tt0881891": "All About Steve",
-      "tt0932669": "Older Than America",
       "tt1045658": "Silver Linings Playbook",
-      "tt1068680": "Yes Man",
-      "tt1119646": "The Hangover",
-      "tt1219289": "Limitless",
-      "tt1243974": "Aloha",
       "tt1247690": "Serena",
-      "tt1411697": "The Hangover Part II",
-      "tt1517451": "A Star Is Born",
       "tt1800241": "American Hustle",
-      "tt1817273": "The Place Beyond the Pines",
-      "tt1840417": "The Words",
-      "tt1951261": "The Hangover Part III",
-      "tt2015381": "Guardians of the Galaxy",
-      "tt2097307": "Hit and Run",
-      "tt2179136": "American Sniper",
-      "tt2446980": "Joy",
-      "tt2503944": "Burnt"
+      "tt2446980": "Joy"
     },
     "name": "Bradley Cooper",
     "nid": "nm0177896",
     "prof": "actor,producer,soundtrack",
     "titles": [
-      "tt0349193",
-      "tt0429493",
-      "tt0795351",
-      "tt0805570",
-      "tt0808399",
-      "tt0881891",
-      "tt0932669",
       "tt1045658",
-      "tt1068680",
-      "tt1119646",
-      "tt1219289",
-      "tt1243974",
       "tt1247690",
-      "tt1411697",
-      "tt1517451",
       "tt1800241",
-      "tt1817273",
-      "tt1840417",
-      "tt1951261",
-      "tt2015381",
-      "tt2097307",
-      "tt2179136",
-      "tt2446980",
-      "tt2503944"
+      "tt2446980"
     ]
   },
   "nm0178574": {
@@ -7499,7 +4767,6 @@
     "birth": "1961",
     "movies": {
       "tt0259446": "My Big Fat Greek Wedding",
-      "tt1068641": "The Burning Plain",
       "tt3760922": "My Big Fat Greek Wedding 2"
     },
     "name": "John Corbett",
@@ -7507,20 +4774,7 @@
     "prof": "actor,soundtrack,miscellaneous",
     "titles": [
       "tt0259446",
-      "tt1068641",
       "tt3760922"
-    ]
-  },
-  "nm0180411": {
-    "birth": "1982",
-    "movies": {
-      "tt1219289": "Limitless"
-    },
-    "name": "Abbie Cornish",
-    "nid": "nm0180411",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt1219289"
     ]
   },
   "nm0185475": {
@@ -7535,44 +4789,6 @@
       "tt0118883"
     ]
   },
-  "nm0185819": {
-    "birth": "1968",
-    "movies": {
-      "tt0409847": "Cowboys & Aliens",
-      "tt0420609": "Infamous"
-    },
-    "name": "Daniel Craig",
-    "nid": "nm0185819",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0409847",
-      "tt0420609"
-    ]
-  },
-  "nm0187724": {
-    "birth": "1956",
-    "movies": {
-      "tt0118571": "Air Force One"
-    },
-    "name": "Wendy Crewson",
-    "nid": "nm0187724",
-    "prof": "actress,producer",
-    "titles": [
-      "tt0118571"
-    ]
-  },
-  "nm0190744": {
-    "birth": "1966",
-    "movies": {
-      "tt0402022": "\u00c6on Flux"
-    },
-    "name": "Marton Csokas",
-    "nid": "nm0190744",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt0402022"
-    ]
-  },
   "nm0191906": {
     "birth": "1952",
     "movies": {
@@ -7583,18 +4799,6 @@
     "prof": "actor,soundtrack,miscellaneous",
     "titles": [
       "tt0112453"
-    ]
-  },
-  "nm0193524": {
-    "birth": "1991",
-    "movies": {
-      "tt0395972": "North Country"
-    },
-    "name": "Thomas Curtis",
-    "nid": "nm0193524",
-    "prof": "actor",
-    "titles": [
-      "tt0395972"
     ]
   },
   "nm0202184": {
@@ -7613,28 +4817,14 @@
     "birth": "1965",
     "movies": {
       "tt0879870": "Eat Pray Love",
-      "tt0956038": "Nights in Rodanthe",
-      "tt1454029": "The Help"
+      "tt0956038": "Nights in Rodanthe"
     },
     "name": "Viola Davis",
     "nid": "nm0205626",
     "prof": "actress,producer,soundtrack",
     "titles": [
       "tt0879870",
-      "tt0956038",
-      "tt1454029"
-    ]
-  },
-  "nm0221046": {
-    "birth": "1980",
-    "movies": {
-      "tt1068680": "Yes Man"
-    },
-    "name": "Zooey Deschanel",
-    "nid": "nm0221046",
-    "prof": "actress,producer,music_department",
-    "titles": [
-      "tt1068680"
+      "tt0956038"
     ]
   },
   "nm0223103": {
@@ -7697,18 +4887,6 @@
       "tt1399683"
     ]
   },
-  "nm0226820": {
-    "birth": "1957",
-    "movies": {
-      "tt0118002": "Two If by Sea"
-    },
-    "name": "Stephen Dillane",
-    "nid": "nm0226820",
-    "prof": "actor",
-    "titles": [
-      "tt0118002"
-    ]
-  },
   "nm0227759": {
     "birth": "1969",
     "movies": {
@@ -7719,30 +4897,6 @@
     "prof": "actor,producer,soundtrack",
     "titles": [
       "tt5706370"
-    ]
-  },
-  "nm0230335": {
-    "birth": "1953",
-    "movies": {
-      "tt0119502": "The Last Time I Committed Suicide"
-    },
-    "name": "John Doe",
-    "nid": "nm0230335",
-    "prof": "actor,soundtrack,composer",
-    "titles": [
-      "tt0119502"
-    ]
-  },
-  "nm0233145": {
-    "birth": "1966",
-    "movies": {
-      "tt0097576": "Indiana Jones and the Last Crusade"
-    },
-    "name": "Alison Doody",
-    "nid": "nm0233145",
-    "prof": "actress",
-    "titles": [
-      "tt0097576"
     ]
   },
   "nm0238057": {
@@ -7757,42 +4911,16 @@
       "tt0146309"
     ]
   },
-  "nm0243233": {
-    "birth": "1976",
-    "movies": {
-      "tt5610554": "Tully"
-    },
-    "name": "Mark Duplass",
-    "nid": "nm0243233",
-    "prof": "actor,producer,writer",
-    "titles": [
-      "tt5610554"
-    ]
-  },
-  "nm0245112": {
-    "birth": "1977",
-    "movies": {
-      "tt0138304": "The Astronaut's Wife"
-    },
-    "name": "Clea DuVall",
-    "nid": "nm0245112",
-    "prof": "actress,director,producer",
-    "titles": [
-      "tt0138304"
-    ]
-  },
   "nm0249291": {
     "birth": "1974",
     "movies": {
-      "tt2873282": "Red Sparrow",
-      "tt3721964": "Gringo"
+      "tt2873282": "Red Sparrow"
     },
     "name": "Joel Edgerton",
     "nid": "nm0249291",
     "prof": "actor,writer,producer",
     "titles": [
-      "tt2873282",
-      "tt3721964"
+      "tt2873282"
     ]
   },
   "nm0251678": {
@@ -7810,15 +4938,13 @@
   "nm0251986": {
     "birth": "1983",
     "movies": {
-      "tt0455782": "The Hunting Party",
-      "tt1156398": "Zombieland"
+      "tt0455782": "The Hunting Party"
     },
     "name": "Jesse Eisenberg",
     "nid": "nm0251986",
     "prof": "actor,writer,soundtrack",
     "titles": [
-      "tt0455782",
-      "tt1156398"
+      "tt0455782"
     ]
   },
   "nm0252230": {
@@ -7845,42 +4971,6 @@
       "tt4209788"
     ]
   },
-  "nm0253371": {
-    "birth": "\\N",
-    "movies": {
-      "tt0095853": "Permanent Record"
-    },
-    "name": "Michael Elgart",
-    "nid": "nm0253371",
-    "prof": "actor",
-    "titles": [
-      "tt0095853"
-    ]
-  },
-  "nm0254712": {
-    "birth": "1969",
-    "movies": {
-      "tt0203019": "Men of Honor"
-    },
-    "name": "Aunjanue Ellis",
-    "nid": "nm0254712",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt0203019"
-    ]
-  },
-  "nm0262635": {
-    "birth": "1981",
-    "movies": {
-      "tt0421073": "Street Kings"
-    },
-    "name": "Chris Evans",
-    "nid": "nm0262635",
-    "prof": "actor,producer,director",
-    "titles": [
-      "tt0421073"
-    ]
-  },
   "nm0266824": {
     "birth": "1994",
     "movies": {
@@ -7895,30 +4985,6 @@
       "tt3165630"
     ]
   },
-  "nm0267506": {
-    "birth": "1976",
-    "movies": {
-      "tt0852713": "The House Bunny"
-    },
-    "name": "Anna Faris",
-    "nid": "nm0267506",
-    "prof": "actress,soundtrack,producer",
-    "titles": [
-      "tt0852713"
-    ]
-  },
-  "nm0267812": {
-    "birth": "1973",
-    "movies": {
-      "tt1220888": "Henry's Crime"
-    },
-    "name": "Vera Farmiga",
-    "nid": "nm0267812",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt1220888"
-    ]
-  },
   "nm0268199": {
     "birth": "1976",
     "movies": {
@@ -7929,54 +4995,6 @@
     "prof": "actor,soundtrack,producer",
     "titles": [
       "tt2140373"
-    ]
-  },
-  "nm0270268": {
-    "birth": "\\N",
-    "movies": {
-      "tt0223844": "One Step Away"
-    },
-    "name": "Kathleen Fee",
-    "nid": "nm0270268",
-    "prof": "actress,miscellaneous,writer",
-    "titles": [
-      "tt0223844"
-    ]
-  },
-  "nm0272706": {
-    "birth": "1994",
-    "movies": {
-      "tt0795351": "Case 39"
-    },
-    "name": "Jodelle Ferland",
-    "nid": "nm0272706",
-    "prof": "actress",
-    "titles": [
-      "tt0795351"
-    ]
-  },
-  "nm0273592": {
-    "birth": "1956",
-    "movies": {
-      "tt0106913": "Fire on the Amazon"
-    },
-    "name": "Juan Fern\u00e1ndez",
-    "nid": "nm0273592",
-    "prof": "actor,producer,director",
-    "titles": [
-      "tt0106913"
-    ]
-  },
-  "nm0278752": {
-    "birth": "1953",
-    "movies": {
-      "tt0120751": "Mighty Joe Young"
-    },
-    "name": "Peter Firth",
-    "nid": "nm0278752",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt0120751"
     ]
   },
   "nm0280890": {
@@ -7991,88 +5009,11 @@
       "tt0108185"
     ]
   },
-  "nm0289656": {
-    "birth": "1968",
-    "movies": {
-      "tt0184858": "Reindeer Games"
-    },
-    "name": "James Frain",
-    "nid": "nm0289656",
-    "prof": "actor",
-    "titles": [
-      "tt0184858"
-    ]
-  },
-  "nm0295484": {
-    "birth": "1976",
-    "movies": {
-      "tt1219289": "Limitless"
-    },
-    "name": "Anna Friel",
-    "nid": "nm0295484",
-    "prof": "actress,producer",
-    "titles": [
-      "tt1219289"
-    ]
-  },
-  "nm0299028": {
-    "birth": "1955",
-    "movies": {
-      "tt0888693": "Sleepwalking"
-    },
-    "name": "Deborra-Lee Furness",
-    "nid": "nm0299028",
-    "prof": "actress,producer,director",
-    "titles": [
-      "tt0888693"
-    ]
-  },
-  "nm0301185": {
-    "birth": "1965",
-    "movies": {
-      "tt0349193": "Bending All the Rules"
-    },
-    "name": "David Gail",
-    "nid": "nm0301185",
-    "prof": "actor",
-    "titles": [
-      "tt0349193"
-    ]
-  },
-  "nm0302108": {
-    "birth": "1969",
-    "movies": {
-      "tt1119646": "The Hangover",
-      "tt1411697": "The Hangover Part II",
-      "tt1951261": "The Hangover Part III"
-    },
-    "name": "Zach Galifianakis",
-    "nid": "nm0302108",
-    "prof": "actor,producer,writer",
-    "titles": [
-      "tt1119646",
-      "tt1411697",
-      "tt1951261"
-    ]
-  },
-  "nm0314524": {
-    "birth": "1958",
-    "movies": {
-      "tt0230838": "Sweet November"
-    },
-    "name": "Greg Germann",
-    "nid": "nm0314524",
-    "prof": "actor,soundtrack,director",
-    "titles": [
-      "tt0230838"
-    ]
-  },
   "nm0316079": {
     "birth": "1967",
     "movies": {
       "tt0429589": "The Ant Bully",
       "tt1135487": "Duplicity",
-      "tt1872181": "The Amazing Spider-Man 2",
       "tt2345112": "Parkland"
     },
     "name": "Paul Giamatti",
@@ -8081,32 +5022,7 @@
     "titles": [
       "tt0429589",
       "tt1135487",
-      "tt1872181",
       "tt2345112"
-    ]
-  },
-  "nm0316284": {
-    "birth": "1942",
-    "movies": {
-      "tt0114887": "A Walk in the Clouds"
-    },
-    "name": "Giancarlo Giannini",
-    "nid": "nm0316284",
-    "prof": "actor,miscellaneous,director",
-    "titles": [
-      "tt0114887"
-    ]
-  },
-  "nm0317293": {
-    "birth": "1965",
-    "movies": {
-      "tt0095853": "Permanent Record"
-    },
-    "name": "Pamela Gidley",
-    "nid": "nm0317293",
-    "prof": "actress,director,writer",
-    "titles": [
-      "tt0095853"
     ]
   },
   "nm0324231": {
@@ -8131,40 +5047,6 @@
     "prof": "actor,producer",
     "titles": [
       "tt5706370"
-    ]
-  },
-  "nm0331516": {
-    "birth": "1980",
-    "movies": {
-      "tt0264935": "Murder by Numbers",
-      "tt1321870": "Gangster Squad",
-      "tt1570728": "Crazy, Stupid, Love.",
-      "tt1817273": "The Place Beyond the Pines",
-      "tt1856101": "Blade Runner 2049",
-      "tt3783958": "La La Land"
-    },
-    "name": "Ryan Gosling",
-    "nid": "nm0331516",
-    "prof": "actor,soundtrack,producer",
-    "titles": [
-      "tt0264935",
-      "tt1321870",
-      "tt1570728",
-      "tt1817273",
-      "tt1856101",
-      "tt3783958"
-    ]
-  },
-  "nm0332562": {
-    "birth": "1966",
-    "movies": {
-      "tt0223844": "One Step Away"
-    },
-    "name": "Alain Goulem",
-    "nid": "nm0332562",
-    "prof": "actor,miscellaneous",
-    "titles": [
-      "tt0223844"
     ]
   },
   "nm0333410": {
@@ -8201,20 +5083,6 @@
     "prof": "actor,producer,soundtrack",
     "titles": [
       "tt0146309"
-    ]
-  },
-  "nm0339460": {
-    "birth": "1975",
-    "movies": {
-      "tt1220888": "Henry's Crime",
-      "tt1392197": "Marmaduke"
-    },
-    "name": "Judy Greer",
-    "nid": "nm0339460",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt1220888",
-      "tt1392197"
     ]
   },
   "nm0342732": {
@@ -8265,18 +5133,6 @@
       "tt0304415"
     ]
   },
-  "nm0355112": {
-    "birth": "1942",
-    "movies": {
-      "tt0102768": "Regarding Henry"
-    },
-    "name": "Michael Haley",
-    "nid": "nm0355112",
-    "prof": "assistant_director,actor,producer",
-    "titles": [
-      "tt0102768"
-    ]
-  },
   "nm0355659": {
     "birth": "1935",
     "movies": {
@@ -8299,30 +5155,6 @@
     "prof": "actress,producer",
     "titles": [
       "tt0477095"
-    ]
-  },
-  "nm0358316": {
-    "birth": "1971",
-    "movies": {
-      "tt2293640": "Minions"
-    },
-    "name": "Jon Hamm",
-    "nid": "nm0358316",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt2293640"
-    ]
-  },
-  "nm0362766": {
-    "birth": "1977",
-    "movies": {
-      "tt1392190": "Mad Max: Fury Road"
-    },
-    "name": "Tom Hardy",
-    "nid": "nm0362766",
-    "prof": "actor,producer,writer",
-    "titles": [
-      "tt1392190"
     ]
   },
   "nm0363159": {
@@ -8352,14 +5184,12 @@
   "nm0370035": {
     "birth": "1959",
     "movies": {
-      "tt0180734": "Hardball",
       "tt1399683": "Winter's Bone"
     },
     "name": "John Hawkes",
     "nid": "nm0370035",
     "prof": "actor,soundtrack,music_department",
     "titles": [
-      "tt0180734",
       "tt1399683"
     ]
   },
@@ -8375,32 +5205,6 @@
       "tt0373450"
     ]
   },
-  "nm0372522": {
-    "birth": "1988",
-    "movies": {
-      "tt0180734": "Hardball"
-    },
-    "name": "Bryan Hearne",
-    "nid": "nm0372522",
-    "prof": "actor",
-    "titles": [
-      "tt0180734"
-    ]
-  },
-  "nm0376716": {
-    "birth": "1975",
-    "movies": {
-      "tt1974419": "The Neon Demon",
-      "tt2402101": "Dark Places"
-    },
-    "name": "Christina Hendricks",
-    "nid": "nm0376716",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt1974419",
-      "tt2402101"
-    ]
-  },
   "nm0378245": {
     "birth": "1970",
     "movies": {
@@ -8411,30 +5215,6 @@
     "prof": "actress,producer,soundtrack",
     "titles": [
       "tt4846340"
-    ]
-  },
-  "nm0383422": {
-    "birth": "1963",
-    "movies": {
-      "tt1068680": "Yes Man"
-    },
-    "name": "John Michael Higgins",
-    "nid": "nm0383422",
-    "prof": "actor,soundtrack,music_department",
-    "titles": [
-      "tt1068680"
-    ]
-  },
-  "nm0383603": {
-    "birth": "1992",
-    "movies": {
-      "tt0375568": "Astro Boy"
-    },
-    "name": "Freddie Highmore",
-    "nid": "nm0383603",
-    "prof": "actor,producer,writer",
-    "titles": [
-      "tt0375568"
     ]
   },
   "nm0385792": {
@@ -8464,50 +5244,19 @@
   "nm0396558": {
     "birth": "1989",
     "movies": {
-      "tt1392190": "Mad Max: Fury Road",
-      "tt2402101": "Dark Places",
-      "tt3385516": "X-Men: Apocalypse",
-      "tt5083738": "The Favourite"
+      "tt3385516": "X-Men: Apocalypse"
     },
     "name": "Nicholas Hoult",
     "nid": "nm0396558",
     "prof": "actor,soundtrack",
     "titles": [
-      "tt1392190",
-      "tt2402101",
-      "tt3385516",
-      "tt5083738"
-    ]
-  },
-  "nm0397171": {
-    "birth": "1981",
-    "movies": {
-      "tt1454029": "The Help"
-    },
-    "name": "Bryce Dallas Howard",
-    "nid": "nm0397171",
-    "prof": "actress,director,writer",
-    "titles": [
-      "tt1454029"
-    ]
-  },
-  "nm0401264": {
-    "birth": "1981",
-    "movies": {
-      "tt1655441": "The Age of Adaline"
-    },
-    "name": "Michiel Huisman",
-    "nid": "nm0401264",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt1655441"
+      "tt3385516"
     ]
   },
   "nm0406975": {
     "birth": "1967",
     "movies": {
       "tt0125439": "Notting Hill",
-      "tt0948470": "The Amazing Spider-Man",
       "tt1247690": "Serena"
     },
     "name": "Rhys Ifans",
@@ -8515,7 +5264,6 @@
     "prof": "actor,soundtrack,producer",
     "titles": [
       "tt0125439",
-      "tt0948470",
       "tt1247690"
     ]
   },
@@ -8531,18 +5279,6 @@
       "tt0101991"
     ]
   },
-  "nm0408946": {
-    "birth": "\\N",
-    "movies": {
-      "tt0100930": "Who Shot Patakango?"
-    },
-    "name": "Aaron Ingram",
-    "nid": "nm0408946",
-    "prof": "actor",
-    "titles": [
-      "tt0100930"
-    ]
-  },
   "nm0410464": {
     "birth": "1956",
     "movies": {
@@ -8553,18 +5289,6 @@
     "prof": "actor",
     "titles": [
       "tt0107611"
-    ]
-  },
-  "nm0412374": {
-    "birth": "1941",
-    "movies": {
-      "tt0313737": "Two Weeks Notice"
-    },
-    "name": "Dana Ivey",
-    "nid": "nm0412374",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt0313737"
     ]
   },
   "nm0412901": {
@@ -8603,18 +5327,6 @@
       "tt4128724"
     ]
   },
-  "nm0421822": {
-    "birth": "1969",
-    "movies": {
-      "tt0881891": "All About Steve"
-    },
-    "name": "Ken Jeong",
-    "nid": "nm0421822",
-    "prof": "actor,writer,producer",
-    "titles": [
-      "tt0881891"
-    ]
-  },
   "nm0425316": {
     "birth": "\\N",
     "movies": {
@@ -8641,22 +5353,9 @@
       "tt3062096"
     ]
   },
-  "nm0428963": {
-    "birth": "1968",
-    "movies": {
-      "tt0191397": "The Replacements"
-    },
-    "name": "Orlando Jones",
-    "nid": "nm0428963",
-    "prof": "actor,writer,miscellaneous",
-    "titles": [
-      "tt0191397"
-    ]
-  },
   "nm0429363": {
     "birth": "1966",
     "movies": {
-      "tt0420609": "Infamous",
       "tt0970411": "City of Ember",
       "tt1247690": "Serena"
     },
@@ -8664,21 +5363,8 @@
     "nid": "nm0429363",
     "prof": "actor,soundtrack",
     "titles": [
-      "tt0420609",
       "tt0970411",
       "tt1247690"
-    ]
-  },
-  "nm0436811": {
-    "birth": "1964",
-    "movies": {
-      "tt0105807": "When the Party's Over"
-    },
-    "name": "Kris Kamm",
-    "nid": "nm0436811",
-    "prof": "actor,producer",
-    "titles": [
-      "tt0105807"
     ]
   },
   "nm0441588": {
@@ -8732,14 +5418,12 @@
   "nm0451234": {
     "birth": "1967",
     "movies": {
-      "tt0948470": "The Amazing Spider-Man",
       "tt3062096": "Inferno"
     },
     "name": "Irrfan Khan",
     "nid": "nm0451234",
     "prof": "actor,producer,director",
     "titles": [
-      "tt0948470",
       "tt3062096"
     ]
   },
@@ -8753,18 +5437,6 @@
     "prof": "actor",
     "titles": [
       "tt0107818"
-    ]
-  },
-  "nm0460867": {
-    "birth": "\\N",
-    "movies": {
-      "tt0100930": "Who Shot Patakango?"
-    },
-    "name": "David Edwin Knight",
-    "nid": "nm0460867",
-    "prof": "actor",
-    "titles": [
-      "tt0100930"
     ]
   },
   "nm0461136": {
@@ -8791,34 +5463,6 @@
       "tt0091637"
     ]
   },
-  "nm0470981": {
-    "birth": "1962",
-    "movies": {
-      "tt0338097": "Head in the Clouds"
-    },
-    "name": "Thomas Kretschmann",
-    "nid": "nm0470981",
-    "prof": "actor",
-    "titles": [
-      "tt0338097"
-    ]
-  },
-  "nm0479471": {
-    "birth": "1986",
-    "movies": {
-      "tt0360486": "Constantine",
-      "tt0367882": "Indiana Jones and the Kingdom of the Crystal Skull",
-      "tt0808399": "New York, I Love You"
-    },
-    "name": "Shia LaBeouf",
-    "nid": "nm0479471",
-    "prof": "actor,director,soundtrack",
-    "titles": [
-      "tt0360486",
-      "tt0367882",
-      "tt0808399"
-    ]
-  },
   "nm0482730": {
     "birth": "1935",
     "movies": {
@@ -8835,18 +5479,6 @@
       "tt2242306"
     ]
   },
-  "nm0486728": {
-    "birth": "1970",
-    "movies": {
-      "tt0191397": "The Replacements"
-    },
-    "name": "Brooke Langton",
-    "nid": "nm0486728",
-    "prof": "actress,soundtrack,writer",
-    "titles": [
-      "tt0191397"
-    ]
-  },
   "nm0490980": {
     "birth": "1953",
     "movies": {
@@ -8857,18 +5489,6 @@
     "prof": "soundtrack,actress,miscellaneous",
     "titles": [
       "tt1460798"
-    ]
-  },
-  "nm0491402": {
-    "birth": "1959",
-    "movies": {
-      "tt0421073": "Street Kings"
-    },
-    "name": "Hugh Laurie",
-    "nid": "nm0491402",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0421073"
     ]
   },
   "nm0492746": {
@@ -8919,42 +5539,6 @@
       "tt0088161"
     ]
   },
-  "nm0512934": {
-    "birth": "1976",
-    "movies": {
-      "tt2870756": "Magic in the Moonlight"
-    },
-    "name": "Hamish Linklater",
-    "nid": "nm0512934",
-    "prof": "actor,soundtrack,writer",
-    "titles": [
-      "tt2870756"
-    ]
-  },
-  "nm0515116": {
-    "birth": "1987",
-    "movies": {
-      "tt1655441": "The Age of Adaline"
-    },
-    "name": "Blake Lively",
-    "nid": "nm0515116",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt1655441"
-    ]
-  },
-  "nm0515296": {
-    "birth": "1967",
-    "movies": {
-      "tt5610554": "Tully"
-    },
-    "name": "Ron Livingston",
-    "nid": "nm0515296",
-    "prof": "actor,camera_department,producer",
-    "titles": [
-      "tt5610554"
-    ]
-  },
   "nm0517844": {
     "birth": "1979",
     "movies": {
@@ -8979,18 +5563,6 @@
       "tt0096926"
     ]
   },
-  "nm0521753": {
-    "birth": "1964",
-    "movies": {
-      "tt0095730": "The Night Before"
-    },
-    "name": "Lori Loughlin",
-    "nid": "nm0521753",
-    "prof": "actress,producer,writer",
-    "titles": [
-      "tt0095730"
-    ]
-  },
   "nm0526019": {
     "birth": "1979",
     "movies": {
@@ -9001,30 +5573,6 @@
     "prof": "producer,actor,director",
     "titles": [
       "tt0316356"
-    ]
-  },
-  "nm0527945": {
-    "birth": "1967",
-    "movies": {
-      "tt6494418": "Siberia"
-    },
-    "name": "Pasha D. Lychnikoff",
-    "nid": "nm0527945",
-    "prof": "actor",
-    "titles": [
-      "tt6494418"
-    ]
-  },
-  "nm0532235": {
-    "birth": "1973",
-    "movies": {
-      "tt2557490": "A Million Ways to Die in the West"
-    },
-    "name": "Seth MacFarlane",
-    "nid": "nm0532235",
-    "prof": "writer,music_department,producer",
-    "titles": [
-      "tt2557490"
     ]
   },
   "nm0536723": {
@@ -9091,42 +5639,6 @@
       "tt0119994"
     ]
   },
-  "nm0544721": {
-    "birth": "1960",
-    "movies": {
-      "tt0102343": "Love Potion No. 9"
-    },
-    "name": "Mary Mara",
-    "nid": "nm0544721",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt0102343"
-    ]
-  },
-  "nm0545408": {
-    "birth": "1928",
-    "movies": {
-      "tt0114319": "Sabrina"
-    },
-    "name": "Nancy Marchand",
-    "nid": "nm0545408",
-    "prof": "actress",
-    "titles": [
-      "tt0114319"
-    ]
-  },
-  "nm0550371": {
-    "birth": "1968",
-    "movies": {
-      "tt2406566": "Atomic Blonde"
-    },
-    "name": "Eddie Marsan",
-    "nid": "nm0550371",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt2406566"
-    ]
-  },
   "nm0551290": {
     "birth": "1963",
     "movies": {
@@ -9180,7 +5692,6 @@
     "movies": {
       "tt0477095": "Starter for 10",
       "tt1270798": "X-Men: First Class",
-      "tt2406566": "Atomic Blonde",
       "tt3385516": "X-Men: Apocalypse"
     },
     "name": "James McAvoy",
@@ -9189,7 +5700,6 @@
     "titles": [
       "tt0477095",
       "tt1270798",
-      "tt2406566",
       "tt3385516"
     ]
   },
@@ -9217,54 +5727,6 @@
       "tt0125439"
     ]
   },
-  "nm0565250": {
-    "birth": "1970",
-    "movies": {
-      "tt2404463": "The Heat"
-    },
-    "name": "Melissa McCarthy",
-    "nid": "nm0565250",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt2404463"
-    ]
-  },
-  "nm0567343": {
-    "birth": "1924",
-    "movies": {
-      "tt0100822": "Tune in Tomorrow..."
-    },
-    "name": "Bill McCutcheon",
-    "nid": "nm0567343",
-    "prof": "actor",
-    "titles": [
-      "tt0100822"
-    ]
-  },
-  "nm0567912": {
-    "birth": "1964",
-    "movies": {
-      "tt2404463": "The Heat"
-    },
-    "name": "Michael McDonald",
-    "nid": "nm0567912",
-    "prof": "actor,director,producer",
-    "titles": [
-      "tt2404463"
-    ]
-  },
-  "nm0569226": {
-    "birth": "1950",
-    "movies": {
-      "tt0146984": "The Legend of Bagger Vance"
-    },
-    "name": "Bruce McGill",
-    "nid": "nm0569226",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt0146984"
-    ]
-  },
   "nm0571188": {
     "birth": "1954",
     "movies": {
@@ -9275,46 +5737,6 @@
     "prof": "actress,soundtrack,composer",
     "titles": [
       "tt0087089"
-    ]
-  },
-  "nm0573037": {
-    "birth": "1968",
-    "movies": {
-      "tt0477071": "Premonition"
-    },
-    "name": "Julian McMahon",
-    "nid": "nm0573037",
-    "prof": "actor,producer",
-    "titles": [
-      "tt0477071"
-    ]
-  },
-  "nm0574534": {
-    "birth": "1942",
-    "movies": {
-      "tt0795351": "Case 39",
-      "tt4425200": "John Wick: Chapter 2",
-      "tt6146586": "John Wick: Chapter 3"
-    },
-    "name": "Ian McShane",
-    "nid": "nm0574534",
-    "prof": "actor,director,producer",
-    "titles": [
-      "tt0795351",
-      "tt4425200",
-      "tt6146586"
-    ]
-  },
-  "nm0578949": {
-    "birth": "1974",
-    "movies": {
-      "tt1817273": "The Place Beyond the Pines"
-    },
-    "name": "Eva Mendes",
-    "nid": "nm0578949",
-    "prof": "actress,soundtrack,director",
-    "titles": [
-      "tt1817273"
     ]
   },
   "nm0580351": {
@@ -9367,18 +5789,6 @@
       "tt0100485"
     ]
   },
-  "nm0588222": {
-    "birth": "1953",
-    "movies": {
-      "tt0113957": "The Net"
-    },
-    "name": "Dennis Miller",
-    "nid": "nm0588222",
-    "prof": "writer,producer,actor",
-    "titles": [
-      "tt0113957"
-    ]
-  },
   "nm0593664": {
     "birth": "1973",
     "movies": {
@@ -9389,30 +5799,6 @@
     "prof": "actress,producer,director",
     "titles": [
       "tt1878841"
-    ]
-  },
-  "nm0596297": {
-    "birth": "1970",
-    "movies": {
-      "tt2016940": "Man of Tai Chi"
-    },
-    "name": "Karen Mok",
-    "nid": "nm0596297",
-    "prof": "actress,soundtrack,music_department",
-    "titles": [
-      "tt2016940"
-    ]
-  },
-  "nm0597388": {
-    "birth": "1979",
-    "movies": {
-      "tt4334266": "The Bad Batch"
-    },
-    "name": "Jason Momoa",
-    "nid": "nm0597388",
-    "prof": "actor,producer,director",
-    "titles": [
-      "tt4334266"
     ]
   },
   "nm0604702": {
@@ -9439,44 +5825,16 @@
       "tt1741273"
     ]
   },
-  "nm0607325": {
-    "birth": "1960",
-    "movies": {
-      "tt0120179": "Speed 2: Cruise Control"
-    },
-    "name": "Temuera Morrison",
-    "nid": "nm0607325",
-    "prof": "actor,director,miscellaneous",
-    "titles": [
-      "tt0120179"
-    ]
-  },
   "nm0608012": {
     "birth": "1947",
     "movies": {
-      "tt0111257": "Speed",
-      "tt0138304": "The Astronaut's Wife",
       "tt0259288": "Dragonfly"
     },
     "name": "Joe Morton",
     "nid": "nm0608012",
     "prof": "actor,soundtrack,director",
     "titles": [
-      "tt0111257",
-      "tt0138304",
       "tt0259288"
-    ]
-  },
-  "nm0609114": {
-    "birth": "1977",
-    "movies": {
-      "tt0410297": "The Lake House"
-    },
-    "name": "Ebon Moss-Bachrach",
-    "nid": "nm0609114",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt0410297"
     ]
   },
   "nm0613561": {
@@ -9491,20 +5849,6 @@
       "tt0101991"
     ]
   },
-  "nm0628601": {
-    "birth": "1972",
-    "movies": {
-      "tt0375679": "Crash",
-      "tt3721964": "Gringo"
-    },
-    "name": "Thandie Newton",
-    "nid": "nm0628601",
-    "prof": "actress,soundtrack,producer",
-    "titles": [
-      "tt0375679",
-      "tt3721964"
-    ]
-  },
   "nm0634897": {
     "birth": "\\N",
     "movies": {
@@ -9515,30 +5859,6 @@
     "prof": "writer,director,miscellaneous",
     "titles": [
       "tt2242306"
-    ]
-  },
-  "nm0636426": {
-    "birth": "1979",
-    "movies": {
-      "tt1446714": "Prometheus"
-    },
-    "name": "Noomi Rapace",
-    "nid": "nm0636426",
-    "prof": "actress",
-    "titles": [
-      "tt1446714"
-    ]
-  },
-  "nm0636942": {
-    "birth": "1981",
-    "movies": {
-      "tt1718158": "Generation Um..."
-    },
-    "name": "Bojana Novakovic",
-    "nid": "nm0636942",
-    "prof": "actress,director,writer",
-    "titles": [
-      "tt1718158"
     ]
   },
   "nm0637681": {
@@ -9553,18 +5873,6 @@
       "tt0109067"
     ]
   },
-  "nm0638824": {
-    "birth": "1960",
-    "movies": {
-      "tt2911666": "John Wick"
-    },
-    "name": "Michael Nyqvist",
-    "nid": "nm0638824",
-    "prof": "actor,producer",
-    "titles": [
-      "tt2911666"
-    ]
-  },
   "nm0644022": {
     "birth": "1962",
     "movies": {
@@ -9577,30 +5885,6 @@
       "tt6294822"
     ]
   },
-  "nm0645683": {
-    "birth": "1968",
-    "movies": {
-      "tt0402022": "\u00c6on Flux"
-    },
-    "name": "Sophie Okonedo",
-    "nid": "nm0645683",
-    "prof": "actress",
-    "titles": [
-      "tt0402022"
-    ]
-  },
-  "nm0649330": {
-    "birth": "\\N",
-    "movies": {
-      "tt0098185": "A Fool and His Money"
-    },
-    "name": "Gerald Orange",
-    "nid": "nm0649330",
-    "prof": "actor,miscellaneous",
-    "titles": [
-      "tt0098185"
-    ]
-  },
   "nm0650945": {
     "birth": "\\N",
     "movies": {
@@ -9611,42 +5895,6 @@
     "prof": "actress,producer,writer",
     "titles": [
       "tt1583420"
-    ]
-  },
-  "nm0651159": {
-    "birth": "1968",
-    "movies": {
-      "tt4154916": "Replicas"
-    },
-    "name": "John Ortiz",
-    "nid": "nm0651159",
-    "prof": "actor,producer",
-    "titles": [
-      "tt4154916"
-    ]
-  },
-  "nm0652663": {
-    "birth": "1969",
-    "movies": {
-      "tt1625346": "Young Adult"
-    },
-    "name": "Patton Oswalt",
-    "nid": "nm0652663",
-    "prof": "actor,writer,producer",
-    "titles": [
-      "tt1625346"
-    ]
-  },
-  "nm0653268": {
-    "birth": "\\N",
-    "movies": {
-      "tt0100930": "Who Shot Patakango?"
-    },
-    "name": "Kevin Otto",
-    "nid": "nm0653268",
-    "prof": "actor,producer,miscellaneous",
-    "titles": [
-      "tt0100930"
     ]
   },
   "nm0654110": {
@@ -9663,30 +5911,6 @@
       "tt1135487"
     ]
   },
-  "nm0654295": {
-    "birth": "1986",
-    "movies": {
-      "tt2911666": "John Wick"
-    },
-    "name": "Alfie Allen",
-    "nid": "nm0654295",
-    "prof": "actor",
-    "titles": [
-      "tt2911666"
-    ]
-  },
-  "nm0654648": {
-    "birth": "1976",
-    "movies": {
-      "tt3721964": "Gringo"
-    },
-    "name": "David Oyelowo",
-    "nid": "nm0654648",
-    "prof": "actor,producer,director",
-    "titles": [
-      "tt3721964"
-    ]
-  },
   "nm0668271": {
     "birth": "1958",
     "movies": {
@@ -9697,18 +5921,6 @@
     "prof": "actor,assistant_director,producer",
     "titles": [
       "tt0102733"
-    ]
-  },
-  "nm0672103": {
-    "birth": "1962",
-    "movies": {
-      "tt0098185": "A Fool and His Money"
-    },
-    "name": "Jonathan Penner",
-    "nid": "nm0672103",
-    "prof": "actor,producer,writer",
-    "titles": [
-      "tt0098185"
     ]
   },
   "nm0680983": {
@@ -9723,66 +5935,16 @@
       "tt1512235"
     ]
   },
-  "nm0685856": {
-    "birth": "1981",
-    "movies": {
-      "tt0264935": "Murder by Numbers"
-    },
-    "name": "Michael Pitt",
-    "nid": "nm0685856",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0264935"
-    ]
-  },
-  "nm0687321": {
-    "birth": "1927",
-    "movies": {
-      "tt0098185": "A Fool and His Money"
-    },
-    "name": "George Plimpton",
-    "nid": "nm0687321",
-    "prof": "actor,writer,camera_department",
-    "titles": [
-      "tt0098185"
-    ]
-  },
   "nm0695435": {
     "birth": "1979",
     "movies": {
-      "tt1355644": "Passengers",
-      "tt2015381": "Guardians of the Galaxy"
+      "tt1355644": "Passengers"
     },
     "name": "Chris Pratt",
     "nid": "nm0695435",
     "prof": "actor,soundtrack,producer",
     "titles": [
-      "tt1355644",
-      "tt2015381"
-    ]
-  },
-  "nm0700869": {
-    "birth": "1932",
-    "movies": {
-      "tt0087469": "Indiana Jones and the Temple of Doom"
-    },
-    "name": "Amrish Puri",
-    "nid": "nm0700869",
-    "prof": "actor,music_department,soundtrack",
-    "titles": [
-      "tt0087469"
-    ]
-  },
-  "nm0702841": {
-    "birth": "1971",
-    "movies": {
-      "tt0087469": "Indiana Jones and the Temple of Doom"
-    },
-    "name": "Jonathan Ke Quan",
-    "nid": "nm0702841",
-    "prof": "actor,miscellaneous,stunts",
-    "titles": [
-      "tt0087469"
+      "tt1355644"
     ]
   },
   "nm0703615": {
@@ -9833,18 +5995,6 @@
       "tt0096094"
     ]
   },
-  "nm0714147": {
-    "birth": "1975",
-    "movies": {
-      "tt1625346": "Young Adult"
-    },
-    "name": "Elizabeth Reaser",
-    "nid": "nm0714147",
-    "prof": "actress",
-    "titles": [
-      "tt1625346"
-    ]
-  },
   "nm0714310": {
     "birth": "1948",
     "movies": {
@@ -9879,42 +6029,6 @@
     "prof": "actor,soundtrack",
     "titles": [
       "tt1185431"
-    ]
-  },
-  "nm0719637": {
-    "birth": "1971",
-    "movies": {
-      "tt0395972": "North Country"
-    },
-    "name": "Jeremy Renner",
-    "nid": "nm0719637",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0395972"
-    ]
-  },
-  "nm0724245": {
-    "birth": "1949",
-    "movies": {
-      "tt0120373": "Trial and Error"
-    },
-    "name": "Michael Richards",
-    "nid": "nm0724245",
-    "prof": "actor,writer,producer",
-    "titles": [
-      "tt0120373"
-    ]
-  },
-  "nm0724927": {
-    "birth": "\\N",
-    "movies": {
-      "tt0102494": "My Own Private Idaho"
-    },
-    "name": "William Richert",
-    "nid": "nm0724927",
-    "prof": "actor,writer,director",
-    "titles": [
-      "tt0102494"
     ]
   },
   "nm0725543": {
@@ -9965,30 +6079,6 @@
       "tt0091814"
     ]
   },
-  "nm0736263": {
-    "birth": "1963",
-    "movies": {
-      "tt0091860": "River's Edge"
-    },
-    "name": "Daniel Roebuck",
-    "nid": "nm0736263",
-    "prof": "actor,producer,director",
-    "titles": [
-      "tt0091860"
-    ]
-  },
-  "nm0736622": {
-    "birth": "1982",
-    "movies": {
-      "tt2139881": "Flarsky"
-    },
-    "name": "Seth Rogen",
-    "nid": "nm0736622",
-    "prof": "actor,producer,writer",
-    "titles": [
-      "tt2139881"
-    ]
-  },
   "nm0749263": {
     "birth": "1967",
     "movies": {
@@ -9999,18 +6089,6 @@
     "prof": "actor,producer,director",
     "titles": [
       "tt0398375"
-    ]
-  },
-  "nm0751638": {
-    "birth": "1953",
-    "movies": {
-      "tt0102494": "My Own Private Idaho"
-    },
-    "name": "James Russo",
-    "nid": "nm0751638",
-    "prof": "actor,producer,writer",
-    "titles": [
-      "tt0102494"
     ]
   },
   "nm0752379": {
@@ -10073,46 +6151,6 @@
       "tt0406816"
     ]
   },
-  "nm0757854": {
-    "birth": "1954",
-    "movies": {
-      "tt0095730": "The Night Before"
-    },
-    "name": "Theresa Saldana",
-    "nid": "nm0757854",
-    "prof": "actress",
-    "titles": [
-      "tt0095730"
-    ]
-  },
-  "nm0757855": {
-    "birth": "1978",
-    "movies": {
-      "tt1840417": "The Words",
-      "tt2015381": "Guardians of the Galaxy"
-    },
-    "name": "Zoe Saldana",
-    "nid": "nm0757855",
-    "prof": "actress,producer,writer",
-    "titles": [
-      "tt1840417",
-      "tt2015381"
-    ]
-  },
-  "nm0760796": {
-    "birth": "1960",
-    "movies": {
-      "tt1335975": "47 Ronin",
-      "tt6146586": "John Wick: Chapter 3"
-    },
-    "name": "Hiroyuki Sanada",
-    "nid": "nm0760796",
-    "prof": "actor,music_department,composer",
-    "titles": [
-      "tt1335975",
-      "tt6146586"
-    ]
-  },
   "nm0774386": {
     "birth": "1977",
     "movies": {
@@ -10123,18 +6161,6 @@
     "prof": "actor,producer,director",
     "titles": [
       "tt2873282"
-    ]
-  },
-  "nm0775455": {
-    "birth": "1990",
-    "movies": {
-      "tt0408345": "Firewall"
-    },
-    "name": "Carly Schroeder",
-    "nid": "nm0775455",
-    "prof": "actress,producer",
-    "titles": [
-      "tt0408345"
     ]
   },
   "nm0779866": {
@@ -10149,18 +6175,6 @@
       "tt0117887"
     ]
   },
-  "nm0782561": {
-    "birth": "1966",
-    "movies": {
-      "tt0095174": "Frantic"
-    },
-    "name": "Emmanuelle Seigner",
-    "nid": "nm0782561",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt0095174"
-    ]
-  },
   "nm0783033": {
     "birth": "1928",
     "movies": {
@@ -10171,30 +6185,6 @@
     "prof": "actress",
     "titles": [
       "tt0118980"
-    ]
-  },
-  "nm0784884": {
-    "birth": "1946",
-    "movies": {
-      "tt0120751": "Mighty Joe Young"
-    },
-    "name": "Rade Serbedzija",
-    "nid": "nm0784884",
-    "prof": "actor,soundtrack,director",
-    "titles": [
-      "tt0120751"
-    ]
-  },
-  "nm0785227": {
-    "birth": "1964",
-    "movies": {
-      "tt2139881": "Flarsky"
-    },
-    "name": "Andy Serkis",
-    "nid": "nm0785227",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt2139881"
     ]
   },
   "nm0790688": {
@@ -10213,18 +6203,6 @@
       "tt4191702"
     ]
   },
-  "nm0793069": {
-    "birth": "1981",
-    "movies": {
-      "tt1335975": "47 Ronin"
-    },
-    "name": "Ko Shibasaki",
-    "nid": "nm0793069",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt1335975"
-    ]
-  },
   "nm0794647": {
     "birth": "1971",
     "movies": {
@@ -10237,44 +6215,18 @@
       "tt2277106"
     ]
   },
-  "nm0798534": {
-    "birth": "1950",
-    "movies": {
-      "tt0095730": "The Night Before"
-    },
-    "name": "Trinidad Silva",
-    "nid": "nm0798534",
-    "prof": "actor",
-    "titles": [
-      "tt0095730"
-    ]
-  },
-  "nm0798971": {
-    "birth": "1970",
-    "movies": {
-      "tt4622512": "Battle of the Sexes"
-    },
-    "name": "Sarah Silverman",
-    "nid": "nm0798971",
-    "prof": "actress,writer,producer",
-    "titles": [
-      "tt4622512"
-    ]
-  },
   "nm0799777": {
     "birth": "1955",
     "movies": {
       "tt0236493": "The Mexican",
-      "tt0335245": "The Ladykillers",
-      "tt3783958": "La La Land"
+      "tt0335245": "The Ladykillers"
     },
     "name": "J.K. Simmons",
     "nid": "nm0799777",
     "prof": "actor,soundtrack",
     "titles": [
       "tt0236493",
-      "tt0335245",
-      "tt3783958"
+      "tt0335245"
     ]
   },
   "nm0813015": {
@@ -10289,46 +6241,9 @@
       "tt0087374"
     ]
   },
-  "nm0813977": {
-    "birth": "1934",
-    "movies": {
-      "tt0090329": "Witness"
-    },
-    "name": "Josef Sommer",
-    "nid": "nm0813977",
-    "prof": "actor",
-    "titles": [
-      "tt0090329"
-    ]
-  },
-  "nm0815880": {
-    "birth": "\\N",
-    "movies": {
-      "tt0095174": "Frantic"
-    },
-    "name": "Djiby Soumare",
-    "nid": "nm0815880",
-    "prof": "actor",
-    "titles": [
-      "tt0095174"
-    ]
-  },
-  "nm0817844": {
-    "birth": "1981",
-    "movies": {
-      "tt0409847": "Cowboys & Aliens"
-    },
-    "name": "Abigail Spencer",
-    "nid": "nm0817844",
-    "prof": "actress,writer,producer",
-    "titles": [
-      "tt0409847"
-    ]
-  },
   "nm0818055": {
     "birth": "1972",
     "movies": {
-      "tt1454029": "The Help",
       "tt2883434": "Black or White",
       "tt4846340": "Hidden Figures"
     },
@@ -10336,7 +6251,6 @@
     "nid": "nm0818055",
     "prof": "actress,producer,soundtrack",
     "titles": [
-      "tt1454029",
       "tt2883434",
       "tt4846340"
     ]
@@ -10351,18 +6265,6 @@
     "prof": "actor",
     "titles": [
       "tt0345074"
-    ]
-  },
-  "nm0819874": {
-    "birth": "1977",
-    "movies": {
-      "tt0267626": "K-19: The Widowmaker"
-    },
-    "name": "Sam Spruell",
-    "nid": "nm0819874",
-    "prof": "actor",
-    "titles": [
-      "tt0267626"
     ]
   },
   "nm0821041": {
@@ -10389,56 +6291,6 @@
       "tt0091541"
     ]
   },
-  "nm0824220": {
-    "birth": "1971",
-    "movies": {
-      "tt0267626": "K-19: The Widowmaker"
-    },
-    "name": "Peter Stebbings",
-    "nid": "nm0824220",
-    "prof": "actor,director,writer",
-    "titles": [
-      "tt0267626"
-    ]
-  },
-  "nm0824566": {
-    "birth": "1974",
-    "movies": {
-      "tt0091557": "The Mosquito Coast"
-    },
-    "name": "Jadrien Steele",
-    "nid": "nm0824566",
-    "prof": "actor,director,writer",
-    "titles": [
-      "tt0091557"
-    ]
-  },
-  "nm0824763": {
-    "birth": "1965",
-    "movies": {
-      "tt0091065": "Flying",
-      "tt0120373": "Trial and Error"
-    },
-    "name": "Jessica Steen",
-    "nid": "nm0824763",
-    "prof": "actress,producer",
-    "titles": [
-      "tt0091065",
-      "tt0120373"
-    ]
-  },
-  "nm0825784": {
-    "birth": "\\N",
-    "movies": {
-      "tt0116621": "In Love and War"
-    },
-    "name": "Margot Steinberg",
-    "nid": "nm0825784",
-    "prof": "actress",
-    "titles": [
-      "tt0116621"
-    ]
-  },
   "nm0829032": {
     "birth": "1964",
     "movies": {
@@ -10449,18 +6301,6 @@
     "prof": "actor,soundtrack",
     "titles": [
       "tt1781840"
-    ]
-  },
-  "nm0829576": {
-    "birth": "1990",
-    "movies": {
-      "tt1735898": "Snow White and the Huntsman"
-    },
-    "name": "Kristen Stewart",
-    "nid": "nm0829576",
-    "prof": "actress,soundtrack,director",
-    "titles": [
-      "tt1735898"
     ]
   },
   "nm0834380": {
@@ -10487,18 +6327,6 @@
       "tt0174480"
     ]
   },
-  "nm0836343": {
-    "birth": "1978",
-    "movies": {
-      "tt0924129": "Crossing Over"
-    },
-    "name": "Jim Sturgess",
-    "nid": "nm0836343",
-    "prof": "actor,soundtrack,music_department",
-    "titles": [
-      "tt0924129"
-    ]
-  },
   "nm0837177": {
     "birth": "1975",
     "movies": {
@@ -10521,54 +6349,6 @@
     "prof": "actor,soundtrack",
     "titles": [
       "tt0250797"
-    ]
-  },
-  "nm0839326": {
-    "birth": "1971",
-    "movies": {
-      "tt1718158": "Generation Um..."
-    },
-    "name": "Daniel Sunjata",
-    "nid": "nm0839326",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt1718158"
-    ]
-  },
-  "nm0842475": {
-    "birth": "\\N",
-    "movies": {
-      "tt0102768": "Regarding Henry"
-    },
-    "name": "Stanley Swerdlow",
-    "nid": "nm0842475",
-    "prof": "actor",
-    "titles": [
-      "tt0102768"
-    ]
-  },
-  "nm0842770": {
-    "birth": "1960",
-    "movies": {
-      "tt0318761": "Thumbsucker"
-    },
-    "name": "Tilda Swinton",
-    "nid": "nm0842770",
-    "prof": "actress,producer,writer",
-    "titles": [
-      "tt0318761"
-    ]
-  },
-  "nm0845209": {
-    "birth": "1968",
-    "movies": {
-      "tt0114887": "A Walk in the Clouds"
-    },
-    "name": "Aitana S\u00e1nchez-Gij\u00f3n",
-    "nid": "nm0845209",
-    "prof": "actress",
-    "titles": [
-      "tt0114887"
     ]
   },
   "nm0846480": {
@@ -10607,18 +6387,6 @@
       "tt0091019"
     ]
   },
-  "nm0855564": {
-    "birth": "1965",
-    "movies": {
-      "tt0340855": "Monster"
-    },
-    "name": "Lee Tergesen",
-    "nid": "nm0855564",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt0340855"
-    ]
-  },
   "nm0859772": {
     "birth": "1946",
     "movies": {
@@ -10643,30 +6411,16 @@
       "tt0259288"
     ]
   },
-  "nm0870007": {
-    "birth": "1978",
-    "movies": {
-      "tt0161081": "What Lies Beneath"
-    },
-    "name": "Katharine Towne",
-    "nid": "nm0870007",
-    "prof": "actress",
-    "titles": [
-      "tt0161081"
-    ]
-  },
   "nm0870204": {
     "birth": "1972",
     "movies": {
-      "tt0280380": "Trapped",
-      "tt0338097": "Head in the Clouds"
+      "tt0280380": "Trapped"
     },
     "name": "Stuart Townsend",
     "nid": "nm0870204",
     "prof": "actor,director,writer",
     "titles": [
-      "tt0280380",
-      "tt0338097"
+      "tt0280380"
     ]
   },
   "nm0870430": {
@@ -10679,18 +6433,6 @@
     "prof": "actor",
     "titles": [
       "tt0265349"
-    ]
-  },
-  "nm0878240": {
-    "birth": "1942",
-    "movies": {
-      "tt0091065": "Flying"
-    },
-    "name": "Rita Tushingham",
-    "nid": "nm0878240",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt0091065"
     ]
   },
   "nm0889522": {
@@ -10760,17 +6502,13 @@
   "nm0911542": {
     "birth": "1942",
     "movies": {
-      "tt0095903": "The Prince of Pennsylvania",
-      "tt0100814": "Tremors",
-      "tt0115857": "Chain Reaction"
+      "tt0100814": "Tremors"
     },
     "name": "Fred Ward",
     "nid": "nm0911542",
     "prof": "actor,soundtrack,producer",
     "titles": [
-      "tt0095903",
-      "tt0100814",
-      "tt0115857"
+      "tt0100814"
     ]
   },
   "nm0911644": {
@@ -10783,18 +6521,6 @@
     "prof": "actor,producer,writer",
     "titles": [
       "tt0094318"
-    ]
-  },
-  "nm0913460": {
-    "birth": "1963",
-    "movies": {
-      "tt0329717": "Hollywood Homicide"
-    },
-    "name": "Isaiah Washington",
-    "nid": "nm0913460",
-    "prof": "actor,producer,executive",
-    "titles": [
-      "tt0329717"
     ]
   },
   "nm0914612": {
@@ -10824,18 +6550,12 @@
   "nm0915989": {
     "birth": "1960",
     "movies": {
-      "tt0133093": "The Matrix",
-      "tt0234215": "The Matrix Reloaded",
-      "tt0242653": "The Matrix Revolutions",
       "tt1371111": "Cloud Atlas"
     },
     "name": "Hugo Weaving",
     "nid": "nm0915989",
     "prof": "actor,soundtrack,producer",
     "titles": [
-      "tt0133093",
-      "tt0234215",
-      "tt0242653",
       "tt1371111"
     ]
   },
@@ -10866,14 +6586,12 @@
   "nm0922035": {
     "birth": "1969",
     "movies": {
-      "tt0191754": "28 Days",
       "tt2241351": "Money Monster"
     },
     "name": "Dominic West",
     "nid": "nm0922035",
     "prof": "actor,director,producer",
     "titles": [
-      "tt0191754",
       "tt2241351"
     ]
   },
@@ -10927,18 +6645,6 @@
       "tt5706370"
     ]
   },
-  "nm0926165": {
-    "birth": "1988",
-    "movies": {
-      "tt0119313": "Hope Floats"
-    },
-    "name": "Mae Whitman",
-    "nid": "nm0926165",
-    "prof": "actress,soundtrack,art_department",
-    "titles": [
-      "tt0119313"
-    ]
-  },
   "nm0929489": {
     "birth": "1948",
     "movies": {
@@ -10963,18 +6669,6 @@
       "tt0119925"
     ]
   },
-  "nm0933940": {
-    "birth": "1973",
-    "movies": {
-      "tt1625346": "Young Adult"
-    },
-    "name": "Patrick Wilson",
-    "nid": "nm0933940",
-    "prof": "actor,soundtrack,producer",
-    "titles": [
-      "tt1625346"
-    ]
-  },
   "nm0933988": {
     "birth": "1966",
     "movies": {
@@ -10997,20 +6691,6 @@
     "prof": "actor,composer,producer",
     "titles": [
       "tt0094812"
-    ]
-  },
-  "nm0935664": {
-    "birth": "1965",
-    "movies": {
-      "tt0096928": "Bill & Ted's Excellent Adventure",
-      "tt0101452": "Bill & Ted's Bogus Journey"
-    },
-    "name": "Alex Winter",
-    "nid": "nm0935664",
-    "prof": "actor,director,producer",
-    "titles": [
-      "tt0096928",
-      "tt0101452"
     ]
   },
   "nm0936403": {
@@ -11063,18 +6743,6 @@
       "tt0089420"
     ]
   },
-  "nm0946962": {
-    "birth": "1970",
-    "movies": {
-      "tt1068641": "The Burning Plain"
-    },
-    "name": "Jos\u00e9 Mar\u00eda Yazpik",
-    "nid": "nm0946962",
-    "prof": "actor,producer",
-    "titles": [
-      "tt1068641"
-    ]
-  },
   "nm0947338": {
     "birth": "1989",
     "movies": {
@@ -11087,18 +6755,6 @@
       "tt1758692"
     ]
   },
-  "nm0948078": {
-    "birth": "\\N",
-    "movies": {
-      "tt0107426": "Little Buddha"
-    },
-    "name": "Ruocheng Ying",
-    "nid": "nm0948078",
-    "prof": "actor",
-    "titles": [
-      "tt0107426"
-    ]
-  },
   "nm0949744": {
     "birth": "1958",
     "movies": {
@@ -11109,18 +6765,6 @@
     "prof": "actress,director,writer",
     "titles": [
       "tt0097125"
-    ]
-  },
-  "nm0950494": {
-    "birth": "\\N",
-    "movies": {
-      "tt2016940": "Man of Tai Chi"
-    },
-    "name": "Hai Yu",
-    "nid": "nm0950494",
-    "prof": "actor,stunts",
-    "titles": [
-      "tt2016940"
     ]
   },
   "nm0957460": {
@@ -11147,18 +6791,6 @@
       "tt0808151"
     ]
   },
-  "nm0959242": {
-    "birth": "\\N",
-    "movies": {
-      "tt0171356": "Gun Shy"
-    },
-    "name": "Jos\u00e9 Z\u00fa\u00f1iga",
-    "nid": "nm0959242",
-    "prof": "actor",
-    "titles": [
-      "tt0171356"
-    ]
-  },
   "nm0970926": {
     "birth": "\\N",
     "movies": {
@@ -11169,30 +6801,6 @@
     "prof": "actor",
     "titles": [
       "tt0852953"
-    ]
-  },
-  "nm0973177": {
-    "birth": "1986",
-    "movies": {
-      "tt2179136": "American Sniper"
-    },
-    "name": "Kyle Gallner",
-    "nid": "nm0973177",
-    "prof": "actor,producer",
-    "titles": [
-      "tt2179136"
-    ]
-  },
-  "nm0993507": {
-    "birth": "1986",
-    "movies": {
-      "tt0852713": "The House Bunny"
-    },
-    "name": "Kat Dennings",
-    "nid": "nm0993507",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt0852713"
     ]
   },
   "nm1005576": {
@@ -11207,49 +6815,10 @@
       "tt0257044"
     ]
   },
-  "nm1009277": {
-    "birth": "1975",
-    "movies": {
-      "tt2097307": "Hit and Run"
-    },
-    "name": "Dax Shepard",
-    "nid": "nm1009277",
-    "prof": "actor,director,soundtrack",
-    "titles": [
-      "tt2097307"
-    ]
-  },
-  "nm1046097": {
-    "birth": "1978",
-    "movies": {
-      "tt1126618": "Morning Glory",
-      "tt1243974": "Aloha"
-    },
-    "name": "Rachel McAdams",
-    "nid": "nm1046097",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt1126618",
-      "tt1243974"
-    ]
-  },
-  "nm1047913": {
-    "birth": "\\N",
-    "movies": {
-      "tt0932669": "Older Than America"
-    },
-    "name": "Glen Gould",
-    "nid": "nm1047913",
-    "prof": "actor,producer,director",
-    "titles": [
-      "tt0932669"
-    ]
-  },
   "nm1055413": {
     "birth": "1977",
     "movies": {
       "tt1270798": "X-Men: First Class",
-      "tt1446714": "Prometheus",
       "tt3385516": "X-Men: Apocalypse",
       "tt6565702": "X-Men: Dark Phoenix"
     },
@@ -11258,7 +6827,6 @@
     "prof": "actor,producer,soundtrack",
     "titles": [
       "tt1270798",
-      "tt1446714",
       "tt3385516",
       "tt6565702"
     ]
@@ -11273,56 +6841,6 @@
     "prof": "actor",
     "titles": [
       "tt0951335"
-    ]
-  },
-  "nm1086384": {
-    "birth": "1985",
-    "movies": {
-      "tt0318761": "Thumbsucker"
-    },
-    "name": "Lou Taylor Pucci",
-    "nid": "nm1086384",
-    "prof": "actor,soundtrack,producer",
-    "titles": [
-      "tt0318761"
-    ]
-  },
-  "nm1086543": {
-    "birth": "1985",
-    "movies": {
-      "tt2557490": "A Million Ways to Die in the West"
-    },
-    "name": "Amanda Seyfried",
-    "nid": "nm1086543",
-    "prof": "actress,soundtrack,producer",
-    "titles": [
-      "tt2557490"
-    ]
-  },
-  "nm1092227": {
-    "birth": "1981",
-    "movies": {
-      "tt2179136": "American Sniper",
-      "tt2503944": "Burnt"
-    },
-    "name": "Sienna Miller",
-    "nid": "nm1092227",
-    "prof": "actress",
-    "titles": [
-      "tt2179136",
-      "tt2503944"
-    ]
-  },
-  "nm1102577": {
-    "birth": "1998",
-    "movies": {
-      "tt1974419": "The Neon Demon"
-    },
-    "name": "Elle Fanning",
-    "nid": "nm1102577",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt1974419"
     ]
   },
   "nm1102891": {
@@ -11352,29 +6870,13 @@
   "nm1107001": {
     "birth": "1978",
     "movies": {
-      "tt1018765": "Our Brand Is Crisis",
       "tt2883434": "Black or White"
     },
     "name": "Anthony Mackie",
     "nid": "nm1107001",
     "prof": "actor,producer,soundtrack",
     "titles": [
-      "tt1018765",
       "tt2883434"
-    ]
-  },
-  "nm1113550": {
-    "birth": "1996",
-    "movies": {
-      "tt1156398": "Zombieland",
-      "tt1731141": "Ender's Game"
-    },
-    "name": "Abigail Breslin",
-    "nid": "nm1113550",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt1156398",
-      "tt1731141"
     ]
   },
   "nm1122614": {
@@ -11389,22 +6891,6 @@
       "tt0388213"
     ]
   },
-  "nm1159180": {
-    "birth": "1974",
-    "movies": {
-      "tt1119646": "The Hangover",
-      "tt1411697": "The Hangover Part II",
-      "tt1951261": "The Hangover Part III"
-    },
-    "name": "Ed Helms",
-    "nid": "nm1159180",
-    "prof": "actor,soundtrack,producer",
-    "titles": [
-      "tt1119646",
-      "tt1411697",
-      "tt1951261"
-    ]
-  },
   "nm1164392": {
     "birth": "\\N",
     "movies": {
@@ -11417,44 +6903,6 @@
       "tt0259446"
     ]
   },
-  "nm1165110": {
-    "birth": "1983",
-    "movies": {
-      "tt1735898": "Snow White and the Huntsman",
-      "tt2381991": "The Huntsman: Winter's War"
-    },
-    "name": "Chris Hemsworth",
-    "nid": "nm1165110",
-    "prof": "actor",
-    "titles": [
-      "tt1735898",
-      "tt2381991"
-    ]
-  },
-  "nm1165660": {
-    "birth": "1973",
-    "movies": {
-      "tt0453562": "42"
-    },
-    "name": "T.R. Knight",
-    "nid": "nm1165660",
-    "prof": "actor",
-    "titles": [
-      "tt0453562"
-    ]
-  },
-  "nm1176985": {
-    "birth": "1969",
-    "movies": {
-      "tt1856101": "Blade Runner 2049"
-    },
-    "name": "Dave Bautista",
-    "nid": "nm1176985",
-    "prof": "actor,producer,miscellaneous",
-    "titles": [
-      "tt1856101"
-    ]
-  },
   "nm1183149": {
     "birth": "1977",
     "movies": {
@@ -11465,30 +6913,6 @@
     "prof": "actor,producer,assistant_director",
     "titles": [
       "tt2446980"
-    ]
-  },
-  "nm1195855": {
-    "birth": "1979",
-    "movies": {
-      "tt1392197": "Marmaduke"
-    },
-    "name": "Lee Pace",
-    "nid": "nm1195855",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt1392197"
-    ]
-  },
-  "nm1241511": {
-    "birth": "\\N",
-    "movies": {
-      "tt1454468": "Gravity"
-    },
-    "name": "Orto Ignatiussen",
-    "nid": "nm1241511",
-    "prof": "actor,miscellaneous",
-    "titles": [
-      "tt1454468"
     ]
   },
   "nm1242688": {
@@ -11509,20 +6933,6 @@
       "tt1951266"
     ]
   },
-  "nm1249052": {
-    "birth": "1979",
-    "movies": {
-      "tt2503944": "Burnt",
-      "tt4425200": "John Wick: Chapter 2"
-    },
-    "name": "Riccardo Scamarcio",
-    "nid": "nm1249052",
-    "prof": "actor,producer",
-    "titles": [
-      "tt2503944",
-      "tt4425200"
-    ]
-  },
   "nm1268748": {
     "birth": "1968",
     "movies": {
@@ -11538,15 +6948,13 @@
   "nm1289434": {
     "birth": "1983",
     "movies": {
-      "tt0460810": "The Great Buck Howard",
-      "tt2381991": "The Huntsman: Winter's War"
+      "tt0460810": "The Great Buck Howard"
     },
     "name": "Emily Blunt",
     "nid": "nm1289434",
     "prof": "actress,soundtrack,miscellaneous",
     "titles": [
-      "tt0460810",
-      "tt2381991"
+      "tt0460810"
     ]
   },
   "nm1294664": {
@@ -11564,51 +6972,13 @@
   "nm1297015": {
     "birth": "1988",
     "movies": {
-      "tt0437405": "Paper Man",
-      "tt0481499": "The Croods",
-      "tt0821640": "Ghosts of Girlfriends Past",
-      "tt0852713": "The House Bunny",
-      "tt0948470": "The Amazing Spider-Man",
-      "tt1156398": "Zombieland",
-      "tt1243974": "Aloha",
-      "tt1282140": "Easy A",
-      "tt1321870": "Gangster Squad",
-      "tt1333125": "Movie 43",
-      "tt1392197": "Marmaduke",
-      "tt1454029": "The Help",
-      "tt1570728": "Crazy, Stupid, Love.",
-      "tt1872181": "The Amazing Spider-Man 2",
-      "tt2850386": "The Croods 2",
-      "tt2870756": "Magic in the Moonlight",
-      "tt3715320": "Irrational Man",
-      "tt3783958": "La La Land",
-      "tt4622512": "Battle of the Sexes",
-      "tt5083738": "The Favourite"
+      "tt1333125": "Movie 43"
     },
     "name": "Emma Stone",
     "nid": "nm1297015",
     "prof": "actress,soundtrack,producer",
     "titles": [
-      "tt0437405",
-      "tt0481499",
-      "tt0821640",
-      "tt0852713",
-      "tt0948470",
-      "tt1156398",
-      "tt1243974",
-      "tt1282140",
-      "tt1321870",
-      "tt1333125",
-      "tt1392197",
-      "tt1454029",
-      "tt1570728",
-      "tt1872181",
-      "tt2850386",
-      "tt2870756",
-      "tt3715320",
-      "tt3783958",
-      "tt4622512",
-      "tt5083738"
+      "tt1333125"
     ]
   },
   "nm1302735": {
@@ -11623,44 +6993,6 @@
       "tt1582507"
     ]
   },
-  "nm1312500": {
-    "birth": "\\N",
-    "movies": {
-      "tt0349193": "Bending All the Rules"
-    },
-    "name": "Colleen Porch",
-    "nid": "nm1312500",
-    "prof": "actress",
-    "titles": [
-      "tt0349193"
-    ]
-  },
-  "nm1312575": {
-    "birth": "1984",
-    "movies": {
-      "tt0409847": "Cowboys & Aliens",
-      "tt1840417": "The Words"
-    },
-    "name": "Olivia Wilde",
-    "nid": "nm1312575",
-    "prof": "actress,producer,director",
-    "titles": [
-      "tt0409847",
-      "tt1840417"
-    ]
-  },
-  "nm1312633": {
-    "birth": "\\N",
-    "movies": {
-      "tt0349193": "Bending All the Rules"
-    },
-    "name": "Morgan Klein",
-    "nid": "nm1312633",
-    "prof": "director,actor,writer",
-    "titles": [
-      "tt0349193"
-    ]
-  },
   "nm1330560": {
     "birth": "1984",
     "movies": {
@@ -11671,30 +7003,6 @@
     "prof": "actor,soundtrack",
     "titles": [
       "tt0804461"
-    ]
-  },
-  "nm1334869": {
-    "birth": "1976",
-    "movies": {
-      "tt1446714": "Prometheus"
-    },
-    "name": "Logan Marshall-Green",
-    "nid": "nm1334869",
-    "prof": "actor,producer",
-    "titles": [
-      "tt1446714"
-    ]
-  },
-  "nm1369571": {
-    "birth": "\\N",
-    "movies": {
-      "tt3715320": "Irrational Man"
-    },
-    "name": "Joe Stapleton",
-    "nid": "nm1369571",
-    "prof": "actor",
-    "titles": [
-      "tt3715320"
     ]
   },
   "nm1374980": {
@@ -11724,15 +7032,13 @@
   "nm1404408": {
     "birth": "1982",
     "movies": {
-      "tt0477095": "Starter for 10",
-      "tt4154916": "Replicas"
+      "tt0477095": "Starter for 10"
     },
     "name": "Alice Eve",
     "nid": "nm1404408",
     "prof": "actress,producer,director",
     "titles": [
-      "tt0477095",
-      "tt4154916"
+      "tt0477095"
     ]
   },
   "nm1419440": {
@@ -11745,30 +7051,6 @@
     "prof": "actress",
     "titles": [
       "tt0951335"
-    ]
-  },
-  "nm1455681": {
-    "birth": "1993",
-    "movies": {
-      "tt0888693": "Sleepwalking"
-    },
-    "name": "AnnaSophia Robb",
-    "nid": "nm1455681",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt0888693"
-    ]
-  },
-  "nm1469236": {
-    "birth": "1974",
-    "movies": {
-      "tt5083738": "The Favourite"
-    },
-    "name": "Olivia Colman",
-    "nid": "nm1469236",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt5083738"
     ]
   },
   "nm1517976": {
@@ -11793,18 +7075,6 @@
     "prof": "actress,soundtrack",
     "titles": [
       "tt0970411"
-    ]
-  },
-  "nm1535523": {
-    "birth": "1998",
-    "movies": {
-      "tt0970416": "The Day the Earth Stood Still"
-    },
-    "name": "Jaden Smith",
-    "nid": "nm1535523",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt0970416"
     ]
   },
   "nm1540404": {
@@ -11834,7 +7104,6 @@
   "nm1567113": {
     "birth": "1977",
     "movies": {
-      "tt2381991": "The Huntsman: Winter's War",
       "tt4209788": "Molly's Game",
       "tt6565702": "X-Men: Dark Phoenix"
     },
@@ -11842,7 +7111,6 @@
     "nid": "nm1567113",
     "prof": "actress,producer,soundtrack",
     "titles": [
-      "tt2381991",
       "tt4209788",
       "tt6565702"
     ]
@@ -11862,28 +7130,24 @@
   "nm1569276": {
     "birth": "1977",
     "movies": {
-      "tt0453562": "42",
       "tt2223990": "Draft Day"
     },
     "name": "Chadwick Boseman",
     "nid": "nm1569276",
     "prof": "actor,producer,writer",
     "titles": [
-      "tt0453562",
       "tt2223990"
     ]
   },
   "nm1601397": {
     "birth": "1980",
     "movies": {
-      "tt5164214": "Ocean's 8",
       "tt6565702": "X-Men: Dark Phoenix"
     },
     "name": "Olivia Munn",
     "nid": "nm1601397",
     "prof": "actress,writer",
     "titles": [
-      "tt5164214",
       "tt6565702"
     ]
   },
@@ -11899,65 +7163,15 @@
       "tt1027862"
     ]
   },
-  "nm1631269": {
-    "birth": "1997",
-    "movies": {
-      "tt2402101": "Dark Places"
-    },
-    "name": "Chlo\u00eb Grace Moretz",
-    "nid": "nm1631269",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt2402101"
-    ]
-  },
-  "nm1663205": {
-    "birth": "1973",
-    "movies": {
-      "tt0429493": "The A-Team"
-    },
-    "name": "Sharlto Copley",
-    "nid": "nm1663205",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0429493"
-    ]
-  },
-  "nm1679669": {
-    "birth": "1971",
-    "movies": {
-      "tt3783958": "La La Land"
-    },
-    "name": "Rosemarie DeWitt",
-    "nid": "nm1679669",
-    "prof": "actress,miscellaneous",
-    "titles": [
-      "tt3783958"
-    ]
-  },
-  "nm1706767": {
-    "birth": "1983",
-    "movies": {
-      "tt2005151": "War Dogs"
-    },
-    "name": "Jonah Hill",
-    "nid": "nm1706767",
-    "prof": "actor,producer,writer",
-    "titles": [
-      "tt2005151"
-    ]
-  },
   "nm1720028": {
     "birth": "1986",
     "movies": {
-      "tt1413495": "Paranoia",
       "tt2172934": "3 Days to Kill"
     },
     "name": "Amber Heard",
     "nid": "nm1720028",
     "prof": "actress,producer,soundtrack",
     "titles": [
-      "tt1413495",
       "tt2172934"
     ]
   },
@@ -12009,30 +7223,6 @@
       "tt2097298"
     ]
   },
-  "nm1813221": {
-    "birth": "1983",
-    "movies": {
-      "tt3503406": "The Whole Truth"
-    },
-    "name": "Gugu Mbatha-Raw",
-    "nid": "nm1813221",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt3503406"
-    ]
-  },
-  "nm1816775": {
-    "birth": "\\N",
-    "movies": {
-      "tt2005151": "War Dogs"
-    },
-    "name": "Gregg Weiner",
-    "nid": "nm1816775",
-    "prof": "actor",
-    "titles": [
-      "tt2005151"
-    ]
-  },
   "nm1843026": {
     "birth": "1982",
     "movies": {
@@ -12069,46 +7259,6 @@
       "tt0822849"
     ]
   },
-  "nm1853544": {
-    "birth": "1967",
-    "movies": {
-      "tt2293640": "Minions"
-    },
-    "name": "Pierre Coffin",
-    "nid": "nm1853544",
-    "prof": "actor,director,producer",
-    "titles": [
-      "tt2293640"
-    ]
-  },
-  "nm1869101": {
-    "birth": "1988",
-    "movies": {
-      "tt1856101": "Blade Runner 2049",
-      "tt3605418": "Knock Knock",
-      "tt4019560": "Exposed"
-    },
-    "name": "Ana de Armas",
-    "nid": "nm1869101",
-    "prof": "actress",
-    "titles": [
-      "tt1856101",
-      "tt3605418",
-      "tt4019560"
-    ]
-  },
-  "nm1886602": {
-    "birth": "1987",
-    "movies": {
-      "tt2005151": "War Dogs"
-    },
-    "name": "Miles Teller",
-    "nid": "nm1886602",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt2005151"
-    ]
-  },
   "nm1925239": {
     "birth": "1990",
     "movies": {
@@ -12119,58 +7269,6 @@
     "prof": "actor",
     "titles": [
       "tt2241351"
-    ]
-  },
-  "nm1940449": {
-    "birth": "1983",
-    "movies": {
-      "tt0948470": "The Amazing Spider-Man",
-      "tt1872181": "The Amazing Spider-Man 2"
-    },
-    "name": "Andrew Garfield",
-    "nid": "nm1940449",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt0948470",
-      "tt1872181"
-    ]
-  },
-  "nm2052567": {
-    "birth": "1996",
-    "movies": {
-      "tt0448157": "Hancock",
-      "tt0878804": "The Blind Side"
-    },
-    "name": "Jae Head",
-    "nid": "nm2052567",
-    "prof": "actor",
-    "titles": [
-      "tt0448157",
-      "tt0878804"
-    ]
-  },
-  "nm2053085": {
-    "birth": "1980",
-    "movies": {
-      "tt2139881": "Flarsky"
-    },
-    "name": "June Diane Raphael",
-    "nid": "nm2053085",
-    "prof": "actress,writer,miscellaneous",
-    "titles": [
-      "tt2139881"
-    ]
-  },
-  "nm2057859": {
-    "birth": "1981",
-    "movies": {
-      "tt4622512": "Battle of the Sexes"
-    },
-    "name": "Andrea Riseborough",
-    "nid": "nm2057859",
-    "prof": "actress,soundtrack,producer",
-    "titles": [
-      "tt4622512"
     ]
   },
   "nm2089529": {
@@ -12195,18 +7293,6 @@
     "prof": "actress,producer",
     "titles": [
       "tt1028532"
-    ]
-  },
-  "nm2182034": {
-    "birth": "2000",
-    "movies": {
-      "tt0477071": "Premonition"
-    },
-    "name": "Shyann McClure",
-    "nid": "nm2182034",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt0477071"
     ]
   },
   "nm2213961": {
@@ -12269,18 +7355,6 @@
       "tt6565702"
     ]
   },
-  "nm2240346": {
-    "birth": "1996",
-    "movies": {
-      "tt0898367": "The Road"
-    },
-    "name": "Kodi Smit-McPhee",
-    "nid": "nm2240346",
-    "prof": "actor",
-    "titles": [
-      "tt0898367"
-    ]
-  },
   "nm2309517": {
     "birth": "1986",
     "movies": {
@@ -12305,30 +7379,6 @@
       "tt7545524"
     ]
   },
-  "nm2368789": {
-    "birth": "1988",
-    "movies": {
-      "tt1392190": "Mad Max: Fury Road"
-    },
-    "name": "Zo\u00eb Kravitz",
-    "nid": "nm2368789",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt1392190"
-    ]
-  },
-  "nm2466842": {
-    "birth": "1984",
-    "movies": {
-      "tt0878804": "The Blind Side"
-    },
-    "name": "Quinton Aaron",
-    "nid": "nm2466842",
-    "prof": "actor,producer,writer",
-    "titles": [
-      "tt0878804"
-    ]
-  },
   "nm2504006": {
     "birth": "1997",
     "movies": {
@@ -12339,18 +7389,6 @@
     "prof": "actor,soundtrack",
     "titles": [
       "tt0386117"
-    ]
-  },
-  "nm2564938": {
-    "birth": "1989",
-    "movies": {
-      "tt1718158": "Generation Um..."
-    },
-    "name": "Adelaide Clemens",
-    "nid": "nm2564938",
-    "prof": "actress",
-    "titles": [
-      "tt1718158"
     ]
   },
   "nm2589551": {
@@ -12365,42 +7403,6 @@
       "tt0386117"
     ]
   },
-  "nm2633535": {
-    "birth": "1997",
-    "movies": {
-      "tt1731141": "Ender's Game"
-    },
-    "name": "Asa Butterfield",
-    "nid": "nm2633535",
-    "prof": "actor",
-    "titles": [
-      "tt1731141"
-    ]
-  },
-  "nm2718512": {
-    "birth": "\\N",
-    "movies": {
-      "tt0453562": "42"
-    },
-    "name": "Nicole Beharie",
-    "nid": "nm2718512",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt0453562"
-    ]
-  },
-  "nm2746751": {
-    "birth": "1985",
-    "movies": {
-      "tt3605418": "Knock Knock"
-    },
-    "name": "Aaron Burns",
-    "nid": "nm2746751",
-    "prof": "actor,visual_effects,camera_department",
-    "titles": [
-      "tt3605418"
-    ]
-  },
   "nm2765903": {
     "birth": "\\N",
     "movies": {
@@ -12413,41 +7415,15 @@
       "tt0455782"
     ]
   },
-  "nm2773059": {
-    "birth": "\\N",
-    "movies": {
-      "tt3503406": "The Whole Truth"
-    },
-    "name": "Gabriel Basso",
-    "nid": "nm2773059",
-    "prof": "actor,soundtrack",
-    "titles": [
-      "tt3503406"
-    ]
-  },
-  "nm2776169": {
-    "birth": "\\N",
-    "movies": {
-      "tt1244659": "Extraordinary Measures"
-    },
-    "name": "Meredith Droeger",
-    "nid": "nm2776169",
-    "prof": "actress",
-    "titles": [
-      "tt1244659"
-    ]
-  },
   "nm2794962": {
     "birth": "1996",
     "movies": {
-      "tt1731141": "Ender's Game",
       "tt2172934": "3 Days to Kill"
     },
     "name": "Hailee Steinfeld",
     "nid": "nm2794962",
     "prof": "actress,soundtrack,music_department",
     "titles": [
-      "tt1731141",
       "tt2172934"
     ]
   },
@@ -12479,7 +7455,6 @@
     "birth": "1990",
     "movies": {
       "tt1392170": "The Hunger Games",
-      "tt1413495": "Paranoia",
       "tt1951264": "The Hunger Games: Catching Fire",
       "tt1951265": "The Hunger Games: Mockingjay - Part 1",
       "tt1951266": "The Hunger Games: Mockingjay - Part 2"
@@ -12489,7 +7464,6 @@
     "prof": "actor,miscellaneous",
     "titles": [
       "tt1392170",
-      "tt1413495",
       "tt1951264",
       "tt1951265",
       "tt1951266"
@@ -12505,80 +7479,6 @@
     "prof": "director,camera_department,editor",
     "titles": [
       "tt4128724"
-    ]
-  },
-  "nm3042755": {
-    "birth": "1982",
-    "movies": {
-      "tt4154916": "Replicas"
-    },
-    "name": "Thomas Middleditch",
-    "nid": "nm3042755",
-    "prof": "actor,writer,soundtrack",
-    "titles": [
-      "tt4154916"
-    ]
-  },
-  "nm3078932": {
-    "birth": "1986",
-    "movies": {
-      "tt1517451": "A Star Is Born"
-    },
-    "name": "Lady Gaga",
-    "nid": "nm3078932",
-    "prof": "soundtrack,actress,composer",
-    "titles": [
-      "tt1517451"
-    ]
-  },
-  "nm3111373": {
-    "birth": "\\N",
-    "movies": {
-      "tt2005151": "War Dogs"
-    },
-    "name": "Steve Lantz",
-    "nid": "nm3111373",
-    "prof": "actor",
-    "titles": [
-      "tt2005151"
-    ]
-  },
-  "nm3194762": {
-    "birth": "\\N",
-    "movies": {
-      "tt1974419": "The Neon Demon"
-    },
-    "name": "Karl Glusman",
-    "nid": "nm3194762",
-    "prof": "actor,camera_department",
-    "titles": [
-      "tt1974419"
-    ]
-  },
-  "nm3199307": {
-    "birth": "1986",
-    "movies": {
-      "tt4425200": "John Wick: Chapter 2",
-      "tt6146586": "John Wick: Chapter 3"
-    },
-    "name": "Ruby Rose",
-    "nid": "nm3199307",
-    "prof": "actress,writer,producer",
-    "titles": [
-      "tt4425200",
-      "tt6146586"
-    ]
-  },
-  "nm3280686": {
-    "birth": "2001",
-    "movies": {
-      "tt4302938": "Kubo and the Two Strings"
-    },
-    "name": "Art Parkinson",
-    "nid": "nm3280686",
-    "prof": "actor",
-    "titles": [
-      "tt4302938"
     ]
   },
   "nm3404934": {
@@ -12617,18 +7517,6 @@
       "tt1399683"
     ]
   },
-  "nm3510471": {
-    "birth": "1986",
-    "movies": {
-      "tt1735898": "Snow White and the Huntsman"
-    },
-    "name": "Sam Claflin",
-    "nid": "nm3510471",
-    "prof": "actor,producer,soundtrack",
-    "titles": [
-      "tt1735898"
-    ]
-  },
   "nm3772243": {
     "birth": "1984",
     "movies": {
@@ -12665,18 +7553,6 @@
       "tt4287320"
     ]
   },
-  "nm3995471": {
-    "birth": "\\N",
-    "movies": {
-      "tt1817273": "The Place Beyond the Pines"
-    },
-    "name": "Craig Van Hook",
-    "nid": "nm3995471",
-    "prof": "actor,transportation_department",
-    "titles": [
-      "tt1817273"
-    ]
-  },
   "nm4003520": {
     "birth": "\\N",
     "movies": {
@@ -12687,18 +7563,6 @@
     "prof": "actress",
     "titles": [
       "tt2140373"
-    ]
-  },
-  "nm4025229": {
-    "birth": "1992",
-    "movies": {
-      "tt4334266": "The Bad Batch"
-    },
-    "name": "Suki Waterhouse",
-    "nid": "nm4025229",
-    "prof": "actress,producer",
-    "titles": [
-      "tt4334266"
     ]
   },
   "nm4025491": {
@@ -12735,30 +7599,6 @@
     "prof": "actor,assistant_director",
     "titles": [
       "tt0477302"
-    ]
-  },
-  "nm4448022": {
-    "birth": "1989",
-    "movies": {
-      "tt3605418": "Knock Knock"
-    },
-    "name": "Lorenza Izzo",
-    "nid": "nm4448022",
-    "prof": "actress,soundtrack",
-    "titles": [
-      "tt3605418"
-    ]
-  },
-  "nm4496875": {
-    "birth": "1987",
-    "movies": {
-      "tt5610554": "Tully"
-    },
-    "name": "Mackenzie Davis",
-    "nid": "nm4496875",
-    "prof": "actress,producer,soundtrack",
-    "titles": [
-      "tt5610554"
     ]
   },
   "nm4867258": {
@@ -12833,18 +7673,6 @@
       "tt1578882"
     ]
   },
-  "nm6518675": {
-    "birth": "\\N",
-    "movies": {
-      "tt2179136": "American Sniper"
-    },
-    "name": "Cole Konis",
-    "nid": "nm6518675",
-    "prof": "actor",
-    "titles": [
-      "tt2179136"
-    ]
-  },
   "nm6627667": {
     "birth": "\\N",
     "movies": {
@@ -12905,30 +7733,6 @@
       "tt7545524"
     ]
   },
-  "nm7633342": {
-    "birth": "\\N",
-    "movies": {
-      "tt4334266": "The Bad Batch"
-    },
-    "name": "Jayda Fink",
-    "nid": "nm7633342",
-    "prof": "actress",
-    "titles": [
-      "tt4334266"
-    ]
-  },
-  "nm8329660": {
-    "birth": "\\N",
-    "movies": {
-      "tt6987770": "Destination Wedding"
-    },
-    "name": "Dj Dallenbach",
-    "nid": "nm8329660",
-    "prof": "actor,producer",
-    "titles": [
-      "tt6987770"
-    ]
-  },
   "nm8696054": {
     "birth": "\\N",
     "movies": {
@@ -12951,30 +7755,6 @@
     "prof": "",
     "titles": [
       "tt2488194"
-    ]
-  },
-  "nm9552585": {
-    "birth": "\\N",
-    "movies": {
-      "tt3286560": "The Last Face"
-    },
-    "name": "Brandon Phillips",
-    "nid": "nm9552585",
-    "prof": "actor",
-    "titles": [
-      "tt3286560"
-    ]
-  },
-  "nm9552586": {
-    "birth": "\\N",
-    "movies": {
-      "tt3286560": "The Last Face"
-    },
-    "name": "Anna Strelkov",
-    "nid": "nm9552586",
-    "prof": "actress",
-    "titles": [
-      "tt3286560"
     ]
   }
 }

@@ -14,7 +14,6 @@ class Favorites:
         actors['nm0000152'] = 'richard_gere'
         actors['nm0000158'] = 'tom_hanks'
         actors['nm0000210'] = 'julia_roberts'
-        actors['nm1297015'] = 'emma_stone'
         actors['nm2225369'] = 'jennifer_lawrence'
         return actors
 
@@ -33,6 +32,7 @@ class Favorites:
         actors['nm0001742'] = 'lori_singer'
         actors['nm0005476'] = 'hilary_swank'
         actors['nm0177896'] = 'bradley_cooper'
+        actors['nm1297015'] = 'emma_stone'
         return actors
 
     def favorite_movies(self):
