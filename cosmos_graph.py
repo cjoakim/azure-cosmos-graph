@@ -54,7 +54,7 @@ class Main:
         self.c = config.Config()
         self.favorites = values.Favorites()
         self.queries = list()
-        self.sleep_time = 0.4
+        self.sleep_time = 0.5
         self.submit_query = False
 
     def execute(self):

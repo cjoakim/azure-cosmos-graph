@@ -92,7 +92,8 @@ inserts.
 
 ### Query the Database
 
-The following are example Gremlin queries:
+The following are example Gremlin queries.  These can either be executed within the Azure Portal
+or with the Python client.
 
 ```
 count the vectors:
@@ -174,10 +175,10 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000102')).pat
 
 path_richard_gere_to_lori_singer:
 query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).path().limit(3)
-
 ```
 
-See file queries.sh
+See file queries.sh.  These previously executed queries have been captured to files in the
+queries/ directory in this project.
 
 ## Gremlin-Python and Apache TinkerPop
 

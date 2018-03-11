@@ -9,7 +9,7 @@
 # Chris Joakim, Microsoft, 2018/03/11
 
 dbname=dev
-collname=movies
+collname=movies2
 
 echo 'using database:   '$dbname
 echo 'using collection: '$collname
