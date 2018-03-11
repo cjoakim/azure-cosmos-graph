@@ -112,9 +112,13 @@ class Main:
         # lines_read: 4832632  elapsed: 25.33212375640869
 
     def identify_candidate_movies(self):
-        infile   = self.c.data_filename_raw('title.principals.tsv')
-        outfile1 = self.c.candidate_movies_json_filename()
-        actors   = self.favorites.actors_for_candidate_movies()
+        infile  = self.c.data_filename_raw('title.principals.tsv')
+        outfile = self.c.candidate_movies_json_filename()
+        print('identify_candidate_movies; infile:  {}'.format(infile))
+        print('identify_candidate_movies; outfile: {}'.format(outfile))
+        time.sleep(3)
+
+        actors = self.favorites.actors_for_candidate_movies()
         row_count = 0
         required  = dict()
         curr_movie_mid = ''
@@ -150,9 +154,9 @@ class Main:
 
         print('required count: {}'.format(len(required)))
         jstr = json.dumps(required, sort_keys=True, indent=2)
-        with open(outfile1, 'wt') as f:
+        with open(outfile, 'wt') as f:
             f.write(jstr)
-            print('file written: {}'.format(outfile1))
+            print('file written: {}'.format(outfile))
 
         elapsed_time = time.time() - self.start_time
         print('lines_read: {}  elapsed: {}'.format(row_count, elapsed_time))
