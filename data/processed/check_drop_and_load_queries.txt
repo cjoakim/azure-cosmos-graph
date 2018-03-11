@@ -1,12 +1,15 @@
 ---
+counting lines in infile ...
+    8307
+---
 grepping for movie vertices ...
-     486    2393   39966
+     486
 ---
 grepping for person vertices ...
-     951    3858   75294
+     951
 ---
 grepping for knows edges ...
-    5136   24146  602602
+    5136
 ---
 grepping for footloose ...
 g.addV('movie').property('id', 'tt0087277').property('title', 'Footloose')

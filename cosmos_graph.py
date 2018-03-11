@@ -136,15 +136,14 @@ class Main:
 
     def create_edges(self):
         people_ids = sorted(self.people.keys())
-        spec = "g.V('{}').addE('in').to(g.V('{}')).property('title', '{}')"
 
         # First add the person-in-movie Edges:
+        spec = "g.V('{}').addE('in').to(g.V('{}')).property('title', '{}')"
         for idx, pid in enumerate(people_ids):
             person = self.people[pid]
             name   = self.scrub_str(person['name'])
             titles = person['titles']
-            print('pid: {} titles: {}'.format(pid, titles))
-
+            #print('pid: {} titles: {}'.format(pid, titles))
             for mid in titles:
                 title = self.scrub_str(self.movies[mid])
                 query = spec.format(pid, mid, title)

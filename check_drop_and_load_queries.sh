@@ -14,16 +14,20 @@ diane_lane=nm0000178
 infile=data/processed/drop_and_load_queries.txt
 
 echo '---'
+echo 'counting lines in infile ...'
+cat $infile | wc -l
+
+echo '---'
 echo 'grepping for movie vertices ...'
-cat $infile | grep movie | wc
+cat $infile | grep movie | wc -l
 
 echo '---'
 echo 'grepping for person vertices ...'
-cat $infile | grep person | wc
+cat $infile | grep person | wc -l
 
 echo '---'
 echo 'grepping for knows edges ...'
-cat $infile | grep knows | wc
+cat $infile | grep knows | wc -l
 
 echo '---'
 echo 'grepping for footloose ...'
