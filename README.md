@@ -1,6 +1,6 @@
 # azure-cosmos-graph
 
-## CosmosDB Graph Database example - the N-Degrees of Kevin Bacon*
+CosmosDB Graph Database example - the N-Degrees of Kevin Bacon*
 
 * = or Julia Roberts or Richard Gere or Diane Lane ...
 
