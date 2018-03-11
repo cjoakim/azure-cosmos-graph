@@ -2,6 +2,7 @@
 Usage:
   python cosmos_graph.py drop_graph dev movies
   python cosmos_graph.py create_drop_and_load_queries dev movies
+  python cosmos_graph.py capture_gremlin_queries_for_doc dev movies
 Options:
   -h --help     Show this screen.
   --version     Show version.
@@ -59,6 +60,10 @@ class Main:
 
             elif func == 'query':
                 self.query(db, coll)
+
+            elif func == 'capture_gremlin_queries_for_doc':
+                self.capture_gremlin_queries_for_doc()
+
             else:
                 self.print_options('Error: invalid function: {}'.format(func))
         else:
@@ -178,6 +183,19 @@ class Main:
         for idx, q in enumerate(queries):
             print('execute_query: {}  # {}'.format(q, idx))
             self.execute_query(q)
+
+    def capture_gremlin_queries_for_doc(self):
+        queries_dir = 'queries'
+        for dir_name, subdirs, file_names in os.walk(queries_dir):
+            for file_name in file_names:
+                fname = '{}/{}'.format(queries_dir, file_name)
+                qname = file_name.split('.')[0]
+                with open(fname, 'rt') as f:
+                    for idx, line in enumerate(f):
+                        if 'query: ' in line:
+                            print('')
+                            print(qname)
+                            print(line.strip())
 
     def query(self, db, coll):
         # python cosmos_graph.py query dev movies countv

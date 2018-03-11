@@ -109,5 +109,9 @@ python cosmos_graph.py query $dbname $collname path richard_gere lori_singer > q
 echo 'querying path from diane_lane to lori_singer ...'
 python cosmos_graph.py query $dbname $collname path diane_lane lori_singer > queries/path_diane_lane_to_lori_singer.txt
 
+###
+
+echo 'capture_gremlin_queries_for_doc ...'
+python cosmos_graph.py capture_gremlin_queries_for_doc $dbname $collname > queries/captured_gremlin_queries.txt
 
 echo 'done'
