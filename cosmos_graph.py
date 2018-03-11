@@ -182,7 +182,6 @@ class Main:
     def execute_load_queries(self, db, coll):
         infile  = self.c.load_queries_txt_filename()
         self.load_queries = list()
-
         self.drop_graph(db, coll)
 
         with open(infile, 'rt') as f:
@@ -193,9 +192,29 @@ class Main:
         print('{} load_queries loaded from file {}'.format(count, infile))
         self.load_loop_sync(0)  # initiate the recursive loop
 
-        # for idx, q in enumerate(queries):
-        #     print('execute_query: {}  # {}'.format(q, idx))
-        #     self.execute_query(q, self.default_sleep_time)
+        for idx, query in enumerate(self.load_queries):
+            self.load_sync(idx, query)
+
+        print('execute_load_queries completed')
+
+    def load_sync(self, idx, query):
+        # see https://github.com/apache/tinkerpop/blob/master/gremlin-python/src/main/jython/gremlin_python/driver/driver_remote_connection.py
+        epoch1, epoch2 = None, None
+        if query:
+            epoch1 = time.time()
+            print('load_sync idx: {} epoch: {} query: {}'.format(idx, epoch1, query))
+            result = self.gremlin_client.submit(query)
+            print(result)
+            if result is None:
+                epoch2 = time.time()
+                print('load_sync - QUERY_NOT_SUCCESSFUL; elapsed: {}'.format(epoch2 - epoch1))
+                time.sleep(self.default_sleep_time)
+                return
+            else:
+                epoch2 = time.time()
+                print('load_sync - query_successful; elapsed: {}'.format(epoch2 - epoch1))
+                time.sleep(self.default_sleep_time)
+                return
 
     def load_loop_async(self, idx):
         # see https://github.com/apache/tinkerpop/blob/master/gremlin-python/src/main/jython/gremlin_python/driver/driver_remote_connection.py
@@ -218,29 +237,6 @@ class Main:
                     self.load_loop_async(idx + 1)  # <-- recursively call this function
         else:
             print('load_loop_async completed at index {}'.format(idx))
-
-    def load_loop_sync(self, idx):
-        # see https://github.com/apache/tinkerpop/blob/master/gremlin-python/src/main/jython/gremlin_python/driver/driver_remote_connection.py
-        if idx < len(self.load_queries):
-            query = self.load_queries[idx]
-            epoch1, epoch2 = None, None
-            if query:
-                epoch1 = time.time()
-                print('load_loop_sync idx: {} epoch: {} query: {}'.format(idx, epoch1, query))
-                result = self.gremlin_client.submit(query)
-                if result is None:
-                    epoch2 = time.time()
-                    print('load_loop_sync - QUERY_NOT_SUCCESSFUL; elapsed: {}'.format(epoch2 - epoch1))
-                    time.sleep(self.default_sleep_time)
-                    self.load_loop_sync(idx + 1)  # <-- recursively call this function
-                else:
-                    epoch2 = time.time()
-                    print('load_loop_sync - query_successful; elapsed: {}'.format(epoch2 - epoch1))
-                    time.sleep(self.default_sleep_time)
-                    self.load_loop_sync(idx + 1)  # <-- recursively call this function
-        else:
-            print('load_loop_sync completed at index {}'.format(idx))
-
 
     def capture_gremlin_queries_for_doc(self):
         queries_dir = 'queries'
