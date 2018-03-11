@@ -4,6 +4,8 @@ lib/
 include/
 man/
 share/
+
+data/raw/
 tmp/
 
 

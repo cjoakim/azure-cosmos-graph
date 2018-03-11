@@ -117,7 +117,6 @@ class Main:
             person = self.people[pid]
             name   = self.scrub_str(person['name'])
             query  = spec.format(pid, name)
-            print('create_people_vertices: {}  # {}'.format(query, idx))
             self.queries.append(query)
 
     def create_edges(self):
@@ -136,24 +135,16 @@ class Main:
                 query = spec.format(pid, mid, title)
                 self.queries.append(query)
 
-        # Next add the person-knows-person Edges:
+        # Next add the person-knows-person-in-movie Edges:
         people_edges = json.load(open(self.c.people_edges_json_filename()))
         concat_keys  = sorted(people_edges.keys())
-        #spec = "g.V('{}').addE('knows').to(g.V('{}'))"
-        spec = "g.V('{}').addE('knows').to(g.V('{}')).property('title', '{}')"
+        spec = "g.V('{}').addE('knows').to(g.V('{}')).property('title', '{}').property('mid', '{}')"
 
         for idx, key in enumerate(concat_keys):
-            title = people_edges[key].replace("'", '')
-            pair  = key.split(':')
-            # create the edge from person 1 to person 2
-            query = spec.format(pair[0], pair[1], title)
-            self.queries.append(query)
-
-        for idx, key in enumerate(concat_keys):
-            title = people_edges[key].replace("'", '')
-            pair  = key.split(':')
-            # create the edge from person 2 to person 1
-            query = spec.format(pair[1], pair[0], title)
+            # the keys look like this: "nm0000152:nm0000178:The Cotton Club:tt0087089"
+            quad  = key.split(':')
+            title = quad[2].replace("'", '')
+            query = spec.format(quad[0], quad[1], title, quad[3])
             self.queries.append(query)
 
     def drop_graph(self, db, coll):

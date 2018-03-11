@@ -6,7 +6,7 @@ Options:
   --version     Show version.
 """
 
-# Chris Joakim, Microsoft, 2018/03/06
+# Chris Joakim, Microsoft, 2018/03/11
 
 import csv
 import json
@@ -20,7 +20,7 @@ from docopt import docopt
 from pysrc.joakim import config
 from pysrc.joakim import values
 
-VERSION='2018/03/06a'
+VERSION='2018/03/11a'
 FOOTLOOSE='tt0087277'
 PRETTYWOMAN='tt0100405'
 KEVINBACON='nm0000102'
@@ -313,7 +313,28 @@ class Main:
         principals, people_edges, row_count = dict(), dict(), 0
 
         # collect the principals dictionary, keyed by movie id, with a
-        # dict as the value with title and list of people
+        # dict as the value with title and list of people, like this:
+        # "tt0087089": {
+        #   "people": [
+        #     {
+        #       "id": "nm0000152",
+        #       "name": "Richard Gere"
+        #     },
+        #     {
+        #       "id": "nm0002138",
+        #       "name": "Gregory Hines"
+        #     },
+        #     {
+        #       "id": "nm0000178",
+        #       "name": "Diane Lane"
+        #     },
+        #     {
+        #       "id": "nm0571188",
+        #       "name": "Lonette McKee"
+        #     }
+        #   ],
+        #   "title": "The Cotton Club"
+        # },
         with open(infile3) as csvfile:
             reader = csv.reader(csvfile, delimiter='|')
             for row in reader:
@@ -346,8 +367,10 @@ class Main:
                     pid2 = person2['id']
                     if pid1 != pid2:
                         pair = sorted([pid1, pid2])
-                        concat_key = '{}:{}'.format(pair[0], pair[1])
-                        people_edges[concat_key] = title
+                        concat_key = '{}:{}:{}:{}'.format(pair[0], pair[1], title, mid)
+                        people_edges[concat_key] = 0
+                        concat_key = '{}:{}:{}:{}'.format(pair[1], pair[0], title, mid)
+                        people_edges[concat_key] = 0
 
         jstr = json.dumps(people_edges, sort_keys=True, indent=2)
         with open(outfile2, 'wt') as f:
@@ -357,8 +380,7 @@ class Main:
         people_edges = json.load(open(self.c.people_edges_json_filename()))
         concat_keys = sorted(people_edges.keys())
         for key in concat_keys:
-            pair = key.split(':')
-            print(pair)
+            print(key.split(':'))
 
     # private
 
