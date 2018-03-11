@@ -16,17 +16,27 @@ This CosmosDB/GraphDB example was inspired by [this](https://en.wikipedia.org/wi
 
 It rests on the assumption that anyone involved in the Hollywood film industry can be linked through their film roles to Bacon within six steps.
 
+![image 1](img/kevin_bacon_and_lori_singer.jpg "")
+
 ## CosmosDB Provisioning
 
 In Azure Portal, provision a CosmosDB with the Graph API.
 
-10,000 RUs -> Estimated spend (USD): $0.80 hourly / $19.20 daily.
+Capture its keys in the Azure Portal, and set these as environment variables to similar values:
+```
+AZURE_COSMOSDB_GRAPH1_ACCT=cjoakim-cosmos-graph1
+AZURE_COSMOSDB_GRAPH1_CONN_STRING=AccountEndpoint=https://cjoakim-cosmos-graph1.documents.azure.com:443/;AccountKey=h2D...Sw==;
+AZURE_COSMOSDB_GRAPH1_DBNAME=dev
+AZURE_COSMOSDB_GRAPH1_KEY=h2D...Sw==
+AZURE_COSMOSDB_GRAPH1_URI=https://cjoakim-cosmos-graph1.documents.azure.com:443/
+```
 
-Capture its keys in portal, and set these as environment variables:
-```
-AZURE_COSMOSDB_GRAPH1_ACCT=xxx
-AZURE_COSMOSDB_GRAPH1_KEY=yyy
-```
+Within the DB account, create database id **dev** with graph id **movies** as shown.
+It is recommended that you specify 10,000 RUs.
+
+![image 1](img/create_graph.png "")
+
+
 
 ## IMDb Data
 
