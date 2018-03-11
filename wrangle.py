@@ -382,20 +382,27 @@ class Main:
                     pid2 = person2['id']
                     if pid1 != pid2:
                         pair = sorted([pid1, pid2])
-                        concat_key = '{}:{}:{}:{}'.format(pair[0], pair[1], title, mid)
-                        people_edges[concat_key] = 0
-                        concat_key = '{}:{}:{}:{}'.format(pair[1], pair[0], title, mid)
-                        people_edges[concat_key] = 0
+
+                        concat_key = '{}:{}'.format(pair[0], pair[1])
+                        if concat_key in people_edges:
+                            people_edges[concat_key][mid] = 0
+                        else:
+                            d = dict()
+                            d[mid] = 0
+                            people_edges[concat_key] = d
+
+                        concat_key = '{}:{}'.format(pair[1], pair[0])
+                        if concat_key in people_edges:
+                            people_edges[concat_key][mid] = 0
+                        else:
+                            d = dict()
+                            d[mid] = 0
+                            people_edges[concat_key] = d
 
         jstr = json.dumps(people_edges, sort_keys=True, indent=2)
         with open(outfile2, 'wt') as f:
             f.write(jstr)
             print('file written: {}'.format(outfile2))
-
-        # people_edges = json.load(open(self.c.people_edges_json_filename()))
-        # concat_keys = sorted(people_edges.keys())
-        # for key in concat_keys:
-        #     print(key.split(':'))
 
     # private
 

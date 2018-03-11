@@ -91,6 +91,7 @@ class Main:
         endpoint = self.c.cosmosdb_gremlin_url()
         username = self.c.cosmosdb_gremlin_username(db, coll)
         password = self.c.cosmosdb_key()
+        print('create_client:')
         print('endpoint: {}'.format(endpoint))
         print('username: {}'.format(username))
         #print('password: {}'.format(password))
@@ -154,13 +155,20 @@ class Main:
         # Next add the person-knows-person-in-movie Edges:
         people_edges = json.load(open(self.c.people_edges_json_filename()))
         concat_keys  = sorted(people_edges.keys())
-        spec = "g.V('{}').addE('knows').to(g.V('{}')).property('title', '{}').property('mid', '{}')"
+        spec = "g.V('{}').addE('knows').to(g.V('{}')).property('mid_list', '{}')"
 
         for idx, key in enumerate(concat_keys):
-            # the keys look like this: "nm0000152:nm0000178:The Cotton Club:tt0087089"
-            quad  = key.split(':')
-            title = quad[2].replace("'", '')
-            query = spec.format(quad[0], quad[1], title, quad[3])
+            # the keys/values look like this:
+            # "nm0000102:nm0001718": {
+            #   "tt0093403": 0,
+            #   "tt0102733": 0,
+            #   "tt0361127": 0,
+            #   "tt0388213": 0
+            # },
+            pair   = key.split(':')
+            ids    = people_edges[key].keys()
+            movies = '|'.join(ids)
+            query  = spec.format(pair[0], pair[1], movies)
             self.queries.append(query)
 
     def drop_graph(self, db, coll):
@@ -182,7 +190,6 @@ class Main:
     def execute_load_queries(self, db, coll):
         infile  = self.c.load_queries_txt_filename()
         self.load_queries = list()
-        self.drop_graph(db, coll)
 
         with open(infile, 'rt') as f:
             for idx, line in enumerate(f):
@@ -192,27 +199,25 @@ class Main:
         print('{} load_queries loaded from file {}'.format(count, infile))
 
         for idx, query in enumerate(self.load_queries):
-            self.load_sync(idx, query)
+            self.load_sync(idx, query, db, coll)
+            time.sleep(self.default_sleep_time)
 
         print('execute_load_queries completed')
 
-    def load_sync(self, idx, query):
+    def load_sync(self, idx, query, db, coll):
         # see https://github.com/apache/tinkerpop/blob/master/gremlin-python/src/main/jython/gremlin_python/driver/driver_remote_connection.py
-        epoch1, epoch2 = None, None
         if query:
-            epoch1 = time.time()
+            if idx % 40 == 0:
+                # limitation of gremlin_python.driver Client?
+                self.create_client(db, coll)
+
             print('load_sync idx: {} epoch: {} query: {}'.format(idx, epoch1, query))
             result = self.gremlin_client.submit(query)
-            #print(result)  # gremlin_python.driver.resultset.ResultSet object at 0x104daedd8>
             if result is None:
-                epoch2 = time.time()
-                print('load_sync - QUERY_NOT_SUCCESSFUL; elapsed: {}'.format(epoch2 - epoch1))
-                time.sleep(self.default_sleep_time)
+                print('load_sync - QUERY_NOT_SUCCESSFUL')
                 return
             else:
-                epoch2 = time.time()
-                print('load_sync - query_successful; elapsed: {}'.format(epoch2 - epoch1))
-                time.sleep(self.default_sleep_time)
+                print('load_sync - query_successful')
                 return
 
     def load_loop_async(self, idx):
