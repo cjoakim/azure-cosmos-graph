@@ -140,18 +140,6 @@ query: g.V().has('label','movie').has('id','tt0087277')
 movie_pretty_woman:
 query: g.V().has('label','movie').has('id','tt0100405')
 
-path_diane_lane_to_lori_singer:
-query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).path().limit(3)
-
-path_richard_gere_to_julia_roberts:
-query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000210')).path().limit(3)
-
-path_richard_gere_to_kevin_bacon:
-query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000102')).path().limit(3)
-
-path_richard_gere_to_lori_singer:
-query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).path().limit(3)
-
 person_julia_roberts:
 query: g.V().has('label','person').has('id','nm0000210')
 
@@ -172,6 +160,21 @@ query: g.V('nm0000152').out('in')
 
 richard_gere_knows:
 query: g.V('nm0000152').out('knows')
+
+-- Path Queries
+
+path_diane_lane_to_lori_singer:
+query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).path().limit(3)
+
+path_richard_gere_to_julia_roberts:
+query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000210')).path().limit(3)
+
+path_richard_gere_to_kevin_bacon:
+query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000102')).path().limit(3)
+
+path_richard_gere_to_lori_singer:
+query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).path().limit(3)
+
 ```
 
 See file queries.sh
@@ -181,12 +184,10 @@ See file queries.sh
 Apache TinkerPop is a graph computing framework for both graph databases (OLTP)
 and graph analytic systems (OLAP).
 
-- https://pypi.python.org/pypi/gremlinpython/3.2.7
-- http://tinkerpop.apache.org/docs/3.2.7/recipes/
 - http://tinkerpop.apache.org
+- http://tinkerpop.apache.org/docs/3.2.7/recipes/
 - http://tinkerpop.apache.org/docs/current/reference/#gremlin-python
-- http://gremlindocs.spmallette.documentup.com (TinkerPop 2.x)
-- http://tinkerpop.apache.org (Download Gremlin console)
+- https://pypi.python.org/pypi/gremlinpython/3.2.7
 - https://docs.microsoft.com/en-us/azure/cosmos-db/create-graph-gremlin-console
 
 ## Visualizations
