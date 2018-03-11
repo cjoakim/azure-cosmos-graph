@@ -190,7 +190,6 @@ class Main:
 
         count = len(self.load_queries)
         print('{} load_queries loaded from file {}'.format(count, infile))
-        self.load_loop_sync(0)  # initiate the recursive loop
 
         for idx, query in enumerate(self.load_queries):
             self.load_sync(idx, query)
