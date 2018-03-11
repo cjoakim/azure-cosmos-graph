@@ -238,7 +238,7 @@ Example conf/remote-secure.yaml file:
 ```
 hosts: [cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com]
 port: 443
-username: /dbs/test/colls/movies
+username: /dbs/dev/colls/movies
 password: h2Dwm7 ... X6nUkSw==
 connectionPool: {enableSsl: true}
 serializer: {className: org.apache.tinkerpop.gremlin.driver.ser.GraphSONMessageSerializerV1d0, config: { serializeResultToString: true }}

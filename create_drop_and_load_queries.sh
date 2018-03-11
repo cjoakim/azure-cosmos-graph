@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Chris Joakim, Microsoft, 2018/03/07
+# Chris Joakim, Microsoft, 2018/03/11
 # ./create_drop_and_load_queries.sh
 
-dbname=test
+dbname=dev
 collname=movies
 outfile=/Users/cjoakim/github/cj_data/imdb/processed/drop_and_load_queries.txt
 

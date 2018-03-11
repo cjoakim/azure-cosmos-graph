@@ -1,13 +1,13 @@
 """
 Usage:
-  python cosmos_graph.py drop_graph test movies
-  python cosmos_graph.py create_drop_and_load_queries test movies
+  python cosmos_graph.py drop_graph dev movies
+  python cosmos_graph.py create_drop_and_load_queries dev movies
 Options:
   -h --help     Show this screen.
   --version     Show version.
 """
 
-# Chris Joakim, Microsoft, 2018/03/07
+# Chris Joakim, Microsoft, 2018/03/11
 
 import csv, json, os, sys, time, traceback
 
@@ -180,20 +180,20 @@ class Main:
             self.execute_query(q)
 
     def query(self, db, coll):
-        # python cosmos_graph.py query test movies count
-        # python cosmos_graph.py query test movies movie   tt0087277
-        # python cosmos_graph.py query test movies movie   footloose
-        # python cosmos_graph.py query test movies movie   pretty_woman
-        # python cosmos_graph.py query test movies edges   pretty_woman
-        # python cosmos_graph.py query test movies person  julia_roberts
-        # python cosmos_graph.py query test movies path    julia_roberts nm0000178
-        # python cosmos_graph.py query test movies path    richard_gere julia_roberts
-        # python cosmos_graph.py query test movies path    kevin_bacon julia_roberts
-        # python cosmos_graph.py query test movies path    kevin_bacon richard_gere
-        # python cosmos_graph.py query test movies v2v     julia_roberts
-        # python cosmos_graph.py query test movies knows   julia_roberts
-        # python cosmos_graph.py query test movies in      julia_roberts
-        # python cosmos_graph.py query test movies people_in pretty_woman
+        # python cosmos_graph.py query dev movies count
+        # python cosmos_graph.py query dev movies movie   tt0087277
+        # python cosmos_graph.py query dev movies movie   footloose
+        # python cosmos_graph.py query dev movies movie   pretty_woman
+        # python cosmos_graph.py query dev movies edges   pretty_woman
+        # python cosmos_graph.py query dev movies person  julia_roberts
+        # python cosmos_graph.py query dev movies path    julia_roberts nm0000178
+        # python cosmos_graph.py query dev movies path    richard_gere julia_roberts
+        # python cosmos_graph.py query dev movies path    kevin_bacon julia_roberts
+        # python cosmos_graph.py query dev movies path    kevin_bacon richard_gere
+        # python cosmos_graph.py query dev movies v2v     julia_roberts
+        # python cosmos_graph.py query dev movies knows   julia_roberts
+        # python cosmos_graph.py query dev movies in      julia_roberts
+        # python cosmos_graph.py query dev movies people_in pretty_woman
 
         self.create_client(db, coll)
         qname = sys.argv[4].lower()

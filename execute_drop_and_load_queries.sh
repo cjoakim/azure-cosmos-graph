@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Chris Joakim, Microsoft, 2018/03/07
+# Chris Joakim, Microsoft, 2018/03/11
 # ./execute_drop_and_load_queries.sh
 
-dbname=test
+dbname=dev
 collname=movies
 
 python cosmos_graph.py execute_drop_and_load_queries $dbname $collname
