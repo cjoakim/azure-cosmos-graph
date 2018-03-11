@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Chris Joakim, Microsoft, 2018/03/11
-# ./check_drop_and_load_queries.sh > tmp/check_drop_and_load_queries.txt
+# ./check_drop_and_load_queries.sh > data/processed/check_drop_and_load_queries.txt
 
 footloose=tt0087277
 pretty_woman=tt0100405
@@ -12,6 +12,18 @@ richard_gere=nm0000152
 diane_lane=nm0000178
 
 infile=data/processed/drop_and_load_queries.txt
+
+echo '---'
+echo 'grepping for movie vertices ...'
+cat $infile | grep movie | wc
+
+echo '---'
+echo 'grepping for person vertices ...'
+cat $infile | grep person | wc
+
+echo '---'
+echo 'grepping for knows edges ...'
+cat $infile | grep knows | wc
 
 echo '---'
 echo 'grepping for footloose ...'
