@@ -40,6 +40,7 @@ class Favorites:
         movies['tt0087277'] = 'footloose'
         movies['tt0100405'] = 'pretty_woman'
         movies['tt0083658'] = 'bladerunner'
+        movies['tt0087089'] = 'cotton_club'
         return movies
 
     def translate_to_id(self, name):

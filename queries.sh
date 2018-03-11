@@ -30,6 +30,9 @@ python cosmos_graph.py query $dbname $collname movie footloose > queries/movie_f
 echo 'querying movie pretty_woman ...'
 python cosmos_graph.py query $dbname $collname movie pretty_woman > queries/movie_pretty_woman.txt
 
+echo 'querying movie cotton_club ...'
+python cosmos_graph.py query $dbname $collname movie cotton_club > queries/movie_cotton_club.txt
+
 ###
 
 echo 'querying person kevin_bacon ...'
