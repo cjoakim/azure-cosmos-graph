@@ -4,7 +4,7 @@
 # ./execute_drop_and_load_queries.sh
 
 dbname=dev
-collname=movies2
+collname=movies
 
 python cosmos_graph.py execute_drop_and_load_queries $dbname $collname
 

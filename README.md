@@ -5,7 +5,7 @@ CosmosDB Graph Database example - the N-Degrees of Kevin Bacon (or Julia Roberts
 Start with the IMDb datasets, wrangle them to a smaller size, load them into
 the CosmosDB/GraphDB, and search for the nth degrees of Kevin Bacon and others.
 
-## Six_Degrees_of_Kevin_Bacon
+## The Six Degrees of Kevin Bacon
 
 This CosmosDB/GraphDB example was inspired by [this](https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon)
 
@@ -42,14 +42,15 @@ It is recommended that you specify 10,000 RUs.
 This project contains **both** the data-wrangling logic as well as the end-result data
 that you can simply use.
 
-To use the pre-wrangled data skip down to the **Load the Database** section.
+To use the pre-wrangled data skip the following **Data Wrangling** section and down to the
+**Load the Database** section on this page.
 
 ### Data Wrangling
 
-The source data for this project is the **Internet Movie Database**.  It contains millions of rows
+The source data for this project is the **Internet Movie Database (IMDb)**.  It contains millions of rows
 of data related to Hollywood moves, their actors/participants, and their ratings.
 
-This can be downloaded from here:
+This data can be downloaded from here:
 - http://www.imdb.com/interfaces/
 - https://datasets.imdbws.com
 
@@ -57,12 +58,12 @@ The wrangling logic in this project filters this huge amount of data into a smal
 is easily loaded into CosmosDB for your exploration.  The wrangling logic is implemented in Python 3.
 
 In short, the wrangling steps are:
-- Start with a manually created list of 12 favorite actors (see 'actors_for_candidate_movies' in values.py)
+- Start with a manually created list of 7 favorite actors (see 'actors_for_candidate_movies' in values.py)
 - Extract just the movies for those actors (approx 486 movies)
 - Extract the principals (i.e. - actors) for those moves.  Omit directors, producers, stunt men, etc.
 - Extract the details for each of the principals
 - Derive the person-knows-person Edges based on the set of actors for each movie.
-- Generate a list of Gremlin commands to insert the Vectors (movies, actors) and Edges into the DB
+- Generate a list of Gremlin commands to insert the Vertices (movies, actors) and Edges into the DB
 - Note, the Gremlin command generation was intentionally decoupled from the actual DB loading.
 
 See bash shell scripts **wrangle.sh** and **create_drop_and_load_queries.sh** which implement this process.
@@ -96,7 +97,7 @@ The following are example Gremlin queries.  These can either be executed within 
 or with the Python client.
 
 ```
-count the vectors:
+count the vertices:
 query: g.V().count()
 
 diane_lane_edges:
@@ -164,9 +165,6 @@ query: g.V('nm0000152').out('knows')
 
 -- Path Queries
 
-path_diane_lane_to_lori_singer:
-query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).path().limit(3)
-
 path_richard_gere_to_julia_roberts:
 query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000210')).path().limit(3)
 
@@ -175,6 +173,10 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000102')).pat
 
 path_richard_gere_to_lori_singer:
 query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).path().limit(3)
+
+path_diane_lane_to_lori_singer:
+query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).path().limit(3)
+
 ```
 
 See file queries.sh.  These previously executed queries have been captured to files in the
