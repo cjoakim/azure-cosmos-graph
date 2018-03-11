@@ -42,7 +42,7 @@ It is recommended that you specify 10,000 RUs.
 This project contains **both** the data-wrangling logic as well as the end-result data
 that you can simply use.
 
-To use the pre-wrangled data skip down to the **Load and Query the DB** section.
+To use the pre-wrangled data skip down to the **Load the Database** section.
 
 ### Data Wrangling
 
@@ -76,7 +76,7 @@ IMDB_DATA_DIR=<some directory on your computer>
 Within $IMDB_DATA_DIR there should be raw/ and processed/ subdirectories.  The downloaded
 and unzipped IMDb data should be in the raw/ directory.
 
-### Load and Query the DB
+### Load the Database
 
 File **data/processed/drop_and_load_queries.txt** contains the pre-wrangled data that
 you can simply load into your DB.  It contains 8307 Gremlin commands to insert the
@@ -90,7 +90,91 @@ $ ./execute_drop_and_load_queries.sh
 This process will take approximately an hour, as there is a built in sleep time between
 inserts.
 
+### Query the Database
 
+The following are example Gremlin queries:
+
+```
+count the vectors:
+query: g.V().count()
+
+diane_lane_edges:
+query: g.V('nm0000178').bothE()
+
+diane_lane_in:
+query: g.V('nm0000178').out('in')
+
+diane_lane_knows:
+query: g.V('nm0000178').out('knows')
+
+julia_roberts_edges:
+query: g.V('nm0000210').bothE()
+
+julia_roberts_in:
+query: g.V('nm0000210').out('in')
+
+julia_roberts_knows:
+query: g.V('nm0000210').out('knows')
+
+kevin_bacon_edges:
+query: g.V('nm0000102').bothE()
+
+kevin_bacon_in:
+query: g.V('nm0000102').out('in')
+
+kevin_bacon_knows:
+query: g.V('nm0000102').out('knows')
+
+lori_singer_edges:
+query: g.V('nm0001742').bothE()
+
+lori_singer_in:
+query: g.V('nm0001742').out('in')
+
+lori_singer_knows:
+query: g.V('nm0001742').out('knows')
+
+movie_footloose:
+query: g.V().has('label','movie').has('id','tt0087277')
+
+movie_pretty_woman:
+query: g.V().has('label','movie').has('id','tt0100405')
+
+path_diane_lane_to_lori_singer:
+query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).path().limit(3)
+
+path_richard_gere_to_julia_roberts:
+query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000210')).path().limit(3)
+
+path_richard_gere_to_kevin_bacon:
+query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000102')).path().limit(3)
+
+path_richard_gere_to_lori_singer:
+query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).path().limit(3)
+
+person_julia_roberts:
+query: g.V().has('label','person').has('id','nm0000210')
+
+person_kevin_bacon:
+query: g.V().has('label','person').has('id','nm0000102')
+
+person_nm0001742:
+query: g.V().has('label','person').has('id','nm0001742')
+
+person_richard_gere:
+query: g.V().has('label','person').has('id','nm0000152')
+
+richard_gere_edges:
+query: g.V('nm0000152').bothE()
+
+richard_gere_in:
+query: g.V('nm0000152').out('in')
+
+richard_gere_knows:
+query: g.V('nm0000152').out('knows')
+```
+
+See file queries.sh
 
 ## Gremlin-Python and Apache TinkerPop
 
@@ -105,46 +189,6 @@ and graph analytic systems (OLAP).
 - http://tinkerpop.apache.org (Download Gremlin console)
 - https://docs.microsoft.com/en-us/azure/cosmos-db/create-graph-gremlin-console
 
-## Loading the Data CosmosDB
-
-See cosmos_graph.py and cosmos_graph.sh
-
-Log output:
-```
-insert_movie_vertices; count: 2518
-
-```
-
-### Some of the Actors
-
-- Footloose https://www.youtube.com/watch?v=AFQaVbIPOWk
-
-
-### Queries
-
-
-
-
-
-### Query
-
-```
-g.V().hasLabel('person')
-
-g.V().hasLabel('person').has('name', 'Adam').outE('knows').inV().hasLabel('person')
-
-Get the path from Thomas to Robin"
-g.V('p1').repeat(out()).until(has('id', 'p6')).path()
-```
-
-
-## Querying CosmosDB
-
-See cosmos_graph.py and cosmos_graph.sh
-
-
-
 ## Visualizations
 
 - https://python-graph-gallery.com/327-network-from-correlation-matrix/
-
