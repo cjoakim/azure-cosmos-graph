@@ -210,6 +210,7 @@ class Main:
                     time.sleep(self.default_sleep_time)
                     self.load_loop(idx + 1)  # <-- recursively call this function
                 else:
+                    epoch2 = arrow.utcnow().timestamp
                     print('query_successful; elapsed: {}'.format(epoch2 - epoch1))
                     time.sleep(self.default_sleep_time)
                     self.load_loop(idx + 1)  # <-- recursively call this function
