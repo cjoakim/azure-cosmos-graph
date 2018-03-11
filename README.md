@@ -201,6 +201,11 @@ query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).pat
 
 ```
 
+WIP Queries:
+```
+g.V(['nm0000178','nm0000102','nm0001742'])
+```
+
 See file queries.sh.  These previously executed queries have been captured to files in the
 queries/ directory in this project.
 
