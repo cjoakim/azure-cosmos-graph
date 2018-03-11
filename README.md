@@ -107,13 +107,8 @@ To load this data into your dev/movies DB, execute the following bash script:
 $ ./execute_load_queries.sh
 ```
 
-269 movie verties
-584 person vertices
-853 total vertices
-3665 edges
-
 This process will take approximately an 40-minutes, as there is a built in sleep time between
-inserts.  853 Vertices should be inserted, with 3795 Edges.
+inserts.  853 Vertices should be inserted (269 movies, 584 people), with 3665 Edges.
 
 ### Query the Database
 

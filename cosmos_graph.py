@@ -211,7 +211,8 @@ class Main:
                 # limitation of gremlin_python.driver Client?
                 self.create_client(db, coll)
 
-            print('load_sync idx: {} epoch: {} query: {}'.format(idx, epoch1, query))
+            epoch = time.time()
+            print('load_sync idx: {} epoch: {} query: {}'.format(idx, epoch, query))
             result = self.gremlin_client.submit(query)
             if result is None:
                 print('load_sync - QUERY_NOT_SUCCESSFUL')
