@@ -61,49 +61,36 @@ In short, the wrangling steps are:
 - Extract just the movies for those actors (approx 486 movies)
 - Extract the principals (i.e. - actors) for those moves.  Omit directors, producers, stunt men, etc.
 - Extract the details for each of the principals
+- Derive the person-knows-person Edges based on the set of actors for each movie.
+- Generate a list of Gremlin commands to insert the Vectors (movies, actors) and Edges into the DB
+- Note, the Gremlin command generation was intentionally decoupled from the actual DB loading.
 
+See bash shell scripts **wrangle.sh** and **create_drop_and_load_queries.sh** which implement this process.
 
-#### IMDb Data
-
-You can download the data from here:
-
-- http://www.imdb.com/interfaces/
-- https://datasets.imdbws.com
-
-### Raw Data
-
-This is the list of the downloaded zipped and unzipped files, with their sizes
+You'll need to set the following environment variable in order to execute the wrangling process
+from the downloaded and unzipped files:
 ```
- 511846598 Feb 27 10:52 name.basics.tsv
- 165971634 Feb 25 05:17 name.basics.tsv.gz
- 174443242 Feb 27 10:52 title.akas.tsv
-  52330181 Feb 25 05:17 title.akas.tsv.gz
- 409681927 Feb 27 10:50 title.basics.tsv
-  87696341 Feb 25 05:17 title.basics.tsv.gz
-  81236137 Feb 27 10:52 title.episode.tsv
-  17665426 Feb 26 05:19 title.episode.tsv.gz
-1208052497 Feb 27 10:52 title.principals.tsv
- 241072882 Feb 26 05:19 title.principals.tsv.gz
-  13764321 Feb 27 10:52 title.ratings.tsv
-   3998762 Feb 26 05:19 title.ratings.tsv.gz
+IMDB_DATA_DIR=<some directory on your computer>
 ```
 
-Also set the IMDB_DATA_DIR environment variable to point to the root directory
-for your data; this can and should be a separate directory from this code repository.
+Within $IMDB_DATA_DIR there should be raw/ and processed/ subdirectories.  The downloaded
+and unzipped IMDb data should be in the raw/ directory.
+
+### Load and Query the DB
+
+File **data/processed/drop_and_load_queries.txt** contains the pre-wrangled data that
+you can simply load into your DB.  It contains 8307 Gremlin commands to insert the
+set of Vertices and Edges connecting them.
+
+To load this data into your dev/movies DB, execute the following bash script:
 ```
-IMDB_DATA_DIR=/Users/cjoakim/Downloads/imdb
+$ ./execute_drop_and_load_queries.sh
 ```
 
-The imdb/ directory will contain a raw/ and /processed subdirectories;
-the downloaded and unzipped files go into raw/
+This process will take approximately an hour, as there is a built in sleep time between
+inserts.
 
-### Data Wrangling
 
-See wrangle.sh and wrangle.py; they produce the following output files.
-
-### Output Data
-
-TODO - revisit
 
 ## Gremlin-Python and Apache TinkerPop
 
