@@ -54,7 +54,7 @@ class Main:
         self.c = config.Config()
         self.favorites = values.Favorites()
         self.queries = list()
-        self.sleep_time = 0.5
+        self.default_sleep_time = 0.5
         self.submit_query = False
 
     def execute(self):
@@ -93,7 +93,7 @@ class Main:
         print('username: {}'.format(username))
         #print('password: {}'.format(password))
         self.gremlin_client = client.Client(endpoint, 'g', username=username, password=password)
-        time.sleep(1)
+        time.sleep(5)
 
     def create_drop_and_load_queries(self, db, coll):
         print('create_drop_and_load_queries START')
@@ -167,12 +167,15 @@ class Main:
         self.create_client(db, coll)
         self.execute_query(query, 10)
 
-    def execute_query(self, query, sleep_time=0.25):
+    def execute_query(self, query, t=None):
         if query:
             callback = self.gremlin_client.submitAsync(query)
             if callback.result() is None:
                 print("query not successful")
-            time.sleep(sleep_time)
+            if t:
+                time.sleep(t)
+            else:
+                time.sleep(self.default_sleep_time)
 
     def execute_drop_and_load_queries(self, db, coll):
         infile  = self.c.drop_and_load_queries_txt_filename()
@@ -187,7 +190,7 @@ class Main:
 
         for idx, q in enumerate(queries):
             print('execute_query: {}  # {}'.format(q, idx))
-            self.execute_query(q)
+            self.execute_query(q, self.default_sleep_time)
 
     def capture_gremlin_queries_for_doc(self):
         queries_dir = 'queries'
