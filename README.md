@@ -1,6 +1,6 @@
 # azure-cosmos-graph
 
-CosmosDB Graph Database example - the N-Degrees of Kevin Bacon (or Julia Roberts or Richard Gere or Diane Lane or Lori Singer...)
+CosmosDB Graph Database example - the N-Degrees of Kevin Bacon (or Julia Roberts or Richard Gere or Diane Lane or Lori Singer ...)
 
 Start with the IMDb datasets, wrangle them to a smaller size, load them into
 the CosmosDB/GraphDB, and search for the nth degrees of Kevin Bacon and others.
@@ -44,6 +44,10 @@ that you can simply use.
 
 To use the pre-wrangled data skip the following **Data Wrangling** section and down to the
 **Load the Database** section on this page.
+
+As of 2018/03/11 these instructions and scripts work on macOS.
+
+TODO - enhance these instructions and scripts to work on an Azure Ubuntu DSVM with Anaconda Python.
 
 ### Data Wrangling
 
@@ -95,7 +99,7 @@ This is the list of the 6 actors as Python code:
 ### Load the Database
 
 File **data/processed/load_queries.txt** contains the pre-wrangled data that
-you can simply load into your DB.  It contains 8307 Gremlin commands to insert the
+you can simply load into your DB.  It contains 4648 Gremlin commands to insert the
 set of Vertices and Edges connecting them.
 
 To load this data into your dev/movies DB, execute the following bash script:
@@ -103,7 +107,7 @@ To load this data into your dev/movies DB, execute the following bash script:
 $ ./execute_load_queries.sh
 ```
 
-This process will take approximately an hour, as there is a built in sleep time between
+This process will take approximately an 40-minutes, as there is a built in sleep time between
 inserts.
 
 ### Query the Database
