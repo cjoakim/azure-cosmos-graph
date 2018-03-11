@@ -1,5 +1,6 @@
 function: query
-endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+create_client:
+endpoint: wss://cjoakim-cosmosdb-gremlin.gremlin.cosmosdb.azure.com:443/
 username: /dbs/dev/colls/movies
 qname: path
 query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000210')).path().limit(3)
@@ -22,7 +23,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000210')).pat
           "properties": {
             "name": [
               {
-                "id": "39333657-057a-40d9-ad15-3527084e8ebb",
+                "id": "4fd27782-4206-4eda-a04b-4fadbd35a71e",
                 "value": "Richard Gere"
               }
             ]
@@ -35,7 +36,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000210')).pat
           "properties": {
             "name": [
               {
-                "id": "ad7a1362-37a8-43c7-8985-abb49394eb46",
+                "id": "81601c6f-7eae-4c84-bed2-e36b593f9b89",
                 "value": "Julia Roberts"
               }
             ]
@@ -57,7 +58,55 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000210')).pat
           "properties": {
             "name": [
               {
-                "id": "39333657-057a-40d9-ad15-3527084e8ebb",
+                "id": "4fd27782-4206-4eda-a04b-4fadbd35a71e",
+                "value": "Richard Gere"
+              }
+            ]
+          }
+        },
+        {
+          "id": "nm0000114",
+          "label": "person",
+          "type": "vertex",
+          "properties": {
+            "name": [
+              {
+                "id": "667ecb35-e102-4ffd-84c2-05d0dc4c4b85",
+                "value": "Steve Buscemi"
+              }
+            ]
+          }
+        },
+        {
+          "id": "nm0000210",
+          "label": "person",
+          "type": "vertex",
+          "properties": {
+            "name": [
+              {
+                "id": "81601c6f-7eae-4c84-bed2-e36b593f9b89",
+                "value": "Julia Roberts"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "labels": [
+        [],
+        [],
+        []
+      ],
+      "objects": [
+        {
+          "id": "nm0000152",
+          "label": "person",
+          "type": "vertex",
+          "properties": {
+            "name": [
+              {
+                "id": "4fd27782-4206-4eda-a04b-4fadbd35a71e",
                 "value": "Richard Gere"
               }
             ]
@@ -70,7 +119,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000210')).pat
           "properties": {
             "name": [
               {
-                "id": "4cab6ffd-2d20-40df-ae97-d15b3977a397",
+                "id": "94445504-0aaa-4324-8098-1ce3c16bb10f",
                 "value": "Susan Sarandon"
               }
             ]
@@ -83,55 +132,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000210')).pat
           "properties": {
             "name": [
               {
-                "id": "ad7a1362-37a8-43c7-8985-abb49394eb46",
-                "value": "Julia Roberts"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "labels": [
-        [],
-        [],
-        []
-      ],
-      "objects": [
-        {
-          "id": "nm0000152",
-          "label": "person",
-          "type": "vertex",
-          "properties": {
-            "name": [
-              {
-                "id": "39333657-057a-40d9-ad15-3527084e8ebb",
-                "value": "Richard Gere"
-              }
-            ]
-          }
-        },
-        {
-          "id": "nm0000349",
-          "label": "person",
-          "type": "vertex",
-          "properties": {
-            "name": [
-              {
-                "id": "fb9e763a-0b3d-48cf-9481-23cfc48486e9",
-                "value": "Joan Cusack"
-              }
-            ]
-          }
-        },
-        {
-          "id": "nm0000210",
-          "label": "person",
-          "type": "vertex",
-          "properties": {
-            "name": [
-              {
-                "id": "ad7a1362-37a8-43c7-8985-abb49394eb46",
+                "id": "81601c6f-7eae-4c84-bed2-e36b593f9b89",
                 "value": "Julia Roberts"
               }
             ]
@@ -142,4 +143,4 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000210')).pat
   ]
 }
 --- result_above ---
-file written: tmp/query_path_1520765459.json
+file written: tmp/query_path_1520808069.json

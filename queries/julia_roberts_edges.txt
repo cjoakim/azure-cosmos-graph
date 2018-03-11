@@ -1,5 +1,6 @@
 function: query
-endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+create_client:
+endpoint: wss://cjoakim-cosmosdb-gremlin.gremlin.cosmosdb.azure.com:443/
 username: /dbs/dev/colls/movies
 qname: edges
 query: g.V('nm0000210').bothE()
@@ -10,31 +11,43 @@ query: g.V('nm0000210').bothE()
   "result_count": 22,
   "result": [
     {
-      "id": "6d77583c-7233-4207-bd45-9702c0856d15",
+      "id": "78c6192e-86a9-4dea-8348-d9d6bf8b92f6",
       "label": "in",
       "type": "edge",
       "inVLabel": "movie",
       "outVLabel": "person",
-      "inV": "tt0376541",
+      "inV": "tt0095690",
       "outV": "nm0000210",
       "properties": {
-        "title": "Closer"
+        "title": "Mystic Pizza"
       }
     },
     {
-      "id": "21f3574f-d45c-4d2a-a817-7308f3d94a40",
+      "id": "294be9be-3510-462a-b60a-f0b2276645db",
       "label": "in",
       "type": "edge",
       "inVLabel": "movie",
       "outVLabel": "person",
-      "inV": "tt0195685",
+      "inV": "tt0098384",
       "outV": "nm0000210",
       "properties": {
-        "title": "Erin Brockovich"
+        "title": "Steel Magnolias"
       }
     },
     {
-      "id": "3be6957a-b62f-40c7-8e05-9295b60a0f74",
+      "id": "6ca3d068-caf1-4ea2-b50f-5018b9cc39b0",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0099582",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Flatliners"
+      }
+    },
+    {
+      "id": "5b40fd68-fdbc-442e-acbb-0d2f1541d4de",
       "label": "in",
       "type": "edge",
       "inVLabel": "movie",
@@ -46,7 +59,163 @@ query: g.V('nm0000210').bothE()
       }
     },
     {
-      "id": "46c93169-63ed-40c3-bb12-ba5ea9b4ee8d",
+      "id": "d3e2bd3f-8889-4f57-a4ac-3e9acea56639",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0101787",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Dying Young"
+      }
+    },
+    {
+      "id": "3ebf0723-437f-4072-9c7e-cbe66ddbdc14",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0102057",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Hook"
+      }
+    },
+    {
+      "id": "97c58f16-6e8a-4327-a41d-a0076b822008",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0102945",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Sleeping with the Enemy"
+      }
+    },
+    {
+      "id": "836b1d30-5363-4614-af48-d8803bf8e85f",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0107798",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "The Pelican Brief"
+      }
+    },
+    {
+      "id": "a1ec4484-512f-4348-8a92-041b82759e84",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0110093",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "I Love Trouble"
+      }
+    },
+    {
+      "id": "24db06e1-540c-41af-8752-986b35c3e57d",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0110907",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Ready to Wear"
+      }
+    },
+    {
+      "id": "9ee429be-4e34-42ff-9d09-5d3970e4a734",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0114496",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Something to Talk About"
+      }
+    },
+    {
+      "id": "c7aff3ab-5c28-4058-ba41-186239c77a02",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0116242",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Everyone Says I Love You"
+      }
+    },
+    {
+      "id": "3fec933a-877c-4ac2-90a2-45d8e5e1cc61",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0117002",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Mary Reilly"
+      }
+    },
+    {
+      "id": "b447d87a-10c3-4093-ad2a-9a0056efcf57",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0117039",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Michael Collins"
+      }
+    },
+    {
+      "id": "e9ee220a-93ce-4abf-9431-ff663b0f83ea",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0118883",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Conspiracy Theory"
+      }
+    },
+    {
+      "id": "e82fa607-4854-4d87-a231-358bb548500a",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0119738",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "My Best Friends Wedding"
+      }
+    },
+    {
+      "id": "c533b44a-998a-417a-a19f-050d0315bb9e",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0120686",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "Stepmom"
+      }
+    },
+    {
+      "id": "51427857-aff6-452a-b9c8-fd14edf1e563",
       "label": "in",
       "type": "edge",
       "inVLabel": "movie",
@@ -58,222 +227,54 @@ query: g.V('nm0000210').bothE()
       }
     },
     {
-      "id": "105c8052-0627-4607-9a66-243050629ce0",
-      "label": "knows",
+      "id": "372b3774-4d66-4e78-91ab-b7ad614b057f",
+      "label": "in",
       "type": "edge",
-      "inVLabel": "person",
+      "inVLabel": "movie",
       "outVLabel": "person",
-      "inV": "nm0000215",
-      "outV": "nm0000210",
-      "properties": {
-        "title": "Stepmom"
-      }
-    },
-    {
-      "id": "5086c56c-0900-4f00-9b99-c555f6cd1985",
-      "label": "knows",
-      "type": "edge",
-      "inVLabel": "person",
-      "outVLabel": "person",
-      "inV": "nm0000243",
-      "outV": "nm0000210",
-      "properties": {
-        "title": "The Pelican Brief"
-      }
-    },
-    {
-      "id": "7036fa39-c752-4c12-8373-ad55df040e40",
-      "label": "knows",
-      "type": "edge",
-      "inVLabel": "person",
-      "outVLabel": "person",
-      "inV": "nm0000245",
-      "outV": "nm0000210",
-      "properties": {
-        "title": "Hook"
-      }
-    },
-    {
-      "id": "7d371bf5-9b6b-4a6e-aed3-db39a84f690a",
-      "label": "knows",
-      "type": "edge",
-      "inVLabel": "person",
-      "outVLabel": "person",
-      "inV": "nm0000287",
-      "outV": "nm0000210",
-      "properties": {
-        "title": "Flatliners"
-      }
-    },
-    {
-      "id": "6bca17f3-e588-4436-89ab-a22155eb1f82",
-      "label": "knows",
-      "type": "edge",
-      "inVLabel": "person",
-      "outVLabel": "person",
-      "inV": "nm0000345",
-      "outV": "nm0000210",
-      "properties": {
-        "title": "Americas Sweethearts"
-      }
-    },
-    {
-      "id": "5731a279-f756-4dcf-8393-bc8905c58f5d",
-      "label": "knows",
-      "type": "edge",
-      "inVLabel": "person",
-      "outVLabel": "person",
-      "inV": "nm0000349",
+      "inV": "tt0163187",
       "outV": "nm0000210",
       "properties": {
         "title": "Runaway Bride"
       }
     },
     {
-      "id": "df51f32c-b820-4057-a25c-05a72b62cfd5",
-      "label": "knows",
+      "id": "fe93abdb-f91e-4051-82e7-cdf5a403643d",
+      "label": "in",
       "type": "edge",
-      "inVLabel": "person",
+      "inVLabel": "movie",
       "outVLabel": "person",
-      "inV": "nm0000352",
+      "inV": "tt0195685",
       "outV": "nm0000210",
       "properties": {
-        "title": "Dying Young"
+        "title": "Erin Brockovich"
       }
     },
     {
-      "id": "6d09d337-d19e-4671-ab85-bf41c6b5f05c",
-      "label": "knows",
+      "id": "47947970-8697-4d98-88ca-9c9b4e374bef",
+      "label": "in",
       "type": "edge",
-      "inVLabel": "person",
+      "inVLabel": "movie",
       "outVLabel": "person",
-      "inV": "nm0000354",
+      "inV": "tt0236493",
+      "outV": "nm0000210",
+      "properties": {
+        "title": "The Mexican"
+      }
+    },
+    {
+      "id": "4a6b88af-7136-4479-bd7f-539f04c70db4",
+      "label": "in",
+      "type": "edge",
+      "inVLabel": "movie",
+      "outVLabel": "person",
+      "inV": "tt0240772",
       "outV": "nm0000210",
       "properties": {
         "title": "Oceans Eleven"
-      }
-    },
-    {
-      "id": "402a5bd4-e452-4ab8-9c37-a3d5eb7e10a6",
-      "label": "knows",
-      "type": "edge",
-      "inVLabel": "person",
-      "outVLabel": "person",
-      "inV": "nm0000379",
-      "outV": "nm0000210",
-      "properties": {
-        "title": "Mona Lisa Smile"
-      }
-    },
-    {
-      "id": "d90b2290-ab2e-4b3b-a0a7-c393d8cacd74",
-      "label": "knows",
-      "type": "edge",
-      "inVLabel": "person",
-      "outVLabel": "person",
-      "inV": "nm0000380",
-      "outV": "nm0000210",
-      "properties": {
-        "title": "Something to Talk About"
-      }
-    },
-    {
-      "id": "3622610b-c4bc-4587-a900-ecf3b66af623",
-      "label": "knows",
-      "type": "edge",
-      "inVLabel": "person",
-      "outVLabel": "person",
-      "inV": "nm0000391",
-      "outV": "nm0000210",
-      "properties": {
-        "title": "My Best Friends Wedding"
-      }
-    },
-    {
-      "id": "be9de601-68f4-47ba-9559-dcb81c58fe3f",
-      "label": "knows",
-      "type": "edge",
-      "inVLabel": "person",
-      "outVLabel": "person",
-      "inV": "nm0000398",
-      "outV": "nm0000210",
-      "properties": {
-        "title": "Steel Magnolias"
-      }
-    },
-    {
-      "id": "2e917f78-ffb8-48ca-a5c7-cfdd9e55b714",
-      "label": "knows",
-      "type": "edge",
-      "inVLabel": "person",
-      "outVLabel": "person",
-      "inV": "nm0000424",
-      "outV": "nm0000210",
-      "properties": {
-        "title": "Notting Hill"
-      }
-    },
-    {
-      "id": "35b53faa-5cf6-482b-89bf-fbc1b6b50904",
-      "label": "knows",
-      "type": "edge",
-      "inVLabel": "person",
-      "outVLabel": "person",
-      "inV": "nm0000438",
-      "outV": "nm0000210",
-      "properties": {
-        "title": "Stepmom"
-      }
-    },
-    {
-      "id": "edcdf6e5-1db8-4ec6-baea-a2c230234afc",
-      "label": "knows",
-      "type": "edge",
-      "inVLabel": "person",
-      "outVLabel": "person",
-      "inV": "nm0000443",
-      "outV": "nm0000210",
-      "properties": {
-        "title": "Everyone Says I Love You"
-      }
-    },
-    {
-      "id": "ef2dac69-75a0-4b5b-8d57-dfdd4ff62052",
-      "label": "knows",
-      "type": "edge",
-      "inVLabel": "person",
-      "outVLabel": "person",
-      "inV": "nm0000450",
-      "outV": "nm0000210",
-      "properties": {
-        "title": "Charlie Wilsons War"
-      }
-    },
-    {
-      "id": "0eb18028-744c-4730-af6c-930128752b09",
-      "label": "knows",
-      "type": "edge",
-      "inVLabel": "person",
-      "outVLabel": "person",
-      "inV": "nm0000496",
-      "outV": "nm0000210",
-      "properties": {
-        "title": "August: Osage County"
-      }
-    },
-    {
-      "id": "154611dc-a7d7-40a4-b8e8-4f6f189c6301",
-      "label": "knows",
-      "type": "edge",
-      "inVLabel": "person",
-      "outVLabel": "person",
-      "inV": "nm0000511",
-      "outV": "nm0000210",
-      "properties": {
-        "title": "Steel Magnolias"
       }
     }
   ]
 }
 --- result_above ---
-file written: tmp/query_edges_1520765439.json
+file written: tmp/query_edges_1520808012.json

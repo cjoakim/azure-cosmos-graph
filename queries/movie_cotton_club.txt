@@ -3,22 +3,22 @@ create_client:
 endpoint: wss://cjoakim-cosmosdb-gremlin.gremlin.cosmosdb.azure.com:443/
 username: /dbs/dev/colls/movies
 qname: movie
-query: g.V().has('label','movie').has('id','tt0100405')
+query: g.V().has('label','movie').has('id','tt0087089')
 --- result_below ---
 {
   "qname": "movie",
-  "query": "g.V().has('label','movie').has('id','tt0100405')",
+  "query": "g.V().has('label','movie').has('id','tt0087089')",
   "result_count": 1,
   "result": [
     {
-      "id": "tt0100405",
+      "id": "tt0087089",
       "label": "movie",
       "type": "vertex",
       "properties": {
         "title": [
           {
-            "id": "12830d38-912a-4f6e-9f76-52bf094eedd7",
-            "value": "Pretty Woman"
+            "id": "1fc388ca-bf5a-4d55-af58-60f33650fade",
+            "value": "The Cotton Club"
           }
         ]
       }
@@ -26,4 +26,4 @@ query: g.V().has('label','movie').has('id','tt0100405')
   ]
 }
 --- result_above ---
-file written: tmp/query_movie_1520807938.json
+file written: tmp/query_movie_1520807944.json

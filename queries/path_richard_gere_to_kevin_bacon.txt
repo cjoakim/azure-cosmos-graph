@@ -1,5 +1,6 @@
 function: query
-endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+create_client:
+endpoint: wss://cjoakim-cosmosdb-gremlin.gremlin.cosmosdb.azure.com:443/
 username: /dbs/dev/colls/movies
 qname: path
 query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000102')).path().limit(3)
@@ -23,7 +24,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000102')).pat
           "properties": {
             "name": [
               {
-                "id": "39333657-057a-40d9-ad15-3527084e8ebb",
+                "id": "4fd27782-4206-4eda-a04b-4fadbd35a71e",
                 "value": "Richard Gere"
               }
             ]
@@ -36,7 +37,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000102')).pat
           "properties": {
             "name": [
               {
-                "id": "347fc7d2-8164-448a-a352-827b14231c8b",
+                "id": "00c20d60-3a19-4ee6-8764-d57b907e2ae9",
                 "value": "Diane Lane"
               }
             ]
@@ -49,7 +50,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000102')).pat
           "properties": {
             "name": [
               {
-                "id": "0a414d67-4be1-48c2-8ab6-289e269182ed",
+                "id": "ba749aff-7a72-429e-8bf7-ff40c73e2e18",
                 "value": "Kevin Bacon"
               }
             ]
@@ -71,7 +72,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000102')).pat
           "properties": {
             "name": [
               {
-                "id": "39333657-057a-40d9-ad15-3527084e8ebb",
+                "id": "4fd27782-4206-4eda-a04b-4fadbd35a71e",
                 "value": "Richard Gere"
               }
             ]
@@ -84,7 +85,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000102')).pat
           "properties": {
             "name": [
               {
-                "id": "ad7a1362-37a8-43c7-8985-abb49394eb46",
+                "id": "81601c6f-7eae-4c84-bed2-e36b593f9b89",
                 "value": "Julia Roberts"
               }
             ]
@@ -97,7 +98,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000102')).pat
           "properties": {
             "name": [
               {
-                "id": "0a414d67-4be1-48c2-8ab6-289e269182ed",
+                "id": "ba749aff-7a72-429e-8bf7-ff40c73e2e18",
                 "value": "Kevin Bacon"
               }
             ]
@@ -119,7 +120,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000102')).pat
           "properties": {
             "name": [
               {
-                "id": "39333657-057a-40d9-ad15-3527084e8ebb",
+                "id": "4fd27782-4206-4eda-a04b-4fadbd35a71e",
                 "value": "Richard Gere"
               }
             ]
@@ -132,7 +133,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000102')).pat
           "properties": {
             "name": [
               {
-                "id": "cec6b866-a6a4-47e9-a0ac-d48e55b364b8",
+                "id": "e34a68bb-096f-4910-a681-fd48f0c7f56f",
                 "value": "Ren\u00e9e Zellweger"
               }
             ]
@@ -145,7 +146,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000102')).pat
           "properties": {
             "name": [
               {
-                "id": "0a414d67-4be1-48c2-8ab6-289e269182ed",
+                "id": "ba749aff-7a72-429e-8bf7-ff40c73e2e18",
                 "value": "Kevin Bacon"
               }
             ]
@@ -156,4 +157,4 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000102')).pat
   ]
 }
 --- result_above ---
-file written: tmp/query_path_1520765462.json
+file written: tmp/query_path_1520808075.json

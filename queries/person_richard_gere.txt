@@ -1,5 +1,6 @@
 function: query
-endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+create_client:
+endpoint: wss://cjoakim-cosmosdb-gremlin.gremlin.cosmosdb.azure.com:443/
 username: /dbs/dev/colls/movies
 qname: person
 query: g.V().has('label','person').has('id','nm0000152')
@@ -16,7 +17,7 @@ query: g.V().has('label','person').has('id','nm0000152')
       "properties": {
         "name": [
           {
-            "id": "39333657-057a-40d9-ad15-3527084e8ebb",
+            "id": "4fd27782-4206-4eda-a04b-4fadbd35a71e",
             "value": "Richard Gere"
           }
         ]
@@ -25,4 +26,4 @@ query: g.V().has('label','person').has('id','nm0000152')
   ]
 }
 --- result_above ---
-file written: tmp/query_person_1520765419.json
+file written: tmp/query_person_1520807956.json

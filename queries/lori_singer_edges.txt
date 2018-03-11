@@ -1,5 +1,6 @@
 function: query
-endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+create_client:
+endpoint: wss://cjoakim-cosmosdb-gremlin.gremlin.cosmosdb.azure.com:443/
 username: /dbs/dev/colls/movies
 qname: edges
 query: g.V('nm0001742').bothE()
@@ -7,10 +8,10 @@ query: g.V('nm0001742').bothE()
 {
   "qname": "edges",
   "query": "g.V('nm0001742').bothE()",
-  "result_count": 13,
+  "result_count": 14,
   "result": [
     {
-      "id": "0fdf9928-14f6-40de-b50b-5e130a65fa2c",
+      "id": "a01d9ef6-b8e1-4ca3-8558-2714a86dc91c",
       "label": "in",
       "type": "edge",
       "inVLabel": "movie",
@@ -22,19 +23,19 @@ query: g.V('nm0001742').bothE()
       }
     },
     {
-      "id": "9ae524fb-3e44-4976-a5f2-0f0cbb9e9803",
-      "label": "knows",
+      "id": "e5ba26aa-d007-436d-becd-c9d23bdc33a5",
+      "label": "in",
       "type": "edge",
-      "inVLabel": "person",
+      "inVLabel": "movie",
       "outVLabel": "person",
-      "inV": "nm0001848",
+      "inV": "tt0089543",
       "outV": "nm0001742",
       "properties": {
-        "title": "Footloose"
+        "title": "The Man with One Red Shoe"
       }
     },
     {
-      "id": "ebceb373-4340-49f8-a092-f3afd76a709d",
+      "id": "6478082c-8c80-4830-90d5-f98e2699a91a",
       "label": "knows",
       "type": "edge",
       "inVLabel": "person",
@@ -42,11 +43,11 @@ query: g.V('nm0001742').bothE()
       "inV": "nm0000102",
       "outV": "nm0001742",
       "properties": {
-        "title": "Footloose"
+        "mid_list": "tt0087277"
       }
     },
     {
-      "id": "f619e919-6b82-478c-b3fc-5b89eb127d29",
+      "id": "6ae084a0-8589-4a27-a8f2-aca570d52c6a",
       "label": "knows",
       "type": "edge",
       "inVLabel": "person",
@@ -54,11 +55,11 @@ query: g.V('nm0001742').bothE()
       "inV": "nm0000158",
       "outV": "nm0001742",
       "properties": {
-        "title": "The Man with One Red Shoe"
+        "mid_list": "tt0089543"
       }
     },
     {
-      "id": "7d300c95-c34e-4e65-bce0-38b6b78faf6c",
+      "id": "1c9930b6-6b5a-4184-9661-c40cdf40c214",
       "label": "knows",
       "type": "edge",
       "inVLabel": "person",
@@ -66,11 +67,11 @@ query: g.V('nm0001742').bothE()
       "inV": "nm0001056",
       "outV": "nm0001742",
       "properties": {
-        "title": "The Man with One Red Shoe"
+        "mid_list": "tt0089543"
       }
     },
     {
-      "id": "2ed4157b-61be-4120-8193-e83167f7a0b3",
+      "id": "b22d50bf-2277-4035-be25-04ccf7b6b4d1",
       "label": "knows",
       "type": "edge",
       "inVLabel": "person",
@@ -78,11 +79,11 @@ query: g.V('nm0001742').bothE()
       "inV": "nm0001164",
       "outV": "nm0001742",
       "properties": {
-        "title": "The Man with One Red Shoe"
+        "mid_list": "tt0089543"
       }
     },
     {
-      "id": "db3cc65a-bd89-4be9-8a82-5b617fc805f1",
+      "id": "45316f0d-e11e-48dd-aa7b-9f029d134d1d",
       "label": "knows",
       "type": "edge",
       "inVLabel": "person",
@@ -90,11 +91,23 @@ query: g.V('nm0001742').bothE()
       "inV": "nm0001475",
       "outV": "nm0001742",
       "properties": {
-        "title": "Footloose"
+        "mid_list": "tt0087277"
       }
     },
     {
-      "id": "dec326fe-0f67-4f34-b285-7285ae227b9c",
+      "id": "fe37eb59-e816-4cfc-b9d9-244ccb59b8ee",
+      "label": "knows",
+      "type": "edge",
+      "inVLabel": "person",
+      "outVLabel": "person",
+      "inV": "nm0001848",
+      "outV": "nm0001742",
+      "properties": {
+        "mid_list": "tt0087277"
+      }
+    },
+    {
+      "id": "ff816bea-4f17-4d13-9285-66516d266d86",
       "label": "knows",
       "type": "edge",
       "inVLabel": "person",
@@ -102,11 +115,11 @@ query: g.V('nm0001742').bothE()
       "inV": "nm0001742",
       "outV": "nm0000102",
       "properties": {
-        "title": "Footloose"
+        "mid_list": "tt0087277"
       }
     },
     {
-      "id": "e0c6a7a7-5d10-41ed-84ed-7df9187a0005",
+      "id": "00c60051-3e9e-417c-92dc-51322df47618",
       "label": "knows",
       "type": "edge",
       "inVLabel": "person",
@@ -114,11 +127,11 @@ query: g.V('nm0001742').bothE()
       "inV": "nm0001742",
       "outV": "nm0000158",
       "properties": {
-        "title": "The Man with One Red Shoe"
+        "mid_list": "tt0089543"
       }
     },
     {
-      "id": "2576b480-6266-45d3-861e-48d6491eb172",
+      "id": "9020cacf-82e5-4127-b82f-03081916c694",
       "label": "knows",
       "type": "edge",
       "inVLabel": "person",
@@ -126,11 +139,11 @@ query: g.V('nm0001742').bothE()
       "inV": "nm0001742",
       "outV": "nm0001056",
       "properties": {
-        "title": "The Man with One Red Shoe"
+        "mid_list": "tt0089543"
       }
     },
     {
-      "id": "4d11b684-143e-4987-b092-bdc714ec96ae",
+      "id": "114431bd-dbc7-43dd-95f4-4b36d256f7cd",
       "label": "knows",
       "type": "edge",
       "inVLabel": "person",
@@ -138,11 +151,11 @@ query: g.V('nm0001742').bothE()
       "inV": "nm0001742",
       "outV": "nm0001164",
       "properties": {
-        "title": "The Man with One Red Shoe"
+        "mid_list": "tt0089543"
       }
     },
     {
-      "id": "fc584521-be45-40f9-9c67-587c1ee9b050",
+      "id": "6f71005b-fc55-45d8-a834-0ecf1189813a",
       "label": "knows",
       "type": "edge",
       "inVLabel": "person",
@@ -150,11 +163,11 @@ query: g.V('nm0001742').bothE()
       "inV": "nm0001742",
       "outV": "nm0001475",
       "properties": {
-        "title": "Footloose"
+        "mid_list": "tt0087277"
       }
     },
     {
-      "id": "60cce84e-f6d7-44ed-87e7-a9bebdc91e18",
+      "id": "d0b01bc3-fba4-4f7d-bc35-0dfcc763c7e5",
       "label": "knows",
       "type": "edge",
       "inVLabel": "person",
@@ -162,10 +175,10 @@ query: g.V('nm0001742').bothE()
       "inV": "nm0001742",
       "outV": "nm0001848",
       "properties": {
-        "title": "Footloose"
+        "mid_list": "tt0087277"
       }
     }
   ]
 }
 --- result_above ---
-file written: tmp/query_edges_1520765446.json
+file written: tmp/query_edges_1520808031.json

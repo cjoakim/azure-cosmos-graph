@@ -110,6 +110,9 @@ $ ./execute_load_queries.sh
 This process will take approximately an 40-minutes, as there is a built in sleep time between
 inserts.  853 Vertices should be inserted (269 movies, 584 people), with 3665 Edges.
 
+For best results, don't query the DB from another process, such as the Azure Portal UI,
+while the load process is executing.
+
 ### Query the Database
 
 The following are example Gremlin queries.  These can either be executed within the Azure Portal

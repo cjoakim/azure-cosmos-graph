@@ -1,5 +1,6 @@
 function: query
-endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+create_client:
+endpoint: wss://cjoakim-cosmosdb-gremlin.gremlin.cosmosdb.azure.com:443/
 username: /dbs/dev/colls/movies
 qname: path
 query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).path().limit(3)
@@ -23,7 +24,7 @@ query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "347fc7d2-8164-448a-a352-827b14231c8b",
+                "id": "00c20d60-3a19-4ee6-8764-d57b907e2ae9",
                 "value": "Diane Lane"
               }
             ]
@@ -36,7 +37,7 @@ query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "0a414d67-4be1-48c2-8ab6-289e269182ed",
+                "id": "ba749aff-7a72-429e-8bf7-ff40c73e2e18",
                 "value": "Kevin Bacon"
               }
             ]
@@ -49,7 +50,7 @@ query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "7f1ff849-86d0-47f6-84ae-015e787a04b7",
+                "id": "fb444d04-c856-4142-ae57-8cc94b5ba5e4",
                 "value": "Lori Singer"
               }
             ]
@@ -72,21 +73,8 @@ query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "347fc7d2-8164-448a-a352-827b14231c8b",
+                "id": "00c20d60-3a19-4ee6-8764-d57b907e2ae9",
                 "value": "Diane Lane"
-              }
-            ]
-          }
-        },
-        {
-          "id": "nm0005260",
-          "label": "person",
-          "type": "vertex",
-          "properties": {
-            "name": [
-              {
-                "id": "a7694ce6-ec34-4f4a-9f59-31bf23068d51",
-                "value": "Frankie Muniz"
               }
             ]
           }
@@ -98,8 +86,21 @@ query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "0a414d67-4be1-48c2-8ab6-289e269182ed",
+                "id": "ba749aff-7a72-429e-8bf7-ff40c73e2e18",
                 "value": "Kevin Bacon"
+              }
+            ]
+          }
+        },
+        {
+          "id": "nm0000158",
+          "label": "person",
+          "type": "vertex",
+          "properties": {
+            "name": [
+              {
+                "id": "09eaa3fb-3143-44ba-8d18-823589dcbd9b",
+                "value": "Tom Hanks"
               }
             ]
           }
@@ -111,7 +112,7 @@ query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "7f1ff849-86d0-47f6-84ae-015e787a04b7",
+                "id": "fb444d04-c856-4142-ae57-8cc94b5ba5e4",
                 "value": "Lori Singer"
               }
             ]
@@ -134,21 +135,8 @@ query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "347fc7d2-8164-448a-a352-827b14231c8b",
+                "id": "00c20d60-3a19-4ee6-8764-d57b907e2ae9",
                 "value": "Diane Lane"
-              }
-            ]
-          }
-        },
-        {
-          "id": "nm0005561",
-          "label": "person",
-          "type": "vertex",
-          "properties": {
-            "name": [
-              {
-                "id": "08954f85-7300-4576-8f70-dec2e0bb82a9",
-                "value": "Luke Wilson"
               }
             ]
           }
@@ -160,8 +148,21 @@ query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "0a414d67-4be1-48c2-8ab6-289e269182ed",
+                "id": "ba749aff-7a72-429e-8bf7-ff40c73e2e18",
                 "value": "Kevin Bacon"
+              }
+            ]
+          }
+        },
+        {
+          "id": "nm0001475",
+          "label": "person",
+          "type": "vertex",
+          "properties": {
+            "name": [
+              {
+                "id": "3fd48ef2-7a64-471b-b9c2-e1e879e5e830",
+                "value": "John Lithgow"
               }
             ]
           }
@@ -173,7 +174,7 @@ query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "7f1ff849-86d0-47f6-84ae-015e787a04b7",
+                "id": "fb444d04-c856-4142-ae57-8cc94b5ba5e4",
                 "value": "Lori Singer"
               }
             ]
@@ -184,4 +185,4 @@ query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).pat
   ]
 }
 --- result_above ---
-file written: tmp/query_path_1520765470.json
+file written: tmp/query_path_1520808089.json

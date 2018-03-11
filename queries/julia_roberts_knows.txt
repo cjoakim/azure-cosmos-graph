@@ -1,5 +1,6 @@
 function: query
-endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+create_client:
+endpoint: wss://cjoakim-cosmosdb-gremlin.gremlin.cosmosdb.azure.com:443/
 username: /dbs/dev/colls/movies
 qname: knows
 query: g.V('nm0000210').out('knows')
@@ -7,8 +8,268 @@ query: g.V('nm0000210').out('knows')
 {
   "qname": "knows",
   "query": "g.V('nm0000210').out('knows')",
-  "result_count": 28,
+  "result_count": 29,
   "result": [
+    {
+      "id": "nm0000047",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "6cc0d24d-b3a4-4e17-870b-d0e67f7f3fe5",
+            "value": "Sophia Loren"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000052",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "c7ed87c2-1a47-429d-929f-568ebf149b81",
+            "value": "Marcello Mastroianni"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000093",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "867ab2c5-552f-4285-871a-6c184ff39422",
+            "value": "Brad Pitt"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000095",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "427ed01a-adc9-4689-8472-43364755de9d",
+            "value": "Woody Allen"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000098",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "f510d10d-5bff-4b7d-b5e0-2a8c5eebaab3",
+            "value": "Jennifer Aniston"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000102",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "ba749aff-7a72-429e-8bf7-ff40c73e2e18",
+            "value": "Kevin Bacon"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000106",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "3301b7d7-b82b-4080-b049-7d5641c620bd",
+            "value": "Drew Barrymore"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000114",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "667ecb35-e102-4ffd-84c2-05d0dc4c4b85",
+            "value": "Steve Buscemi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000115",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "c4d9506f-f221-44fc-82ed-566626b20abd",
+            "value": "Nicolas Cage"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000123",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "553db3ec-a3e4-408b-a1b0-00d6d0ba10a0",
+            "value": "George Clooney"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000131",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "59eabe9d-cf7d-4abe-85c2-8ce67a47d0f1",
+            "value": "John Cusack"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000139",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "a27082d4-9478-469e-8e8f-91f995300a9b",
+            "value": "Cameron Diaz"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000141",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "80c7cd99-f56a-466b-bd8e-d8ea98b28727",
+            "value": "David Duchovny"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000152",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "4fd27782-4206-4eda-a04b-4fadbd35a71e",
+            "value": "Richard Gere"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000154",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "606e6b47-9da7-4ca4-96d7-ed4084f15771",
+            "value": "Mel Gibson"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000158",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "09eaa3fb-3143-44ba-8d18-823589dcbd9b",
+            "value": "Tom Hanks"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000163",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "c3e91883-1015-4134-87bc-0374c32e4e0b",
+            "value": "Dustin Hoffman"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000173",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "c08d882c-4ffa-4252-beb0-e57720b9eef8",
+            "value": "Nicole Kidman"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000179",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "fe371d56-ed4f-4037-a164-e109d2db5dc1",
+            "value": "Jude Law"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000204",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "be83a66d-30c4-4c03-92ca-c3174e499d9f",
+            "value": "Natalie Portman"
+          }
+        ]
+      }
+    },
     {
       "id": "nm0000215",
       "label": "person",
@@ -16,7 +277,7 @@ query: g.V('nm0000210').out('knows')
       "properties": {
         "name": [
           {
-            "id": "4cab6ffd-2d20-40df-ae97-d15b3977a397",
+            "id": "94445504-0aaa-4324-8098-1ce3c16bb10f",
             "value": "Susan Sarandon"
           }
         ]
@@ -29,7 +290,7 @@ query: g.V('nm0000210').out('knows')
       "properties": {
         "name": [
           {
-            "id": "14a6ec95-5164-455d-b184-c52a732431c1",
+            "id": "1427a2b4-2100-4e3f-a293-11e451b83a3d",
             "value": "Denzel Washington"
           }
         ]
@@ -42,7 +303,7 @@ query: g.V('nm0000210').out('knows')
       "properties": {
         "name": [
           {
-            "id": "db9ef69d-13ce-437c-a7e8-9b4e93a3bdfe",
+            "id": "7e25c047-b69f-4e68-8f6f-8e362115ce30",
             "value": "Robin Williams"
           }
         ]
@@ -55,7 +316,7 @@ query: g.V('nm0000210').out('knows')
       "properties": {
         "name": [
           {
-            "id": "55083ab3-3b78-4d09-bf2a-59a957fc09dd",
+            "id": "7d279e2f-e841-47c9-a5aa-55e86b0a9319",
             "value": "William Baldwin"
           }
         ]
@@ -68,7 +329,7 @@ query: g.V('nm0000210').out('knows')
       "properties": {
         "name": [
           {
-            "id": "38598b97-e525-4849-8a6d-ee4f383e9fda",
+            "id": "b7a080b2-76bf-4854-bde2-3152a0285994",
             "value": "Billy Crystal"
           }
         ]
@@ -81,7 +342,7 @@ query: g.V('nm0000210').out('knows')
       "properties": {
         "name": [
           {
-            "id": "fb9e763a-0b3d-48cf-9481-23cfc48486e9",
+            "id": "d933c900-74b5-4748-b8aa-854be36b4e27",
             "value": "Joan Cusack"
           }
         ]
@@ -94,7 +355,7 @@ query: g.V('nm0000210').out('knows')
       "properties": {
         "name": [
           {
-            "id": "ba98b357-6c3a-4aed-9a9e-aa4be6740240",
+            "id": "e3849da5-5aff-4da2-baeb-1613cac12d3f",
             "value": "Vincent DOnofrio"
           }
         ]
@@ -107,7 +368,7 @@ query: g.V('nm0000210').out('knows')
       "properties": {
         "name": [
           {
-            "id": "f4ecaf52-d4e9-466b-98f3-1dec08963d5a",
+            "id": "4717cf90-726b-47f6-ac43-fbaf65067f78",
             "value": "Matt Damon"
           }
         ]
@@ -120,255 +381,8 @@ query: g.V('nm0000210').out('knows')
       "properties": {
         "name": [
           {
-            "id": "09e8821c-17ac-4add-bc67-71abddece9cf",
+            "id": "1ebf94f4-b9eb-419a-a406-559970585368",
             "value": "Kirsten Dunst"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000380",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "65815a54-7c01-4132-a945-9b290cf7bb03",
-            "value": "Robert Duvall"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000391",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "d06a72ca-9f80-4dae-8150-4160830d4412",
-            "value": "Rupert Everett"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000398",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "9ac3dfb9-9fb1-4c7f-8fc7-904dcaf81843",
-            "value": "Sally Field"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000424",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "165b17a4-8f01-43fb-b349-83b3c6feb883",
-            "value": "Hugh Grant"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000438",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "3ed8cb40-7579-4627-9fc4-070e95dfe4f7",
-            "value": "Ed Harris"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000443",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "2d22489c-3d5e-4fdf-9464-201bcd901abb",
-            "value": "Goldie Hawn"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000450",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "6d8833db-6c2b-4076-ae37-2b3afa933769",
-            "value": "Philip Seymour Hoffman"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000496",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "d247bf94-82d0-46f0-bffa-18e79e941872",
-            "value": "Juliette Lewis"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000511",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "a92c54f6-5337-414b-ad3c-c17563240fa8",
-            "value": "Shirley MacLaine"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000518",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "f223b747-8245-4b09-a43e-2bdada92d472",
-            "value": "John Malkovich"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000551",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "18883869-4061-40e0-bc3a-49282245b9b5",
-            "value": "Dermot Mulroney"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000553",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "002edcd7-6453-4a5f-8295-16cc88d7f326",
-            "value": "Liam Neeson"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000560",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "b5bbcd8c-b4fe-4e95-9eff-32d67573d64e",
-            "value": "Nick Nolte"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000598",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "b024067a-596a-4142-bb6e-c6e32b8f76aa",
-            "value": "Dennis Quaid"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000624",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "2ec8b7e0-8467-4313-a4a5-e56cd1acfa2e",
-            "value": "Laura San Giacomo"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000658",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "b8ef5515-caed-4c89-8120-6c2ba8bd5ef9",
-            "value": "Meryl Streep"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000662",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "3d88971a-183f-46c6-8da7-94e5e9a651ff",
-            "value": "Kiefer Sutherland"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000666",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "789b8503-20ba-4b77-8190-6058ddb8706d",
-            "value": "Lili Taylor"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000754",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "43d902e1-88c4-4d94-a637-3280eac2d37e",
-            "value": "Kevin Anderson"
           }
         ]
       }
@@ -376,4 +390,4 @@ query: g.V('nm0000210').out('knows')
   ]
 }
 --- result_above ---
-file written: tmp/query_knows_1520765450.json
+file written: tmp/query_knows_1520808043.json

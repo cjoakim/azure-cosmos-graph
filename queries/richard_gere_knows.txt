@@ -1,5 +1,6 @@
 function: query
-endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+create_client:
+endpoint: wss://cjoakim-cosmosdb-gremlin.gremlin.cosmosdb.azure.com:443/
 username: /dbs/dev/colls/movies
 qname: knows
 query: g.V('nm0000152').out('knows')
@@ -10,13 +11,78 @@ query: g.V('nm0000152').out('knows')
   "result_count": 29,
   "result": [
     {
+      "id": "nm0000107",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "19211552-c93f-408e-a341-39d9d2bce51d",
+            "value": "Kim Basinger"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000114",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "667ecb35-e102-4ffd-84c2-05d0dc4c4b85",
+            "value": "Steve Buscemi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000125",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "3f698ed0-ff7d-4367-b6db-2c0164246312",
+            "value": "Sean Connery"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000132",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "456cb4d1-c0cd-4412-ac90-be41f7aecced",
+            "value": "Claire Danes"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0000149",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "523af10f-55de-4591-a7ef-449d7e0174a7",
+            "value": "Jodie Foster"
+          }
+        ]
+      }
+    },
+    {
       "id": "nm0000160",
       "label": "person",
       "type": "vertex",
       "properties": {
         "name": [
           {
-            "id": "ab0f5a02-b3fe-4032-ac84-2df9a35a5864",
+            "id": "836f8b77-112f-41d5-bc57-d922342067ae",
             "value": "Ethan Hawke"
           }
         ]
@@ -29,7 +95,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "eed608e6-f33a-4e13-a33f-5376fb7ec224",
+            "id": "3e31a794-acbd-471d-9942-d5aef527d8b9",
             "value": "Helen Hunt"
           }
         ]
@@ -42,7 +108,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "347fc7d2-8164-448a-a352-827b14231c8b",
+            "id": "00c20d60-3a19-4ee6-8764-d57b907e2ae9",
             "value": "Diane Lane"
           }
         ]
@@ -55,7 +121,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "d9680367-75f5-43ad-a15c-96d39965c50d",
+            "id": "01e743c9-24e5-41bf-a878-aa4185897839",
             "value": "Jennifer Lopez"
           }
         ]
@@ -68,7 +134,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "e9a9ed2a-272e-446a-b2b7-1a0765f192f9",
+            "id": "88734743-5003-436e-b5ed-ad304e1ccd97",
             "value": "Ewan McGregor"
           }
         ]
@@ -81,7 +147,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "ad7a1362-37a8-43c7-8985-abb49394eb46",
+            "id": "81601c6f-7eae-4c84-bed2-e36b593f9b89",
             "value": "Julia Roberts"
           }
         ]
@@ -94,7 +160,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "825164eb-98a1-4c88-acb4-7d06ef02032f",
+            "id": "1e4990c0-cfc7-4ca7-b8b5-05280de9b6e2",
             "value": "Winona Ryder"
           }
         ]
@@ -107,7 +173,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "4cab6ffd-2d20-40df-ae97-d15b3977a397",
+            "id": "94445504-0aaa-4324-8098-1ce3c16bb10f",
             "value": "Susan Sarandon"
           }
         ]
@@ -120,7 +186,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "22c18792-8966-488d-8261-c1770028c829",
+            "id": "66ea49e5-fc06-4ca7-aab3-0851af311d86",
             "value": "Sharon Stone"
           }
         ]
@@ -133,7 +199,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "b2f73946-6d46-4040-ad55-f4c93e9f56c1",
+            "id": "087292d2-1d08-4e37-a768-206776cfa785",
             "value": "Uma Thurman"
           }
         ]
@@ -146,7 +212,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "557a0be5-0b58-46a7-8b28-8132bbd5c476",
+            "id": "1a65f582-f42b-419d-8595-1425e9645ac1",
             "value": "Bruce Willis"
           }
         ]
@@ -159,7 +225,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "cec6b866-a6a4-47e9-a0ac-d48e55b364b8",
+            "id": "e34a68bb-096f-4910-a681-fd48f0c7f56f",
             "value": "Ren\u00e9e Zellweger"
           }
         ]
@@ -172,7 +238,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "8126e672-f1c3-4af2-9282-30e120287a05",
+            "id": "fdd28f98-ad5d-41cc-8eb6-216e979f4745",
             "value": "Joan Allen"
           }
         ]
@@ -185,7 +251,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "8555e162-3d20-4913-85da-8700f728f6ca",
+            "id": "0e7f8620-31e9-42a5-8e3c-913849a2515a",
             "value": "Juliette Binoche"
           }
         ]
@@ -198,7 +264,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "c873eb19-9fdb-4b6a-9d55-eca269c989c8",
+            "id": "4b5f327d-b76b-42a8-a1c1-08b931373662",
             "value": "Don Cheadle"
           }
         ]
@@ -211,7 +277,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "fb9e763a-0b3d-48cf-9481-23cfc48486e9",
+            "id": "d933c900-74b5-4748-b8aa-854be36b4e27",
             "value": "Joan Cusack"
           }
         ]
@@ -224,7 +290,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "91a337ee-c42e-4964-96d4-3054434ab437",
+            "id": "3946e408-aed5-40c6-9707-e85b58bb2578",
             "value": "Lolita Davidovich"
           }
         ]
@@ -237,7 +303,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "272a1e4e-37dd-40e5-8d39-cba367de7bea",
+            "id": "d19a239a-7c11-4ed2-a6a1-6de13d1893bc",
             "value": "Laura Dern"
           }
         ]
@@ -250,7 +316,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "914e5915-2238-4dc3-8f47-f0f82f57b48a",
+            "id": "19501a3c-b654-49f8-ad37-08f40ba9a3d8",
             "value": "Farrah Fawcett"
           }
         ]
@@ -263,7 +329,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "2cd56770-f5be-4993-92bd-5929a542a8d5",
+            "id": "593c09f5-2f11-4fbc-8719-9aec34c7573a",
             "value": "Andy Garcia"
           }
         ]
@@ -276,7 +342,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "4ea539e2-7759-43e0-bc12-9d94d8f1b468",
+            "id": "5c3d3d8e-d9ca-4221-b316-16522e96f3bd",
             "value": "Gene Hackman"
           }
         ]
@@ -289,7 +355,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "63b3db41-23ea-4f23-ae4e-662743efb1f3",
+            "id": "9b5db390-4afc-4212-b69b-d8ddf719e2f8",
             "value": "Alice Krige"
           }
         ]
@@ -302,7 +368,7 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "1eb8f884-bea4-4b82-8a0f-ef944c9f67c1",
+            "id": "33d5780d-e30c-4dae-a079-646ea033a1d0",
             "value": "Bai Ling"
           }
         ]
@@ -315,73 +381,8 @@ query: g.V('nm0000152').out('knows')
       "properties": {
         "name": [
           {
-            "id": "e5d23780-99ba-4ef6-a3cf-e8578c9d0a48",
+            "id": "33ff5709-470d-4c14-b9ca-5efda6506ccc",
             "value": "Penelope Ann Miller"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000547",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "154cebed-5245-4b64-9ab9-a0212fbd852e",
-            "value": "Alfred Molina"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000565",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "5c08d2d5-2950-4ade-85e2-98467757d59f",
-            "value": "Lena Olin"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000566",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "9bbe7ab3-d339-4a62-9ed2-2ba7f2472a8e",
-            "value": "Julia Ormond"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000616",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "fbd9d7c5-74ae-4c02-92a8-06ab101c26eb",
-            "value": "Eric Roberts"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0000619",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "d4922c37-624c-453e-8f60-eb564bf4ab4a",
-            "value": "Tim Roth"
           }
         ]
       }
@@ -389,4 +390,4 @@ query: g.V('nm0000152').out('knows')
   ]
 }
 --- result_above ---
-file written: tmp/query_knows_1520765452.json
+file written: tmp/query_knows_1520808050.json

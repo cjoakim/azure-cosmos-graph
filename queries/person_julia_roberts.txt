@@ -1,5 +1,6 @@
 function: query
-endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+create_client:
+endpoint: wss://cjoakim-cosmosdb-gremlin.gremlin.cosmosdb.azure.com:443/
 username: /dbs/dev/colls/movies
 qname: person
 query: g.V().has('label','person').has('id','nm0000210')
@@ -16,7 +17,7 @@ query: g.V().has('label','person').has('id','nm0000210')
       "properties": {
         "name": [
           {
-            "id": "ad7a1362-37a8-43c7-8985-abb49394eb46",
+            "id": "81601c6f-7eae-4c84-bed2-e36b593f9b89",
             "value": "Julia Roberts"
           }
         ]
@@ -25,4 +26,4 @@ query: g.V().has('label','person').has('id','nm0000210')
   ]
 }
 --- result_above ---
-file written: tmp/query_person_1520765421.json
+file written: tmp/query_person_1520807963.json

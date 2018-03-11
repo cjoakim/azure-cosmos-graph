@@ -1,5 +1,6 @@
 function: query
-endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+create_client:
+endpoint: wss://cjoakim-cosmosdb-gremlin.gremlin.cosmosdb.azure.com:443/
 username: /dbs/dev/colls/movies
 qname: knows
 query: g.V('nm0000178').out('knows')
@@ -7,151 +8,8 @@ query: g.V('nm0000178').out('knows')
 {
   "qname": "knows",
   "query": "g.V('nm0000178').out('knows')",
-  "result_count": 13,
+  "result_count": 10,
   "result": [
-    {
-      "id": "nm0000206",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "bc5c4c1a-9263-4b01-9ca6-7bb563060b0e",
-            "value": "Keanu Reeves"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0002138",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "2acc1634-ebca-4b2e-8847-d7c9544b63c1",
-            "value": "Gregory Hines"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0005221",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "2b7e10a7-5d82-4cd3-9de0-817519965a84",
-            "value": "Christopher Meloni"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0005260",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "a7694ce6-ec34-4f4a-9f59-31bf23068d51",
-            "value": "Frankie Muniz"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0005561",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "08954f85-7300-4576-8f70-dec2e0bb82a9",
-            "value": "Luke Wilson"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0205626",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "eef16bf9-0ffc-4eeb-9419-4e65d303eda6",
-            "value": "Viola Davis"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0370035",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "dfeaa931-ba6d-40bd-8a97-fe5e02982588",
-            "value": "John Hawkes"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0372522",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "4f342511-c027-42da-9fb9-f06862479b57",
-            "value": "Bryan Hearne"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0553648",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "83a31656-a5b6-47b6-abcf-137615b818f0",
-            "value": "Olivier Martinez"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0571188",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "6c0ed1dc-dd7e-4b5d-a2ea-5fdb9efe9143",
-            "value": "Lonette McKee"
-          }
-        ]
-      }
-    },
-    {
-      "id": "nm0838059",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "add2fd32-5836-4e11-9f6b-382ba22feca8",
-            "value": "Erik Per Sullivan"
-          }
-        ]
-      }
-    },
     {
       "id": "nm0000102",
       "label": "person",
@@ -159,7 +17,7 @@ query: g.V('nm0000178').out('knows')
       "properties": {
         "name": [
           {
-            "id": "0a414d67-4be1-48c2-8ab6-289e269182ed",
+            "id": "ba749aff-7a72-429e-8bf7-ff40c73e2e18",
             "value": "Kevin Bacon"
           }
         ]
@@ -172,8 +30,112 @@ query: g.V('nm0000178').out('knows')
       "properties": {
         "name": [
           {
-            "id": "39333657-057a-40d9-ad15-3527084e8ebb",
+            "id": "4fd27782-4206-4eda-a04b-4fadbd35a71e",
             "value": "Richard Gere"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0002138",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "358b0627-2c97-4fb8-8860-d8820c42a6b0",
+            "value": "Gregory Hines"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0005221",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "a429ff71-9cff-47ca-93d8-7f3eba2da380",
+            "value": "Christopher Meloni"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0005260",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "bddb98f3-a9f7-431c-abd8-4fa4757c2464",
+            "value": "Frankie Muniz"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0005561",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "6d8f5e48-8590-4cac-880e-3ddf2a57d031",
+            "value": "Luke Wilson"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0205626",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "39b2290f-43e6-41a0-af2a-d3f7e521e2a4",
+            "value": "Viola Davis"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0553648",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "f7dbfcc1-576e-445b-bad1-76cb7810276d",
+            "value": "Olivier Martinez"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0571188",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "3103af9c-bd53-4e4e-b7fb-b35fbb7fa5f3",
+            "value": "Lonette McKee"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0838059",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "e94d772e-995e-4ad3-b88d-a85f4ce51894",
+            "value": "Erik Per Sullivan"
           }
         ]
       }
@@ -181,4 +143,4 @@ query: g.V('nm0000178').out('knows')
   ]
 }
 --- result_above ---
-file written: tmp/query_knows_1520765457.json
+file written: tmp/query_knows_1520808062.json

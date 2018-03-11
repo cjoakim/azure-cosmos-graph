@@ -1,5 +1,6 @@
 function: query
-endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+create_client:
+endpoint: wss://cjoakim-cosmosdb-gremlin.gremlin.cosmosdb.azure.com:443/
 username: /dbs/dev/colls/movies
 qname: path
 query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).path().limit(3)
@@ -24,7 +25,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "39333657-057a-40d9-ad15-3527084e8ebb",
+                "id": "4fd27782-4206-4eda-a04b-4fadbd35a71e",
                 "value": "Richard Gere"
               }
             ]
@@ -37,7 +38,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "eed608e6-f33a-4e13-a33f-5376fb7ec224",
+                "id": "3e31a794-acbd-471d-9942-d5aef527d8b9",
                 "value": "Helen Hunt"
               }
             ]
@@ -50,7 +51,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "b63169ef-8189-441d-8d6f-c405147b42c9",
+                "id": "09eaa3fb-3143-44ba-8d18-823589dcbd9b",
                 "value": "Tom Hanks"
               }
             ]
@@ -63,7 +64,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "7f1ff849-86d0-47f6-84ae-015e787a04b7",
+                "id": "fb444d04-c856-4142-ae57-8cc94b5ba5e4",
                 "value": "Lori Singer"
               }
             ]
@@ -86,7 +87,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "39333657-057a-40d9-ad15-3527084e8ebb",
+                "id": "4fd27782-4206-4eda-a04b-4fadbd35a71e",
                 "value": "Richard Gere"
               }
             ]
@@ -99,7 +100,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "347fc7d2-8164-448a-a352-827b14231c8b",
+                "id": "00c20d60-3a19-4ee6-8764-d57b907e2ae9",
                 "value": "Diane Lane"
               }
             ]
@@ -112,7 +113,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "0a414d67-4be1-48c2-8ab6-289e269182ed",
+                "id": "ba749aff-7a72-429e-8bf7-ff40c73e2e18",
                 "value": "Kevin Bacon"
               }
             ]
@@ -125,7 +126,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "7f1ff849-86d0-47f6-84ae-015e787a04b7",
+                "id": "fb444d04-c856-4142-ae57-8cc94b5ba5e4",
                 "value": "Lori Singer"
               }
             ]
@@ -148,7 +149,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "39333657-057a-40d9-ad15-3527084e8ebb",
+                "id": "4fd27782-4206-4eda-a04b-4fadbd35a71e",
                 "value": "Richard Gere"
               }
             ]
@@ -161,7 +162,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "e9a9ed2a-272e-446a-b2b7-1a0765f192f9",
+                "id": "88734743-5003-436e-b5ed-ad304e1ccd97",
                 "value": "Ewan McGregor"
               }
             ]
@@ -174,7 +175,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "b63169ef-8189-441d-8d6f-c405147b42c9",
+                "id": "09eaa3fb-3143-44ba-8d18-823589dcbd9b",
                 "value": "Tom Hanks"
               }
             ]
@@ -187,7 +188,7 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           "properties": {
             "name": [
               {
-                "id": "7f1ff849-86d0-47f6-84ae-015e787a04b7",
+                "id": "fb444d04-c856-4142-ae57-8cc94b5ba5e4",
                 "value": "Lori Singer"
               }
             ]
@@ -198,4 +199,4 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).pat
   ]
 }
 --- result_above ---
-file written: tmp/query_path_1520765467.json
+file written: tmp/query_path_1520808082.json

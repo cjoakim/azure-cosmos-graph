@@ -39,6 +39,9 @@ query: g.V('nm0001742').out('in')
 lori_singer_knows
 query: g.V('nm0001742').out('knows')
 
+movie_cotton_club
+query: g.V().has('label','movie').has('id','tt0087089')
+
 movie_footloose
 query: g.V().has('label','movie').has('id','tt0087277')
 

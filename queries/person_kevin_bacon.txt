@@ -1,5 +1,6 @@
 function: query
-endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+create_client:
+endpoint: wss://cjoakim-cosmosdb-gremlin.gremlin.cosmosdb.azure.com:443/
 username: /dbs/dev/colls/movies
 qname: person
 query: g.V().has('label','person').has('id','nm0000102')
@@ -16,7 +17,7 @@ query: g.V().has('label','person').has('id','nm0000102')
       "properties": {
         "name": [
           {
-            "id": "0a414d67-4be1-48c2-8ab6-289e269182ed",
+            "id": "ba749aff-7a72-429e-8bf7-ff40c73e2e18",
             "value": "Kevin Bacon"
           }
         ]
@@ -25,4 +26,4 @@ query: g.V().has('label','person').has('id','nm0000102')
   ]
 }
 --- result_above ---
-file written: tmp/query_person_1520765417.json
+file written: tmp/query_person_1520807950.json

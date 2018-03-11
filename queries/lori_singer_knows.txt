@@ -1,5 +1,6 @@
 function: query
-endpoint: wss://cjoakim-cosmos-graph1.gremlin.cosmosdb.azure.com:443/
+create_client:
+endpoint: wss://cjoakim-cosmosdb-gremlin.gremlin.cosmosdb.azure.com:443/
 username: /dbs/dev/colls/movies
 qname: knows
 query: g.V('nm0001742').out('knows')
@@ -10,26 +11,13 @@ query: g.V('nm0001742').out('knows')
   "result_count": 6,
   "result": [
     {
-      "id": "nm0001848",
-      "label": "person",
-      "type": "vertex",
-      "properties": {
-        "name": [
-          {
-            "id": "9751d39b-6dd5-4999-a9c6-3a1d9714f805",
-            "value": "Dianne Wiest"
-          }
-        ]
-      }
-    },
-    {
       "id": "nm0000102",
       "label": "person",
       "type": "vertex",
       "properties": {
         "name": [
           {
-            "id": "0a414d67-4be1-48c2-8ab6-289e269182ed",
+            "id": "ba749aff-7a72-429e-8bf7-ff40c73e2e18",
             "value": "Kevin Bacon"
           }
         ]
@@ -42,7 +30,7 @@ query: g.V('nm0001742').out('knows')
       "properties": {
         "name": [
           {
-            "id": "b63169ef-8189-441d-8d6f-c405147b42c9",
+            "id": "09eaa3fb-3143-44ba-8d18-823589dcbd9b",
             "value": "Tom Hanks"
           }
         ]
@@ -55,7 +43,7 @@ query: g.V('nm0001742').out('knows')
       "properties": {
         "name": [
           {
-            "id": "ddeb4a54-453d-40f4-a3de-363c1be581f4",
+            "id": "117c15bb-05bf-466a-b2eb-64ec979b2607",
             "value": "Dabney Coleman"
           }
         ]
@@ -68,7 +56,7 @@ query: g.V('nm0001742').out('knows')
       "properties": {
         "name": [
           {
-            "id": "c755176f-44c1-4bf7-bc8b-c8a1f70c0693",
+            "id": "1ff6967a-6bb1-41b4-b606-1d5505b30738",
             "value": "Charles Durning"
           }
         ]
@@ -81,8 +69,21 @@ query: g.V('nm0001742').out('knows')
       "properties": {
         "name": [
           {
-            "id": "9201dd0d-7123-4a00-b1ce-9e83a4c6cf10",
+            "id": "3fd48ef2-7a64-471b-b9c2-e1e879e5e830",
             "value": "John Lithgow"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nm0001848",
+      "label": "person",
+      "type": "vertex",
+      "properties": {
+        "name": [
+          {
+            "id": "633548da-f317-43c0-8482-0818bef26266",
+            "value": "Dianne Wiest"
           }
         ]
       }
@@ -90,4 +91,4 @@ query: g.V('nm0001742').out('knows')
   ]
 }
 --- result_above ---
-file written: tmp/query_knows_1520765455.json
+file written: tmp/query_knows_1520808056.json
