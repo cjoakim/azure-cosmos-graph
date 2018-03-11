@@ -249,7 +249,7 @@ class Main:
             if p[1] == pid:
                 mid = p[0]
                 movie_ids[mid] = pid
-        return ','.join(sorted(movie_ids.keys()))
+        return sorted(movie_ids.keys())
 
     def extract_people(self):
         # wc -l name.basics.tsv -> 8449645 name.basics.tsv
@@ -288,10 +288,11 @@ class Main:
                         known4 = row['knownForTitles']
                         #titles = self.filter_titles(movies, known4)
                         titles = self.movies_for_person(nid)
+                        tstr   =','.join(titles)
                         name   = row['primaryName']
                         birth  = row['birthYear']
                         prof   = row['primaryProfession']
-                        line   = '{}|{}|{}|{}|{}'.format(nid, name, birth, titles, prof)
+                        line   = '{}|{}|{}|{}|{}'.format(nid, name, birth, tstr, prof)
                         people_list.append(line)
 
                         # also create a corresponding person Object for the JSON
@@ -300,9 +301,9 @@ class Main:
                         person['name']   = name
                         person['birth']  = birth
                         person['prof']   = prof
-                        person['titles'] = titles.split()
+                        person['titles'] = titles
                         m = dict()
-                        for id in titles.split(','):
+                        for id in titles:
                             mname = movies[id]
                             m[id] = mname
                         person['movies'] = m

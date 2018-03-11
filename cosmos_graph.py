@@ -2,6 +2,21 @@
 Usage:
   python cosmos_graph.py drop_graph dev movies
   python cosmos_graph.py create_drop_and_load_queries dev movies
+  python cosmos_graph.py execute_drop_and_load_queries dev movies
+  python cosmos_graph.py query dev movies countv
+  python cosmos_graph.py query dev movies movie    tt0087277
+  python cosmos_graph.py query dev movies movie    footloose
+  python cosmos_graph.py query dev movies movie    pretty_woman
+  python cosmos_graph.py query dev movies person   julia_roberts
+  python cosmos_graph.py query dev movies person   nm0001742
+  python cosmos_graph.py query dev movies edges    footloose
+  python cosmos_graph.py query dev movies edges    julia_roberts
+  python cosmos_graph.py query dev movies vertices julia_roberts
+  python cosmos_graph.py query dev movies knows    kevin_bacon
+  python cosmos_graph.py query dev movies in       julia_roberts
+  python cosmos_graph.py query dev movies path     richard_gere julia_roberts
+  python cosmos_graph.py query dev movies path     richard_gere kevin_bacon
+  python cosmos_graph.py query dev movies path     richard_gere richard_gere
   python cosmos_graph.py capture_gremlin_queries_for_doc dev movies
 Options:
   -h --help     Show this screen.
@@ -121,7 +136,6 @@ class Main:
 
     def create_edges(self):
         people_ids = sorted(self.people.keys())
-        #spec = "g.V('{}').addE('in').to(g.V('{}'))"
         spec = "g.V('{}').addE('in').to(g.V('{}')).property('title', '{}')"
 
         # First add the person-in-movie Edges:
@@ -129,6 +143,7 @@ class Main:
             person = self.people[pid]
             name   = self.scrub_str(person['name'])
             titles = person['titles']
+            print('pid: {} titles: {}'.format(pid, titles))
 
             for mid in titles:
                 title = self.scrub_str(self.movies[mid])
@@ -189,21 +204,6 @@ class Main:
                             print(line.strip())
 
     def query(self, db, coll):
-        # python cosmos_graph.py query dev movies countv
-        # python cosmos_graph.py query dev movies movie    tt0087277
-        # python cosmos_graph.py query dev movies movie    footloose
-        # python cosmos_graph.py query dev movies movie    pretty_woman
-        # python cosmos_graph.py query dev movies person   julia_roberts
-        # python cosmos_graph.py query dev movies person   nm0001742
-        # python cosmos_graph.py query dev movies edges    footloose
-        # python cosmos_graph.py query dev movies edges    julia_roberts
-        # python cosmos_graph.py query dev movies vertices julia_roberts
-        # python cosmos_graph.py query dev movies knows    kevin_bacon
-        # python cosmos_graph.py query dev movies in       julia_roberts
-        # python cosmos_graph.py query dev movies path     richard_gere julia_roberts
-        # python cosmos_graph.py query dev movies path     richard_gere kevin_bacon
-        # python cosmos_graph.py query dev movies path     richard_gere richard_gere
-
         self.create_client(db, coll)
         qname = sys.argv[4].lower()
         query = None
