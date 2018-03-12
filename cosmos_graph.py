@@ -18,6 +18,7 @@ Usage:
   python cosmos_graph.py query dev movies path     richard_gere kevin_bacon
   python cosmos_graph.py query dev movies path     richard_gere richard_gere
   python cosmos_graph.py capture_gremlin_queries_for_doc dev movies
+  python cosmos_graph.py d3_gen dev movies queries/kevin_bacon_knows.txt d3/kevin_bacon_knows.json
 Options:
   -h --help     Show this screen.
   --version     Show version.
@@ -38,6 +39,7 @@ from gremlin_python.driver import client
 from docopt import docopt
 
 from pysrc.joakim import config
+from pysrc.joakim import d3
 from pysrc.joakim import values
 
 VERSION='2018/03/11'
@@ -80,6 +82,9 @@ class Main:
 
             elif func == 'capture_gremlin_queries_for_doc':
                 self.capture_gremlin_queries_for_doc()
+
+            elif func == 'd3_gen':
+                self.d3_gen()
 
             else:
                 self.print_options('Error: invalid function: {}'.format(func))
@@ -335,6 +340,13 @@ class Main:
                     print('file written: {}'.format(outfile))
         else:
             print('invalid args')
+
+    def d3_gen(self):
+        infile  = sys.argv[4]
+        outfile = sys.argv[5]
+        print('d3_gen; infile: {}'.format(infile))
+        util = d3.D3Util(infile, outfile)
+        print(''.join(util.lines))
 
     def scrub_str(self, s):
         return s.replace("'", '')
