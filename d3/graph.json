@@ -1,47 +1,37 @@
 {
   "nodes": [
     {
-      "name": "Peter",
-      "label": "Person",
-      "id": 1
+      "id": "nm0001742",
+      "name": "Lori Singer",
+      "label": "person"
     },
     {
-      "name": "Michael",
-      "label": "Person",
-      "id": 2
+      "id": "nm0000102",
+      "name": "Kevin Bacon",
+      "label": "person"
     },
     {
-      "name": "Neo4j",
-      "label": "Database",
-      "id": 3
+      "id": "nm2225369",
+      "name": "Jennifer Lawrence",
+      "label": "person"
     },
     {
-      "name": "Graph Database",
-      "label": "Database",
-      "id": 4
+      "id": "nm0001648",
+      "name": "Charlotte Rampling",
+      "label": "person"
+    },
+    {
+      "id": "nm0000134",
+      "name": "Robert De Niro",
+      "label": "person"
+    },
+    {
+      "id": "nm0000223",
+      "name": "Elisabeth Shue",
+      "label": "person"
     }
   ],
-  "links": [
-    {
-      "source": 1,
-      "target": 2,
-      "type": "KNOWS",
-      "since": 2010
-    },
-    {
-      "source": 1,
-      "target": 3,
-      "type": "FOUNDED"
-    },
-    {
-      "source": 2,
-      "target": 3,
-      "type": "WORKS_ON"
-    },
-    {
-      "source": 3,
-      "target": 4,
-      "type": "IS_A"
-    }
-  ]
+  "links": [],
+  "qname": "path",
+  "query": "g.V('nm0001742').repeat(out().simplePath()).until(hasId('nm0001648')).path().limit(3)"
 }

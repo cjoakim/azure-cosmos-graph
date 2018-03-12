@@ -1,1 +1,37 @@
-{}
+{
+  "nodes": [
+    {
+      "id": "nm0001742",
+      "name": "Lori Singer",
+      "label": "person"
+    },
+    {
+      "id": "nm0000102",
+      "name": "Kevin Bacon",
+      "label": "person"
+    },
+    {
+      "id": "nm2225369",
+      "name": "Jennifer Lawrence",
+      "label": "person"
+    },
+    {
+      "id": "nm0001648",
+      "name": "Charlotte Rampling",
+      "label": "person"
+    },
+    {
+      "id": "nm0000134",
+      "name": "Robert De Niro",
+      "label": "person"
+    },
+    {
+      "id": "nm0000223",
+      "name": "Elisabeth Shue",
+      "label": "person"
+    }
+  ],
+  "links": [],
+  "qname": "path",
+  "query": "g.V('nm0001742').repeat(out().simplePath()).until(hasId('nm0001648')).path().limit(3)"
+}
