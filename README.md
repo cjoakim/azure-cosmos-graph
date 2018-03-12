@@ -42,10 +42,24 @@ It is recommended that you specify 10,000 RUs.
 This project contains **both** the data-wrangling logic as well as the end-result data
 that you can simply use.
 
+At this time (3/12/2018) these instructions and scripts are oriented toward "standard" Python 3.6.4
+from Python.org running on macOS.  However, I plan on enhancing them for Anaconda Python on an
+Azure Ubuntu Data Science Virtual Machine (DSVM) later this week.
+
+To create the Python virtual environment, run the following from Terminal:
+```
+$ git clone git@github.com:cjoakim/azure-cosmos-graph.git
+$ cd azure-cosmos-graph
+$ ./venv.sh
+$ source bin/activate
+$ python --version
+Python 3.6.4
+```
+
 To use the pre-wrangled data skip the following **Data Wrangling** section and down to the
 **Load the Database** section on this page.
 
-As of 2018/03/11 these instructions and scripts work on macOS.
+As of 2018/03/12 these instructions and scripts work on macOS.
 
 TODO - enhance these instructions and scripts to work on an Azure Ubuntu DSVM with Anaconda Python.
 
@@ -209,17 +223,28 @@ g.V(['nm0000178','nm0000102','nm0001742'])
 See file queries.sh.  These previously executed queries have been captured to files in the
 queries/ directory in this project.
 
+## Visualizations with D3.js
+
+You can start a local python web server by running the command below:
+```
+$ ./webserver.sh
+```
+
+The visit **http://localhost:8000/d3/index.html** with your web browser.  You should be able
+to see a D3.js visualization of your latest path query.  For example, the "knows" path from
+Lori Singer to Charlotte Rampling is shown below.
+
+![image 1](img/paths_lori_singer_to_charlotte_rampling.png "")
+
 ## Gremlin-Python and Apache TinkerPop
 
 Apache TinkerPop is a graph computing framework for both graph databases (OLTP)
-and graph analytic systems (OLAP).
+and graph analytic systems (OLAP).  CosmosDB uses the Gremlin API, and the Python code
+in this project accesses Gremlin via the **gremlinpython** library, version 3.2.7.
 
+Here are some useful links to Apache TinkerPop and Gremlin:
 - http://tinkerpop.apache.org
 - http://tinkerpop.apache.org/docs/3.2.7/recipes/
 - http://tinkerpop.apache.org/docs/current/reference/#gremlin-python
 - https://pypi.python.org/pypi/gremlinpython/3.2.7
 - https://docs.microsoft.com/en-us/azure/cosmos-db/create-graph-gremlin-console
-
-## Visualizations
-
-- https://python-graph-gallery.com/327-network-from-correlation-matrix/
