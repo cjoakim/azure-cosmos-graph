@@ -34,13 +34,30 @@ class D3Util:
 
     def parse_path(self):
         paths = self.results_obj['result']
-        for path in paths:
-            print('path')
-            objects = path['objects']
-            for obj in objects:
-                self.add_node(obj)
 
-    def add_node(self, obj):
+        # First create the Nodes (Vertices)
+        for path_idx, path in enumerate(paths):
+            objects = path['objects']
+            obj_count = len(objects)
+            for obj_idx, obj in enumerate(objects):
+                next_obj_idx = obj_idx + 1
+                if next_obj_idx < obj_count:
+                    next_obj = objects[next_obj_idx]
+                    self.add_node(obj, next_obj)
+                else:
+                    self.add_node(obj)
+
+        # Next create the Links (Edges)
+        for path_idx, path in enumerate(paths):
+            objects = path['objects']
+            obj_count = len(objects)
+            for obj_idx, obj in enumerate(objects):
+                next_obj_idx = obj_idx + 1
+                if next_obj_idx < obj_count:
+                    next_obj = objects[next_obj_idx]
+                    self.add_link(obj, next_obj, path_idx)
+
+    def add_node(self, obj, next_obj=None):
         id = obj['id']
         if id not in self.node_ids:
             d = dict()
@@ -50,6 +67,13 @@ class D3Util:
             self.node_ids[id] = d
             self.nodes.append(d)
 
+    def add_link(self, obj, next_obj, path_idx):
+        d = dict()
+        d['source'] = obj['id']
+        d['target'] = next_obj['id']
+        d['type']   = 'knows, path {}'.format(path_idx + 1)
+        d['since']  = ''
+        self.links.append(d)
 
         # "objects": [
         #   {
