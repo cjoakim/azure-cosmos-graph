@@ -29,11 +29,16 @@ class Favorites:
         actors['nm0000234'] = 'charlize_theron'
         actors['nm0000456'] = 'holly_hunter'
         actors['nm0000518'] = 'john_malkovich'
+        actors['nm0000849'] = 'javier_bardem'
+        actors['nm0001648'] = 'charlotte_rampling'
         actors['nm0001742'] = 'lori_singer'
+        actors['nm0001848'] = 'dianne_wiest'
         actors['nm0005476'] = 'hilary_swank'
         actors['nm0177896'] = 'bradley_cooper'
+        actors['nm0205626'] = 'viola_davis'
         actors['nm1297015'] = 'emma_stone'
         return actors
+
 
     def favorite_movies(self):
         movies = dict()
