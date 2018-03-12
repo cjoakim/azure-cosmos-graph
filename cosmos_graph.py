@@ -346,7 +346,9 @@ class Main:
         outfile = sys.argv[5]
         print('d3_gen; infile: {}'.format(infile))
         util = d3.D3Util(infile, outfile)
-        print(''.join(util.lines))
+        print('qname: {}'.format(util.qname))
+        print('query: {}'.format(util.query))
+        print(json.dumps(util.results_obj, sort_keys=True, indent=2))
 
     def scrub_str(self, s):
         return s.replace("'", '')
