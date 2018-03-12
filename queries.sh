@@ -112,6 +112,9 @@ python cosmos_graph.py query $dbname $collname path richard_gere lori_singer > q
 echo 'querying path from diane_lane to lori_singer ...'
 python cosmos_graph.py query $dbname $collname path diane_lane lori_singer > queries/path_diane_lane_to_lori_singer.txt
 
+echo 'querying path from lori_singer to viola_davis...'
+python cosmos_graph.py query $dbname $collname path lori_singer viola_davis > queries/path_lori_singer_to_viola_davis.txt
+
 echo 'querying path from lori_singer to charlotte_rampling...'
 python cosmos_graph.py query $dbname $collname path lori_singer charlotte_rampling > queries/path_lori_singer_to_charlotte_rampling.txt
 

@@ -3,29 +3,30 @@ create_client:
 endpoint: wss://cjoakim-cosmosdb-gremlin.gremlin.cosmosdb.azure.com:443/
 username: /dbs/dev/colls/movies
 qname: path
-query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).path().limit(3)
+query: g.V('nm0001742').repeat(out().simplePath()).until(hasId('nm0205626')).path().limit(3)
 --- result_below ---
 {
   "qname": "path",
-  "query": "g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).path().limit(3)",
+  "query": "g.V('nm0001742').repeat(out().simplePath()).until(hasId('nm0205626')).path().limit(3)",
   "result_count": 3,
   "result": [
     {
       "labels": [
         [],
         [],
+        [],
         []
       ],
       "objects": [
         {
-          "id": "nm0000178",
+          "id": "nm0001742",
           "label": "person",
           "type": "vertex",
           "properties": {
             "name": [
               {
-                "id": "00c20d60-3a19-4ee6-8764-d57b907e2ae9",
-                "value": "Diane Lane"
+                "id": "fb444d04-c856-4142-ae57-8cc94b5ba5e4",
+                "value": "Lori Singer"
               }
             ]
           }
@@ -44,14 +45,27 @@ query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           }
         },
         {
-          "id": "nm0001742",
+          "id": "nm0000178",
           "label": "person",
           "type": "vertex",
           "properties": {
             "name": [
               {
-                "id": "fb444d04-c856-4142-ae57-8cc94b5ba5e4",
-                "value": "Lori Singer"
+                "id": "00c20d60-3a19-4ee6-8764-d57b907e2ae9",
+                "value": "Diane Lane"
+              }
+            ]
+          }
+        },
+        {
+          "id": "nm0205626",
+          "label": "person",
+          "type": "vertex",
+          "properties": {
+            "name": [
+              {
+                "id": "39b2290f-43e6-41a0-af2a-d3f7e521e2a4",
+                "value": "Viola Davis"
               }
             ]
           }
@@ -67,14 +81,14 @@ query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).pat
       ],
       "objects": [
         {
-          "id": "nm0000178",
+          "id": "nm0001742",
           "label": "person",
           "type": "vertex",
           "properties": {
             "name": [
               {
-                "id": "00c20d60-3a19-4ee6-8764-d57b907e2ae9",
-                "value": "Diane Lane"
+                "id": "fb444d04-c856-4142-ae57-8cc94b5ba5e4",
+                "value": "Lori Singer"
               }
             ]
           }
@@ -88,6 +102,55 @@ query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).pat
               {
                 "id": "ba749aff-7a72-429e-8bf7-ff40c73e2e18",
                 "value": "Kevin Bacon"
+              }
+            ]
+          }
+        },
+        {
+          "id": "nm0000210",
+          "label": "person",
+          "type": "vertex",
+          "properties": {
+            "name": [
+              {
+                "id": "81601c6f-7eae-4c84-bed2-e36b593f9b89",
+                "value": "Julia Roberts"
+              }
+            ]
+          }
+        },
+        {
+          "id": "nm0205626",
+          "label": "person",
+          "type": "vertex",
+          "properties": {
+            "name": [
+              {
+                "id": "39b2290f-43e6-41a0-af2a-d3f7e521e2a4",
+                "value": "Viola Davis"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "labels": [
+        [],
+        [],
+        [],
+        []
+      ],
+      "objects": [
+        {
+          "id": "nm0001742",
+          "label": "person",
+          "type": "vertex",
+          "properties": {
+            "name": [
+              {
+                "id": "fb444d04-c856-4142-ae57-8cc94b5ba5e4",
+                "value": "Lori Singer"
               }
             ]
           }
@@ -106,76 +169,27 @@ query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).pat
           }
         },
         {
-          "id": "nm0001742",
+          "id": "nm0000210",
           "label": "person",
           "type": "vertex",
           "properties": {
             "name": [
               {
-                "id": "fb444d04-c856-4142-ae57-8cc94b5ba5e4",
-                "value": "Lori Singer"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "labels": [
-        [],
-        [],
-        [],
-        []
-      ],
-      "objects": [
-        {
-          "id": "nm0000178",
-          "label": "person",
-          "type": "vertex",
-          "properties": {
-            "name": [
-              {
-                "id": "00c20d60-3a19-4ee6-8764-d57b907e2ae9",
-                "value": "Diane Lane"
+                "id": "81601c6f-7eae-4c84-bed2-e36b593f9b89",
+                "value": "Julia Roberts"
               }
             ]
           }
         },
         {
-          "id": "nm0000102",
+          "id": "nm0205626",
           "label": "person",
           "type": "vertex",
           "properties": {
             "name": [
               {
-                "id": "ba749aff-7a72-429e-8bf7-ff40c73e2e18",
-                "value": "Kevin Bacon"
-              }
-            ]
-          }
-        },
-        {
-          "id": "nm0001475",
-          "label": "person",
-          "type": "vertex",
-          "properties": {
-            "name": [
-              {
-                "id": "3fd48ef2-7a64-471b-b9c2-e1e879e5e830",
-                "value": "John Lithgow"
-              }
-            ]
-          }
-        },
-        {
-          "id": "nm0001742",
-          "label": "person",
-          "type": "vertex",
-          "properties": {
-            "name": [
-              {
-                "id": "fb444d04-c856-4142-ae57-8cc94b5ba5e4",
-                "value": "Lori Singer"
+                "id": "39b2290f-43e6-41a0-af2a-d3f7e521e2a4",
+                "value": "Viola Davis"
               }
             ]
           }
@@ -185,6 +199,6 @@ query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).pat
   ]
 }
 --- result_above ---
-file written: tmp/query_path_1520850588.json
-D3Util#__init__: tmp/query_path_1520850588.json
+file written: tmp/query_path_1520850596.json
+D3Util#__init__: tmp/query_path_1520850596.json
 file written: d3/graph.json

@@ -51,6 +51,12 @@ query: g.V().has('label','movie').has('id','tt0100405')
 path_diane_lane_to_lori_singer
 query: g.V('nm0000178').repeat(out().simplePath()).until(hasId('nm0001742')).path().limit(3)
 
+path_lori_singer_to_charlotte_rampling
+query: g.V('nm0001742').repeat(out().simplePath()).until(hasId('nm0001648')).path().limit(3)
+
+path_lori_singer_to_viola_davis
+query: g.V('nm0001742').repeat(out().simplePath()).until(hasId('nm0205626')).path().limit(3)
+
 path_richard_gere_to_julia_roberts
 query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0000210')).path().limit(3)
 

@@ -17,6 +17,8 @@ Usage:
   python cosmos_graph.py query dev movies path     richard_gere julia_roberts
   python cosmos_graph.py query dev movies path     richard_gere kevin_bacon
   python cosmos_graph.py query dev movies path     richard_gere richard_gere
+  python cosmos_graph.py query dev movies path     lori_singer viola_davis
+  python cosmos_graph.py query dev movies path     lori_singer charlotte_rampling
   python cosmos_graph.py capture_gremlin_queries_for_doc dev movies
   python cosmos_graph.py d3_gen dev movies data/test/query_path_1520846133.json
 Options:
@@ -315,7 +317,6 @@ class Main:
 
             callback = self.gremlin_client.submitAsync(query)
             if callback.result() is not None:
-                #print(type(callback.result()))  # <class 'gremlin_python.driver.resultset.ResultSet'>
                 print('--- result_below ---')
                 data = dict()
                 r = callback.result().one()
@@ -332,7 +333,7 @@ class Main:
                     print('--- result_above ---')
                     print('file written: {}'.format(outfile))
 
-                if False:
+                if True:
                     # Also produce the d3/graph.json file for visualization
                     util = d3.D3Util(outfile)
         else:
@@ -342,9 +343,6 @@ class Main:
         infile  = sys.argv[4]
         print('d3_gen; infile: {}'.format(infile))
         util = d3.D3Util(infile)
-        #print('qname: {}'.format(util.qname))
-        #print('query: {}'.format(util.query))
-        #print(json.dumps(util.results_obj, sort_keys=True, indent=2))
 
     def scrub_str(self, s):
         return s.replace("'", '')

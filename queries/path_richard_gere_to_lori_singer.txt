@@ -199,4 +199,6 @@ query: g.V('nm0000152').repeat(out().simplePath()).until(hasId('nm0001742')).pat
   ]
 }
 --- result_above ---
-file written: tmp/query_path_1520808082.json
+file written: tmp/query_path_1520850581.json
+D3Util#__init__: tmp/query_path_1520850581.json
+file written: d3/graph.json

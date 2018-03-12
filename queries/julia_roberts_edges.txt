@@ -277,4 +277,5 @@ query: g.V('nm0000210').bothE()
   ]
 }
 --- result_above ---
-file written: tmp/query_edges_1520808012.json
+file written: tmp/query_edges_1520850511.json
+D3Util#__init__: tmp/query_edges_1520850511.json

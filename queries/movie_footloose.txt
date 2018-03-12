@@ -26,4 +26,5 @@ query: g.V().has('label','movie').has('id','tt0087277')
   ]
 }
 --- result_above ---
-file written: tmp/query_movie_1520807932.json
+file written: tmp/query_movie_1520850429.json
+D3Util#__init__: tmp/query_movie_1520850429.json

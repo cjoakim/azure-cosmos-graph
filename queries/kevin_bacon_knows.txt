@@ -390,4 +390,5 @@ query: g.V('nm0000102').out('knows')
   ]
 }
 --- result_above ---
-file written: tmp/query_knows_1520808037.json
+file written: tmp/query_knows_1520850536.json
+D3Util#__init__: tmp/query_knows_1520850536.json

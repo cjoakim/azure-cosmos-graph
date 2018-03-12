@@ -17,6 +17,7 @@ class D3Util:
         self.links = list() # array of dict objects
         self.graph_obj['nodes'] = self.nodes
         self.graph_obj['links'] = self.links
+        self.write_outfile = False
 
         with open(self.infile, 'r') as f:
             self.results_obj = json.loads(f.read())
@@ -27,10 +28,11 @@ class D3Util:
         if '_path_' in self.infile:
             self.parse_path()
 
-        jstr = json.dumps(self.graph_obj, indent=2)
-        with open(self.outfile, 'wt') as f:
-            f.write(jstr)
-            print('file written: {}'.format(self.outfile))
+        if self.write_outfile:
+            jstr = json.dumps(self.graph_obj, indent=2)
+            with open(self.outfile, 'wt') as f:
+                f.write(jstr)
+                print('file written: {}'.format(self.outfile))
 
     def parse_path(self):
         paths = self.results_obj['result']
@@ -56,6 +58,8 @@ class D3Util:
                 if next_obj_idx < obj_count:
                     next_obj = objects[next_obj_idx]
                     self.add_link(obj, next_obj, path_idx)
+
+        self.write_outfile = True
 
     def add_node(self, obj, next_obj=None):
         id = obj['id']
