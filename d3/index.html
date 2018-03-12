@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
         .node {}
-
         .link { stroke: #999; stroke-opacity: .6; stroke-width: 1px; }
     </style>
 </head>
@@ -20,8 +19,8 @@
     var colors = d3.scaleOrdinal(d3.schemeCategory10);
 
     var svg = d3.select("svg"),
-        width = +svg.attr("width"),
-        height = +svg.attr("height"),
+        width  = + svg.attr("width"),
+        height = + svg.attr("height"),
         node,
         link;
 
@@ -37,7 +36,7 @@
         .append('svg:path')
         .attr('d', 'M 0,-5 L 10 ,0 L 0,5')
         .attr('fill', '#999')
-        .style('stroke','none');
+        .style('stroke', 'none');
 
     var simulation = d3.forceSimulation()
         .force("link", d3.forceLink().id(function (d) {return d.id;}).distance(100).strength(1))
@@ -80,7 +79,7 @@
             .attrs({
                 'class': 'edgelabel',
                 'id': function (d, i) {return 'edgelabel' + i},
-                'font-size': 10,
+                'font-size': 16,
                 'fill': '#aaa'
             });
 

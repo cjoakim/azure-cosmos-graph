@@ -71,37 +71,6 @@ class D3Util:
         d = dict()
         d['source'] = obj['id']
         d['target'] = next_obj['id']
-        d['type']   = 'knows, path {}'.format(path_idx + 1)
+        d['type']   = 'knows (p{})'.format(path_idx + 1)
         d['since']  = ''
         self.links.append(d)
-
-        # "objects": [
-        #   {
-        #     "id": "nm0001742",
-        #     "label": "person",
-        #     "type": "vertex",
-        #     "properties": {
-        #       "name": [
-        #         {
-        #           "id": "fb444d04-c856-4142-ae57-8cc94b5ba5e4",
-        #           "value": "Lori Singer"
-        #         }
-        #       ]
-        #     }
-        #   },
-
-        # nodes:
-        # {
-        #   "name": "Peter",
-        #   "label": "Person",
-        #   "id": 1
-        # },
-
-        # links:
-        # {
-        #   "source": 1,
-        #   "target": 2,
-        #   "type": "KNOWS",
-        #   "since": 2010
-        # },
-
