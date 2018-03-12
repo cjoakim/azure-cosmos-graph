@@ -231,7 +231,7 @@ $ ./webserver.sh
 ```
 
 In another Terminal window, execute the following command to query CosmosDB for the "knows"
-path from Lori Singer (in Footloose) to Charlotte Rampling (in Red Sparrow).
+path from Lori Singer (actress in Footloose) to Charlotte Rampling (actress in Red Sparrow).
 ```
 $ python cosmos_graph.py query $dbname $collname path lori_singer charlotte_rampling
 ```
