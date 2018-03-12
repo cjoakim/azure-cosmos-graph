@@ -1,10 +1,3 @@
-function: query
-create_client:
-endpoint: wss://cjoakim-cosmosdb-gremlin.gremlin.cosmosdb.azure.com:443/
-username: /dbs/dev/colls/movies
-qname: path
-query: g.V('nm0001742').repeat(out().simplePath()).until(hasId('nm0001648')).path().limit(3)
---- result_below ---
 {
   "qname": "path",
   "query": "g.V('nm0001742').repeat(out().simplePath()).until(hasId('nm0001648')).path().limit(3)",
@@ -226,5 +219,3 @@ query: g.V('nm0001742').repeat(out().simplePath()).until(hasId('nm0001648')).pat
     }
   ]
 }
---- result_above ---
-file written: tmp/query_path_1520846133.json

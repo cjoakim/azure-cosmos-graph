@@ -18,13 +18,13 @@ Usage:
   python cosmos_graph.py query dev movies path     richard_gere kevin_bacon
   python cosmos_graph.py query dev movies path     richard_gere richard_gere
   python cosmos_graph.py capture_gremlin_queries_for_doc dev movies
-  python cosmos_graph.py d3_gen dev movies queries/kevin_bacon_knows.txt d3/kevin_bacon_knows.json
+  python cosmos_graph.py d3_gen dev movies data/test/query_path_1520846133.json
 Options:
   -h --help     Show this screen.
   --version     Show version.
 """
 
-# Chris Joakim, Microsoft, 2018/03/11
+# Chris Joakim, Microsoft, 2018/03/12
 
 import csv, json, os, sys, time, traceback
 import arrow
@@ -302,13 +302,6 @@ class Main:
             #query = "g.V('{}').repeat(out('knows')).times(1)".format(id1)
             query = "g.V('{}').out('in')".format(id1)
 
-        # elif qname == 'path_orig':
-        #     arg1 = sys.argv[5].lower()
-        #     arg2 = sys.argv[6].lower()
-        #     id1  = self.favorites.translate_to_id(arg1)
-        #     id2  = self.favorites.translate_to_id(arg2)
-        #     query = "g.V('{}').bothE().where(otherV().hasId('{}')).path()".format(id1, id2)
-
         elif qname == 'path':
             arg1 = sys.argv[5].lower()
             arg2 = sys.argv[6].lower()
@@ -338,17 +331,20 @@ class Main:
                     out.write(jstr)
                     print('--- result_above ---')
                     print('file written: {}'.format(outfile))
+
+                if False:
+                    # Also produce the d3/graph.json file for visualization
+                    util = d3.D3Util(outfile)
         else:
             print('invalid args')
 
     def d3_gen(self):
         infile  = sys.argv[4]
-        outfile = sys.argv[5]
         print('d3_gen; infile: {}'.format(infile))
-        util = d3.D3Util(infile, outfile)
-        print('qname: {}'.format(util.qname))
-        print('query: {}'.format(util.query))
-        print(json.dumps(util.results_obj, sort_keys=True, indent=2))
+        util = d3.D3Util(infile)
+        #print('qname: {}'.format(util.qname))
+        #print('query: {}'.format(util.query))
+        #print(json.dumps(util.results_obj, sort_keys=True, indent=2))
 
     def scrub_str(self, s):
         return s.replace("'", '')
