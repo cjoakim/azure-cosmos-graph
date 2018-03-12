@@ -43,7 +43,7 @@ This project contains **both** the data-wrangling logic as well as the end-resul
 that you can simply use.
 
 At this time (3/12/2018) these instructions and scripts are oriented toward "standard" Python 3.6.4
-from Python.org running on macOS.  However, I plan on enhancing them for Anaconda Python on an
+from Python.org running on **macOS**.  However, I plan on enhancing them for Anaconda Python on an
 Azure Ubuntu Data Science Virtual Machine (DSVM) later this week.
 
 To create the Python virtual environment, run the following from Terminal:
@@ -228,6 +228,12 @@ queries/ directory in this project.
 You can start a local python web server by running the command below:
 ```
 $ ./webserver.sh
+```
+
+In another Terminal window, execute the following command to query CosmosDB for the "knows"
+path from Lori Singer (in Footloose) to Charlotte Rampling (in Red Sparrow).
+```
+$ python cosmos_graph.py query $dbname $collname path lori_singer charlotte_rampling
 ```
 
 The visit **http://localhost:8000/d3/index.html** with your web browser.  You should be able
