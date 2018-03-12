@@ -3,32 +3,32 @@
     {
       "id": "nm0001742",
       "name": "Lori Singer",
-      "label": "person"
+      "label": "person:nm0001742"
     },
     {
       "id": "nm0000102",
       "name": "Kevin Bacon",
-      "label": "person"
+      "label": "person:nm0000102"
     },
     {
       "id": "nm2225369",
       "name": "Jennifer Lawrence",
-      "label": "person"
+      "label": "person:nm2225369"
     },
     {
       "id": "nm0001648",
       "name": "Charlotte Rampling",
-      "label": "person"
+      "label": "person:nm0001648"
     },
     {
       "id": "nm0000134",
       "name": "Robert De Niro",
-      "label": "person"
+      "label": "person:nm0000134"
     },
     {
       "id": "nm0000223",
       "name": "Elisabeth Shue",
-      "label": "person"
+      "label": "person:nm0000223"
     }
   ],
   "links": [

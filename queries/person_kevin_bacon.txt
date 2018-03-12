@@ -26,5 +26,5 @@ query: g.V().has('label','person').has('id','nm0000102')
   ]
 }
 --- result_above ---
-file written: tmp/query_person_1520850448.json
-D3Util#__init__: tmp/query_person_1520850448.json
+file written: tmp/query_person_1520851207.json
+D3Util#__init__: tmp/query_person_1520851207.json

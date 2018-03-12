@@ -14,5 +14,5 @@ query: g.V().count()
   ]
 }
 --- result_above ---
-file written: tmp/query_countv_1520850423.json
-D3Util#__init__: tmp/query_countv_1520850423.json
+file written: tmp/query_countv_1520851182.json
+D3Util#__init__: tmp/query_countv_1520851182.json

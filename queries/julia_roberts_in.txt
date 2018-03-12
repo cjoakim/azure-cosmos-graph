@@ -377,5 +377,5 @@ query: g.V('nm0000210').out('in')
   ]
 }
 --- result_above ---
-file written: tmp/query_in_1520850479.json
-D3Util#__init__: tmp/query_in_1520850479.json
+file written: tmp/query_in_1520851238.json
+D3Util#__init__: tmp/query_in_1520851238.json

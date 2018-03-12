@@ -67,7 +67,7 @@ class D3Util:
             d = dict()
             d['id'] = id
             d['name'] = obj['properties']['name'][0]['value']
-            d['label'] = obj['label']
+            d['label'] = '{}:{}'.format(obj['label'], id)
             self.node_ids[id] = d
             self.nodes.append(d)
 
