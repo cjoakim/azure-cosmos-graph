@@ -195,7 +195,8 @@ class Main:
                 time.sleep(self.default_sleep_time)
 
     def execute_load_queries(self, db, coll):
-        infile  = self.c.load_queries_txt_filename()
+        #infile = self.c.load_queries_txt_filename()
+        infile = 'data/processed/load_queries.txt'
         self.load_queries = list()
 
         with open(infile, 'rt') as f:
@@ -220,12 +221,16 @@ class Main:
 
             epoch = time.time()
             print('load_sync idx: {} epoch: {} query: {}'.format(idx, epoch, query))
-            result = self.gremlin_client.submit(query)
-            if result is None:
-                print('load_sync - QUERY_NOT_SUCCESSFUL')
+            #result = self.gremlin_client.submit(query)
+            #if result is None:
+            callback = self.gremlin_client.submitAsync(query)
+            r = callback.result()
+            if r is not None:
+                print('load_sync - query_successful')
+                print(r)
                 return
             else:
-                print('load_sync - query_successful')
+                print('load_sync - QUERY_NOT_SUCCESSFUL')
                 return
 
     def load_loop_async(self, idx):

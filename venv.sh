@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Recreate the virtual environment and reinstall libs.
-# Chris Joakim, 2018/02/27
+# Chris Joakim, 2019/03/20
 
 # brew upgrade python3
 
@@ -19,11 +19,11 @@ python --version
 echo 'installing/upgrading libs...'
 pip install --upgrade pip-tools
 
-# pip install --upgrade arrow
-# pip install --upgrade azure
-# pip install --upgrade docopt
-# pip install --upgrade gremlinpython
-# pip install --upgrade futures
+pip install --upgrade arrow
+pip install --upgrade azure
+pip install --upgrade docopt
+pip install --upgrade gremlinpython
+pip install --upgrade futures
 
 # gremlinpython==3.2.7
 
@@ -31,6 +31,6 @@ pip install --upgrade pip-tools
 # pip freeze > requirements.txt
 
 echo 'pip install from requirements.txt...'
-pip install -r requirements.txt
+#pip install -r requirements.txt
 
 echo 'done'

@@ -24,11 +24,12 @@ In Azure Portal, provision a CosmosDB with the Graph API.
 
 Capture its keys in the Azure Portal, and set these as environment variables to similar values:
 ```
-AZURE_COSMOSDB_GRAPH1_ACCT=cjoakim-cosmos-graph1
-AZURE_COSMOSDB_GRAPH1_CONN_STRING=AccountEndpoint=https://cjoakim-cosmos-graph1.documents.azure.com:443/;AccountKey=h2D...Sw==;
-AZURE_COSMOSDB_GRAPH1_DBNAME=dev
-AZURE_COSMOSDB_GRAPH1_KEY=h2D...Sw==
-AZURE_COSMOSDB_GRAPH1_URI=https://cjoakim-cosmos-graph1.documents.azure.com:443/
+AZURE_COSMOSDB_GRAPHDB_ACCT=cjoakimcosmosdbgremlin
+AZURE_COSMOSDB_GRAPHDB_CONN_STRING=AccountEndpoint=https://cjoakimcosmosdbgremlin.documents.azure.com:443/;AccountKey=bT6...Ysg==;ApiKind=Gremlin;
+AZURE_COSMOSDB_GRAPHDB_DBNAME=dev
+AZURE_COSMOSDB_GRAPHDB_COLNAME=movies
+AZURE_COSMOSDB_GRAPHDB_KEY=bT6...Ysg==
+AZURE_COSMOSDB_GRAPHDB_URI=https://cjoakimcosmosdbgremlin.documents.azure.com:443/
 ```
 
 Within the DB account, create database id **dev** with graph id **movies** as shown.
@@ -42,10 +43,6 @@ It is recommended that you specify 10,000 RUs.
 This project contains **both** the data-wrangling logic as well as the end-result data
 that you can simply use.
 
-At this time (3/12/2018) these instructions and scripts are oriented toward "standard" Python 3.6.4
-from Python.org running on **macOS**.  However, I plan on enhancing them for Anaconda Python on an
-Azure Ubuntu Data Science Virtual Machine (DSVM) later this week.
-
 To create the Python virtual environment, run the following from Terminal:
 ```
 $ git clone git@github.com:cjoakim/azure-cosmos-graph.git
@@ -53,15 +50,12 @@ $ cd azure-cosmos-graph
 $ ./venv.sh
 $ source bin/activate
 $ python --version
-Python 3.6.4
+Python 3.7.2
 ```
 
 To use the pre-wrangled data skip the following **Data Wrangling** section and down to the
 **Load the Database** section on this page.
 
-As of 2018/03/12 these instructions and scripts work on macOS.
-
-TODO - enhance these instructions and scripts to work on an Azure Ubuntu DSVM with Anaconda Python.
 
 ### Data Wrangling
 
@@ -112,9 +106,9 @@ This is the list of the 6 actors as Python code:
 
 ### Load the Database
 
-File **data/processed/load_queries.txt** contains the pre-wrangled data that
-you can simply load into your DB.  It contains 4648 Gremlin commands to insert the
-set of Vertices and Edges connecting them.
+File [data/processed/load_queries.txt](data/processed/load_queries.txt)
+contains the pre-wrangled data that you can simply load into your DB.
+It contains 4648 Gremlin commands to insert the set of Vertices and Edges connecting them.
 
 To load this data into your dev/movies DB, execute the following bash script:
 ```
@@ -233,10 +227,10 @@ $ ./webserver.sh
 In another Terminal window, execute the following command to query CosmosDB for the "knows"
 path from Lori Singer (actress in Footloose) to Charlotte Rampling (actress in Red Sparrow).
 ```
-$ python cosmos_graph.py query $dbname $collname path lori_singer charlotte_rampling
+$ python cosmos_graph.py query dev movies path lori_singer charlotte_rampling
 ```
 
-The visit **http://localhost:8000/d3/index.html** with your web browser.  You should be able
+Then visit **http://localhost:8899/d3/index.html** with your web browser.  You should be able
 to see a D3.js visualization of your latest path query.  For example, the "knows" path from
 Lori Singer to Charlotte Rampling is shown below.
 

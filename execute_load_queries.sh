@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Chris Joakim, Microsoft, 2018/03/11
+# Chris Joakim, Microsoft, 2019/03/20
 # ./execute_load_queries.sh
 
 dbname=dev
