@@ -9,7 +9,7 @@
     <!-- These are the only properties you should have to change.  -->
     <property name="_projectRoot"   value="/Users/${user.name}/github" />
     <property name="_projectName"   value="azure-cosmos-graph" />
-    <property name="_backupRoot"    value="/Users/${user.name}/Backups/projects" /
+    <property name="_backupRoot"    value="/Users/${user.name}/Backups/projects" />
 
     <!-- These properties are computed from the above. -->
     <property name="_projectDir"    value="${_projectRoot}/${_projectName}" />
